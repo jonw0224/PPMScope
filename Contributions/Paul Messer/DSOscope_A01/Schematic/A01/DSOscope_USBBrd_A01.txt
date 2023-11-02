@@ -1,0 +1,12 @@
+====+  Parts List for C:\Users\pmesser\_Paul\Design\DSOscope\Schematic\A01\DSOscope_USBBrd_A01.dsn  +====
+
+R10,R7,R8,R9                  4   0.0,1/8W 5% 0805,0805,311-0.0ARCT-ND,5%,,,1/8W
+C3                            1   0.1uF,10% 25V X7R 0805,0805,PCC1828CT-ND,10%,25V,X7R
+P1                            1   1 x 6,Sq Pin Socket 0.025 pin 0.1 space,SqPinSocket1x6,S7039-ND
+R1,R2                         2   1.00K,1/8W 1% 0805,0805,311-1.00KCRCT-ND,1%,,,1/8W
+C1                            1   1.0uF,+80% -20% 25V Y5V 0805,0805,311-1358-1-ND,+80% -20%,25V,Y5V
+R3,R4,R5,R6                   4   10.0K,1/8W 1% 0805,0805,311-10.0KCRCT-ND,1%,,,1/8W
+C2                            1   4.7uF,10% 16V X5R 0805,0805,PCC2323CT-ND,10%,16V,X5R
+U1                            1   FT232RL,USB UART: SSOP-28,SSOP28,768-1007-1-ND
+L1                            1   Ferrite Bead SMT,1000 ohm:100MHz,0805,445-1559-1-ND,25%
+D1,D2                         2   LED,Red : SMT 110 x 140 x 075,LEDSMT1,404-1161-1-ND

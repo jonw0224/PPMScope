@@ -1,0 +1,107 @@
+1.  Introduction
+	A.  About - done 5/8/2007
+	B.  License and Source Code - done 5/8/2007
+	C.  Release Notes
+		a.  Added Repetative sampling, "time equivalent" modes - done 2/19/2009
+		b.  Expanded interlaced sampling mode to 417 kHz maximum - done 2/19/2009
+		c.  Changed the panel incremental buttons to spinners - this adds keyboard arrow and mouse scroll wheel functionality to selecting
+			 the Time per Div, Volts per Div for each channel, Voltage Offset for each channel, and Trigger Delay - done 2/19/2009
+		d.  Menu enhancements (radio buttons and check boxes) - done 2/19/2009
+		e.  Other interface enhancements (larger buttons for toolbar, mouse cursors with "see thru hole" for better measurement on scope 
+			screen - done 2/19/2009
+	D.  Future Revisions - done 5/8/2007
+		Describe measurements - done 2/19/2009
+		Spectrum windowing - done 2/19/2009
+		More waveform math -Ch1, -Ch2, Ch2 - Ch1, etc. - done 2/19/2009
+	E.  Support - done 5/8/2007
+
+2.  Oscilloscope Construction
+	A.  PIC programmer
+		i.   David Tait Schematic and links - done 5/8/2007
+		ii.  WinPic800 Software, links, and configuration - done 5/8/2007
+	B.  Build
+		i.   Schematic - done 5/8/2007
+		ii.  PCB - done 5/8/2007
+		iii. Enclosure design - done 5/8/2007
+		iv.  Parts reference and cost to build - done 5/8/2007
+			Add resistor and capacitor tolerances - done 2/20/2009
+	C.  Testing
+		i.   Analog testing - sweep inputs, measure outputs with DMM - done 5/9/2007
+		ii.  Digital testing - test connection w/ Hardware dialog - done 5/9/2007
+		iii. Turn on - sweep inputs (no trigger) - done 5/9/2007
+		iv.  Test circuit (generator) - schematic and hookup - done 5/9/2007
+		v.   Turn on - try out, check connection indicator - done 5/9/2007
+		vi.  Try trigger modes, sweep trigger - done 5/9/2007
+		vii. Try gains and AC/DC modes - done 5/9/2007
+		viii.Email for help - done 5/9/2007
+	D.  Calibration
+		i.   Switch coupling to AC mode on both channels - done 5/9/2007
+		ii.  Turn pot until channels read ground - done 5/9/2007
+		iii. Ground both channels - done 5/9/2007
+		iv.  Switch coupling to DC mode on both channels - done 5/9/2007
+		v.   Both channels should read ground - done 5/9/2007
+
+3.  Oscilloscope Program
+	A.  Screen shot and identification of components / links - done 5/10/2007
+		Update Image - done 2/24/2009
+	B.  Using screens
+		i.   Screen descriptions - done 5/11/2007
+		ii.  Measurements and Cursors - done 5/11/2007
+		iii. Swapping screen positions - done 5/11/2007
+		iv.  Screen modes
+			 a.  X/Y vs V/T - done 5/11/2007
+			 b.  Spectrum magnitude linear vs logrithmic - done 5/11/2007
+		v.   Waveform reconstruction modes
+			 a.  Triangle (quickest, smooth waveform) - done 5/15/2007		 
+			 b.  Square (emphasizes digital nature of data) - done 5/15/2007
+			 c.  Point (just the facts) - done 5/15/2007
+			 d.  Sinc (slower, lowest frequency smooth waveform.  Some ringing, best for spectrum measurements). - done 5/15/2007
+		vi.  Capture modes
+			 a.  Run (continuous, redraw latest)- done 5/15/2007
+			 b.  Single capture (sample once then stop) - done 5/15/2007
+			 c.  Hold (continous, retain old information on the screen) - done 5/15/2007
+	C.  Trigger modes
+		i.   Positive slope - done 5/15/2007
+		ii.  Negative slope - done 5/15/2007
+		iii. No trigger - done 5/15/2007
+		iv.  Trigger level - done 5/15/2007
+		v.  Trigger delay - done 5/15/2007
+	D.  Sampling modes
+		i.   Normal mode description - repetative waveforms, high frequency (1 MHz - 11 Hz sampling)
+			 a.  Wait for trigger - done 5/15/2007
+			 b.  Stores 256 samples on channel 1 - done 5/15/2007
+			 c.  Wait for next trigger - done 5/15/2007
+			 d.  Stores 256 samples on channel 2 - done 5/15/2007
+		ii.  Interlaced mode description - non repetative waveforms, lower frequency (151 kHz - 11 Hz sampling)
+				Update for 417kHz - 11 Hz - done 2/20/2009
+			 a.  Wait for trigger - done 5/15/2007
+			 b.  Samples channel 1 - done 5/15/2007
+			 c.  Samples channel 2 - done 5/15/2007
+			 d.  128 samples per channel - done 5/15/2007
+				Add picture to explanation with trigger - done 2/20/2009
+		iii.  Repetative mode - repetative waveforms, high frequency (5 MHz and 2.5 MHz sampling) - done 2/20/2009
+			a.  General description (lower sampling with incremental delays after trigger)  Include pictures - done 2/20/2009
+			b.  Must be used with a trigger (software defaults to negative slope triggering if "No triggering is selected"
+			c.  Wait for trigger
+			d.  Samples at lower sample rate (for example 5 MHz samples at 1 MHz)
+			e.  Wait for another trigger, and add a slight delay
+			f.  Samples again at a lower sample rate (shifted by delay)
+			g. Repeat trigger, delay, and sampling
+			h.  Reconstruct waveform by ordering the samples and representing in an equivalent time picture
+			i.   256 samples per channel
+	E.  Channel Display manipulation
+		i.   Channel enabled - done 5/15/2007
+		ii.  Channel math - done 5/15/2007
+		iii. Time per Division - done 5/15/2007
+		iv.  Volt per Division - done 5/15/2007
+		v.   Channel offset - done 5/15/2007
+		vi.  Using the analog gain switches (explanation) - done 2/23/2009
+*		vii. Using the AC/DC coupling switches (explanation) - done 2/23/2009
+	F.  Waveform Save - Basic format - done 5/15/2007
+	G.  Settings Save and Open
+		i.   How to - done 5/15/2007
+		ii.  Settings file details - done 5/15/2007
+
+*4.  About the author (testimony and gospel presentation)
+
+*ADD INDEX TO HELP FILE...

@@ -1,0 +1,1862 @@
+# depslib dependency file v1.0
+1328207328 source:e:\projects\ppmscope\pcsource\aboutdlg.c
+	"main.h"
+	"aboutdlg.h"
+
+1342817234 e:\projects\ppmscope\pcsource\main.h
+	<windows.h>
+	<commctrl.h>
+	"hdriver.h"
+	"oscdisp.h"
+	"panel.h"
+	"fourier.h"
+	"ini_io.h"
+	"func.h"
+	"settings.h"
+
+1339009664 e:\projects\ppmscope\pcsource\hdriver.h
+
+1342804102 e:\projects\ppmscope\pcsource\oscdisp.h
+
+1339789986 e:\projects\ppmscope\pcsource\panel.h
+
+1328207330 e:\projects\ppmscope\pcsource\fourier.h
+
+1328207330 e:\projects\ppmscope\pcsource\ini_io.h
+
+1328207330 e:\projects\ppmscope\pcsource\func.h
+	<math.h>
+	"fourier.h"
+
+1342809124 e:\projects\ppmscope\pcsource\settings.h
+
+1328207330 e:\projects\ppmscope\pcsource\aboutdlg.h
+
+1328207332 source:e:\projects\ppmscope\pcsource\caldlg.c
+	"main.h"
+	"caldlg.h"
+
+1328207332 e:\projects\ppmscope\pcsource\caldlg.h
+
+1328207328 source:e:\projects\ppmscope\pcsource\debug.c
+	<stdio.h>
+	"settings.h"
+
+1342813976 source:e:\projects\ppmscope\pcsource\engnum.c
+	<stdio.h>
+	<stdlib.h>
+
+1328207330 source:e:\projects\ppmscope\pcsource\fourier.c
+	<math.h>
+	"fourier.h"
+
+1340841528 source:e:\projects\ppmscope\pcsource\func.c
+	"func.h"
+
+1337366128 source:e:\projects\ppmscope\pcsource\hardwaredlg.c
+	"main.h"
+	"hardwaredlg.h"
+	"parallel.h"
+
+1328207328 e:\projects\ppmscope\pcsource\hardwaredlg.h
+
+1328207330 e:\projects\ppmscope\pcsource\parallel.h
+
+1342816856 source:e:\projects\ppmscope\pcsource\hdriver.c
+	"par_i2c.h"
+	"parallel.h"
+	"serial.h"
+	"hdriver.h"
+	"settings.h"
+	"debug.h"
+	<stdlib.h>
+	<time.h>
+	<math.h>
+
+1328207330 e:\projects\ppmscope\pcsource\par_i2c.h
+	"parallel.h"
+
+1342793936 e:\projects\ppmscope\pcsource\serial.h
+
+1328207328 e:\projects\ppmscope\pcsource\debug.h
+
+1338927286 source:e:\projects\ppmscope\pcsource\hdwtestdlg.c
+	"main.h"
+	"hdwtestdlg.h"
+
+1328207330 e:\projects\ppmscope\pcsource\hdwtestdlg.h
+
+1342814334 source:e:\projects\ppmscope\pcsource\ini_io.c
+	<stdio.h>
+	<stdlib.h>
+	"ini_io.h"
+
+1331866104 source:e:\projects\ppmscope\pcsource\logdlg.c
+	"main.h"
+	"logdlg.h"
+	"engNum.h"
+
+1328207332 e:\projects\ppmscope\pcsource\logdlg.h
+	<stdio.h>
+
+1328207328 e:\projects\ppmscope\pcsource\engnum.h
+
+1342817274 source:e:\projects\ppmscope\pcsource\main.c
+	"main.h"
+	"aboutdlg.h"
+	"hardwaredlg.h"
+	"hdwtestdlg.h"
+	"parallel.h"
+	"refreshratedlg.h"
+	"caldlg.h"
+	"logdlg.h"
+	<stdio.h>
+	<time.h>
+
+1328207330 e:\projects\ppmscope\pcsource\refreshratedlg.h
+
+1342815750 source:e:\projects\ppmscope\pcsource\oscdisp.c
+	"main.h"
+	"oscDisp.h"
+	<math.h>
+	"debug.h"
+
+1342816404 source:e:\projects\ppmscope\pcsource\panel.c
+	"main.h"
+	"engNum.h"
+	<stdio.h>
+
+1328207330 source:e:\projects\ppmscope\pcsource\par_i2c.c
+	"par_i2c.h"
+
+1339159318 source:e:\projects\ppmscope\pcsource\parallel.c
+	<windows.h>
+	"parallel.h"
+
+1328207330 source:e:\projects\ppmscope\pcsource\refreshratedlg.c
+	"main.h"
+	"refreshratedlg.h"
+	"engNum.h"
+
+1342814952 source:e:\projects\ppmscope\pcsource\resource.rc
+	"main.h"
+	"hardwaredlg.h"
+	"aboutdlg.h"
+	"hdwtestdlg.h"
+	"parallel.h"
+	"refreshratedlg.h"
+	"logdlg.h"
+	"caldlg.h"
+
+1342811478 source:e:\projects\ppmscope\pcsource\serial.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	"debug.h"
+
+1328207328 source:f:\projects\ppmscope\pcsource\aboutdlg.c
+	"main.h"
+	"aboutdlg.h"
+
+1342818784 f:\projects\ppmscope\pcsource\main.h
+	<windows.h>
+	<commctrl.h>
+	"hdriver.h"
+	"oscdisp.h"
+	"panel.h"
+	"fourier.h"
+	"ini_io.h"
+	"func.h"
+	"settings.h"
+
+1339009664 f:\projects\ppmscope\pcsource\hdriver.h
+
+1342818784 f:\projects\ppmscope\pcsource\oscdisp.h
+
+1339789986 f:\projects\ppmscope\pcsource\panel.h
+
+1328207330 f:\projects\ppmscope\pcsource\fourier.h
+
+1328207330 f:\projects\ppmscope\pcsource\ini_io.h
+
+1328207330 f:\projects\ppmscope\pcsource\func.h
+	<math.h>
+	"fourier.h"
+
+1343355772 f:\projects\ppmscope\pcsource\settings.h
+
+1328207330 f:\projects\ppmscope\pcsource\aboutdlg.h
+
+1328207332 source:f:\projects\ppmscope\pcsource\caldlg.c
+	"main.h"
+	"caldlg.h"
+
+1328207332 f:\projects\ppmscope\pcsource\caldlg.h
+
+1328207328 source:f:\projects\ppmscope\pcsource\debug.c
+	<stdio.h>
+	"settings.h"
+
+1342813976 source:f:\projects\ppmscope\pcsource\engnum.c
+	<stdio.h>
+	<stdlib.h>
+
+1328207330 source:f:\projects\ppmscope\pcsource\fourier.c
+	<math.h>
+	"fourier.h"
+
+1340841528 source:f:\projects\ppmscope\pcsource\func.c
+	"func.h"
+
+1337366128 source:f:\projects\ppmscope\pcsource\hardwaredlg.c
+	"main.h"
+	"hardwaredlg.h"
+	"parallel.h"
+
+1328207328 f:\projects\ppmscope\pcsource\hardwaredlg.h
+
+1328207330 f:\projects\ppmscope\pcsource\parallel.h
+
+1343358426 source:f:\projects\ppmscope\pcsource\hdriver.c
+	"par_i2c.h"
+	"parallel.h"
+	"serial.h"
+	"hdriver.h"
+	"settings.h"
+	"debug.h"
+	<stdlib.h>
+	<time.h>
+	<math.h>
+
+1328207330 f:\projects\ppmscope\pcsource\par_i2c.h
+	"parallel.h"
+
+1342793936 f:\projects\ppmscope\pcsource\serial.h
+
+1328207328 f:\projects\ppmscope\pcsource\debug.h
+
+1338927286 source:f:\projects\ppmscope\pcsource\hdwtestdlg.c
+	"main.h"
+	"hdwtestdlg.h"
+
+1328207330 f:\projects\ppmscope\pcsource\hdwtestdlg.h
+
+1342814334 source:f:\projects\ppmscope\pcsource\ini_io.c
+	<stdio.h>
+	<stdlib.h>
+	"ini_io.h"
+
+1331866104 source:f:\projects\ppmscope\pcsource\logdlg.c
+	"main.h"
+	"logdlg.h"
+	"engNum.h"
+
+1328207332 f:\projects\ppmscope\pcsource\logdlg.h
+	<stdio.h>
+
+1328207328 f:\projects\ppmscope\pcsource\engnum.h
+
+1342818594 source:f:\projects\ppmscope\pcsource\main.c
+	"main.h"
+	"aboutdlg.h"
+	"hardwaredlg.h"
+	"hdwtestdlg.h"
+	"parallel.h"
+	"refreshratedlg.h"
+	"caldlg.h"
+	"logdlg.h"
+	<stdio.h>
+	<time.h>
+
+1328207330 f:\projects\ppmscope\pcsource\refreshratedlg.h
+
+1342818784 source:f:\projects\ppmscope\pcsource\oscdisp.c
+	"main.h"
+	"oscDisp.h"
+	<math.h>
+	"debug.h"
+
+1342818588 source:f:\projects\ppmscope\pcsource\panel.c
+	"main.h"
+	"engNum.h"
+	<stdio.h>
+
+1328207330 source:f:\projects\ppmscope\pcsource\par_i2c.c
+	"par_i2c.h"
+
+1339159318 source:f:\projects\ppmscope\pcsource\parallel.c
+	<windows.h>
+	"parallel.h"
+
+1328207330 source:f:\projects\ppmscope\pcsource\refreshratedlg.c
+	"main.h"
+	"refreshratedlg.h"
+	"engNum.h"
+
+1342814952 source:f:\projects\ppmscope\pcsource\resource.rc
+	"main.h"
+	"hardwaredlg.h"
+	"aboutdlg.h"
+	"hdwtestdlg.h"
+	"parallel.h"
+	"refreshratedlg.h"
+	"logdlg.h"
+	"caldlg.h"
+
+1343358394 source:f:\projects\ppmscope\pcsource\serial.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	"debug.h"
+
+1328207328 source:c:\temp\e\projects\ppmscope\pcsource\aboutdlg.c
+	"main.h"
+	"aboutdlg.h"
+
+1342818784 c:\temp\e\projects\ppmscope\pcsource\main.h
+	<windows.h>
+	<commctrl.h>
+	"hdriver.h"
+	"oscdisp.h"
+	"panel.h"
+	"fourier.h"
+	"ini_io.h"
+	"func.h"
+	"settings.h"
+
+1339009664 c:\temp\e\projects\ppmscope\pcsource\hdriver.h
+
+1342818784 c:\temp\e\projects\ppmscope\pcsource\oscdisp.h
+
+1339789986 c:\temp\e\projects\ppmscope\pcsource\panel.h
+
+1328207330 c:\temp\e\projects\ppmscope\pcsource\fourier.h
+
+1328207330 c:\temp\e\projects\ppmscope\pcsource\ini_io.h
+
+1328207330 c:\temp\e\projects\ppmscope\pcsource\func.h
+	<math.h>
+	"fourier.h"
+
+1343418491 c:\temp\e\projects\ppmscope\pcsource\settings.h
+
+1328207330 c:\temp\e\projects\ppmscope\pcsource\aboutdlg.h
+
+1328207332 source:c:\temp\e\projects\ppmscope\pcsource\caldlg.c
+	"main.h"
+	"caldlg.h"
+
+1328207332 c:\temp\e\projects\ppmscope\pcsource\caldlg.h
+
+1328207328 source:c:\temp\e\projects\ppmscope\pcsource\debug.c
+	<stdio.h>
+	"settings.h"
+
+1342813976 source:c:\temp\e\projects\ppmscope\pcsource\engnum.c
+	<stdio.h>
+	<stdlib.h>
+
+1328207330 source:c:\temp\e\projects\ppmscope\pcsource\fourier.c
+	<math.h>
+	"fourier.h"
+
+1340841528 source:c:\temp\e\projects\ppmscope\pcsource\func.c
+	"func.h"
+
+1337366128 source:c:\temp\e\projects\ppmscope\pcsource\hardwaredlg.c
+	"main.h"
+	"hardwaredlg.h"
+	"parallel.h"
+
+1328207328 c:\temp\e\projects\ppmscope\pcsource\hardwaredlg.h
+
+1328207330 c:\temp\e\projects\ppmscope\pcsource\parallel.h
+
+1338927286 source:c:\temp\e\projects\ppmscope\pcsource\hdwtestdlg.c
+	"main.h"
+	"hdwtestdlg.h"
+
+1328207330 c:\temp\e\projects\ppmscope\pcsource\hdwtestdlg.h
+
+1342814334 source:c:\temp\e\projects\ppmscope\pcsource\ini_io.c
+	<stdio.h>
+	<stdlib.h>
+	"ini_io.h"
+
+1331866104 source:c:\temp\e\projects\ppmscope\pcsource\logdlg.c
+	"main.h"
+	"logdlg.h"
+	"engNum.h"
+
+1328207332 c:\temp\e\projects\ppmscope\pcsource\logdlg.h
+	<stdio.h>
+
+1328207328 c:\temp\e\projects\ppmscope\pcsource\engnum.h
+
+1342818594 source:c:\temp\e\projects\ppmscope\pcsource\main.c
+	"main.h"
+	"aboutdlg.h"
+	"hardwaredlg.h"
+	"hdwtestdlg.h"
+	"parallel.h"
+	"refreshratedlg.h"
+	"caldlg.h"
+	"logdlg.h"
+	<stdio.h>
+	<time.h>
+
+1328207330 c:\temp\e\projects\ppmscope\pcsource\refreshratedlg.h
+
+1342818784 source:c:\temp\e\projects\ppmscope\pcsource\oscdisp.c
+	"main.h"
+	"oscDisp.h"
+	<math.h>
+	"debug.h"
+
+1328207328 c:\temp\e\projects\ppmscope\pcsource\debug.h
+
+1342818588 source:c:\temp\e\projects\ppmscope\pcsource\panel.c
+	"main.h"
+	"engNum.h"
+	<stdio.h>
+
+1328207330 source:c:\temp\e\projects\ppmscope\pcsource\par_i2c.c
+	"par_i2c.h"
+
+1328207330 c:\temp\e\projects\ppmscope\pcsource\par_i2c.h
+	"parallel.h"
+
+1339159318 source:c:\temp\e\projects\ppmscope\pcsource\parallel.c
+	<windows.h>
+	"parallel.h"
+
+1328207330 source:c:\temp\e\projects\ppmscope\pcsource\refreshratedlg.c
+	"main.h"
+	"refreshratedlg.h"
+	"engNum.h"
+
+1342814952 source:c:\temp\e\projects\ppmscope\pcsource\resource.rc
+	"main.h"
+	"hardwaredlg.h"
+	"aboutdlg.h"
+	"hdwtestdlg.h"
+	"parallel.h"
+	"refreshratedlg.h"
+	"logdlg.h"
+	"caldlg.h"
+
+1343358394 source:c:\temp\e\projects\ppmscope\pcsource\serial.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	"debug.h"
+
+1328207328 source:c:\jww\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\aboutdlg.c
+	"main.h"
+	"aboutdlg.h"
+
+1342818784 c:\jww\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\main.h
+	<windows.h>
+	<commctrl.h>
+	"hdriver.h"
+	"oscdisp.h"
+	"panel.h"
+	"fourier.h"
+	"ini_io.h"
+	"func.h"
+	"settings.h"
+
+1349359887 c:\jww\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\hdriver.h
+
+1342818784 c:\jww\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\oscdisp.h
+
+1339789986 c:\jww\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\panel.h
+
+1328207330 c:\jww\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\fourier.h
+
+1328207330 c:\jww\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\ini_io.h
+
+1328207330 c:\jww\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\func.h
+	<math.h>
+	"fourier.h"
+
+1349375044 c:\jww\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\settings.h
+
+1328207330 c:\jww\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\aboutdlg.h
+
+1328207332 source:c:\jww\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\caldlg.c
+	"main.h"
+	"caldlg.h"
+
+1328207332 c:\jww\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\caldlg.h
+
+1328207328 source:c:\jww\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\debug.c
+	<stdio.h>
+	"settings.h"
+
+1342813976 source:c:\jww\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\engnum.c
+	<stdio.h>
+	<stdlib.h>
+
+1348766840 source:c:\jww\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\fourier.c
+	<math.h>
+	"fourier.h"
+
+1340841528 source:c:\jww\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\func.c
+	"func.h"
+
+1337366128 source:c:\jww\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\hardwaredlg.c
+	"main.h"
+	"hardwaredlg.h"
+	"parallel.h"
+
+1328207328 c:\jww\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\hardwaredlg.h
+
+1328207330 c:\jww\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\parallel.h
+
+1349359277 source:c:\jww\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\hdriver.c
+	"par_i2c.h"
+	"parallel.h"
+	"serial.h"
+	"hdriver.h"
+	"settings.h"
+	"debug.h"
+	<stdlib.h>
+	<time.h>
+	<math.h>
+
+1328207330 c:\jww\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\par_i2c.h
+	"parallel.h"
+
+1346271198 c:\jww\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\serial.h
+
+1328207328 c:\jww\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\debug.h
+
+1338927286 source:c:\jww\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\hdwtestdlg.c
+	"main.h"
+	"hdwtestdlg.h"
+
+1328207330 c:\jww\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\hdwtestdlg.h
+
+1342814334 source:c:\jww\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\ini_io.c
+	<stdio.h>
+	<stdlib.h>
+	"ini_io.h"
+
+1331866104 source:c:\jww\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\logdlg.c
+	"main.h"
+	"logdlg.h"
+	"engNum.h"
+
+1328207332 c:\jww\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\logdlg.h
+	<stdio.h>
+
+1328207328 c:\jww\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\engnum.h
+
+1342818594 source:c:\jww\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\main.c
+	"main.h"
+	"aboutdlg.h"
+	"hardwaredlg.h"
+	"hdwtestdlg.h"
+	"parallel.h"
+	"refreshratedlg.h"
+	"caldlg.h"
+	"logdlg.h"
+	<stdio.h>
+	<time.h>
+
+1328207330 c:\jww\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\refreshratedlg.h
+
+1349360567 source:c:\jww\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\panel.c
+	"main.h"
+	"engNum.h"
+	<stdio.h>
+
+1328207330 source:c:\jww\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\par_i2c.c
+	"par_i2c.h"
+
+1339159318 source:c:\jww\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\parallel.c
+	<windows.h>
+	"parallel.h"
+
+1328207330 source:c:\jww\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\refreshratedlg.c
+	"main.h"
+	"refreshratedlg.h"
+	"engNum.h"
+
+1342814952 source:c:\jww\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\resource.rc
+	"main.h"
+	"hardwaredlg.h"
+	"aboutdlg.h"
+	"hdwtestdlg.h"
+	"parallel.h"
+	"refreshratedlg.h"
+	"logdlg.h"
+	"caldlg.h"
+
+1346271198 source:c:\jww\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\serial.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	"debug.h"
+
+1348755366 source:c:\jww\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\oscdisp.c
+	"main.h"
+	"oscDisp.h"
+	<math.h>
+	"debug.h"
+
+1328207328 source:c:\google drive\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\aboutdlg.c
+	"main.h"
+	"aboutdlg.h"
+
+1342818784 c:\google drive\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\main.h
+	<windows.h>
+	<commctrl.h>
+	"hdriver.h"
+	"oscdisp.h"
+	"panel.h"
+	"fourier.h"
+	"ini_io.h"
+	"func.h"
+	"settings.h"
+
+1360334807 c:\google drive\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\hdriver.h
+
+1342818784 c:\google drive\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\oscdisp.h
+
+1360249417 c:\google drive\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\panel.h
+
+1328207330 c:\google drive\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\fourier.h
+
+1328207330 c:\google drive\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\ini_io.h
+
+1328207330 c:\google drive\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\func.h
+	<math.h>
+	"fourier.h"
+
+1360384592 c:\google drive\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\settings.h
+
+1328207330 c:\google drive\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\aboutdlg.h
+
+1328207332 source:c:\google drive\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\caldlg.c
+	"main.h"
+	"caldlg.h"
+
+1328207332 c:\google drive\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\caldlg.h
+
+1328207328 source:c:\google drive\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\debug.c
+	<stdio.h>
+	"settings.h"
+
+1342813976 source:c:\google drive\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\engnum.c
+	<stdio.h>
+	<stdlib.h>
+
+1348766840 source:c:\google drive\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\fourier.c
+	<math.h>
+	"fourier.h"
+
+1340841528 source:c:\google drive\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\func.c
+	"func.h"
+
+1360384592 source:c:\google drive\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\hardwaredlg.c
+	"main.h"
+	"hardwaredlg.h"
+	"parallel.h"
+
+1328207328 c:\google drive\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\hardwaredlg.h
+
+1328207330 c:\google drive\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\parallel.h
+
+1360334598 source:c:\google drive\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\hdriver.c
+	"par_i2c.h"
+	"parallel.h"
+	"serial.h"
+	"hdriver.h"
+	"settings.h"
+	"debug.h"
+	<stdlib.h>
+	<time.h>
+	<math.h>
+
+1328207330 c:\google drive\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\par_i2c.h
+	"parallel.h"
+
+1346271198 c:\google drive\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\serial.h
+
+1328207328 c:\google drive\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\debug.h
+
+1338927286 source:c:\google drive\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\hdwtestdlg.c
+	"main.h"
+	"hdwtestdlg.h"
+
+1328207330 c:\google drive\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\hdwtestdlg.h
+
+1342814334 source:c:\google drive\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\ini_io.c
+	<stdio.h>
+	<stdlib.h>
+	"ini_io.h"
+
+1331866104 source:c:\google drive\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\logdlg.c
+	"main.h"
+	"logdlg.h"
+	"engNum.h"
+
+1328207332 c:\google drive\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\logdlg.h
+	<stdio.h>
+
+1328207328 c:\google drive\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\engnum.h
+
+1360334565 source:c:\google drive\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\main.c
+	"main.h"
+	"aboutdlg.h"
+	"hardwaredlg.h"
+	"hdwtestdlg.h"
+	"parallel.h"
+	"refreshratedlg.h"
+	"caldlg.h"
+	"logdlg.h"
+	<stdio.h>
+	<time.h>
+
+1328207330 c:\google drive\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\refreshratedlg.h
+
+1360252221 source:c:\google drive\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\oscdisp.c
+	"main.h"
+	"oscDisp.h"
+	<math.h>
+	"debug.h"
+
+1360295860 source:c:\google drive\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\panel.c
+	"main.h"
+	"engNum.h"
+	<stdio.h>
+
+1328207330 source:c:\google drive\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\par_i2c.c
+	"par_i2c.h"
+
+1339159318 source:c:\google drive\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\parallel.c
+	<windows.h>
+	"parallel.h"
+
+1328207330 source:c:\google drive\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\refreshratedlg.c
+	"main.h"
+	"refreshratedlg.h"
+	"engNum.h"
+
+1360269060 source:c:\google drive\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\resource.rc
+	"main.h"
+	"hardwaredlg.h"
+	"aboutdlg.h"
+	"hdwtestdlg.h"
+	"parallel.h"
+	"refreshratedlg.h"
+	"logdlg.h"
+	"caldlg.h"
+
+1346271198 source:c:\google drive\projects\ppmscope\contributions\paul messer\dsoscope_a03\pcsource\serial.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	"debug.h"
+
+1328210928 source:c:\google drive\projects\ppmscope\contributions\paul messer\pcsource\aboutdlg.c
+	"main.h"
+	"aboutdlg.h"
+
+1342822384 c:\google drive\projects\ppmscope\contributions\paul messer\pcsource\main.h
+	<windows.h>
+	<commctrl.h>
+	"hdriver.h"
+	"oscdisp.h"
+	"panel.h"
+	"fourier.h"
+	"ini_io.h"
+	"func.h"
+	"settings.h"
+
+1365615067 c:\google drive\projects\ppmscope\contributions\paul messer\pcsource\hdriver.h
+
+1342822384 c:\google drive\projects\ppmscope\contributions\paul messer\pcsource\oscdisp.h
+
+1360253017 c:\google drive\projects\ppmscope\contributions\paul messer\pcsource\panel.h
+
+1328210930 c:\google drive\projects\ppmscope\contributions\paul messer\pcsource\fourier.h
+
+1328210930 c:\google drive\projects\ppmscope\contributions\paul messer\pcsource\ini_io.h
+
+1328210930 c:\google drive\projects\ppmscope\contributions\paul messer\pcsource\func.h
+	<math.h>
+	"fourier.h"
+
+1364410188 c:\google drive\projects\ppmscope\contributions\paul messer\pcsource\settings.h
+
+1328210930 c:\google drive\projects\ppmscope\contributions\paul messer\pcsource\aboutdlg.h
+
+1328210932 source:c:\google drive\projects\ppmscope\contributions\paul messer\pcsource\caldlg.c
+	"main.h"
+	"caldlg.h"
+
+1328210932 c:\google drive\projects\ppmscope\contributions\paul messer\pcsource\caldlg.h
+
+1328210928 source:c:\google drive\projects\ppmscope\contributions\paul messer\pcsource\debug.c
+	<stdio.h>
+	"settings.h"
+
+1342817576 source:c:\google drive\projects\ppmscope\contributions\paul messer\pcsource\engnum.c
+	<stdio.h>
+	<stdlib.h>
+
+1348770440 source:c:\google drive\projects\ppmscope\contributions\paul messer\pcsource\fourier.c
+	<math.h>
+	"fourier.h"
+
+1340845128 source:c:\google drive\projects\ppmscope\contributions\paul messer\pcsource\func.c
+	"func.h"
+
+1365620569 source:c:\google drive\projects\ppmscope\contributions\paul messer\pcsource\hardwaredlg.c
+	"main.h"
+	"hardwaredlg.h"
+	"parallel.h"
+
+1365618666 c:\google drive\projects\ppmscope\contributions\paul messer\pcsource\hardwaredlg.h
+
+1328210930 c:\google drive\projects\ppmscope\contributions\paul messer\pcsource\parallel.h
+
+1365617964 source:c:\google drive\projects\ppmscope\contributions\paul messer\pcsource\hdriver.c
+	"par_i2c.h"
+	"parallel.h"
+	"serial.h"
+	"hdriver.h"
+	"settings.h"
+	"debug.h"
+	<stdlib.h>
+	<time.h>
+	<math.h>
+
+1328210930 c:\google drive\projects\ppmscope\contributions\paul messer\pcsource\par_i2c.h
+	"parallel.h"
+
+1346274798 c:\google drive\projects\ppmscope\contributions\paul messer\pcsource\serial.h
+
+1328210928 c:\google drive\projects\ppmscope\contributions\paul messer\pcsource\debug.h
+
+1338930886 source:c:\google drive\projects\ppmscope\contributions\paul messer\pcsource\hdwtestdlg.c
+	"main.h"
+	"hdwtestdlg.h"
+
+1328210930 c:\google drive\projects\ppmscope\contributions\paul messer\pcsource\hdwtestdlg.h
+
+1360340604 source:c:\google drive\projects\ppmscope\contributions\paul messer\pcsource\ini_io.c
+	<stdio.h>
+	<stdlib.h>
+	"ini_io.h"
+
+1331869704 source:c:\google drive\projects\ppmscope\contributions\paul messer\pcsource\logdlg.c
+	"main.h"
+	"logdlg.h"
+	"engNum.h"
+
+1328210932 c:\google drive\projects\ppmscope\contributions\paul messer\pcsource\logdlg.h
+	<stdio.h>
+
+1328210928 c:\google drive\projects\ppmscope\contributions\paul messer\pcsource\engnum.h
+
+1365618507 source:c:\google drive\projects\ppmscope\contributions\paul messer\pcsource\main.c
+	"main.h"
+	"aboutdlg.h"
+	"hardwaredlg.h"
+	"hdwtestdlg.h"
+	"parallel.h"
+	"refreshratedlg.h"
+	"caldlg.h"
+	"logdlg.h"
+	<stdio.h>
+	<time.h>
+
+1328210930 c:\google drive\projects\ppmscope\contributions\paul messer\pcsource\refreshratedlg.h
+
+1364411168 source:c:\google drive\projects\ppmscope\contributions\paul messer\pcsource\oscdisp.c
+	"main.h"
+	"oscDisp.h"
+	<math.h>
+	"debug.h"
+
+1364410426 source:c:\google drive\projects\ppmscope\contributions\paul messer\pcsource\panel.c
+	"main.h"
+	"engNum.h"
+	<stdio.h>
+
+1328210930 source:c:\google drive\projects\ppmscope\contributions\paul messer\pcsource\par_i2c.c
+	"par_i2c.h"
+
+1339162918 source:c:\google drive\projects\ppmscope\contributions\paul messer\pcsource\parallel.c
+	<windows.h>
+	"parallel.h"
+
+1328210930 source:c:\google drive\projects\ppmscope\contributions\paul messer\pcsource\refreshratedlg.c
+	"main.h"
+	"refreshratedlg.h"
+	"engNum.h"
+
+1365618780 source:c:\google drive\projects\ppmscope\contributions\paul messer\pcsource\resource.rc
+	"main.h"
+	"hardwaredlg.h"
+	"aboutdlg.h"
+	"hdwtestdlg.h"
+	"parallel.h"
+	"refreshratedlg.h"
+	"logdlg.h"
+	"caldlg.h"
+
+1346274798 source:c:\google drive\projects\ppmscope\contributions\paul messer\pcsource\serial.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	"debug.h"
+
+1328210928 source:c:\google drive\projects\ppmscope\pcsource\aboutdlg.c
+	"main.h"
+	"aboutdlg.h"
+
+1370547353 c:\google drive\projects\ppmscope\pcsource\main.h
+	<windows.h>
+	<commctrl.h>
+	"hdriver.h"
+	"oscdisp.h"
+	"panel.h"
+	"fourier.h"
+	"ini_io.h"
+	"func.h"
+	"settings.h"
+
+1370526418 c:\google drive\projects\ppmscope\pcsource\hdriver.h
+
+1367934719 c:\google drive\projects\ppmscope\pcsource\oscdisp.h
+
+1360253017 c:\google drive\projects\ppmscope\pcsource\panel.h
+
+1328210930 c:\google drive\projects\ppmscope\pcsource\fourier.h
+
+1328210930 c:\google drive\projects\ppmscope\pcsource\ini_io.h
+
+1328210930 c:\google drive\projects\ppmscope\pcsource\func.h
+	<math.h>
+	"fourier.h"
+
+1372341582 c:\google drive\projects\ppmscope\pcsource\settings.h
+
+1328210930 c:\google drive\projects\ppmscope\pcsource\aboutdlg.h
+
+1328210932 source:c:\google drive\projects\ppmscope\pcsource\caldlg.c
+	"main.h"
+	"caldlg.h"
+
+1328210932 c:\google drive\projects\ppmscope\pcsource\caldlg.h
+
+1328210928 source:c:\google drive\projects\ppmscope\pcsource\debug.c
+	<stdio.h>
+	"settings.h"
+
+1342817576 source:c:\google drive\projects\ppmscope\pcsource\engnum.c
+	<stdio.h>
+	<stdlib.h>
+
+1348770440 source:c:\google drive\projects\ppmscope\pcsource\fourier.c
+	<math.h>
+	"fourier.h"
+
+1340845128 source:c:\google drive\projects\ppmscope\pcsource\func.c
+	"func.h"
+
+1366807441 source:c:\google drive\projects\ppmscope\pcsource\hardwaredlg.c
+	"main.h"
+	"hardwaredlg.h"
+	"parallel.h"
+
+1366805735 c:\google drive\projects\ppmscope\pcsource\hardwaredlg.h
+
+1328210930 c:\google drive\projects\ppmscope\pcsource\parallel.h
+
+1370526417 source:c:\google drive\projects\ppmscope\pcsource\hdriver.c
+	"par_i2c.h"
+	"parallel.h"
+	"serial.h"
+	"hdriver.h"
+	"settings.h"
+	"debug.h"
+	<stdlib.h>
+	<time.h>
+	<math.h>
+
+1328210930 c:\google drive\projects\ppmscope\pcsource\par_i2c.h
+	"parallel.h"
+
+1346274798 c:\google drive\projects\ppmscope\pcsource\serial.h
+
+1328210928 c:\google drive\projects\ppmscope\pcsource\debug.h
+
+1338930886 source:c:\google drive\projects\ppmscope\pcsource\hdwtestdlg.c
+	"main.h"
+	"hdwtestdlg.h"
+
+1328210930 c:\google drive\projects\ppmscope\pcsource\hdwtestdlg.h
+
+1360340604 source:c:\google drive\projects\ppmscope\pcsource\ini_io.c
+	<stdio.h>
+	<stdlib.h>
+	"ini_io.h"
+
+1331869704 source:c:\google drive\projects\ppmscope\pcsource\logdlg.c
+	"main.h"
+	"logdlg.h"
+	"engNum.h"
+
+1328210932 c:\google drive\projects\ppmscope\pcsource\logdlg.h
+	<stdio.h>
+
+1328210928 c:\google drive\projects\ppmscope\pcsource\engnum.h
+
+1370547353 source:c:\google drive\projects\ppmscope\pcsource\main.c
+	"main.h"
+	"aboutdlg.h"
+	"hardwaredlg.h"
+	"hdwtestdlg.h"
+	"parallel.h"
+	"refreshratedlg.h"
+	"caldlg.h"
+	"logdlg.h"
+	<stdio.h>
+	<time.h>
+
+1328210930 c:\google drive\projects\ppmscope\pcsource\refreshratedlg.h
+
+1370523804 source:c:\google drive\projects\ppmscope\pcsource\oscdisp.c
+	"main.h"
+	"oscDisp.h"
+	<math.h>
+	"debug.h"
+
+1371136618 source:c:\google drive\projects\ppmscope\pcsource\panel.c
+	"main.h"
+	"engNum.h"
+	<stdio.h>
+
+1328210930 source:c:\google drive\projects\ppmscope\pcsource\par_i2c.c
+	"par_i2c.h"
+
+1339162918 source:c:\google drive\projects\ppmscope\pcsource\parallel.c
+	<windows.h>
+	"parallel.h"
+
+1328210930 source:c:\google drive\projects\ppmscope\pcsource\refreshratedlg.c
+	"main.h"
+	"refreshratedlg.h"
+	"engNum.h"
+
+1370547382 source:c:\google drive\projects\ppmscope\pcsource\resource.rc
+	"main.h"
+	"hardwaredlg.h"
+	"aboutdlg.h"
+	"hdwtestdlg.h"
+	"parallel.h"
+	"refreshratedlg.h"
+	"logdlg.h"
+	"caldlg.h"
+
+1362779192 source:c:\google drive\projects\ppmscope\pcsource\serial.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+
+1328207328 source:c:\skydrive\projects\ppmscope\pcsource\aboutdlg.c
+	"main.h"
+	"aboutdlg.h"
+
+1372788971 c:\skydrive\projects\ppmscope\pcsource\main.h
+	<windows.h>
+	<commctrl.h>
+	"hdriver.h"
+	"oscdisp.h"
+	"panel.h"
+	"fourier.h"
+	"ini_io.h"
+	"func.h"
+	"settings.h"
+
+1389979077 c:\skydrive\projects\ppmscope\pcsource\hdriver.h
+
+1390855682 c:\skydrive\projects\ppmscope\pcsource\oscdisp.h
+
+1360249417 c:\skydrive\projects\ppmscope\pcsource\panel.h
+
+1328207330 c:\skydrive\projects\ppmscope\pcsource\fourier.h
+
+1328207330 c:\skydrive\projects\ppmscope\pcsource\ini_io.h
+
+1328207330 c:\skydrive\projects\ppmscope\pcsource\func.h
+	<math.h>
+	"fourier.h"
+
+1391014054 c:\skydrive\projects\ppmscope\pcsource\settings.h
+
+1328207330 c:\skydrive\projects\ppmscope\pcsource\aboutdlg.h
+
+1328207332 source:c:\skydrive\projects\ppmscope\pcsource\caldlg.c
+	"main.h"
+	"caldlg.h"
+
+1328207332 c:\skydrive\projects\ppmscope\pcsource\caldlg.h
+
+1328207328 source:c:\skydrive\projects\ppmscope\pcsource\debug.c
+	<stdio.h>
+	"settings.h"
+
+1342813976 source:c:\skydrive\projects\ppmscope\pcsource\engnum.c
+	<stdio.h>
+	<stdlib.h>
+
+1348766840 source:c:\skydrive\projects\ppmscope\pcsource\fourier.c
+	<math.h>
+	"fourier.h"
+
+1340841528 source:c:\skydrive\projects\ppmscope\pcsource\func.c
+	"func.h"
+
+1389978896 source:c:\skydrive\projects\ppmscope\pcsource\hardwaredlg.c
+	"main.h"
+	"hardwaredlg.h"
+	"parallel.h"
+	<stdio.h>
+
+1389978945 c:\skydrive\projects\ppmscope\pcsource\hardwaredlg.h
+
+1328207330 c:\skydrive\projects\ppmscope\pcsource\parallel.h
+
+1389979042 source:c:\skydrive\projects\ppmscope\pcsource\hdriver.c
+	"par_i2c.h"
+	"parallel.h"
+	"serial.h"
+	"hdriver.h"
+	"settings.h"
+	"debug.h"
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<math.h>
+
+1328207330 c:\skydrive\projects\ppmscope\pcsource\par_i2c.h
+	"parallel.h"
+
+1346271198 c:\skydrive\projects\ppmscope\pcsource\serial.h
+
+1328207328 c:\skydrive\projects\ppmscope\pcsource\debug.h
+
+1338927286 source:c:\skydrive\projects\ppmscope\pcsource\hdwtestdlg.c
+	"main.h"
+	"hdwtestdlg.h"
+
+1328207330 c:\skydrive\projects\ppmscope\pcsource\hdwtestdlg.h
+
+1390931637 source:c:\skydrive\projects\ppmscope\pcsource\ini_io.c
+	<stdio.h>
+	<stdlib.h>
+	"ini_io.h"
+
+1389371938 source:c:\skydrive\projects\ppmscope\pcsource\logdlg.c
+	"main.h"
+	"logdlg.h"
+	"engNum.h"
+	<time.h>
+
+1328207332 c:\skydrive\projects\ppmscope\pcsource\logdlg.h
+	<stdio.h>
+
+1328207328 c:\skydrive\projects\ppmscope\pcsource\engnum.h
+
+1390931652 source:c:\skydrive\projects\ppmscope\pcsource\main.c
+	"main.h"
+	"aboutdlg.h"
+	"hardwaredlg.h"
+	"hdwtestdlg.h"
+	"parallel.h"
+	"refreshratedlg.h"
+	"caldlg.h"
+	"logdlg.h"
+	<stdio.h>
+	<time.h>
+
+1328207330 c:\skydrive\projects\ppmscope\pcsource\refreshratedlg.h
+
+1389979392 source:c:\skydrive\projects\ppmscope\pcsource\panel.c
+	"main.h"
+	"engNum.h"
+	<stdio.h>
+
+1328207330 source:c:\skydrive\projects\ppmscope\pcsource\par_i2c.c
+	"par_i2c.h"
+
+1339159318 source:c:\skydrive\projects\ppmscope\pcsource\parallel.c
+	<windows.h>
+	"parallel.h"
+
+1328207330 source:c:\skydrive\projects\ppmscope\pcsource\refreshratedlg.c
+	"main.h"
+	"refreshratedlg.h"
+	"engNum.h"
+
+1389979384 source:c:\skydrive\projects\ppmscope\pcsource\resource.rc
+	"main.h"
+	"hardwaredlg.h"
+	"aboutdlg.h"
+	"hdwtestdlg.h"
+	"parallel.h"
+	"refreshratedlg.h"
+	"logdlg.h"
+	"caldlg.h"
+
+1389372569 source:c:\skydrive\projects\ppmscope\pcsource\serial.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+
+1391014130 source:c:\skydrive\projects\ppmscope\pcsource\oscdisp.c
+	"main.h"
+	"oscDisp.h"
+	<math.h>
+	"debug.h"
+	<stdio.h>
+
+1328210928 source:c:\onedrive\projects\ppmscope\pcsource\aboutdlg.c
+	"main.h"
+	"aboutdlg.h"
+
+1406144200 c:\onedrive\projects\ppmscope\pcsource\main.h
+	<windows.h>
+	<commctrl.h>
+	"hdriver.h"
+	"oscdisp.h"
+	"panel.h"
+	"fourier.h"
+	"ini_io.h"
+	"func.h"
+	"settings.h"
+
+1403197662 c:\onedrive\projects\ppmscope\pcsource\hdriver.h
+
+1410880540 c:\onedrive\projects\ppmscope\pcsource\oscdisp.h
+
+1410889522 c:\onedrive\projects\ppmscope\pcsource\panel.h
+
+1328210930 c:\onedrive\projects\ppmscope\pcsource\fourier.h
+
+1405974412 c:\onedrive\projects\ppmscope\pcsource\ini_io.h
+
+1328210930 c:\onedrive\projects\ppmscope\pcsource\func.h
+	<math.h>
+	"fourier.h"
+
+1420840021 c:\onedrive\projects\ppmscope\pcsource\settings.h
+
+1328210930 c:\onedrive\projects\ppmscope\pcsource\aboutdlg.h
+
+1328210932 source:c:\onedrive\projects\ppmscope\pcsource\caldlg.c
+	"main.h"
+	"caldlg.h"
+
+1328210932 c:\onedrive\projects\ppmscope\pcsource\caldlg.h
+
+1328210928 source:c:\onedrive\projects\ppmscope\pcsource\debug.c
+	<stdio.h>
+	"settings.h"
+
+1342817576 source:c:\onedrive\projects\ppmscope\pcsource\engnum.c
+	<stdio.h>
+	<stdlib.h>
+
+1348770440 source:c:\onedrive\projects\ppmscope\pcsource\fourier.c
+	<math.h>
+	"fourier.h"
+
+1340845128 source:c:\onedrive\projects\ppmscope\pcsource\func.c
+	"func.h"
+
+1389982496 source:c:\onedrive\projects\ppmscope\pcsource\hardwaredlg.c
+	"main.h"
+	"hardwaredlg.h"
+	"parallel.h"
+	<stdio.h>
+
+1396551976 c:\onedrive\projects\ppmscope\pcsource\hardwaredlg.h
+
+1328210930 c:\onedrive\projects\ppmscope\pcsource\parallel.h
+
+1420839771 source:c:\onedrive\projects\ppmscope\pcsource\hdriver.c
+	"par_i2c.h"
+	"parallel.h"
+	"serial.h"
+	"hdriver.h"
+	"settings.h"
+	"debug.h"
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<math.h>
+
+1328210930 c:\onedrive\projects\ppmscope\pcsource\par_i2c.h
+	"parallel.h"
+
+1346274798 c:\onedrive\projects\ppmscope\pcsource\serial.h
+
+1328210928 c:\onedrive\projects\ppmscope\pcsource\debug.h
+
+1394650184 source:c:\onedrive\projects\ppmscope\pcsource\hdwtestdlg.c
+	"main.h"
+	"hdwtestdlg.h"
+
+1328210930 c:\onedrive\projects\ppmscope\pcsource\hdwtestdlg.h
+
+1405974042 source:c:\onedrive\projects\ppmscope\pcsource\ini_io.c
+	<stdio.h>
+	<stdlib.h>
+	"ini_io.h"
+
+1389375538 source:c:\onedrive\projects\ppmscope\pcsource\logdlg.c
+	"main.h"
+	"logdlg.h"
+	"engNum.h"
+	<time.h>
+
+1328210932 c:\onedrive\projects\ppmscope\pcsource\logdlg.h
+	<stdio.h>
+
+1328210928 c:\onedrive\projects\ppmscope\pcsource\engnum.h
+
+1410881374 source:c:\onedrive\projects\ppmscope\pcsource\main.c
+	"main.h"
+	"aboutdlg.h"
+	"hardwaredlg.h"
+	"hdwtestdlg.h"
+	"parallel.h"
+	"refreshratedlg.h"
+	"caldlg.h"
+	"logdlg.h"
+	<stdio.h>
+	<time.h>
+
+1328210930 c:\onedrive\projects\ppmscope\pcsource\refreshratedlg.h
+
+1410901174 source:c:\onedrive\projects\ppmscope\pcsource\oscdisp.c
+	"main.h"
+	"oscDisp.h"
+	<math.h>
+	"debug.h"
+	<stdio.h>
+
+1419948354 source:c:\onedrive\projects\ppmscope\pcsource\panel.c
+	"main.h"
+	"engNum.h"
+	<stdio.h>
+
+1328210930 source:c:\onedrive\projects\ppmscope\pcsource\par_i2c.c
+	"par_i2c.h"
+
+1339162918 source:c:\onedrive\projects\ppmscope\pcsource\parallel.c
+	<windows.h>
+	"parallel.h"
+
+1328210930 source:c:\onedrive\projects\ppmscope\pcsource\refreshratedlg.c
+	"main.h"
+	"refreshratedlg.h"
+	"engNum.h"
+
+1409261250 source:c:\onedrive\projects\ppmscope\pcsource\resource.rc
+	"main.h"
+	"hardwaredlg.h"
+	"aboutdlg.h"
+	"hdwtestdlg.h"
+	"parallel.h"
+	"refreshratedlg.h"
+	"logdlg.h"
+	"caldlg.h"
+
+1389376170 source:c:\onedrive\projects\ppmscope\pcsource\serial.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+
+1328210928 source:c:\jww\projects\ppmscope\pcsource\aboutdlg.c
+	"main.h"
+	"aboutdlg.h"
+
+1406144200 c:\jww\projects\ppmscope\pcsource\main.h
+	<windows.h>
+	<commctrl.h>
+	"hdriver.h"
+	"oscdisp.h"
+	"panel.h"
+	"fourier.h"
+	"ini_io.h"
+	"func.h"
+	"settings.h"
+
+1403197662 c:\jww\projects\ppmscope\pcsource\hdriver.h
+
+1410880539 c:\jww\projects\ppmscope\pcsource\oscdisp.h
+
+1410889521 c:\jww\projects\ppmscope\pcsource\panel.h
+
+1328210930 c:\jww\projects\ppmscope\pcsource\fourier.h
+
+1405974412 c:\jww\projects\ppmscope\pcsource\ini_io.h
+
+1328210930 c:\jww\projects\ppmscope\pcsource\func.h
+	<math.h>
+	"fourier.h"
+
+1411439635 c:\jww\projects\ppmscope\pcsource\settings.h
+
+1328210930 c:\jww\projects\ppmscope\pcsource\aboutdlg.h
+
+1328210932 source:c:\jww\projects\ppmscope\pcsource\caldlg.c
+	"main.h"
+	"caldlg.h"
+
+1328210932 c:\jww\projects\ppmscope\pcsource\caldlg.h
+
+1328210928 source:c:\jww\projects\ppmscope\pcsource\debug.c
+	<stdio.h>
+	"settings.h"
+
+1342817576 source:c:\jww\projects\ppmscope\pcsource\engnum.c
+	<stdio.h>
+	<stdlib.h>
+
+1348770440 source:c:\jww\projects\ppmscope\pcsource\fourier.c
+	<math.h>
+	"fourier.h"
+
+1340845128 source:c:\jww\projects\ppmscope\pcsource\func.c
+	"func.h"
+
+1389982496 source:c:\jww\projects\ppmscope\pcsource\hardwaredlg.c
+	"main.h"
+	"hardwaredlg.h"
+	"parallel.h"
+	<stdio.h>
+
+1396551976 c:\jww\projects\ppmscope\pcsource\hardwaredlg.h
+
+1328210930 c:\jww\projects\ppmscope\pcsource\parallel.h
+
+1404927130 source:c:\jww\projects\ppmscope\pcsource\hdriver.c
+	"par_i2c.h"
+	"parallel.h"
+	"serial.h"
+	"hdriver.h"
+	"settings.h"
+	"debug.h"
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<math.h>
+
+1328210930 c:\jww\projects\ppmscope\pcsource\par_i2c.h
+	"parallel.h"
+
+1346274798 c:\jww\projects\ppmscope\pcsource\serial.h
+
+1328210928 c:\jww\projects\ppmscope\pcsource\debug.h
+
+1394650184 source:c:\jww\projects\ppmscope\pcsource\hdwtestdlg.c
+	"main.h"
+	"hdwtestdlg.h"
+
+1328210930 c:\jww\projects\ppmscope\pcsource\hdwtestdlg.h
+
+1405974042 source:c:\jww\projects\ppmscope\pcsource\ini_io.c
+	<stdio.h>
+	<stdlib.h>
+	"ini_io.h"
+
+1389375538 source:c:\jww\projects\ppmscope\pcsource\logdlg.c
+	"main.h"
+	"logdlg.h"
+	"engNum.h"
+	<time.h>
+
+1328210932 c:\jww\projects\ppmscope\pcsource\logdlg.h
+	<stdio.h>
+
+1328210928 c:\jww\projects\ppmscope\pcsource\engnum.h
+
+1410881372 source:c:\jww\projects\ppmscope\pcsource\main.c
+	"main.h"
+	"aboutdlg.h"
+	"hardwaredlg.h"
+	"hdwtestdlg.h"
+	"parallel.h"
+	"refreshratedlg.h"
+	"caldlg.h"
+	"logdlg.h"
+	<stdio.h>
+	<time.h>
+
+1328210930 c:\jww\projects\ppmscope\pcsource\refreshratedlg.h
+
+1406324100 source:c:\jww\projects\ppmscope\pcsource\panel.c
+	"main.h"
+	"engNum.h"
+	<stdio.h>
+
+1328210930 source:c:\jww\projects\ppmscope\pcsource\par_i2c.c
+	"par_i2c.h"
+
+1339162918 source:c:\jww\projects\ppmscope\pcsource\parallel.c
+	<windows.h>
+	"parallel.h"
+
+1328210930 source:c:\jww\projects\ppmscope\pcsource\refreshratedlg.c
+	"main.h"
+	"refreshratedlg.h"
+	"engNum.h"
+
+1409261250 source:c:\jww\projects\ppmscope\pcsource\resource.rc
+	"main.h"
+	"hardwaredlg.h"
+	"aboutdlg.h"
+	"hdwtestdlg.h"
+	"parallel.h"
+	"refreshratedlg.h"
+	"logdlg.h"
+	"caldlg.h"
+
+1389376170 source:c:\jww\projects\ppmscope\pcsource\serial.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+
+1410901172 source:c:\jww\projects\ppmscope\pcsource\oscdisp.c
+	"main.h"
+	"oscDisp.h"
+	<math.h>
+	"debug.h"
+	<stdio.h>
+
+1328210928 source:z:\run\media\jweaver\c2cab9e8cab9d8bd\onedrive\projects\ppmscope\pcsource\aboutdlg.c
+	"main.h"
+	"aboutdlg.h"
+
+1406147800 z:\run\media\jweaver\c2cab9e8cab9d8bd\onedrive\projects\ppmscope\pcsource\main.h
+	<windows.h>
+	<commctrl.h>
+	"hdriver.h"
+	"oscdisp.h"
+	"panel.h"
+	"fourier.h"
+	"ini_io.h"
+	"func.h"
+	"settings.h"
+
+1403201262 z:\run\media\jweaver\c2cab9e8cab9d8bd\onedrive\projects\ppmscope\pcsource\hdriver.h
+
+1410884140 z:\run\media\jweaver\c2cab9e8cab9d8bd\onedrive\projects\ppmscope\pcsource\oscdisp.h
+
+1410893122 z:\run\media\jweaver\c2cab9e8cab9d8bd\onedrive\projects\ppmscope\pcsource\panel.h
+
+1328210930 z:\run\media\jweaver\c2cab9e8cab9d8bd\onedrive\projects\ppmscope\pcsource\fourier.h
+
+1405978012 z:\run\media\jweaver\c2cab9e8cab9d8bd\onedrive\projects\ppmscope\pcsource\ini_io.h
+
+1328210930 z:\run\media\jweaver\c2cab9e8cab9d8bd\onedrive\projects\ppmscope\pcsource\func.h
+	<math.h>
+	"fourier.h"
+
+1440476885 z:\run\media\jweaver\c2cab9e8cab9d8bd\onedrive\projects\ppmscope\pcsource\settings.h
+
+1328210930 z:\run\media\jweaver\c2cab9e8cab9d8bd\onedrive\projects\ppmscope\pcsource\aboutdlg.h
+
+1328210932 source:z:\run\media\jweaver\c2cab9e8cab9d8bd\onedrive\projects\ppmscope\pcsource\caldlg.c
+	"main.h"
+	"caldlg.h"
+
+1328210932 z:\run\media\jweaver\c2cab9e8cab9d8bd\onedrive\projects\ppmscope\pcsource\caldlg.h
+
+1328210928 source:z:\run\media\jweaver\c2cab9e8cab9d8bd\onedrive\projects\ppmscope\pcsource\debug.c
+	<stdio.h>
+	"settings.h"
+
+1342821176 source:z:\run\media\jweaver\c2cab9e8cab9d8bd\onedrive\projects\ppmscope\pcsource\engnum.c
+	<stdio.h>
+	<stdlib.h>
+
+1348774040 source:z:\run\media\jweaver\c2cab9e8cab9d8bd\onedrive\projects\ppmscope\pcsource\fourier.c
+	<math.h>
+	"fourier.h"
+
+1340848728 source:z:\run\media\jweaver\c2cab9e8cab9d8bd\onedrive\projects\ppmscope\pcsource\func.c
+	"func.h"
+
+1389982496 source:z:\run\media\jweaver\c2cab9e8cab9d8bd\onedrive\projects\ppmscope\pcsource\hardwaredlg.c
+	"main.h"
+	"hardwaredlg.h"
+	"parallel.h"
+	<stdio.h>
+
+1396555576 z:\run\media\jweaver\c2cab9e8cab9d8bd\onedrive\projects\ppmscope\pcsource\hardwaredlg.h
+
+1328210930 z:\run\media\jweaver\c2cab9e8cab9d8bd\onedrive\projects\ppmscope\pcsource\parallel.h
+
+1420839772 source:z:\run\media\jweaver\c2cab9e8cab9d8bd\onedrive\projects\ppmscope\pcsource\hdriver.c
+	"par_i2c.h"
+	"parallel.h"
+	"serial.h"
+	"hdriver.h"
+	"settings.h"
+	"debug.h"
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<math.h>
+
+1328210930 z:\run\media\jweaver\c2cab9e8cab9d8bd\onedrive\projects\ppmscope\pcsource\par_i2c.h
+	"parallel.h"
+
+1346278398 z:\run\media\jweaver\c2cab9e8cab9d8bd\onedrive\projects\ppmscope\pcsource\serial.h
+
+1328210928 z:\run\media\jweaver\c2cab9e8cab9d8bd\onedrive\projects\ppmscope\pcsource\debug.h
+
+1394653784 source:z:\run\media\jweaver\c2cab9e8cab9d8bd\onedrive\projects\ppmscope\pcsource\hdwtestdlg.c
+	"main.h"
+	"hdwtestdlg.h"
+
+1328210930 z:\run\media\jweaver\c2cab9e8cab9d8bd\onedrive\projects\ppmscope\pcsource\hdwtestdlg.h
+
+1405977642 source:z:\run\media\jweaver\c2cab9e8cab9d8bd\onedrive\projects\ppmscope\pcsource\ini_io.c
+	<stdio.h>
+	<stdlib.h>
+	"ini_io.h"
+
+1389375538 source:z:\run\media\jweaver\c2cab9e8cab9d8bd\onedrive\projects\ppmscope\pcsource\logdlg.c
+	"main.h"
+	"logdlg.h"
+	"engNum.h"
+	<time.h>
+
+1328210932 z:\run\media\jweaver\c2cab9e8cab9d8bd\onedrive\projects\ppmscope\pcsource\logdlg.h
+	<stdio.h>
+
+1328210928 z:\run\media\jweaver\c2cab9e8cab9d8bd\onedrive\projects\ppmscope\pcsource\engnum.h
+
+1410884974 source:z:\run\media\jweaver\c2cab9e8cab9d8bd\onedrive\projects\ppmscope\pcsource\main.c
+	"main.h"
+	"aboutdlg.h"
+	"hardwaredlg.h"
+	"hdwtestdlg.h"
+	"parallel.h"
+	"refreshratedlg.h"
+	"caldlg.h"
+	"logdlg.h"
+	<stdio.h>
+	<time.h>
+
+1328210930 z:\run\media\jweaver\c2cab9e8cab9d8bd\onedrive\projects\ppmscope\pcsource\refreshratedlg.h
+
+1410904774 source:z:\run\media\jweaver\c2cab9e8cab9d8bd\onedrive\projects\ppmscope\pcsource\oscdisp.c
+	"main.h"
+	"oscDisp.h"
+	<math.h>
+	"debug.h"
+	<stdio.h>
+
+1419948356 source:z:\run\media\jweaver\c2cab9e8cab9d8bd\onedrive\projects\ppmscope\pcsource\panel.c
+	"main.h"
+	"engNum.h"
+	<stdio.h>
+
+1328210930 source:z:\run\media\jweaver\c2cab9e8cab9d8bd\onedrive\projects\ppmscope\pcsource\par_i2c.c
+	"par_i2c.h"
+
+1339166518 source:z:\run\media\jweaver\c2cab9e8cab9d8bd\onedrive\projects\ppmscope\pcsource\parallel.c
+	<windows.h>
+	"parallel.h"
+
+1328210930 source:z:\run\media\jweaver\c2cab9e8cab9d8bd\onedrive\projects\ppmscope\pcsource\refreshratedlg.c
+	"main.h"
+	"refreshratedlg.h"
+	"engNum.h"
+
+1409264850 source:z:\run\media\jweaver\c2cab9e8cab9d8bd\onedrive\projects\ppmscope\pcsource\resource.rc
+	"main.h"
+	"hardwaredlg.h"
+	"aboutdlg.h"
+	"hdwtestdlg.h"
+	"parallel.h"
+	"refreshratedlg.h"
+	"logdlg.h"
+	"caldlg.h"
+
+1389376170 source:z:\run\media\jweaver\c2cab9e8cab9d8bd\onedrive\projects\ppmscope\pcsource\serial.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+
+1485406649 source:z:\home\jweaver\documents\projects\ppmscope\pcsource\aboutdlg.c
+	"main.h"
+	"aboutdlg.h"
+
+1485406649 z:\home\jweaver\documents\projects\ppmscope\pcsource\main.h
+	<windows.h>
+	<commctrl.h>
+	"hdriver.h"
+	"oscdisp.h"
+	"panel.h"
+	"fourier.h"
+	"ini_io.h"
+	"func.h"
+	"settings.h"
+
+1485406649 z:\home\jweaver\documents\projects\ppmscope\pcsource\hdriver.h
+
+1485406649 z:\home\jweaver\documents\projects\ppmscope\pcsource\oscdisp.h
+
+1485406649 z:\home\jweaver\documents\projects\ppmscope\pcsource\panel.h
+
+1485406649 z:\home\jweaver\documents\projects\ppmscope\pcsource\fourier.h
+
+1485406649 z:\home\jweaver\documents\projects\ppmscope\pcsource\ini_io.h
+
+1485406649 z:\home\jweaver\documents\projects\ppmscope\pcsource\func.h
+	<math.h>
+	"fourier.h"
+
+1485406649 z:\home\jweaver\documents\projects\ppmscope\pcsource\settings.h
+
+1485406649 z:\home\jweaver\documents\projects\ppmscope\pcsource\aboutdlg.h
+
+1485406649 source:z:\home\jweaver\documents\projects\ppmscope\pcsource\caldlg.c
+	"main.h"
+	"caldlg.h"
+
+1485406649 z:\home\jweaver\documents\projects\ppmscope\pcsource\caldlg.h
+
+1485406649 source:z:\home\jweaver\documents\projects\ppmscope\pcsource\debug.c
+	<stdio.h>
+	"settings.h"
+
+1485406649 source:z:\home\jweaver\documents\projects\ppmscope\pcsource\engnum.c
+	<stdio.h>
+	<stdlib.h>
+
+1485406649 source:z:\home\jweaver\documents\projects\ppmscope\pcsource\fourier.c
+	<math.h>
+	"fourier.h"
+
+1485406649 source:z:\home\jweaver\documents\projects\ppmscope\pcsource\func.c
+	"func.h"
+
+1485406649 source:z:\home\jweaver\documents\projects\ppmscope\pcsource\hardwaredlg.c
+	"main.h"
+	"hardwaredlg.h"
+	"parallel.h"
+	<stdio.h>
+
+1485406649 z:\home\jweaver\documents\projects\ppmscope\pcsource\hardwaredlg.h
+
+1485406649 z:\home\jweaver\documents\projects\ppmscope\pcsource\parallel.h
+
+1485406649 source:z:\home\jweaver\documents\projects\ppmscope\pcsource\hdriver.c
+	"par_i2c.h"
+	"parallel.h"
+	"serial.h"
+	"hdriver.h"
+	"settings.h"
+	"debug.h"
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<math.h>
+
+1485406649 z:\home\jweaver\documents\projects\ppmscope\pcsource\par_i2c.h
+	"parallel.h"
+
+1485406649 z:\home\jweaver\documents\projects\ppmscope\pcsource\serial.h
+
+1485406649 z:\home\jweaver\documents\projects\ppmscope\pcsource\debug.h
+
+1485406649 source:z:\home\jweaver\documents\projects\ppmscope\pcsource\hdwtestdlg.c
+	"main.h"
+	"hdwtestdlg.h"
+
+1485406649 z:\home\jweaver\documents\projects\ppmscope\pcsource\hdwtestdlg.h
+
+1485406649 source:z:\home\jweaver\documents\projects\ppmscope\pcsource\ini_io.c
+	<stdio.h>
+	<stdlib.h>
+	"ini_io.h"
+
+1485406649 source:z:\home\jweaver\documents\projects\ppmscope\pcsource\logdlg.c
+	"main.h"
+	"logdlg.h"
+	"engNum.h"
+	<time.h>
+
+1485406649 z:\home\jweaver\documents\projects\ppmscope\pcsource\logdlg.h
+	<stdio.h>
+
+1485406649 z:\home\jweaver\documents\projects\ppmscope\pcsource\engnum.h
+
+1485406649 source:z:\home\jweaver\documents\projects\ppmscope\pcsource\main.c
+	"main.h"
+	"aboutdlg.h"
+	"hardwaredlg.h"
+	"hdwtestdlg.h"
+	"parallel.h"
+	"refreshratedlg.h"
+	"caldlg.h"
+	"logdlg.h"
+	<stdio.h>
+	<time.h>
+
+1485406649 z:\home\jweaver\documents\projects\ppmscope\pcsource\refreshratedlg.h
+
+1485406649 source:z:\home\jweaver\documents\projects\ppmscope\pcsource\oscdisp.c
+	"main.h"
+	"oscDisp.h"
+	<math.h>
+	"debug.h"
+	<stdio.h>
+
+1485406649 source:z:\home\jweaver\documents\projects\ppmscope\pcsource\panel.c
+	"main.h"
+	"engNum.h"
+	<stdio.h>
+
+1485406649 source:z:\home\jweaver\documents\projects\ppmscope\pcsource\par_i2c.c
+	"par_i2c.h"
+
+1485406649 source:z:\home\jweaver\documents\projects\ppmscope\pcsource\parallel.c
+	<windows.h>
+	"parallel.h"
+
+1485406649 source:z:\home\jweaver\documents\projects\ppmscope\pcsource\refreshratedlg.c
+	"main.h"
+	"refreshratedlg.h"
+	"engNum.h"
+
+1485406649 source:z:\home\jweaver\documents\projects\ppmscope\pcsource\resource.rc
+	"main.h"
+	"hardwaredlg.h"
+	"aboutdlg.h"
+	"hdwtestdlg.h"
+	"parallel.h"
+	"refreshratedlg.h"
+	"logdlg.h"
+	"caldlg.h"
+
+1485406649 source:z:\home\jweaver\documents\projects\ppmscope\pcsource\serial.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+

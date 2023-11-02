@@ -1,0 +1,95 @@
+<html>
+<head>
+</head>
+<body>
+<center>
+<table border=0 width="800">
+	<tr><td>
+		<h1><b><center>
+ equality.inc </b></h1><br><b>Author:  </b> 
+  Jonathan Weaver, jonw0224@netscape.net<br><b>Date:    </b> 
+ 7/10/2003<br><b>Version: </b> 
+ 1.0<br><b>Filename: </b> 
+ equality.inc<br><b>Description:  </b>
+ A set of equality testing macros.  Assumes all registers and literals are signed bytes.
+</td></tr></table>
+</center><br>
+<hr><br>
+<h2><b><i>Procedure Heading List</i></b></h2><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td>
+<a href="#0">skipEqFF macro regA,regB </a></td></tr><tr><td><a href="#3">skipEqLF macro lit, regB </a></td></tr><tr><td><a href="#1">skipGrEqFF macro regA, regB </a></td></tr><tr><td><a href="#6">skipGrEqFL macro regA, lit </a></td></tr><tr><td><a href="#4">skipGrEqLF macro lit, regB </a></td></tr><tr><td><a href="#2">skipGrFF macro regA, regB </a></td></tr><tr><td><a href="#7">skipGrFL macro regA, lit </a></td></tr><tr><td><a href="#5">skipGrLF macro lit, regB </a></td></tr><tr><td><a href="#12">skipLessEqZero macro </a></td></tr><tr><td><a href="#10">skipLessZero macro </a></td></tr><tr><td><a href="#11">skipMoreEqZero macro </a></td></tr><tr><td><a href="#13">skipMoreZero macro </a></td></tr><tr><td><a href="#9">skipNotZero macro </a></td></tr><tr><td><a href="#8">skipZero macro </a></td></tr><tr><td><a href="#0"></a></td></tr></table>
+<br><hr><br>
+<h2><b><i>Procedure Descriptions</i></b></h2><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="0"></a>skipEqFF macro regA,regB <tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ This macro skips the next line if regA is equal to regB</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="3"></a>skipEqLF macro lit, regB <tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ This macro skips the next line if the literal is equal to regB</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="1"></a>skipGrEqFF macro regA, regB <tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ This macro skips the next line if regA is greater than or equal to regB</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="6"></a>skipGrEqFL macro regA, lit <tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ This macro skips the next line if the regA is greater than or equal to the literal</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="4"></a>skipGrEqLF macro lit, regB <tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ This macro skips the next line if the literal is greater than or equal to regB</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="2"></a>skipGrFF macro regA, regB <tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ This macro skips the next line if regA is greater than regB</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="7"></a>skipGrFL macro regA, lit <tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ This macro skips the next line if the regA is greater than the literal</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="5"></a>skipGrLF macro lit, regB <tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ This macro skips the next line if the literal is greater than regB</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="12"></a>skipLessEqZero macro <tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ This macro skips the next line if the result of the previous line is less than or equal to zero</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="10"></a>skipLessZero macro <tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ This macro skips the next line if the result of the previous line is less than zero</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="11"></a>skipMoreEqZero macro <tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ This macro skips the next line if the result of the previous line is more than or equal to zero</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="13"></a>skipMoreZero macro <tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ This macro skips the next line if the result of the previous line is more than zero</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="9"></a>skipNotZero macro <tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ This macro skips the next line if the result of the previous line is not zero</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="8"></a>skipZero macro <tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ This macro skips the next line if the result of the previous line is zero</td></tr></table>
+</td></tr></table>
+</center>
+<br><br></body></html>

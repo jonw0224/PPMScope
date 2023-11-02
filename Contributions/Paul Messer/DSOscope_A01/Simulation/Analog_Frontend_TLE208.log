@@ -1,0 +1,161 @@
+Circuit: * C:\Users\pmesser\_Paul\Design\DSOscope\Simulation\Analog_Frontend_TLE208.asc
+
+R8: both pins shorted together -- ignoring.
+R2: both pins shorted together -- ignoring.
+WARNING: Node N003 is floating.
+
+WARNING: Less than two connections to node N008.  This node is used by R16.
+Early termination of direct N-R iteration.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+vernier = 0.5
+vernier = 0.25
+Gmin = 3.08405
+vernier = 0.125
+vernier = 0.0625
+vernier = 0.03125
+vernier = 0.015625
+Gmin = 3.12843
+vernier = 0.0078125
+vernier = 0.0104167
+vernier = 0.00520833
+vernier = 0.00260417
+Gmin = 3.09604
+vernier = 0.00347222
+Gmin = 3.07196
+vernier = 0.00462963
+vernier = 0.00231481
+vernier = 0.00115741
+vernier = 0.00154321
+Gmin = 3.06515
+vernier = 0.00205761
+vernier = 0.00102881
+vernier = 0.000514403
+Gmin = 3.05807
+vernier = 0.00068587
+vernier = 0.000914493
+Gmin = 3.05305
+vernier = 0.00121932
+Gmin = 3.04491
+vernier = 0.00162576
+vernier = 0.000812882
+vernier = 0.000406441
+vernier = 0.000541921
+Gmin = 3.04203
+vernier = 0.000722562
+Gmin = 3.03722
+vernier = 0.000963415
+vernier = 0.000481708
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 14.3939%
+Source Step = 21.9697%
+Source Step = 23.5056%
+Source Step = 23.5352%
+Source Step = 23.5647%
+Source Step = 23.5943%
+Source Step = 23.6239%
+Source Step = 23.6535%
+vernier = 0.00146484
+Source Step = 23.695%
+Source Step = 23.7393%
+Source Step = 23.7837%
+Source Step = 23.8281%
+Source Step = 23.8725%
+vernier = 0.00219727
+Source Step = 23.9324%
+Source Step = 23.999%
+Source Step = 24.0656%
+Source Step = 24.1322%
+Source Step = 24.1988%
+vernier = 0.0032959
+Source Step = 24.2853%
+Source Step = 24.3852%
+Source Step = 24.4851%
+Source Step = 24.585%
+Source Step = 24.6848%
+vernier = 0.00494385
+Source Step = 24.8097%
+Source Step = 24.9595%
+Source Step = 25.1093%
+Source Step = 25.2591%
+Source Step = 25.4089%
+vernier = 0.00741577
+Source Step = 25.5887%
+Source Step = 25.8134%
+Source Step = 26.0382%
+Source Step = 26.2629%
+Source Step = 26.4876%
+vernier = 0.0111237
+Source Step = 26.746%
+Source Step = 27.0831%
+Source Step = 27.4202%
+Source Step = 27.7573%
+Source Step = 28.0943%
+vernier = 0.0166855
+Source Step = 28.4651%
+Source Step = 28.9708%
+Source Step = 29.4764%
+Source Step = 29.982%
+Source Step = 30.4876%
+vernier = 0.0250282
+Source Step = 31.0185%
+Source Step = 31.7769%
+Source Step = 32.5354%
+Source Step = 33.2938%
+Source Step = 34.0522%
+Source Step = 34.8107%
+vernier = 0.0375423
+Source Step = 35.9483%
+Source Step = 37.086%
+Source Step = 38.2236%
+Source Step = 39.3613%
+Source Step = 40.4989%
+vernier = 0.0563135
+Source Step = 42.1485%
+Source Step = 43.855%
+Source Step = 45.5614%
+Source Step = 47.2679%
+Source Step = 48.9744%
+vernier = 0.0844703
+Source Step = 51.3634%
+Source Step = 53.9231%
+Source Step = 56.4828%
+Source Step = 59.0425%
+Source Step = 61.6023%
+vernier = 0.126705
+Source Step = 65.0579%
+Source Step = 68.8974%
+Source Step = 72.737%
+Source Step = 76.5765%
+Source Step = 80.4161%
+vernier = 0.190058
+Source Step = 85.4075%
+Source Step = 91.1668%
+Source Step = 96.9262%
+Source Step = 100%
+Source stepping succeeded in finding the operating point.
+
+
+Date: Tue Apr 24 14:56:44 2012
+Total elapsed time: 3.619 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 9327
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 142
+fillins = 927
+solver = Normal
+Matrix Compiler1:    4575 opcodes
+Matrix Compiler2: 27.0 KB object code size  6.8/6.8/[3.4]
+
+

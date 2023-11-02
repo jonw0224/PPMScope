@@ -1,0 +1,160 @@
+<html>
+<head>
+</head>
+<body>
+<center>
+<table border=0 width="800">
+	<tr><td>
+		<h1><b><center>
+  parallel.bas </b></h1><br><b>Author:  </b> 
+  Jonathan Weaver<br><b>Date:    </b> 
+    created 7/13/01.  Build #2 11/17/03.<br><b>Version: </b> 
+  1.0 build #2.  Added comments and pinMap<br><b>Filename: </b> 
+  parallel.bas<br><b>Description:  </b>
+  a set of subroutines designed to help interface with parallel ports
+</td></tr></table>
+</center><br>
+<hr><br>
+<h2><b><i>Procedure Heading List</i></b></h2><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td>
+<a href="#3">function BITRESET public</a></td></tr><tr><td><a href="#4">function BITSET public</a></td></tr><tr><td><a href="#5">function BITTOGGLE public</a></td></tr><tr><td><a href="#8">function CONTROLPORT public</a></td></tr><tr><td><a href="#9">function DATAPORT public</a></td></tr><tr><td><a href="#2">function getBit(portNo%, byteNo%, bitNo%) public</a></td></tr><tr><td><a href="#7">function getByte(portNo%, byteNo%) public</a></td></tr><tr><td><a href="#11">function isPortValid?(portNo%) public</a></td></tr><tr><td><a href="#13">sub pinMap(byVal pinNo%, portByte%, portbit%, setVal?, resetVal?) public</a></td></tr><tr><td><a href="#1">sub setBit(portNo%, byteNo%, bitNo%, v?) public</a></td></tr><tr><td><a href="#6">sub setByte(portNo%, byteNo%, byt?) public</a></td></tr><tr><td><a href="#12">sub setPortBases() public</a></td></tr><tr><td><a href="#10">function STATUSPORT public</a></td></tr><tr><td><a href="#0">function verParallel$() public</a></td></tr><tr><td><a href="#0"></a></td></tr></table>
+<br><hr><br>
+<h2><b><i>Procedure Descriptions</i></b></h2><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="3"></a>function BITRESET public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Returns the value used by setBit() to reset a bit (0)</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="4"></a>function BITSET public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Returns the value used by setBit() to set a bit (1)</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="5"></a>function BITTOGGLE public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Returns the value used by setBit() to toggle a bit (2)</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="8"></a>function CONTROLPORT public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Returns the CONTROLPORT byte (2) used byt setBit(), getBit(), setByte(), and getByte()</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="9"></a>function DATAPORT public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Returns the DATAPORT byte (0) used byt setBit(), getBit(), setByte(), and getByte()</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="2"></a>function getBit(portNo%, byteNo%, bitNo%) public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Return the value of a bit</td></tr><tr><td colspan=2><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+portNo%</i></td><td width=600>
+ the port number.  0=LPT1, 1=LPT2, 2=LPT3</td></tr>
+<tr><td width=200><i> 
+byteNo%</i></td><td width=600>
+ specifies control byte, data byte, or status byte</td></tr>
+<tr><td width=200><i> 
+bitNo%</i></td><td width=600>
+ specifies the bit in the byte</td></tr>
+<tr><td width=200><i> 
+v?</i></td><td width=600>
+ the value of the bit, 0 or 1</td></tr><tr><td width=200>
+<b>Returns:</b></td><td width=600> 
+ the value of the bit on the port</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="7"></a>function getByte(portNo%, byteNo%) public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Return the port byte</td></tr><tr><td colspan=2><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+portNo%</i></td><td width=600>
+ the port number.  0=LPT1, 1=LPT2, 2=LPT3</td></tr>
+<tr><td width=200><i> 
+byteNo%</i></td><td width=600>
+ specifies control byte, data byte, or status byte</td></tr><tr><td width=200>
+<b>Returns:</b></td><td width=600> 
+ the value of the byte</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="11"></a>function isPortValid?(portNo%) public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Tests if the port is valid</td></tr><tr><td colspan=2><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+portNo%</i></td><td width=600>
+ the port number.  0=LPT1, 1=LPT2, 2=LPT3</td></tr><tr><td width=200>
+<b>Returns:</b></td><td width=600> 
+  TRUE if valid, FALSE otherwise</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="13"></a>sub pinMap(byVal pinNo%, portByte%, portbit%, setVal?, resetVal?) public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Defines a map from physical pin to port byte</td></tr><tr><td colspan=2><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+pinNo%</i></td><td width=600>
+ the number of the pin to map</td></tr>
+<tr><td width=200><i> 
+portByte%</i></td><td width=600>
+ returned value.  DATAPORT, STATUSPORT, or CONTROLPORT</td></tr>
+<tr><td width=200><i> 
+portbit%</i></td><td width=600>
+ returned value.  Bit in the port byte.</td></tr>
+<tr><td width=200><i> 
+setVal?</i></td><td width=600>
+ the logic corresponding to a +5 voltage or high Z output on the pin</td></tr>
+<tr><td width=200><i> 
+resetVal?</i></td><td width=600>
+ the logic corresponding to a 0 voltage output on the pin</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="1"></a>sub setBit(portNo%, byteNo%, bitNo%, v?) public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Set the bit to the value in v?</td></tr><tr><td colspan=2><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+portNo%</i></td><td width=600>
+ the port number.  0=LPT1, 1=LPT2, 2=LPT3</td></tr>
+<tr><td width=200><i> 
+byteNo%</i></td><td width=600>
+ specifies control byte, data byte, or status byte</td></tr>
+<tr><td width=200><i> 
+bitNo%</i></td><td width=600>
+ specifies the bit in the byte</td></tr>
+<tr><td width=200><i> 
+v?</i></td><td width=600>
+ the value of the bit, 0 to reset, 1 to set, or 2 to toggle</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="6"></a>sub setByte(portNo%, byteNo%, byt?) public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Set the port byte to the value in byt?</td></tr><tr><td colspan=2><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+portNo%</i></td><td width=600>
+ the port number.  0=LPT1, 1=LPT2, 2=LPT3</td></tr>
+<tr><td width=200><i> 
+byteNo%</i></td><td width=600>
+ specifies control byte, data byte, or status byte</td></tr>
+<tr><td width=200><i> 
+byt?</i></td><td width=600>
+ the value of the byte</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="12"></a>sub setPortBases() public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Stores the addresses for the parallel ports from BIOS to be referred to by portNo%</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="10"></a>function STATUSPORT public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Returns the STATUSPORT byte (1) used byt setBit(), getBit(), setByte(), and getByte()</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="0"></a>function verParallel$() public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Returns the build and version number of this unit library</td></tr><tr><td width=200>
+<b>Returns:</b></td><td width=600> 
+ the number of the build</td></tr></table>
+</td></tr></table>
+</center>
+<br><br></body></html>

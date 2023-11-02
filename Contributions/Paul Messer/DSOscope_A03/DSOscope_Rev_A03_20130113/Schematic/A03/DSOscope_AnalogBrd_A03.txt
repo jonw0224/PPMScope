@@ -1,0 +1,34 @@
+====+  Parts List for C:\Users\pmesser\_Paul\Design\DSOscope\Schematic\A03\DSOscope_AnalogBrd_A03.dsn  +====
+
+C1,C3                         2   0.1uF,10% 100V X7R 1206,1206,478-1529-1-ND,,10%,,X7R,100V
+C18                           1   0.1uF,10% 50V X7R 0805,0805,399-1170-1-ND,,10%,,X7R,50V
+J3                            1   1 x 18,Sq Pin Socket 0.025 pin 0.1 space,SqPinSocket1x18,S7051-ND
+J4                            1   1 x 7,Sq Pin Socket 0.025 pin 0.1 space,SqPinSocket1x7,S7040-ND
+R11,R12,R17,R20,R22,R24,
+R25,R27,R30,R35,R36,R37,
+R4,R7,R9                     15   1.00K,1/8W 1% 0805,0805,311-1.00KCRCT-ND,1/8W,1%
+R15,R16,R2,R3,R33,R34         6   1.00M,1/8W 1% 0805,0805,311-1.00MCRCT-ND,1/8W,1%
+C10,C11,C12,C5,C6,C7,C8,
+C9                            8   1.0uF,+80% -20% 25V Y5V 0805,0805,311-1358-1-ND,,+80% -20%,,Y5V,25V
+R1,R14                        2   10.0,1/8W 1% 0805,0805,311-10.0CRCT-ND,1/8W,1%
+R19,R26,R6                    3   100K,1/8W 1% 0805,0805,311-100KCRCT-ND,1/8W,1%
+C2,C4                         2   100pF,5% 100V C0G 0805,0805,399-1123-1-ND,,5%,,C0G,100V
+R13,R31                       2   10K,Pot 0.5W 25Turn,PV36W,490-2875-ND,0.5W,,,Linear
+R29                           1   10K,Pot Vertical 0.125W,POTVERT1,CT2265-ND,0.125W,,,Linear
+C14,C15                       2   10pF,5% 50V C0G 0603,0603,399-1049-1-ND,,5%,,C0G,50V
+C13,C16,C17                   3   10uF,+80% -20% 16V Y5V 0805,0805,490-3347-1-ND,,+80% -20%,,Y5V,16V
+R10,R23                       2   110K,1/8W 1% 0805,0805,311-110KCRCT-ND,1/8W,1%
+R21,R8                        2   2.61K,1/8W 1% 0805,0805,311-2.61KCRCT-ND,1/8W,1%
+R18,R5                        2   3.90K,1/8W 1% 0805,0805,311-3.90KCRCT-ND,1/8W,1%
+R28                           1   680,1/8W 1% 0805,0805,311-680CRCT-ND,1/8W,1%
+D1,D2,D6,D7                   4   BAP50-03,Pin Diode 50V 50mA: SOD-323,SOD323,568-1916-1-ND
+R32                           1   DNI,Do Not Install - 1/8W 1% 0805,0805,No P/N,1/8W,1%
+SW1,SW5                       2   DP3T EG2322,Slide Switch Right Angle,SWDP3TSLD2,EG1948-ND
+SW3,SW7                       2   DPDT,Subminiature (on-off-on),SWDPDTTOGSM1,,,,138907
+SW2,SW4,SW6                   3   DPDT,Subminiature (on-on),SWDPDTTOGSM1,,,,75977
+D11                           1   LED,Red : T1 3/4,LED175VERT,,,,333489
+U4                            1   LM311,Single Comparator: SOIC-8,SOIC8,497-1569-1-ND
+D3,D8                         2   MMBD7000,Signal Diode Dual: SOT-23,SOT23,,,,656309
+D10,D4,D5,D9                  4   MMSZ5237B,Zener Diode 8.2V 0.5W: SOD-123,SOD123,MMSZ5237B-FDICT-ND,,,
+U1,U2,U3                      3   TLE2082,Dual JFET OP AMP: SOIC-8,SOIC8,296-1343-1-ND
+J1,J2                         2   Terminal Block,Screw 2 pin 0.2 space,TBLKx2,ED2609-ND

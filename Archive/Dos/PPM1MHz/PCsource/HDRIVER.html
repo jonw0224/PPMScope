@@ -1,0 +1,216 @@
+<html>
+<head>
+</head>
+<body>
+<center>
+<table border=0 width="800">
+	<tr><td>
+		<h1><b><center>
+  HDriver.bas </b></h1><br><b>Author:  </b> 
+  Jonathan Weaver<br><b>Date:    </b> 
+    2/1/2005<br><b>Version: </b> 
+ 2.0 Build # 1<br><b>Filename: </b> 
+  HDriver.bas<br><b>Description:  </b>
+  Driver for the hardware communications with the oscilloscope device
+</td></tr></table>
+</center><br>
+<hr><br>
+<h2><b><i>Procedure Heading List</i></b></h2><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td>
+<a href="#8">function ADJ_CDECR() public</a></td></tr><tr><td><a href="#6">function ADJ_CINCR() public</a></td></tr><tr><td><a href="#9">function ADJ_FDECR() public</a></td></tr><tr><td><a href="#7">function ADJ_FINCR() public</a></td></tr><tr><td><a href="#5">function ADJ_NOADJ() public</a></td></tr><tr><td><a href="#17">sub enableTrigger(state?) public</a></td></tr><tr><td><a href="#18">function getEnableTrigger() public</a></td></tr><tr><td><a href="#11">function getMaxSampleRate!() public</a></td></tr><tr><td><a href="#0">function getMaxSamplesPerChannel??() public</a></td></tr><tr><td><a href="#12">function getSampleRate!() public</a></td></tr><tr><td><a href="#1">function getSamplesPerChannel??() public</a></td></tr><tr><td><a href="#14">function getTriggerDelay!() public</a></td></tr><tr><td><a href="#20">function getTriggerSlope() public</a></td></tr><tr><td><a href="#16">function getTrueXY() public</a></td></tr><tr><td><a href="#24">function recieveConfig() public</a></td></tr><tr><td><a href="#22">function recieveData(dataRec() as byte, sampleConfig as byte, channelAOffset as byte, channelBOffset as byte) public</a></td></tr><tr><td><a href="#3">sub sampleRateChange(sampleRateAdj?) public</a></td></tr><tr><td><a href="#23">function sendConfig() public</a></td></tr><tr><td><a href="#10">sub setSampleRate(sRate!) public</a></td></tr><tr><td><a href="#2">sub setSamplesPerChannel(spchannel??) public</a></td></tr><tr><td><a href="#13">sub setTriggerDelay(tDelay!) public</a></td></tr><tr><td><a href="#15">sub setTrueXY(state?) public</a></td></tr><tr><td><a href="#4">sub triggerDelayChange(triggerDelayAdj?) public</a></td></tr><tr><td><a href="#19">sub triggerSlope(state?) public</a></td></tr><tr><td><a href="#21">function updateChannels(channelA(), channelB(), DCA?, DCB?) public</a></td></tr><tr><td><a href="#0"></a></td></tr></table>
+<br><hr><br>
+<h2><b><i>Procedure Descriptions</i></b></h2><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="8"></a>function ADJ_CDECR() public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Constant function representing course decrease sampleRate or triggerDelay adjustment</td></tr><tr><td width=200>
+<b>Returns:</b></td><td width=600> 
+ 4</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="6"></a>function ADJ_CINCR() public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Constant function representing course increase sampleRate or triggerDelay adjustment</td></tr><tr><td width=200>
+<b>Returns:</b></td><td width=600> 
+ 1</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="9"></a>function ADJ_FDECR() public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Constant function representing fine decrease sampleRate or triggerDelay adjustment</td></tr><tr><td width=200>
+<b>Returns:</b></td><td width=600> 
+ 8</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="7"></a>function ADJ_FINCR() public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Constant function representing fine increase sampleRate or triggerDelay adjustment</td></tr><tr><td width=200>
+<b>Returns:</b></td><td width=600> 
+ 2</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="5"></a>function ADJ_NOADJ() public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Constant function representing no sampleRate or triggerDelay adjustment</td></tr><tr><td width=200>
+<b>Returns:</b></td><td width=600> 
+ 0</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="17"></a>sub enableTrigger(state?) public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Turns the trigger on or off</td></tr><tr><td colspan=2><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+state?</i></td><td width=600>
+  true turns the trigger on, false turns the trigger off</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="18"></a>function getEnableTrigger() public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Returns true if the trigger is enabled, otherwise returns false</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="11"></a>function getMaxSampleRate!() public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Returns the maximum possible sample rate of the device</td></tr><tr><td width=200>
+<b>Returns:</b></td><td width=600> 
+ the maximum possible sample rate of the device</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="0"></a>function getMaxSamplesPerChannel??() public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Reports the maximum number of samples per channel</td></tr><tr><td width=200>
+<b>Returns:</b></td><td width=600> 
+  the maximum number of samples per channel</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="12"></a>function getSampleRate!() public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Returns the frequency of the sample rate in Hz</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="1"></a>function getSamplesPerChannel??() public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Reports the current number of samples per channel</td></tr><tr><td width=200>
+<b>Returns:</b></td><td width=600> 
+  the current number of samples per channel</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="14"></a>function getTriggerDelay!() public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Returns delay in seconds from the trigger level to beginning of capture</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="20"></a>function getTriggerSlope() public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Gets the trigger slope.  True denotes positive slope, false denotes negative slope.</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="16"></a>function getTrueXY() public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Returns 1 if TrueXY is on, 2 if TrueXY is available but not on.  Otherwise, returns 0.</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="24"></a>function recieveConfig() public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Recieves configuration settings from the oscilloscope</td></tr><tr><td width=200>
+<b>Returns:</b></td><td width=600> 
+  1 if sucessful, 0 otherwise</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="22"></a>function recieveData(dataRec() as byte, sampleConfig as byte, channelAOffset as byte, channelBOffset as byte) public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Recieves data from oscilloscope</td></tr><tr><td colspan=2><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+dataRec()</i></td><td width=600>
+ an array of bytes representing data recieved from the slave device</td></tr>
+<tr><td width=200><i> 
+sampleConfig</i></td><td width=600>
+ a byte returned to indicate the configuration of the sampling device</td></tr>
+<tr><td width=200><i> 
+channelAOffset</i></td><td width=600>
+ a byte returned to indicate the offset of channel A</td></tr>
+<tr><td width=200><i> 
+channelBOffset</i></td><td width=600>
+ a byte returned to indicate the offset of channel B</td></tr><tr><td width=200>
+<b>Returns:</b></td><td width=600> 
+ 1 if successful, 0 otherwise</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="3"></a>sub sampleRateChange(sampleRateAdj?) public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ sampleRateAdj?: 0 = no adjustment.  1 = Course adjustment increase.  2 = fine adjustment increase.  4 = course adjustment decrease.  8 = fine adjustment increase.</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="23"></a>function sendConfig() public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Sends configuration settings to the oscilloscope</td></tr><tr><td width=200>
+<b>Returns:</b></td><td width=600> 
+ 1 if the configuration was accepted by the device, otherwise returns 0</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="10"></a>sub setSampleRate(sRate!) public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Sets the sample rate to the rate in sRate!</td></tr><tr><td colspan=2><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+sRate!</i></td><td width=600>
+  sample rate in Hz, will be modified to ACTUAL sample rate for display at end of call</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="2"></a>sub setSamplesPerChannel(spchannel??) public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Sets the current number of samples per channel, limiting to the maximum allowable</td></tr><tr><td colspan=2><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+spchannel??</i></td><td width=600>
+  the number of samples per channel to set, up to the maximum</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="13"></a>sub setTriggerDelay(tDelay!) public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Adjust the delay associated with the trigger</td></tr><tr><td colspan=2><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+tDelay!</i></td><td width=600>
+ the delay in seconds for the trigger, will updated to actual value after delay is set</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="15"></a>sub setTrueXY(state?) public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Switch to true XY capture mode based on the state passed</td></tr><tr><td colspan=2><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+state?</i></td><td width=600>
+  true indicates true XY mode on, false indicates true XY mode off</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="4"></a>sub triggerDelayChange(triggerDelayAdj?) public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ triggerDelayAdj?: 0 = no adjustment.  1 = Course adjustment increase.  2 = fine adjustment increase.  4 = course adjustment decrease.  8 = fine adjustment increase.</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="19"></a>sub triggerSlope(state?) public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Sets the trigger slope either positive or negative</td></tr><tr><td colspan=2><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+state?</i></td><td width=600>
+  true denotes positive slope, false denotes negative slope</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="21"></a>function updateChannels(channelA(), channelB(), DCA?, DCB?) public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Updates channelA() and channelB() with the appropriate channels</td></tr><tr><td colspan=2><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+channelA()</i></td><td width=600>
+  the channelA array</td></tr>
+<tr><td width=200><i> 
+channelB()</i></td><td width=600>
+  the channelB array</td></tr>
+<tr><td width=200><i> 
+DCA?</i></td><td width=600>
+  one if channel A is DC coupled, zero otherwise</td></tr>
+<tr><td width=200><i> 
+DCB?</i></td><td width=600>
+  one if channel B is DC coupled, zero otherwise</td></tr><tr><td width=200>
+<b>Returns:</b></td><td width=600> 
+  two if redraw required, one if successful, zero if not successful</td></tr></table>
+</td></tr></table>
+</center>
+<br><br></body></html>

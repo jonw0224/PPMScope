@@ -1,0 +1,35 @@
+<html>
+<head>
+	<META content="PIC Assembly Freeware" name=keywords>
+	<META content="Jonathan Weaver" name=author>
+</head>
+<body>
+<center>
+<table border=0 width="800">
+	<tr><td>
+		<h2><b><center>
+  banks.inc </b></h2><br><b>Author:  </b> 
+  Jonathan Weaver, jonw0224@netscape.net<br><b>Date:    </b> 
+ 11/9/2005<br><b>Version: </b> 
+ 2.0<br><b>Filename: </b> 
+  banks.inc<br><b>Description:  </b>
+  Banking macro.  A replacement for the banksel command.  Uses minimal bit set/clear commands to set desired bank.
+</td></tr></table>
+<br>
+<br>
+<h2><b><i>Procedure Heading List</i></b></h2><br>
+<table cellpadding=3 cellspacing=0 style="BORDER-LEFT: #8f8f8f 1px solid;BORDER-RIGHT: #8f8f8f 1px solid; BORDER-TOP: #8f8f8f 1px solid; BORDER-BOTTOM: #8f8f8f 1px solid" bgcolor="#CFCFFF" width="800">
+<tr><td style="BORDER-BOTTOM: #8f8f8f 1px solid;">
+<a href="#0">BNKSEL macro reg </a></td></tr><tr><td style="BORDER-BOTTOM: #8f8f8f 1px solid;"><a href="#0"></a></td></tr></table>
+<br><br>
+<h2><b><i>Procedure Descriptions</i></b></h2><br>
+<table cellpadding=3 cellspacing=0 style="BORDER-LEFT: #8f8f8f 1px solid;BORDER-RIGHT: #8f8f8f 1px solid; BORDER-TOP: #8f8f8f 1px solid; BORDER-BOTTOM: #8f8f8f 1px solid" bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2 style="BORDER-BOTTOM: #8f8f8f 1px solid;"><a name="0"></a>BNKSEL macro reg <tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Sets the STATUS bits RP0 and RP1 correctly depending on the label passed.  Comparable to banksel command, except that it remembers the last bank selected in a variable named CURRENTBANK.  Based on CURRENTBANK and label, it will execute only necessary bsf, bcf commands.  1 to 2 program words and cycles.</td></tr><tr><td colspan=2 style="BORDER-TOP: #8f8f8f 1px solid;"><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+reg</i></td><td width=600>
+ the register whose bank to select</td></tr></table>
+</td></tr></table>
+</center>
+<br><br></body></html>

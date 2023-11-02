@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<Title>Using the Oscilloscope Front Panel</Title>
+    <link rel="stylesheet" href="main.css">
+</HEAD>
+<BODY>
+
+<h1>Using the Oscilloscope Front Panel</h1>
+
+<p>There are two adjustments for each channel:
+
+<ul>
+	<li><a href="panel.html#gains">Analog Gain</a>
+	<li><a href="panel.html#coupling">Channel Coupling</a>
+</ul>
+
+<p>Also, there is a trigger level adjustment to adjust the voltage level used in triggering the oscilloscope.  To read more
+about using triggers and trigger modes, click <a href="scope.html#trigger">here</a></P>
+
+<a name="gains"></a>
+<h1>Analog Gain Switches</h1>
+
+<p>The analog gain switches change the gain of analog stage of the oscilloscope.  The hardware reports the current gain and 
+the software adjusts for the reported gain.  That is, a one volt peak-to-peak waveform on the channel input will always measure
+one volt peak-to-peak on the oscilloscope screen.  In effect, you will change the gain and nothing will appear to happen on the 
+screen.  Therefore, the analog gain switches do not modify the amplitude gain of the waveform as displayed on the oscilloscope, 
+but it does change the voltage resolution and the voltage range of the oscilloscope.</p>
+
+<p>The oscilloscope uses an 8 bit ADC and scales a voltage over a range of 0 to 5 Volts.  The gain of the analog gain stage can
+be increased so the sensitivity of the ADC is increased (the side effect of changing the analog gain is the range of measurement is 
+decreased.  The sensitivity is:</p>
+
+<center><p class="eqn"><i>Vstep = 3.9 / Gain * 5 / 256 = 0.076 / Gain</i></p></center>
+
+<p>And the range of measurement is:</p>
+
+<center><p class="eqn"><i>Range = 5 * 3.9 / Gain = 19.5 / Gain</i></p></center>
+<center><p class="eqn"><i>Vmax = + Range / 2</i></p></center>
+<center><p class="eqn"><i>Vmin = - Range / 2</i></p></center>
+
+<p>The 3.9 is the gain introduced by the analog stage with the gain switch selecting a gain of 1.  
+Below is a summary of each gain setting, the sensitivity, maximum measurable voltage, minimum measurable voltage, and voltage range.</p>
+
+<center><table width=75% border=0 cellspacing=0 style="BORDER-LEFT: #8f8f8f 1px solid;BORDER-RIGHT: #8f8f8f 1px solid; BORDER-TOP: #8f8f8f 1px solid; BORDER-BOTTOM: #8f8f8f 1px solid">
+	<tr>
+		<td bgcolor="#EFEFEF" width = 20%><center><p><b>Gain Setting</b></center></td>
+		<td bgcolor="#EFEFEF" width = 20%><center><p><b>Vstep</b></center></td>
+		<td bgcolor="#EFEFEF" width = 20%><center><p><b>Vmax</b></center></td>
+		<td bgcolor="#EFEFEF" width = 20%><center><p><b>Vmin</b></center></td>
+		<td bgcolor="#EFEFEF" width = 20%><center><p><b>Range</b></center></td>
+	</tr>
+	<tr>
+		<td style="BORDER-TOP: #8f8f8f 1px solid;"><center><p>1</center></td>
+		<td style="BORDER-TOP: #8f8f8f 1px solid;"><center><p>76 mV</center></td>
+		<td style="BORDER-TOP: #8f8f8f 1px solid;"><center><p>9.75 V</center></td>
+		<td style="BORDER-TOP: #8f8f8f 1px solid;"><center><p>-9.75 V</center></td>
+		<td style="BORDER-TOP: #8f8f8f 1px solid;"><center><p>19.5 V</center></td>
+	</tr>
+	<tr>
+		<td style="BORDER-TOP: #8f8f8f 1px solid;"><center><p>2</center></td>
+		<td style="BORDER-TOP: #8f8f8f 1px solid;"><center><p>38 mV</center></td>
+		<td style="BORDER-TOP: #8f8f8f 1px solid;"><center><p>4.88 V</center></td>
+		<td style="BORDER-TOP: #8f8f8f 1px solid;"><center><p>-4.88 V</center></td>
+		<td style="BORDER-TOP: #8f8f8f 1px solid;"><center><p>9.75 V</center></td>
+	</tr>
+	<tr>
+		<td style="BORDER-TOP: #8f8f8f 1px solid;"><center><p>5</center></td>
+		<td style="BORDER-TOP: #8f8f8f 1px solid;"><center><p>15 mV</center></td>
+		<td style="BORDER-TOP: #8f8f8f 1px solid;"><center><p>1.95 V</center></td>
+		<td style="BORDER-TOP: #8f8f8f 1px solid;"><center><p>-1.95 V</center></td>
+		<td style="BORDER-TOP: #8f8f8f 1px solid;"><center><p>3.90 V</center></td>
+	</tr>
+</table>
+</center>
+
+<a name="coupling"></a>
+
+<h1>AC/DC Coupling Switches</h1>
+
+<p>The AC/DC Coupling Switches are on the front panel of the oscilloscope.
+The position of the coupling switch determines whether or not the waveform is placed in series with a capacitor.
+If the coupling is set to DC then the signal is not placed in series with a capacitor and the DC component of the signal is
+preserved.
+If the coupling is set to AC then the signal is placed in series with a capacitor and the DC component of the signal is 
+removed.</p>
+
+</BODY>
+
+</HTML>

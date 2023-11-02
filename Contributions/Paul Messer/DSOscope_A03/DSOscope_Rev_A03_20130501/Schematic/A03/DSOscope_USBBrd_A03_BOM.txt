@@ -1,0 +1,21 @@
+====+  Parts List for DSOscope_USBBrd_A03.dsn  +====
+
+Reference_Designator(s)       Qty   Description                                           PN_Digi-Key           PN_Jameco       
+---------------------------   ---   ---------------------------------------------------   -------------------   ----------------
+
+C1                              1   1.0uF +80% -20% 25V Y5V 0805                          311-1358-1-ND          
+C2                              1   4.7uF 10% 16V X5R 0805                                445-7640-1-ND          
+C3                              1   0.1uF 10% 50V X7R 0805                                399-1170-1-ND          
+D1                              1   LED Green : SMT 1206                                                        2039902 
+D2                              1   LED Red : SMT 1206                                                          1556414 
+L1                              1   Ferrite Bead SMT 1000 ohm:100MHz                      445-1559-1-ND          
+P1                              1   1 x 6 Sq Pin Socket 0.025 pin 0.1 space               S7039-ND               
+R1,R2                           2   1.00K 1/8W 1% 0805                                    311-1.00KCRCT-ND       
+R3,R4,R5,R10                    4   DNI Do Not Install - 1/8W 1% 0805                     No P/N                 
+R6                              1   10.0K 1/8W 1% 0805                                    311-10.0KCRCT-ND       
+R7,R8,R9                        3   220 1/8W 1% 0805                                      311-220CRCT-ND         
+U1                              1   FT232RL USB UART: SSOP-28                             768-1007-1-ND          
+
+
+====+  End of Parts List for DSOscope_USBBrd_A03.dsn  +====
+

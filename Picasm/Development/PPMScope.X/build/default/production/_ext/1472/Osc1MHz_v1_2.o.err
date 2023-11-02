@@ -1,0 +1,33 @@
+Message[302] /home/jweaver/Documents/Projects/PPMScope/Picasm/Development/Osc1MHz_v1_2.asm 540 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] /home/jweaver/Documents/Projects/PPMScope/Picasm/Development/Osc1MHz_v1_2.asm 541 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] /home/jweaver/Documents/Projects/PPMScope/Picasm/Development/asmext.inc 346 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] /home/jweaver/Documents/Projects/PPMScope/Picasm/Development/asmext.inc 346 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] /home/jweaver/Documents/Projects/PPMScope/Picasm/Development/Osc1MHz_v1_2.asm 545 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] /home/jweaver/Documents/Projects/PPMScope/Picasm/Development/asmext.inc 346 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] /home/jweaver/Documents/Projects/PPMScope/Picasm/Development/asmext.inc 346 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] /home/jweaver/Documents/Projects/PPMScope/Picasm/Development/asmext.inc 346 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] /home/jweaver/Documents/Projects/PPMScope/Picasm/Development/asmext.inc 346 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] /home/jweaver/Documents/Projects/PPMScope/Picasm/Development/asmext.inc 346 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] /home/jweaver/Documents/Projects/PPMScope/Picasm/Development/asmext.inc 346 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] /home/jweaver/Documents/Projects/PPMScope/Picasm/Development/asmext.inc 346 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] /home/jweaver/Documents/Projects/PPMScope/Picasm/Development/asmext.inc 346 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] /home/jweaver/Documents/Projects/PPMScope/Picasm/Development/Osc1MHz_v1_2.asm 661 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] /home/jweaver/Documents/Projects/PPMScope/Picasm/Development/Osc1MHz_v1_2.asm 665 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] /home/jweaver/Documents/Projects/PPMScope/Picasm/Development/Osc1MHz_v1_2.asm 381 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] /home/jweaver/Documents/Projects/PPMScope/Picasm/Development/Osc1MHz_v1_2.asm 382 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] /home/jweaver/Documents/Projects/PPMScope/Picasm/Development/Osc1MHz_v1_2.asm 383 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] /home/jweaver/Documents/Projects/PPMScope/Picasm/Development/Osc1MHz_v1_2.asm 384 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] /home/jweaver/Documents/Projects/PPMScope/Picasm/Development/Osc1MHz_v1_2.asm 410 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] /home/jweaver/Documents/Projects/PPMScope/Picasm/Development/Osc1MHz_v1_2.asm 411 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] /home/jweaver/Documents/Projects/PPMScope/Picasm/Development/Osc1MHz_v1_2.asm 412 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] /home/jweaver/Documents/Projects/PPMScope/Picasm/Development/Osc1MHz_v1_2.asm 413 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] /home/jweaver/Documents/Projects/PPMScope/Picasm/Development/Osc1MHz_v1_2.asm 893 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[306] /home/jweaver/Documents/Projects/PPMScope/Picasm/Development/Osc1MHz_v1_2.asm 1566 : Crossing page boundary -- ensure page bits are set.
+Message[306] /home/jweaver/Documents/Projects/PPMScope/Picasm/Development/Osc1MHz_v1_2.asm 1592 : Crossing page boundary -- ensure page bits are set.
+Message[306] /home/jweaver/Documents/Projects/PPMScope/Picasm/Development/Osc1MHz_v1_2.asm 1599 : Crossing page boundary -- ensure page bits are set.
+Message[306] /home/jweaver/Documents/Projects/PPMScope/Picasm/Development/Osc1MHz_v1_2.asm 1706 : Crossing page boundary -- ensure page bits are set.
+Message[306] /home/jweaver/Documents/Projects/PPMScope/Picasm/Development/Osc1MHz_v1_2.asm 307 : Crossing page boundary -- ensure page bits are set.
+Message[306] /home/jweaver/Documents/Projects/PPMScope/Picasm/Development/Osc1MHz_v1_2.asm 307 : Crossing page boundary -- ensure page bits are set.
+Message[306] /home/jweaver/Documents/Projects/PPMScope/Picasm/Development/Osc1MHz_v1_2.asm 307 : Crossing page boundary -- ensure page bits are set.
+Message[306] /home/jweaver/Documents/Projects/PPMScope/Picasm/Development/Osc1MHz_v1_2.asm 2027 : Crossing page boundary -- ensure page bits are set.
+Message[306] /home/jweaver/Documents/Projects/PPMScope/Picasm/Development/Osc1MHz_v1_2.asm 307 : Crossing page boundary -- ensure page bits are set.

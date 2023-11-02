@@ -1,0 +1,47 @@
+====+  Parts List for E:\electronics\WORK\PIC\PPMScope\PPM1MHz.dsn  +====
+
+3R17,3R19,3R28,3R30           4   100k,Small Resistor,RC05
+2C2,2C3,2C4                   3   100n,Capacitor,C300
+2R12,2R13,2R14,2R3,4R36,
+4R37,2R4,4R41,4R43,2R6,
+2R9                          11   10k,Small Resistor,RC05
+2R2                           1   10k,Small Resistor,RC07
+4R42                          1   10k,Small Var. Resistor,PanelMount
+3C7,3C8                       2   10u,Capacitor,RAD-248
+2R1,2R10,2R11,3R15,3R21,
+3R22,3R23,3R25,3R26,3R32
+3R33,3R34,3R35,4R38,4R39
+2R44,2R45,2R5                18   1k,Small Resistor,RC05
+2X1                           1   20MHz,Crystal,CK60
+2C1,2C5                       2   20p,Capacitor,C300
+3R16,3R27                     2   3.9k,Small Resistor,RC05
+3R18,3R29                     2   33k,Small Resistor,RC05
+3R20,3R31                     2   3k,Small Resistor,RC05
+4R40                          1   4.7k,Small Resistor,RC05
+2C6                           1   4.7u,Capacitor,C300
+2U8                           1   7407,Hex Buffers
+                              0   7407,Hex Buffers,14DIP300
+3S1,3S2,3S5,3S6               4   ACDCMode,Single Pole Switch
+3CN9                          1   Ch1_In,Contact in,package name for PCB layout
+3CN10                         1   Ch2_In,Contact in,package name for PCB layout
+2CN5                          1   GND,Contact in,package name for PCB layout
+3S3,3S4                       2   Gain,2 pole 3 pos. switch
+2CN2                          1   I2CCLK,Contact in,package name for PCB layout
+2CN3                          1   I2CDATA,Contact in,package name for PCB layout
+2CN8                          1   I2CDATAIN,Contact out,package name for PCB layout
+4U6,4U7                       2   LM311,LM311,8DIP300
+2U2                           1   MAX118,ADC - 1 MHz,28DIP600
+4Q1                           1   N3904,Bipolar transistor, small,TO-92-A
+4D10,4D9                      2   N4148,Diode,DO-35
+3D1,3D2,3D3,3D4,3D5,3D6,
+3D7,3D8                       8   N4148,small diode,DO-35
+2CN6                          1   PGCLK,Contact in,package name for PCB layout
+2CN7                          1   PGDATA,Contact in,package name for PCB layout
+2CN1                          1   PGVPP,Contact in,package name for PCB layout
+2U1                           1   PIC16F877A,PIC microcontroller,40DIP600
+3R24                          1   POT10k,Small Var. Resistor,POT 3386P
+4CN11                         1   RX,Contact in,package name for PCB layout
+2CN4                          1   SER/PAR,Contact in,package name for PCB layout
+3U3,3U4,3U5                   3   TLE2082,Dual Low Noise Op-Amp
+3U3,3U4,3U5                   3   TLE2082,Dual Low Noise Op-Amp,8DIP300
+4CN12                         1   TX,Contact out,package name for PCB layout

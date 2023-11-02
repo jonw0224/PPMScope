@@ -1,0 +1,28 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=ppmscope.chm
+Contents file=ppmscope.hhc
+Default topic=intro.html
+Display compile progress=No
+Index file=ppmscope.hhk
+Language=0x409 English (United States)
+Title=PPMScope Help
+
+
+[FILES]
+intro.html
+ConstOverview.html
+picprog.html
+build.html
+test.html
+calibrate.html
+scrmenu.html
+progoverview.html
+screen.html
+scope.html
+files.html
+compile.html
+linux.html
+
+[INFOTYPES]
+

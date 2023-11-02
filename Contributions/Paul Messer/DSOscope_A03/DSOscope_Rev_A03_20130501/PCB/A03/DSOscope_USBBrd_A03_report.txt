@@ -1,0 +1,86 @@
+FreePCB project report (default units = MIL)
+============================================
+Project name: DSOscope_USBBrd_A03
+Project file: C:\Users\pmesser\_Paul\Design\DSOscope\PCB\A03\DSOscope_USBBrd_A03.fpc
+Default library folder: c:\users\pmesser\_paul\design\my_freepcb_library
+
+Board statistics
+==============
+Number of copper layers: 4
+Number of board outlines: 1
+Board outline(s) extent: X = 1150 MIL; Y = 925 MIL
+Number of parts: 18
+Number of pins: 66 (6 through-hole, 60 SMT)
+Number of vias: 19
+Number of holes: 25
+
+Drill list
+==========
+NUMBER  DIAMETER
+------  --------
+   19   21 MIL
+    6   41 MIL
+
+Part list
+=========
+For parts on top: the angle is in degrees CCW, as viewed from the top
+For parts on the bottom: the angle is in degrees CCW, as viewed from the bottom by flipping the PCB left-right
+All centroid coordinates are as viewed from the top
+
+REF         PACKAGE  VALUE       FOOTPRINT  PINS  HOLES    SIDE  ANGLE  CENT X  CENT Y  PIN1 X  PIN1 Y  GLUE W  GLUE X  GLUE Y
+---         -------  -----       ---------  ----  -----    ----  -----  ------  ------  ------  ------  ------  ------  ------
+ C1            0805                   0805     2      0     top    180     815     535     770     535      10     815     580
+ C2            0805                   0805     2      0     top    270      80     420      80     465      10     125     420
+ C3            0805                   0805     2      0  bottom      0     385     575     430     575      10     385     620
+ D1       1206DIODE              1206DIODE     2      0     top      0   182.5     825     250     825      10   182.5   757.5
+ D2       1206DIODE              1206DIODE     2      0     top    180   457.5     825     390     825      10   457.5   892.5
+ L1            0805                   0805     2      0     top    180     815     455     770     455      10     815     500
+ P1  SqPinSocket1x6         SqPinSocket1x6     6      6  bottom     90    1000     325    1000     325
+ R1            0805                   0805     2      0     top     90     100     650     100     605      10      55     650
+R10            0805                   0805     2      0  bottom      0     165      85     210      85      10     165     130
+ R2            0805                   0805     2      0     top      0     705     825     750     825      10     705     780
+ R3            0805                   0805     2      0     top      0     735     245     780     245      10     735     200
+ R4            0805                   0805     2      0     top      0     735     165     780     165      10     735     120
+ R5            0805                   0805     2      0     top      0     555      85     600      85      10     555      40
+ R6            0805                   0805     2      0     top    180     175      85     130      85      10     175     130
+ R7            0805                   0805     2      0  bottom    180     745     245     700     245      10     745     200
+ R8            0805                   0805     2      0  bottom    180     745     165     700     165      10     745     120
+ R9            0805                   0805     2      0  bottom    180     565      85     520      85      10     565      40
+ U1          SSOP28                 SSOP28    28      0     top    180     369   422.5     200     255      25     369   422.5
+
+Gerber file settings
+====================
+Include board outline: YES
+Include moires: NO
+Include layer description text: NO
+Include pilot holes: YES
+Connect SMT pins to copper areas: NO
+Use thermals for SMT pins: YES
+Use thermals for through-hole pins: YES
+Use thermals for vias: YES
+Make solder-mask cutouts for vias: NO
+Use 90-degree thermals for round pins: NO
+Copper to copper-fill clearance: 15 MIL
+Hole-edge to copper-fill clearance: 15 MIL
+Solder mask clearance: 8 MIL
+Pilot hole diameter: 10 MIL
+Minimum silkscreen line width: 5 MIL
+Thermal relief line width: 20 MIL
+Board outline line width: 5 MIL
+Minimum annular ring width (pins): 7 MIL
+Minimum annular ring width (vias): 5 MIL
+Amount to shrink SMT pads for paste mask: 0 MIL
+
+DRC settings
+============
+Minimum trace width: 10 MIL
+Minimum pad to pad clearance: 10 MIL
+Minimum pad to trace clearance: 10 MIL
+Minimum trace to trace clearance: 10 MIL
+Minimum hole to copper clearance: 15 MIL
+Minimum hole to hole clearance: 25 MIL
+Minimum annular ring (pins): 7 MIL
+Minimum annular ring (vias): 5 MIL
+Minimum board edge to copper clearance: 25 MIL
+Minimum board edge to hole clearance: 25 MIL
+Minimum copper area to copper area clearance: 10 MIL

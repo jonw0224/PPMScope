@@ -1,0 +1,346 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<Title>PPMScope Introduction</Title>
+    <link rel="stylesheet" href="main.css">
+</HEAD>
+<BODY>
+
+<h1>PPMScope Introduction</h1>
+
+<UL>
+	<LI><a href=intro.html#about>About</a>
+	<li><a href=intro.html#release>Release Notes</a>
+	<li><a href=intro.html#revisions>Future Revisions</a>
+	<li><a href=intro.html#support>Support</a>
+	<LI><a href=intro.html#license>License</a>
+	<li><a href=intro.html#credits>Acknowledgements</a>
+</UL>
+
+<a name="about"></a>
+<h1>About</h1>
+
+<p>PPMScope is a do-it-yourself oscilloscope design with a maximum sample rate of 1 MHz and a time equivalent sample rate of 5 MHz
+    (bandwidth of 500 kHz).
+	The scope interfaces with a PC and communicates with software designed for Windows to
+	display the captured waveform in the both the time and frequency domains.
+	The design combines a high frequency analog stage with AC/DC coupling and three gains, a
+	MAX118 digital to analog converter, a trigger circuit, a PIC16F877A microcontroller, and
+	some PC interfacing hardware.  The oscilloscope specifications are in the table below:</p>
+
+<h1>Specifications and Goal Feature List</h1>
+
+	<table width=100% border=0 cellspacing=0 style="BORDER-LEFT: #8f8f8f 1px solid;BORDER-RIGHT: #8f8f8f 1px solid; BORDER-TOP: #8f8f8f 1px solid; BORDER-BOTTOM: #8f8f8f 1px solid">
+	<tr>
+		<td bgcolor="#EFEFEF"><p></td>
+		<td bgcolor="#EFEFEF"><p><b>Current Version (v.2.19)</b></td>
+		<td bgcolor="#EFEFEF"><p>    <b>Goal Version</b></td>
+	</tr><tr>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p><b>Sample Rate</b></td>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p>Variable, single shot 1 MHz max, interlaced 417 kHz max, time equivalent 5 MHz max</td>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p>Variable, single shot 1 MHz max, interlaced 500 kHz max, time equivalent 5 MHz max</td>
+	</tr><tr>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p><b>Bandwidth</b></td>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p>5 MHz analog bandwidth.  500 kHz practical bandwidth.</td>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p>500 kHz</td>
+	</tr><tr>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p><b>Number of Channels</b></td>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p>Two</td>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p>Two</td>
+	</tr><tr>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p><b>Sample Depth</b></td>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p>256 bytes per channel, 128 bytes per channel when interlaced</td>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p>256 bytes per channel, 128 bytes per channel when interlaced</td>
+	</tr><tr>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p><b>Sample Modes</b></td>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p>Single shot, interlaced channel, and time equivalent</td>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p>Single shot, interlaced channel, and time equivalent</td>
+	</tr><tr>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p><b>Calibration</b></td>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p>Voltage offset</td>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p>Voltage per division and voltage offset calibration</td>
+	</tr><tr>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p><b>Configuration Settings</b></td>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p>Configuration of default and saving of settings for future use</td>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p>Configuration of default and saving of settings for future use</td>
+	</tr><tr>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p><b>Hardware Connection</b></td>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p>Any parallel, serial, or USB port (using Serial over USB)</td>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p>Any parallel, serial, or USB port</td>
+	</tr><tr>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p><b>Coupling</b></td>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p>AC and DC, reflected on PC</td>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p>AC and DC, reflected on PC</td>
+	</tr><tr>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p><b>Channel gain</b></td>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p>Gain of 1, 2, and 5, reflected on PC</td>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p>Gain of 1, 2, and 5, reflected on PC</td>
+	</tr><tr>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p><b>Trigger</b></td>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p>Variable level, slope, and timing</td>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p>Variable level, slope, and timing</td>
+	</tr><tr>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p><b>Frequency Spectrum</b></td>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p>Yes</td>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p>Yes with user selected sampling windows</td>
+	</tr><tr>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p><b>Waveform Reconstruction</b></td>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p>Spline, triangle, square, point, and sinc</td>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p>Triangle, square, point, and sinc</td>
+	</tr><tr>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p><b>XY view</b></td>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p>Yes</td>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p>Yes</td>
+	</tr><tr>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p><b>Channel offset and volt per division settings</b>
+		</td><td  style="BORDER-TOP: #8f8f8f 1px solid;"><p>Yes</td>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p>Yes</td>
+	</tr><tr>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p><b>Cursors</b></td>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p>Yes</td>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p>Yes</td>
+	</tr><tr>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p><b>Math functions</b></td>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p>Addition, subtraction, auto period, auto peak-to-peak, etc.</td>
+		<td  style="BORDER-TOP: #8f8f8f 1px solid;"><p>Addition, subtraction, auto period, auto peak-to-peak, etc.</td>
+	</tr><tr>
+		 <td  style="BORDER-TOP: #8f8f8f 1px solid;"><p><b>Waveform export</b></td>
+		 <td  style="BORDER-TOP: #8f8f8f 1px solid;"><p>Comma delimited</td>
+		 <td  style="BORDER-TOP: #8f8f8f 1px solid;"><p>Bitmap and comma delimited</td>
+	</tr><tr>
+		 <td  style="BORDER-TOP: #8f8f8f 1px solid;"><p><b>Waveform logging</b></td>
+		 <td  style="BORDER-TOP: #8f8f8f 1px solid;"><p>Comma delimited logfile containing waveform and measurement information</td>
+		 <td  style="BORDER-TOP: #8f8f8f 1px solid;"><p>Comma delimited logfile containing waveform and measurement information</td>
+	</tr>
+	</table>
+<a name="release"></a>
+<h1>Release Notes</h1>
+
+<p><b>Release Notes for version 2.19 build 4/17/2014</b></p>
+
+<ul>
+	<li>Modified side panel code to handle different text size selections (font screen DPI settings) correctly.
+	</li><li>Made the hardware test automatically disable triggering and use the highest possible sample rate during the test to ensure a successful test for a correctly connected oscilloscope.
+	</li><li>Changed the spectrum display voltage scaling to handle the display more intelligently for all volt per div modes.
+	</li><li>Correction to the version 1.21 PCB layout (it was missing the AC/DC connection point).  
+	</li><li>Updated the wiring diagram for connecting the PCB to components not mounted on the PCB.
+	</li>
+</ul>
+
+<p><b>Release Notes for version 2.18 build 1/28/2014</b></p>
+
+<ul>
+	<li>Increased the performance of SINC reconstruction code to be as efficient as other methods of reconstruction.
+	</li><li>Added COM10 through COM19 to the serial port dropdown list (for people using multiple COM Ports or Serial to USB converters)
+	</li><li>Trigger indicators on the oscilloscope screen are no longer Channel 1, Channel 2, but follow the designation in the panel for Channel A and Channel B when possible.
+	</li><li>Corrected a bug in oscdisp.c which caused the program to not work when compiled with the latest version of Code::Blocks (version 13.12) or Dev-Cpp (version 5.5.3)
+	</li><li>Cleaned up source code to minimize compile warnings in Code::Blocks environment
+	</li><li>Updated Help Documentation to include USB connections and usage with Fedora Linux
+	</li>
+</ul>
+
+<p><b>Release Notes for version 2.17 build 7/2/2013</b></p>
+
+<ul>
+<li>Added support for features in Paul Messer's DSOScope Rev 3 implementation.  These include:
+	<ul><li>Pretrigger in XY sampling mode (chop sampling) available at around 500 uS per division
+	</li><li>An interrupt driven sampling mode also available at around 500 uS per division capable of drawing the channel as it is captured
+	</li><li>Extended the range of the low end sample rates available by a couple of orders of magnitude
+	</li><li>Integration of attenuation and trigger source switch statuses into the software panel
+	</li></ul>
+<p>My thanks to Paul for his addition of features, interest in the PPMScope project, and encouragement in development.
+</p>
+<li>Improvements to the protection circuitry on the analog front-end improve protection and the analog bandwidth.  In October, a user pointed out that the oscilloscope was bandwidth limited.  The bandwidth limit was around 1 MHz.  However, you could see the bandwidth limitation readily with a lower frequency square wave when the square wave is sampled at 5 MHz time equivalent sampling mode.  The changes are simple and can be implemented without re-etching boards, but by changing out four components.  The changes raised the analog bandwidth of the scope to 5 MHz or higher.
+</li>
+<li>Fixed a scaling bug to the spectrum window introduced in the 2.16 release
+</li>
+<li>Changed the trigger indication
+</li>
+<li>Serial and USB communications improvements.  The 2.16 release resulted in slower waveform refresh rates because of a bug that caused every waveform update to utilize a timeout.  In short, the timeout was killing the refresh rate.  Now the timeout is avoided.
+</li>
+<li>Window mouseover and cursor measurements now indicate the time in reference to the trigger instead of the left hand of the display.
+</li>
+<li>Corrected a bug in the Hardware Testing.
+</li>
+<li>Corrected a bug that could misreport the first sample in XY mode at higher sample rates.
+</li>
+<li>Changed the functionality of the coarse time per division and volts per division adjustments to jump according to a traditional 1, 2, 5 sequence.
+</li>
+<li>Additional cubic spline reconstruction method.  This method provides a smoother reconstruction than the straight line reconstruction while introducing less oscillation in the reconstruction than the sinc reconstruction method.
+</li>
+<li>Addition of a high resolution mode.  In many cases, this effectively adds around 1.5 bits of resolution to the scope.  While the scope uses an 8 bit ADC, the high resolution mode uses averaging to achieve nearly a 10 bit resolution.
+</li>
+<li>Added documentation on parallel, serial, and USB setups to the help file.
+</li>
+</ul>
+
+<p><b>Release Notes for version 2.16 build 10/1/2012</b></p>
+
+<ul>
+	<li>Corrected more software and firmware bugs in the serial port interface.  The particular nasty bug caused the scope hardware to freeze temporarily while sampling or triggering at low rates.</li>
+	<li>Added a USB to Serial port daughterboard adaptor for connection of the oscilloscope via a USB port.  The board is built around the FT232 USB interface IC.</li>
+	<li>Incorporated Firmware modifications for use with the PIC16F887 contributed by Paul Messer.</li>
+	<li>Timebase code changes to allow for continuous changes in time per division.  The time per division is always calibrated in the display and you can use any time per division you like.</li>
+	<li>Other corrections to glitches in the oscilloscope and frequency displays.</li>
+</ul>
+
+<p><b>Release Notes for version 2.15 build 6/20/2012</b></p>
+
+<ul>
+	<li>Upgraded version of inpout32.dll for parallel port compatibility in Windows 7 and 64 bit versions of Windows XP and Windows Vista.  See the readme.txt file for instructions to install the new parallel port drivers on Windows 7 and Windows Vista.</li>
+	<li>Corrected software and firmware bugs in serial port interface.</li>
+	<li>Changed functionality of continuous and single shot buttons to allow infinite persistence in single shot mode (previous versions only allowed infinite persistence in continuous sample mode.</li>
+	<li>Removed the limitation to a single running instance.  This allows multiple instances of the program to connect to multiple PPMScopes connected to different ports on the same PC.  The limitation is still an option in the source code.</li>
+	<li>Added some accelerator keys and side panel acceptance of the "enter" key for changing Time/Div, Volts/Div, Voltage Offset, and Trigger Delay.</li>
+</ul>
+
+<p><b>Release Notes for version 2.141 build 3/30/2012</b></p>
+
+<ul>
+	<li>Correction of bug.  The program would sometimes freeze when turning the trigger off.</li>
+	<li>Fine tuning of waveform and measurement logging.</li>
+	<li>Feedback of modes on the toolbar using depressed buttons.</li>
+	<li>Upgrade of software license to GPL v3.</li>
+	<li>Ground plane added to PCB layout.</li>
+	<li>Parts list added for version 1.2 of the hardware.</li>
+</ul>
+
+<p><b>Release Notes for version 2.14 build 12/12/2011</b></p>
+
+<ul>
+	<li>Addition of user configurable parallel port.</li>
+	<li>Addition of serial port interface.</li>
+	<li>Addition of hardware testing dialog.</li>
+	<li>Change to the firmware and software to correct yet another triggering bug.  On single capture trigger events,
+		the scope had to be triggered twice to capture one waveform.  Now every event is captured.</li>
+	<li>Addition of user defined refresh rate.</li>
+	<li>Implementation of all configuration file options.</li>
+	<li>Addition of waveform and measurement logging.  This adds data recorder capability to the oscilloscope program
+		which could be helpful for capturing behavior like battery discharge curves or filter bode plots.</li>
+	<li>PCB layout drawn in FreePCB and exported as Gerbers and PDF files.</li>
+	<li>Modifications to hardware for future USB interface (now hardware version 1.2).  Prior versions of the
+		hardware are still supported in	software and firmware updates.</li>
+</ul>
+
+<p><b>Release Notes for version 2.131 build 2/1/2011</b></p>
+
+<ul>
+	<li>Change to the firmware to correct yet another triggering bug.  Thanks to Ger Van Den Hoek for his help in discovering and troubleshooting the bug.</li>
+</ul>
+
+<p><b>Release Notes for version 2.13 build 11/18/2009</b></p>
+
+<ul>
+	<li>Change to the firmware to correct a triggering bug.  At slower trigger intervals, the software would attempt communication during a trigger event.  The trigger event would cause the communication to be interrupted.  Periodically, the interruption of communication would leave the communication lines in an invalid state and the oscilloscope would quit responding to further communications.  This bug has been corrected in the firmware.
+	<li>Added auto measurements (auto peak to peak, rise time, fall time, period, frequency, signal rms, signal average, duty cycle, etc.).
+</ul>
+
+<p><b>Release Notes for version 2.12 build 4/1/2009</b></p>
+
+<ul>
+	<li>Added Repetitive sampling, "time equivalent" modes for sampling waveforms up to a 5 MHz sample rate
+	<li>Expanded interlaced sampling mode to 417 kHz maximum sample rate
+	<li>Changed trigger functionality so that when the trigger is turned off, the scope reconfigures without a trigger
+		event (before the scope would not update until a trigger occurred.  This caused some confusion, because the
+		user turned the trigger off and had to toggle the power on the oscilloscope or force a trigger event
+		to see the screen update.
+	<li>Shortened minimum trigger delay to 2.6 us, improved trigger delay resolution, and extended maximum trigger delay
+	<li>Changed the panel incremental buttons to spinner buttons.  This change adds keyboard arrow and mouse scroll wheel
+		functionality to selecting the Time-per-Div, Volts-per-Div for each channel, Voltage Offset for each channel, and the Trigger Delay
+	<li>Program Menu enhancements, the addition of radio buttons and check boxes to indicate oscilloscope settings
+	<li>Other interface enhancements such as larger buttons for toolbar, changing of mouse cursors with "see thru hole" for better measurement
+		on the scope screen
+	<li>Correction of bug that was causing the Time-per-Div reported by the scope panel to be slightly in error
+	<li>Correction of bug that was causing incorrect behavior when sampling at less than 9,000 Hz.  The oscilloscope software was always assuming
+		that data was recieved whenever requested.  However, at the lower sampling rates, data wasn't aways ready to be reported to the PC
+	<li>Correction of bug that was causing the voltages to be scaled incorrectly by 23 percent
+	<li>Clarification on note for R24 on the Schematic
+	<li>Additional topics added to the help system
+	<li>Additional wiring diagram added to the PCB directory showing how components are connected to the PCB that are mounted on the front or
+		back panels of the oscilloscope enclosure
+</ul>
+<a name="revisions"></a>
+<h1>Future Revisions</h1>
+
+<p>Here are my plans for future revisions of the hardware and software including:
+
+<ul>
+	<li>Upgrade the microcontroller to increase the samples per channel, expand sample rates, and add USB support
+	<li>Hardware calibration (voltage per division)
+	<li>Extended math functions and math function graphing
+	<li>User selectable windowing functions (Rectangular [default - included in software now], Hanns, Hamming, Gauss, Blackman, etc)
+	<li>User interface enhancements, color choices, etc (fun stuff)
+	<li>Multi-language support
+</ul>
+<a name="support"></a>
+<h1>Support</h1>
+
+<p>I'd be glad to help with the installation of this software, the construction of
+   the oscilloscope hardware, the understanding of the source code, the addition
+   of functionality to the software, or the accepting of bug reports and the repairing of bugs.
+   If you just need someone to e-mail every now and then, I don't mind making friends.
+   I am not nearly as enthusiastic about doing your homework or helping on
+   some unrelated project unless I find it interesting.  That said, you can ask,
+   but I don't give any promises about my expertise in anything except matters
+   directly relating to the software and hardware schematics delivered here.</p>
+
+<p><b>Website:  </b><A HREF= "#"
+ onClick="window.open('http://jonw0224.weebly.com/',
+'Sample','toolbar=yes,width=640,height=480,left=0,top=0,status=yes,scrollbars=yes,resize=yes');return false">http://jonw0224.weebly.com</a>
+<p><b>E-mail:  </b>jonw0224@aim.com</p>
+
+<a name="license"></a>
+<h1>License</h1>
+
+ <p>Copyright (C) 2006-2012 Jonathan Weaver</p>
+
+<p>The PC source code was developed using <A HREF= "#"
+ onClick="window.open('http://www.bloodshed.net/devcpp.html',
+'Sample','toolbar=yes,width=640,height=480,left=0,top=0,status=yes,scrollbars=yes,resize=yes');return false">DevCpp</a>.
+  DevCpp is a free C, C++ IDE based on the Mingw compiler.  The PIC firmware was developed using
+<A HREF= "#"
+ onClick="window.open('http://www.microchip.com',
+'Sample','toolbar=yes,width=640,height=480,left=0,top=0,status=yes,scrollbars=yes,resize=yes');return false">Microchip's IDE</a>, which is also available for free.</p>
+
+<p>This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.</p>
+
+    <p>You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <a href=<A HREF= "#"
+ onClick="window.open('http://www.gnu.org/licenses/',
+'Sample','toolbar=yes,width=640,height=480,left=0,top=0,status=yes,scrollbars=yes,resize=yes');return false">http://www.gnu.org/licenses/</a>.</p>
+ <a name="credits"></a>
+ <h1>Acknowledgements</h1>
+
+ <p>I would like to thank Karoly Simon, Ger Van Den Hoek, Dave de Boer, Krzysztof Passowicz, and Paul Messer
+  for their interest in this project, assistance in testing, and contributions to the project.</p>
+
+ <p>I would like to thank my wife, Samantha, for her patience as I've spent many hours writing code, breadboarding,
+ and soldering.  She has always listened to me with interest.  I would like to dedicate this project to her, to my daughter Ella, and to my sons Evan and Ethan.</p>
+
+ <p>I also would like to thank my God for blessing my life in everyway.  I owe Him everything!  He gave me life,
+ an inquisitive mind, the ability to get an education, and a new life.  Most importantly, God gave me His saving
+ grace and redeemed me to a life of Holiness through the sacrificial death of His Son, Jesus Christ.  You
+ see, inspite of everything that God had done for me, at one time I tried to live my life on my own and for
+ myself.  I thought I was a good person.  Then, one day, I realized that no matter
+ how good I tried to be, I was too small to impress God.  God couldn't overlook the bad that I had done.  You see,
+ the God I serve has never done anything bad, but He is good and He is Holy.  He is also personal and He loves
+ me and you individually.  Because of that love, He sent His son to die as payment for the wrong things we have
+ done.  Beyond that, He raised His son from the dead to show that He has power over death and can give each of us
+ eternal life.  My wrongs are paid for and I live a new life for God.  No longer am I in control of my life, but
+ God has me!  I am second and it is the best place to be!  <A HREF= "#"
+ onClick="window.open('http://www.iamsecond.com',
+'Sample','toolbar=yes,width=640,height=480,left=0,top=0, status=yes,scrollbars=yes,resize=yes');return false">
+You can be too!</a></p>
+
+</BODY>
+
+</HTML>

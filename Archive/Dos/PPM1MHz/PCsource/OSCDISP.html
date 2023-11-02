@@ -1,0 +1,287 @@
+<html>
+<head>
+</head>
+<body>
+<center>
+<table border=0 width="800">
+	<tr><td>
+		<h1><b><center>
+  oscDisp.bas </b></h1><br><b>Author:  </b> 
+  Jonathan Weaver<br><b>Date:    </b> 
+    5/3/2005<br><b>Version: </b> 
+ 1.0 Build # 5 9/14/2004<br><b>Filename: </b> 
+  oscDisp.bas<br><b>Description:  </b>
+  An oscilloscope screen and spectrum screen.  Scales waveforms and displays them on the screen.
+</td></tr></table>
+</center><br>
+<hr><br>
+<h2><b><i>Procedure Heading List</i></b></h2><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td>
+<a href="#11">sub clkScope() public</a></td></tr><tr><td><a href="#25">sub DFourier(channel(), magn(), phase()) public</a></td></tr><tr><td><a href="#6">sub drawScope() public</a></td></tr><tr><td><a href="#7">sub drawSpectrum () public</a></td></tr><tr><td><a href="#9">sub getCursor(byval hndl%, t!, chAv!, chBv!) public</a></td></tr><tr><td><a href="#3">sub getScopePosition(x1%, y1%, x2%, y2%) public</a></td></tr><tr><td><a href="#5">sub getSpectPosition(x1%, y1%, x2%, y2%) public</a></td></tr><tr><td><a href="#1">function getTimePerDivision!() public</a></td></tr><tr><td><a href="#19">function Mode_CHAENABLED() public</a></td></tr><tr><td><a href="#20">function Mode_CHBENABLED() public</a></td></tr><tr><td><a href="#18">function Mode_FREQMAGLOG() public</a></td></tr><tr><td><a href="#16">function Mode_HOLD() public</a></td></tr><tr><td><a href="#14">function Mode_RUN() public</a></td></tr><tr><td><a href="#15">function Mode_STOP() public</a></td></tr><tr><td><a href="#17">function Mode_XY() public</a></td></tr><tr><td><a href="#10">function overCursor(byval xscr%, byval yscr%) public</a></td></tr><tr><td><a href="#24">function reconst_POINT() public</a></td></tr><tr><td><a href="#22">function reconst_SINC() public</a></td></tr><tr><td><a href="#23">function reconst_SQUARE() public</a></td></tr><tr><td><a href="#21">function reconst_TRIANGLE() public</a></td></tr><tr><td><a href="#12">sub scopeValue (byval scrx%, byval scry%, t!, chAV!, chBV!) public</a></td></tr><tr><td><a href="#8">sub setCursor(byval xscr%, byval yscr%) public</a></td></tr><tr><td><a href="#2">sub setScopePosition(byval x1%, byval y1%, byval x2%, byval y2%) public</a></td></tr><tr><td><a href="#4">sub setSpectPosition(byval x1%, byval y1%, byval x2%, byval y2%) public</a></td></tr><tr><td><a href="#13">sub spectumValue (byval scrx%, byval scry%, freq!, chMagn!, chPhase!) public</a></td></tr><tr><td><a href="#0">function verOscDisp$() public</a></td></tr><tr><td><a href="#0"></a></td></tr></table>
+<br><hr><br>
+<h2><b><i>Procedure Descriptions</i></b></h2><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="11"></a>sub clkScope() public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Handles mouse clicks within the scope area</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="25"></a>sub DFourier(channel(), magn(), phase()) public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Do the discrete Fourier transform on channel()</td></tr><tr><td colspan=2><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+channel()</i></td><td width=600>
+  an array with time domain information for a channel</td></tr>
+<tr><td width=200><i> 
+amplitude()</i></td><td width=600>
+  a dynamic array that returns amplitude information base on harmonic number in order of increasing frequency.  Omega-hat = 2*pi*(array index)/(total samples).  Frequency = (array index)/(total samples)/(time per sample).</td></tr>
+<tr><td width=200><i> 
+phase()</i></td><td width=600>
+  a dynamic array that returns phase information based on harmonic number</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="6"></a>sub drawScope() public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Draws the scope screen in the designated area according to mode, reconstruction, etc.</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="7"></a>sub drawSpectrum () public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Draws the spectrum screen in the designated area according to modes.</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="9"></a>sub getCursor(byval hndl%, t!, chAv!, chBv!) public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Gets the value of the cursor on the scope base on the handle</td></tr><tr><td colspan=2><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+hndl%</i></td><td width=600>
+  the handle of the cursor (0 or 1)</td></tr>
+<tr><td width=200><i> 
+t!</i></td><td width=600>
+  the time value on the scope at the cursor location.  In XY-Mode this is zero.</td></tr>
+<tr><td width=200><i> 
+chAv!</i></td><td width=600>
+  the channel A Voltage on the scope at the cursor location</td></tr>
+<tr><td width=200><i> 
+chBv!</i></td><td width=600>
+  the channel B Voltage on the scope at the cursor location</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="3"></a>sub getScopePosition(x1%, y1%, x2%, y2%) public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Returns the position of the scope as displayed on the screen</td></tr><tr><td colspan=2><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+x1%</i></td><td width=600>
+  returns the x-coordinate of the upper left corner</td></tr>
+<tr><td width=200><i> 
+y1%</i></td><td width=600>
+  returns the y-coordinate of the upper left corner</td></tr>
+<tr><td width=200><i> 
+x2%</i></td><td width=600>
+  returns the x-coordinate of the lower right corner</td></tr>
+<tr><td width=200><i> 
+y2%</i></td><td width=600>
+  returns the y-coordinate of the lower right corner</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="5"></a>sub getSpectPosition(x1%, y1%, x2%, y2%) public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Returns the position of the spectrum as displayed on the screen</td></tr><tr><td colspan=2><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+x1%</i></td><td width=600>
+  returns the x-coordinate of the upper left corner</td></tr>
+<tr><td width=200><i> 
+y1%</i></td><td width=600>
+  returns the y-coordinate of the upper left corner</td></tr>
+<tr><td width=200><i> 
+x2%</i></td><td width=600>
+  returns the x-coordinate of the lower right corner</td></tr>
+<tr><td width=200><i> 
+y2%</i></td><td width=600>
+  returns the y-coordinate of the lower right corner</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="1"></a>function getTimePerDivision!() public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Returns the time per Division</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="19"></a>function Mode_CHAENABLED() public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Returns: 32</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="20"></a>function Mode_CHBENABLED() public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Returns: 64</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="18"></a>function Mode_FREQMAGLOG() public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Returns: 16</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="16"></a>function Mode_HOLD() public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Constant function to designate the Hold mode.  In hold mode, the drawScope and drawSpectrum subroutines always refresh, but do not erase previous data</td></tr><tr><td width=200>
+<b>Returns:</b></td><td width=600> 
+ 2</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="14"></a>function Mode_RUN() public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Constant function to designate the Run mode.  In run mode, the drawScope and drawSpectrum subroutines always refresh, erasing previous data.</td></tr><tr><td width=200>
+<b>Returns:</b></td><td width=600> 
+ 1</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="15"></a>function Mode_STOP() public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Constant function to designate the Stop mode.  In stop mode, the drawScope and drawSpectrum subroutines never refresh</td></tr><tr><td width=200>
+<b>Returns:</b></td><td width=600> 
+ 0</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="17"></a>function Mode_XY() public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Constant function to designate the XY mode.  In XY mode, the Scope screen places ChannelA on the horizontal axis and ChannelB on the vertical axis</td></tr><tr><td width=200>
+<b>Returns:</b></td><td width=600> 
+ 4</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="10"></a>function overCursor(byval xscr%, byval yscr%) public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Returns the handle of the cursor if the screen position is over it.  Returns -1 if not over a cursor, 0 if over the first cursor, 1 if over the second cursor.</td></tr><tr><td colspan=2><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+xscr%</i></td><td width=600>
+  the x-position of the screen to check</td></tr>
+<tr><td width=200><i> 
+yscr%</i></td><td width=600>
+  the y-position of the screen to check</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="24"></a>function reconst_POINT() public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Constant function to designate NO signal reconstuction.  Data points are displayed.</td></tr><tr><td width=200>
+<b>Returns:</b></td><td width=600> 
+ 3</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="22"></a>function reconst_SINC() public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Constant function to designate signal reconstruction using sinc functions.</td></tr><tr><td width=200>
+<b>Returns:</b></td><td width=600> 
+ 1</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="23"></a>function reconst_SQUARE() public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Constant function to designate signal reconstruction using square pulses.</td></tr><tr><td width=200>
+<b>Returns:</b></td><td width=600> 
+ 2</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="21"></a>function reconst_TRIANGLE() public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Constant function to designate signal reconstruction using triangular pulses.</td></tr><tr><td width=200>
+<b>Returns:</b></td><td width=600> 
+ 0</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="12"></a>sub scopeValue (byval scrx%, byval scry%, t!, chAV!, chBV!) public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Returns the values of the scope corresponding to given screen coordinates</td></tr><tr><td colspan=2><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+scrx%</i></td><td width=600>
+  x-coordinate of the screen</td></tr>
+<tr><td width=200><i> 
+scry%</i></td><td width=600>
+  y-coordinate of the screen</td></tr>
+<tr><td width=200><i> 
+t!</i></td><td width=600>
+  the returned time value of the screen coordinate.  If in XY_mode, returns zero</td></tr>
+<tr><td width=200><i> 
+chAV!</i></td><td width=600>
+  the returned value of channel A for the screen coordinate.</td></tr>
+<tr><td width=200><i> 
+chBV!</i></td><td width=600>
+  the returned value of channel B for the screen coordinate.</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="8"></a>sub setCursor(byval xscr%, byval yscr%) public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Creates a cursor</td></tr><tr><td colspan=2><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+xAscr%</i></td><td width=600>
+  the x-position of the screen to create the cursor over</td></tr>
+<tr><td width=200><i> 
+yBscr%</i></td><td width=600>
+  the y-position of the screen to create the cursor over</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="2"></a>sub setScopePosition(byval x1%, byval y1%, byval x2%, byval y2%) public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Sets the position of the scope as displayed on the screen</td></tr><tr><td colspan=2><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+x1%</i></td><td width=600>
+  x-coordinate of the upper left corner</td></tr>
+<tr><td width=200><i> 
+y1%</i></td><td width=600>
+  y-coordinate of the upper left corner</td></tr>
+<tr><td width=200><i> 
+x2%</i></td><td width=600>
+  x-coordinate of the lower right corner</td></tr>
+<tr><td width=200><i> 
+y2%</i></td><td width=600>
+  y-coordinate of the lower right corner</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="4"></a>sub setSpectPosition(byval x1%, byval y1%, byval x2%, byval y2%) public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Sets the position of the spectrum as displayed on the screen</td></tr><tr><td colspan=2><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+x1%</i></td><td width=600>
+  x-coordinate of the upper left corner</td></tr>
+<tr><td width=200><i> 
+y1%</i></td><td width=600>
+  y-coordinate of the upper left corner</td></tr>
+<tr><td width=200><i> 
+x2%</i></td><td width=600>
+  x-coordinate of the lower right corner</td></tr>
+<tr><td width=200><i> 
+y2%</i></td><td width=600>
+  y-coordinate of the lower right corner</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="13"></a>sub spectumValue (byval scrx%, byval scry%, freq!, chMagn!, chPhase!) public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Returns the values of the spectrum corresponding to given screen coordinates</td></tr><tr><td colspan=2><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+scrx%</i></td><td width=600>
+  x-coordinate of the screen</td></tr>
+<tr><td width=200><i> 
+scry%</i></td><td width=600>
+  y-coordinate of the screen</td></tr>
+<tr><td width=200><i> 
+freq!</i></td><td width=600>
+  the frequency value of the screen coordinate</td></tr>
+<tr><td width=200><i> 
+chMagn!</i></td><td width=600>
+  the magnitude value of the screen coordinate, if the coordinate is over the Magnitude plot, otherwise, zero</td></tr>
+<tr><td width=200><i> 
+chPhase!</i></td><td width=600>
+  the phase value of the screen coordinate, if the coordinate is over the Phase plot, otherwise, zero</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="0"></a>function verOscDisp$() public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+          1.0 build # 6 5/3/2005</td></tr><tr><td colspan=2><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+Returns the version and build number of this unit</i></td><td width=600>
+</td></tr><tr><td width=200>
+<b>Returns:</b></td><td width=600> 
+  a string containing the version and build of this unit</td></tr></table>
+</td></tr></table>
+</center>
+<br><br></body></html>

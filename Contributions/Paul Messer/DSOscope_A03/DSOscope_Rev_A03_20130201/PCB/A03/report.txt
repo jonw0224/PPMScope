@@ -1,0 +1,18 @@
+FreePCB project report (default units = MIL)
+============================================
+Project name: DSOscope_AnalogBrd
+Project file: C:\Google Drive\Projects\PPMScope\Contributions\Paul Messer\DSOscope_A03\DSOscope_Rev_A03_20130201\PCB\A03\DSOscope_AnalogBrd_A03.fpc
+Default library folder: c:\users\pmesser\_paul\design\my_freepcb_library
+
+Drill list
+==========
+NUMBER  DIAMETER
+------  --------
+   20   21 MIL
+    3   55 MIL
+    2   100 MIL
+   63   40 MIL
+    2   14 MIL
+   16   35 MIL
+    4   43 MIL
+   52   30 MIL

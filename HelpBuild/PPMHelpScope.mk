@@ -1,0 +1,157 @@
+[Make]
+file=scope.html
+directory=<!--#main.dat:ppmhelpdir#-->
+template=main.tpl
+default=PPMHelpIndex.mk
+
+[title]
+Using Oscilloscope Windows
+
+[file]
+scope.html
+
+[description]
+Using the oscilloscope window.  PPMScope online help.
+
+[content]
+<h1>Using the Oscilloscope Windows</h1>
+
+<p>The larger oscilloscope window is the main window.  It is the window that has cursors.  Cursors can be added by right-clicking in the main window.  Cursors can be dragged around the window using the mouse.  Cursors can also be dragged off the edge of the window.  The cursor values are displayed at the bottom of the control and information panel.</p>
+
+<p>The two other windows are the sub windows.  The sub windows do not have cursors.  However, either of the sub windows can be exchanged with the main window by double-right clicking on the sub window.</p>
+
+<p>When the mouse is moved over any of the windows, the status bar will display the value under the mouse.</p>
+
+<a name="winmodes"></a>
+<h1>Oscilloscope Window Modes</h1>
+
+<ul>
+	<li><b>V-T Mode</b> - Displays voltage versus time for Channel A and 			Channel B.  Voltage is on the Y-Axis (using Volt-per-division and 			Channel Offset).  Time is on the X-Axis.
+	<li><b>X-Y Mode</b> - Displays voltage on Channel A versus voltage on 		Channel B.  Channel A is on the X-axis and Channel B is on the Y-			axis.
+	<li><b>Frequency Linear Magnitude</b> - Displays the frequency 			magnitude versus the frequency (the program uses a Fast Fourier 		Transform, FFT, algorithm to calculate the frequency spectrum).  			Magnitude is on the Y-Axis on a linear scale.  Frequency is on the X-		Axis.
+	<li><b>Frequency Logarithmic Magnitude</b> - Displays the frequency 			magnitude versus the frequency (the program uses a Fast Fourier 		Transform, FFT, algorithm to calculate the frequency spectrum).  			Magnitude is on the Y-Axis on a logarithmic scale.  Frequency is on 		the X-Axis.
+</ul>
+
+<a name="reconst"></a>
+<h1>Waveform Reconstruction Modes</h1>
+
+<p>Reconstruction refers to the method of drawing the captured waveform and spectrum &quot;between the data points&quot;.</p>
+
+<ul>
+	<li><b>Triangle</b> - Draw the waveform assuming reconstruction using triangular pulses.  Effectively, 			this draws the waveform by drawing a line between each sample point.  This is the best general mode 		of waveform reconstruction.
+	<li><b>Square</b> - Draw the waveform assuming reconstruction using square pulses.  Effectively, 			this draws the waveform in a sample and hold fashion.  This mode quickly reminds the observer of the
+		digital nature of the data displayed.
+	<li><b>Point</b> - Draw only the sample points.  Just the facts.
+	<li><b>Sinc</b> - Draw the waveform assuming reconstruction using sinc function pulses.  Effectively,
+		this draws the waveform in as a lowest frequency representation.  You may observe some extra 			oscillations in waveforms with sharp corners, etc.  Sinc reconstruction is the most CPU intensive method 		but also seems to yield the most accurate representation of the frequency spectrum plot.
+</ul>
+
+<a name="channel"></a>
+<h1>Channel Display Settings and Scaling</h1>
+<ul>
+	<li><b>Channel enabled</b> - determines whether or not the channel will be displayed (note it is still captured, analyzed and saved)
+	<li><b>Channel math</b> - Channel A and Channel B are mathematical manipulations of Channel 1 and Channel 2.  The manipulations are as follows: (1)  Ch1 only, (2) Ch2 only, (3) Ch1 + Ch2, and (4) Ch1 - Ch2
+	<li><b>Time per Division</b> - Time per horizontal block in V-T mode.  Adjusting the time per division will squeeze or stretch the waveform along the horizontal axis.  The time per division directly determines the sampling rate for the selected mode, the number of samples displayed per channel, and the upper frequency of the spectrum displays.
+	<li><b>Volt per Division</b> - The voltage per vertical block in V-T mode.  The voltage per block in X-Y mode for the appropriate channel.  The volt per division will squeeze of stretch the waveform along the vertical axis in V-T mode.  It will squeeze or stretch the waveform along either axis in X-Y mode.  It also dictates the vertical scale of the spectrum magnitude display.
+	<li><b>Channel offset</b> - the channel offset determines where 0 volts is on the display.  This can shift the waveform up and down in the V-T mode or shift the position of the waveform in X-Y mode.  The channel offset has no effect on the spectrum displays.
+</ul>
+
+<a name="capture"></a>
+<h1>Oscilloscope Capture Modes</h1>
+
+<ul>
+	<li><b>Run</b> (Run button) - Continuously polls the oscilloscope for the next waveform (after a trigger event).  		Depending on the 			Sampling Mode, the waveform is refreshed every 0.4 or 0.2 		seconds.  Run mode only displays the 		current captured waveform and no past captured 		waveforms.
+	<li><b>Single</b> (Pause button) - Captures a waveform once (after a single trigger event) and then stops 			polling the oscilloscope.  Displays the single captured waveform on the screen.
+	<li><b>Hold</b> (Record button) - Like the <i>Run</i> mode, the hold mode continuously polls the oscilloscope 		for the next waveform.  Hold mode displays the current and the past captured waveforms.  The past 		captured waveforms are drawn in a slightly darker color.  Currently, resizing the screen or placing other 		screens over window will clear the past captured waveform representations.
+</ul>
+
+<a name="trigger"></a>
+<h1>Trigger Modes and Configuration</h1>
+
+<p>The oscilloscope can trigger at various voltage levels in positive or negative slope modes on Channel 1.  After a trigger event, the oscilloscope begins to capture the waveform.  There is no circular buffer and no pre-trigger data stored in the oscilloscope.  Also, the first data point captured after a trigger event is a minimum of 2.6 microseconds.  The actual trigger delay is configurable to be a longer period of time as well.  After the first data point is captured, subsequent data points are captured with timing and order specified by the sampling mode until the 256 byte buffer on the oscilloscope microcontroller is full.</p>
+
+<ul>
+	<p><li><b>Trigger Level</b> - the trigger voltage selected by a knob on the oscilloscope.  The trigger event is 		caused by comparing the trigger level to the waveform on Channel 1 and waiting for a transition.</p>
+	<p><li><b>Trigger Delay</b> - the trigger delay after a trigger event the oscilloscope waits before sampling the 		first data point.</p>
+	<p><li><b>Trigger Positive</b> - specifies that a positive slope transition across the trigger level will cause a trigger event.  A positive slope transition is where Channel 1 goes from lower to higher than the trigger level.
+	<p><li><b>Trigger Negative</b> - specifies that a negative slope transition across the trigger level will cause a trigger event.  A negative slope transition is where Channel 1 goes from higher to lower than the trigger level.
+	<p><li><b>No Trigger</b> - specifies that the waveform capture begins immediately without a trigger event.
+</ul>
+
+<a name="sample"></a>
+<h1>Sampling modes</h1>
+
+<p>The sampling mode being used by the PPMScope is reported on the panel below the sample rate.  The PPMScope has three modes of sampling:</p>
+
+<p><b>Sequential (default) mode</b> - the sequential sampling mode is good for repetitive waveforms or single channel non-repetitive waveforms.  The frequency range for the sequential sample mode is from 1 MHz to 11 Hz.  The method for capturing waveforms using the sequential sampling mode is as follows:
+
+<ul>
+	<li>Wait for the trigger event
+	<li>Store 256 samples on Channel 1 and report to the computer
+	<li>Wait for the next trigger event
+	<li>Store 256 samples on Channel 2 and report to the computer
+</ul>
+
+<p>A few key things to notice.  Channel 1 and Channel 2 are not sampled at the same time.  It is assumed that Channel 1 and Channel 2 retain the same phase relationship relative to the trigger and are repetitive.  If the trigger is off the phase relationship between Channel 1 and Channel 2 is not reliable.  Also, the screen refresh rate for the sequential mode is 0.15 seconds for each channel or 0.3 seconds to refresh both Channel 1 and Channel 2.</p>
+
+<p><b>Interlaced mode</b> - the interlaced sampling mode is good for non-repetitive waveforms on both channels.  The frequency range is lower than the sequential sampling mode at 417 kHz to 11 Hz.  The method for capturing waveforms using the interlaced sampling mode is as follows:
+
+<ul>
+	<li>Wait for the trigger event
+	<li>Capture a single sample on Channel 1
+	<li>Capture a single sample on Channel 2 (1.2 microseconds later)
+	<li>Repeat the concurrent sampling until the 256 byte buffer on the microcontroller is full.  This is  128 samples 		per channel.
+	<li>Report the samples to the computer
+</ul>
+
+<p>The PC program will display the two waveforms with the proper phase relationship even though Channel 2 is sampled 1.2 microseconds later than Channel 1.  Also, the screen refresh rate is 0.15 seconds to refresh both Channel 1 and Channel 2.</p>
+
+<p><b>Time Equivalent mode</b> - the time equivalent sampling mode is good for repetitive waveforms on both channels.  Time equivalent sampling mode must be used in conjunction with a trigger.  If no trigger is selected when entering time equivalent mode, then the 
+default trigger mode is a negative slope trigger.  The frequency range for the time equivalent sample mode is from 5 MHz to 2.5 MHz.  The method for capturing waveforms using time equivalent sampling mode is as follows:
+
+<ul>
+	<li>Wait for the trigger event
+	<li>Store a subset of samples for Channel 1 at a lower sampling frequency
+	<li>Wait for the next trigger event and add a small increment to the trigger delay
+	<li>Store a subset of samples for Channel 1 at the same lower sampling frequency
+	<li>Continue to trigger and sample and store until 256 samples for Channel 1 are complete
+	<li>Report the samples to the computer
+	<li>Repeat the process for Channel 2
+</ul>
+
+<p>With this methodology, a time equivalent sampling of a high frequency is captured for a repetitive waveform by sampling at a lower frequency after many trigger events.  The picture below illustrates how this works:</p>
+
+<center><img border=0 alt="Time Equivalent Sampling" src="timeequsample.jpg" height=400 width=460></center>
+
+<p>Each color represents a subset of samples.  For example, to achieve a 5 Mhz equivalent sampling rate, the red samples would be sampled at 1 Mhz, the blue delayed by 200 ns and sampled at 1 Mhz, the yellow delayed by 400 ns and sampled at 1 Mhz, etc.  
+The samples are reordered by the PC in an alternating color pattern as shown in the picture and the waveform is displayed AS IF it were sampled at 5 Mhz.  This method works well for repetitive waveforms only.  The screen refresh rate is 0.15 seconds for each channel and 0.3 seconds to refresh both channels.</p>
+
+<a name="automeasure"></a>
+<h1>Auto Measurements</h1>
+
+<p>The application can make up to four auto measurements on either channel at the same time.  The measurements are described below.</p>
+
+<p><b>AcRms</b> - returns the Root Mean Squared value of the waveform without the DC component.</p>
+<p><b>Avg</b> - returns the average value of the waveform.</p>
+<p><b>DutyCycle</b> - returns the duty cycle (a decimal representing the time when the signal is above average) of the waveform.</p>
+<p><b>Falltime</b> - returns the time the signal transistions from within 20 percent of the maximum value to within 20 percent of the minimum value.</p>
+<p><b>Freq</b> - returns the frequency of the waveform.</p>
+<p><b>Magn</b> - returns the magnitude of the fundamental of the waveform.</p>
+<p><b>Max</b> - returns the maximum value (voltage) of the waveform.</p>
+<p><b>Min</b> - returns the minimum value (voltage) of the waveform</p>
+<p><b>NDutyCycle</b> - returns the negative duty cycle (a decimal representing the time when the signal is below average) of the waveform.</p>
+<p><b>NPulsewidth</b> - returns the amount of time that the waveform is within 20 percent of the minimum value.</p>
+<p><b>Period</b> - returns the amount of time of a single period of the waveform
+<p><b>PerAvg</b> - returns the average value of the waveform over a single period.  The main difference between the PerAvg and Avg function is that the Avg function gives the average value of the waveform as displayed in the window (including edge effects) while the PerAvg function gives the average value of the waveform over  a single period.</p>
+<p><b>PerRMS</b> - returns the Root Mean Squared value of the waveform over a single period (includes the DC component).</p>
+<p><b>PerAcRms</b> - returns the Root Mean Squared value of the waveform over a single period without the DC component.</p>
+<p><b>Phase</b> - returns the phase of the fundamental of the waveform.</p>
+<p><b>Ptp</b> - returns the peak to peak value of the waveform.</p>
+<p><b>Pulsewidth</b> - returns the amount of time that the waveform is within 20 percent of the maximum value.</p>
+<p><b>Risetime</b> - returns the time the signal transistions from within 20 percent of the minimum value to within 20 percent of the minimum value.</p>
+<p><b>Rms</b> - returns the Root Mean Squared value of the waveform including the DC component.</p>
+<p><b>SNR</b> - returns the Signal to Noise ratio of the waveform.  The Signal to Noise ratio is calculated as the power of the signal divided by the power of the noise OR as the square of the amplitude of the signal divided by the square of the amplitude of the noise.</p>
+<p><b>THD</b> - returns the Total Harmonic Distortion of the signal defined as the sum of the harmonic powers divided by the fundamental frequency power.</p>
+<p><b>THDN</b> - returns the Total Harmonic Distortion plus Noise of the signal defined as the total waveform power minus the fundamental frequency power and then divided by the fundamental frequency power.  This is the same as the THD, but adds the noise between harmonic frequencies to the harmonic power used in THD.</p>
+<p><b>TimeOfMax</b> - returns the time between the beginning of the sample window and the maximum value of the waveform.</p>
+<p><b>TimeOfMin</b> - returns the time between the beginning of the sample window and the minimum value of the waveform.</p>

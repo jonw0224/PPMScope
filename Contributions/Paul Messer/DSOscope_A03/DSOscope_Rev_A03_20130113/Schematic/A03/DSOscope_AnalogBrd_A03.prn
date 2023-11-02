@@ -1,0 +1,4057 @@
+%-12345X@PJL JOB
+@PJL SET RESOLUTION=600
+@PJL ENTER LANGUAGE = POSTSCRIPT
+%!PS-Adobe-3.0
+%%Title: DSOscope_AnalogBrd_A03.dsn
+%%Creator: PScript5.dll Version 5.2.2
+%%CreationDate: 1/10/2013 13:53:16
+%%For: pmesser
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%Orientation: Landscape
+%%PageOrder: Special
+%%DocumentNeededResources: (atend)
+%%DocumentSuppliedResources: (atend)
+%%DocumentData: Clean7Bit
+%%TargetDevice: (HP LaserJet 4MP) (2013.103) 33
+%%LanguageLevel: 2
+%%EndComments
+
+%%BeginDefaults
+%%PageBoundingBox: 13 13 599 780
+%%ViewingOrientation: 0 1 -1 0
+%%EndDefaults
+
+
+%%BeginProlog
+%%BeginResource: file Pscript_WinNT_ErrorHandler 5.0 0
+/currentpacking where{pop/oldpack currentpacking def/setpacking where{pop false
+setpacking}if}if/$brkpage 64 dict def $brkpage begin/prnt{dup type/stringtype
+ne{=string cvs}if dup length 6 mul/tx exch def/ty 10 def currentpoint/toy exch
+def/tox exch def 1 setgray newpath tox toy 2 sub moveto 0 ty rlineto tx 0
+rlineto 0 ty neg rlineto closepath fill tox toy moveto 0 setgray show}bind def
+/nl{currentpoint exch pop lmargin exch moveto 0 -10 rmoveto}def/=={/cp 0 def
+typeprint nl}def/typeprint{dup type exec}readonly def/lmargin 72 def/rmargin 72
+def/tprint{dup length cp add rmargin gt{nl/cp 0 def}if dup length cp add/cp
+exch def prnt}readonly def/cvsprint{=string cvs tprint( )tprint}readonly def
+/integertype{cvsprint}readonly def/realtype{cvsprint}readonly def/booleantype
+{cvsprint}readonly def/operatortype{(--)tprint =string cvs tprint(-- )tprint}
+readonly def/marktype{pop(-mark- )tprint}readonly def/dicttype{pop
+(-dictionary- )tprint}readonly def/nulltype{pop(-null- )tprint}readonly def
+/filetype{pop(-filestream- )tprint}readonly def/savetype{pop(-savelevel- )
+tprint}readonly def/fonttype{pop(-fontid- )tprint}readonly def/nametype{dup
+xcheck not{(/)tprint}if cvsprint}readonly def/stringtype{dup rcheck{(\()tprint
+tprint(\))tprint}{pop(-string- )tprint}ifelse}readonly def/arraytype{dup rcheck
+{dup xcheck{({)tprint{typeprint}forall(})tprint}{([)tprint{typeprint}forall(])
+tprint}ifelse}{pop(-array- )tprint}ifelse}readonly def/packedarraytype{dup
+rcheck{dup xcheck{({)tprint{typeprint}forall(})tprint}{([)tprint{typeprint}
+forall(])tprint}ifelse}{pop(-packedarray- )tprint}ifelse}readonly def/courier
+/Courier findfont 10 scalefont def end errordict/handleerror{systemdict begin
+$error begin $brkpage begin newerror{/newerror false store vmstatus pop pop 0
+ne{grestoreall}if errorname(VMerror)ne{showpage}if initgraphics courier setfont
+lmargin 720 moveto errorname(VMerror)eq{userdict/ehsave known{clear userdict
+/ehsave get restore 2 vmreclaim}if vmstatus exch pop exch pop PrtVMMsg}{
+(ERROR: )prnt errorname prnt nl(OFFENDING COMMAND: )prnt/command load prnt
+$error/ostack known{nl nl(STACK:)prnt nl nl $error/ostack get aload length{==}
+repeat}if}ifelse systemdict/showpage get exec(%%[ Error: )print errorname
+=print(; OffendingCommand: )print/command load =print( ]%%)= flush}if end end
+end}dup 0 systemdict put dup 4 $brkpage put bind readonly put/currentpacking
+where{pop/setpacking where{pop oldpack setpacking}if}if
+%%EndResource
+userdict /Pscript_WinNT_Incr 230 dict dup begin put
+%%BeginResource: file Pscript_FatalError 5.0 0
+userdict begin/FatalErrorIf{{initgraphics findfont 1 index 0 eq{exch pop}{dup
+length dict begin{1 index/FID ne{def}{pop pop}ifelse}forall/Encoding
+{ISOLatin1Encoding}stopped{StandardEncoding}if def currentdict end
+/ErrFont-Latin1 exch definefont}ifelse exch scalefont setfont counttomark 3 div
+cvi{moveto show}repeat showpage quit}{cleartomark}ifelse}bind def end
+%%EndResource
+userdict begin/PrtVMMsg{vmstatus exch sub exch pop gt{[
+(This job requires more memory than is available in this printer.)100 500
+(Try one or more of the following, and then print again:)100 485
+(For the output format, choose Optimize For Portability.)115 470
+(In the Device Settings page, make sure the Available PostScript Memory is accurate.)
+115 455(Reduce the number of fonts in the document.)115 440
+(Print the document in parts.)115 425 12/Times-Roman showpage
+(%%[ PrinterError: Low Printer VM ]%%)= true FatalErrorIf}if}bind def end
+version cvi 2016 ge{/VM?{pop}bind def}{/VM? userdict/PrtVMMsg get def}ifelse
+105000 VM?
+%%BeginResource: file Pscript_Win_Basic 5.0 0
+/d/def load def/,/load load d/~/exch , d/?/ifelse , d/!/pop , d/`/begin , d/^
+/index , d/@/dup , d/+/translate , d/$/roll , d/U/userdict , d/M/moveto , d/-
+/rlineto , d/&/currentdict , d/:/gsave , d/;/grestore , d/F/false , d/T/true ,
+d/N/newpath , d/E/end , d/Ac/arc , d/An/arcn , d/A/ashow , d/D/awidthshow , d/C
+/closepath , d/V/div , d/O/eofill , d/L/fill , d/I/lineto , d/-c/curveto , d/-M
+/rmoveto , d/+S/scale , d/Ji/setfont , d/Lc/setlinecap , d/Lj/setlinejoin , d
+/Lw/setlinewidth , d/Lm/setmiterlimit , d/sd/setdash , d/S/show , d/LH/showpage
+, d/K/stroke , d/W/widthshow , d/R/rotate , d/L2? false/languagelevel where{pop
+languagelevel 2 ge{pop true}if}if d L2?{/xS/xshow , d/yS/yshow , d/zS/xyshow ,
+d}if/b{bind d}bind d/bd{bind d}bind d/xd{~ d}bd/ld{, d}bd/bn/bind ld/lw/Lw ld
+/lc/Lc ld/lj/Lj ld/sg/setgray ld/ADO_mxRot null d/self & d/OrgMx matrix
+currentmatrix d/reinitialize{: OrgMx setmatrix[/TextInit/GraphInit/UtilsInit
+counttomark{@ where{self eq}{F}?{cvx exec}{!}?}repeat cleartomark ;}b
+/initialize{`{/Pscript_Win_Data where{!}{U/Pscript_Win_Data & put}?/ADO_mxRot ~
+d/TextInitialised? F d reinitialize E}{U/Pscript_Win_Data 230 dict @ ` put
+/ADO_mxRot ~ d/TextInitialised? F d reinitialize}?}b/terminate{!{& self eq
+{exit}{E}?}loop E}b/suspend/terminate , d/resume{` Pscript_Win_Data `}b U `
+/lucas 21690 d/featurebegin{countdictstack lucas[}b/featurecleanup{stopped
+{cleartomark @ lucas eq{! exit}if}loop countdictstack ~ sub @ 0 gt{{E}repeat}
+{!}?}b E/snap{transform 0.25 sub round 0.25 add ~ 0.25 sub round 0.25 add ~
+itransform}b/dsnap{dtransform round ~ round ~ idtransform}b/nonzero_round{@ 0.5
+ge{round}{@ -0.5 lt{round}{0 ge{1}{-1}?}?}?}b/nonzero_dsnap{dtransform
+nonzero_round ~ nonzero_round ~ idtransform}b U<04>cvn{}put/rr{1 ^ 0 - 0 ~ -
+neg 0 - C}b/irp{4 -2 $ + +S fx 4 2 $ M 1 ^ 0 - 0 ~ - neg 0 -}b/rp{4 2 $ M 1 ^ 0
+- 0 ~ - neg 0 -}b/solid{[]0 sd}b/g{@ not{U/DefIf_save save put}if U/DefIf_bool
+2 ^ put}b/DefIf_El{if U/DefIf_bool get not @{U/DefIf_save get restore}if}b/e
+{DefIf_El !}b/UDF{L2?{undefinefont}{!}?}b/UDR{L2?{undefineresource}{! !}?}b
+/freeVM{/Courier findfont[40 0 0 -40 0 0]makefont Ji 2 vmreclaim}b/hfRedefFont
+{findfont @ length dict `{1 ^/FID ne{d}{! !}?}forall & E @ ` ~{/CharStrings 1
+dict `/.notdef 0 d & E d}if/Encoding 256 array 0 1 255{1 ^ ~/.notdef put}for d
+E definefont !}bind d/hfMkCIDFont{/CIDFont findresource @ length 2 add dict `{1
+^ @/FID eq ~ @/XUID eq ~/UIDBase eq or or{! !}{d}?}forall/CDevProc ~ d/Metrics2
+16 dict d/CIDFontName 1 ^ d & E 1 ^ ~/CIDFont defineresource ![~]composefont !}
+bind d
+%%EndResource
+%%BeginResource: file Pscript_Win_Utils_L2 5.0 0
+/rf/rectfill , d/fx{1 1 dtransform @ 0 ge{1 sub 0.5}{1 add -0.5}? 3 -1 $ @ 0 ge
+{1 sub 0.5}{1 add -0.5}? 3 1 $ 4 1 $ idtransform 4 -2 $ idtransform}b/BZ{4 -2 $
+snap + +S fx rf}b/rs/rectstroke , d/rc/rectclip , d/UtilsInit{currentglobal{F
+setglobal}if}b/scol{! setcolor}b/colspA/DeviceGray d/colspABC/DeviceRGB d
+/colspRefresh{colspABC setcolorspace}b/SetColSpace{colspABC setcolorspace}b
+/resourcestatus where{!/ColorRendering/ProcSet resourcestatus{! ! T}{F}?}{F}?
+not{/ColorRendering<</GetHalftoneName{currenthalftone @/HalftoneName known{
+/HalftoneName get}{!/none}?}bn/GetPageDeviceName{currentpagedevice @
+/PageDeviceName known{/PageDeviceName get @ null eq{!/none}if}{!/none}?}bn
+/GetSubstituteCRD{!/DefaultColorRendering/ColorRendering resourcestatus{! !
+/DefaultColorRendering}{(DefaultColorRendering*){cvn exit}127 string
+/ColorRendering resourceforall}?}bn>>/defineresource where{!/ProcSet
+defineresource !}{! !}?}if/buildcrdname{/ColorRendering/ProcSet findresource `
+mark GetHalftoneName @ type @/nametype ne ~/stringtype ne and{!/none}if(.)
+GetPageDeviceName @ type @/nametype ne ~/stringtype ne and{!/none}if(.)5 ^ 0 5
+-1 1{^ length add}for string 6 1 $ 5 ^ 5{~ 1 ^ cvs length 1 ^ length 1 ^ sub
+getinterval}repeat ! cvn 3 1 $ ! ! E}b/definecolorrendering{~ buildcrdname ~
+/ColorRendering defineresource !}b/findcolorrendering where{!}{
+/findcolorrendering{buildcrdname @/ColorRendering resourcestatus{! ! T}{
+/ColorRendering/ProcSet findresource ` GetSubstituteCRD E F}?}b}?
+/selectcolorrendering{findcolorrendering !/ColorRendering findresource
+setcolorrendering}b/G2UBegin{findresource/FontInfo get/GlyphNames2Unicode get
+`}bind d/G2CCBegin{findresource/FontInfo get/GlyphNames2HostCode get `}bind d
+/G2UEnd{E}bind d/AddFontInfoBegin{/FontInfo 8 dict @ `}bind d/AddFontInfo{
+/GlyphNames2Unicode 16 dict d/GlyphNames2HostCode 16 dict d}bind d
+/AddFontInfoEnd{E d}bind d/T0AddCFFMtx2{/CIDFont findresource/Metrics2 get ` d
+E}bind d
+%%EndResource
+end
+%%EndProlog
+
+%%BeginSetup
+statusdict begin (%%[ ProductName: ) print product print ( ]%%)= flush end
+[ 0 1 -1 0 0 0 ] false Pscript_WinNT_Incr dup /initialize get exec
+featurebegin{
+%%BeginNonPPDFeature: JobTimeout 0
+0 /languagelevel where{pop languagelevel}{1}ifelse 2 ge{1 dict dup/JobTimeout  4 -1 roll put setuserparams}{statusdict/setjobtimeout get exec}ifelse
+%%EndNonPPDFeature
+}featurecleanup
+
+featurebegin{
+%%BeginNonPPDFeature: WaitTimeout 300
+300 /languagelevel where{pop languagelevel}{1}ifelse 2 ge{1 dict dup/WaitTimeout 4 -1 roll put setuserparams}{statusdict/waittimeout 3 -1 roll put}ifelse
+%%EndNonPPDFeature
+}featurecleanup
+
+featurebegin{
+%%BeginFeature: *PageSize Letter
+
+    2 dict 
+    dup /Policies 1 dict dup /PageSize 1 put put 
+    dup /DeferredMediaSelection true put setpagedevice
+    2 dict dup /PageSize [612 792] put dup /ImagingBBox null put setpagedevice
+%%EndFeature
+}featurecleanup
+featurebegin{
+%%BeginFeature: *Resolution 600dpi
+
+%%EndFeature
+}featurecleanup
+1 setlinecap 1 setlinejoin
+/mysetup [ 0 72 600 V 72 600 V 0 12.99968 12.99968 ] def 
+%%EndSetup
+
+userdict begin /ehsave save def end
+%%Page: 1 1
+%%PageBoundingBox: 13 13 599 780
+%%EndPageComments
+%%BeginPageSetup
+/DeviceRGB dup setcolorspace /colspABC exch def
+mysetup concat colspRefresh
+%%EndPageSetup
+
+/DeviceGray dup setcolorspace /colspABC exch def
+0 0 scol Pscript_WinNT_Incr begin
+%%BeginResource: file Pscript_Text 5.0 0
+/TextInit{TextInitialised? not{/Pscript_Windows_Font & d/TextInitialised? T d
+/fM[1 0 0 1 0 0]d/mFM matrix d/iMat[1 0 0.212557 1 0 0]d}if}b/copyfont{1 ^
+length add dict `{1 ^/FID ne{d}{! !}?}forall & E}b/EncodeDict 11 dict d/bullets
+{{/bullet}repeat}b/rF{3 copyfont @ ` ~ EncodeDict ~ get/Encoding ~ 3 ^/0 eq{&
+/CharStrings known{CharStrings/Eth known not{! EncodeDict/ANSIEncodingOld get}
+if}if}if d E}b/mF{@ 7 1 $ findfont ~{@/Encoding get @ StandardEncoding eq{! T}{
+{ISOLatin1Encoding}stopped{! F}{eq}?{T}{@ ` T 32 1 127{Encoding 1 ^ get
+StandardEncoding 3 -1 $ get eq and}for E}?}?}{F}?{1 ^ ~ rF}{0 copyfont}? 6 -2 $
+! ! ~ !/pd_charset @ where{~ get 128 eq{@ FDV 2 copy get @ length array copy
+put pd_CoverFCRange}if}{!}? 2 ^ ~ definefont fM 5 4 -1 $ put fM 4 0 put fM
+makefont Pscript_Windows_Font 3 1 $ put}b/sLT{: Lw -M currentpoint snap M 0 - 0
+Lc K ;}b/xUP null d/yUP null d/uW null d/xSP null d/ySP null d/sW null d/sSU{N
+/uW ~ d/yUP ~ d/xUP ~ d}b/sU{xUP yUP uW sLT}b/sST{N/sW ~ d/ySP ~ d/xSP ~ d}b/sT
+{xSP ySP sW sLT}b/sR{: + R 0 0 M}b/sRxy{: matrix astore concat 0 0 M}b/eR/; , d
+/AddOrigFP{{&/FontInfo known{&/FontInfo get length 6 add}{6}? dict `
+/WinPitchAndFamily ~ d/WinCharSet ~ d/OrigFontType ~ d/OrigFontStyle ~ d
+/OrigFontName ~ d & E/FontInfo ~ d}{! ! ! ! !}?}b/mFS{makefont
+Pscript_Windows_Font 3 1 $ put}b/mF42D{0 copyfont `/FontName ~ d 2 copy ~ sub 1
+add dict `/.notdef 0 d 2 copy 1 ~{@ 3 ^ sub Encoding ~ get ~ d}for & E
+/CharStrings ~ d ! ! & @ E/FontName get ~ definefont}b/mF42{15 dict ` @ 4 1 $
+FontName ~ d/FontType 0 d/FMapType 2 d/FontMatrix[1 0 0 1 0 0]d 1 ^ 254 add 255
+idiv @ array/Encoding ~ d 0 1 3 -1 $ 1 sub{@ Encoding 3 1 $ put}for/FDepVector
+Encoding length array d/CharStrings 2 dict `/.notdef 0 d & E d 0 1 Encoding
+length 1 sub{@ @ 10 lt{! FontName length 1 add string}{100 lt{FontName length 2
+add string}{FontName length 3 add string}?}? @ 0 FontName @ length string cvs
+putinterval @ 3 -1 $ @ 4 1 $ 3 string cvs FontName length ~ putinterval cvn 1 ^
+256 mul @ 255 add 3 -1 $ 4 ^ findfont mF42D FDepVector 3 1 $ put}for & @ E
+/FontName get ~ definefont ! ! ! mF}b/mF_OTF_V{~ ! ~ ! 4 -1 $ ! findfont 2 ^ ~
+definefont fM @ @ 4 6 -1 $ neg put 5 0 put 90 matrix R matrix concatmatrix
+makefont Pscript_Windows_Font 3 1 $ put}b/mF_TTF_V{3{~ !}repeat 3 -1 $ !
+findfont 1 ^ ~ definefont Pscript_Windows_Font 3 1 $ put}b/UmF{L2?
+{Pscript_Windows_Font ~ undef}{!}?}b/UmF42{@ findfont/FDepVector get{/FontName
+get undefinefont}forall undefinefont}b
+%%EndResource
+end reinitialize
+Pscript_WinNT_Incr begin
+%%BeginResource: file Pscript_Encoding256 5.0 0
+/CharCol256Encoding[/.notdef/breve/caron/dotaccent/dotlessi/fi/fl/fraction
+/hungarumlaut/Lslash/lslash/minus/ogonek/ring/Zcaron/zcaron/.notdef/.notdef
+/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+/.notdef/.notdef/.notdef/.notdef/.notdef/space/exclam/quotedbl/numbersign
+/dollar/percent/ampersand/quotesingle/parenleft/parenright/asterisk/plus/comma
+/hyphen/period/slash/zero/one/two/three/four/five/six/seven/eight/nine/colon
+/semicolon/less/equal/greater/question/at/A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S
+/T/U/V/W/X/Y/Z/bracketleft/backslash/bracketright/asciicircum/underscore/grave
+/a/b/c/d/e/f/g/h/i/j/k/l/m/n/o/p/q/r/s/t/u/v/w/x/y/z/braceleft/bar/braceright
+/asciitilde/.notdef/Euro/.notdef/quotesinglbase/florin/quotedblbase/ellipsis
+/dagger/daggerdbl/circumflex/perthousand/Scaron/guilsinglleft/OE/.notdef
+/.notdef/.notdef/.notdef/quoteleft/quoteright/quotedblleft/quotedblright/bullet
+/endash/emdash/tilde/trademark/scaron/guilsinglright/oe/.notdef/.notdef
+/Ydieresis/.notdef/exclamdown/cent/sterling/currency/yen/brokenbar/section
+/dieresis/copyright/ordfeminine/guillemotleft/logicalnot/.notdef/registered
+/macron/degree/plusminus/twosuperior/threesuperior/acute/mu/paragraph
+/periodcentered/cedilla/onesuperior/ordmasculine/guillemotright/onequarter
+/onehalf/threequarters/questiondown/Agrave/Aacute/Acircumflex/Atilde/Adieresis
+/Aring/AE/Ccedilla/Egrave/Eacute/Ecircumflex/Edieresis/Igrave/Iacute
+/Icircumflex/Idieresis/Eth/Ntilde/Ograve/Oacute/Ocircumflex/Otilde/Odieresis
+/multiply/Oslash/Ugrave/Uacute/Ucircumflex/Udieresis/Yacute/Thorn/germandbls
+/agrave/aacute/acircumflex/atilde/adieresis/aring/ae/ccedilla/egrave/eacute
+/ecircumflex/edieresis/igrave/iacute/icircumflex/idieresis/eth/ntilde/ograve
+/oacute/ocircumflex/otilde/odieresis/divide/oslash/ugrave/uacute/ucircumflex
+/udieresis/yacute/thorn/ydieresis]def EncodeDict/256 CharCol256Encoding put
+%%EndResource
+end reinitialize
+
+%%IncludeResource: font Helvetica
+Pscript_WinNT_Incr begin
+%%BeginResource: file Pscript_Win_Euro_L2 5.0 0
+/UseT3EuroFont{/currentdistillerparams where{pop currentdistillerparams
+/CoreDistVersion get 4000 le}{false}ifelse}bind def/NewEuroT3Font?{dup/FontType
+get 3 eq{dup/EuroFont known exch/BaseFont known and}{pop false}ifelse}bind def
+/T1FontHasEuro{dup/CharStrings known not{dup NewEuroT3Font?{dup/EuroGlyphName
+get exch/EuroFont get/CharStrings get exch known{true}{false}ifelse}{pop false}
+ifelse}{dup/FontType get 1 eq{/CharStrings get/Euro known}{dup/InfoDict known{
+/InfoDict get/Euro known}{/CharStrings get/Euro known}ifelse}ifelse}ifelse}bind
+def/FontHasEuro{findfont dup/Blend known{pop true}{T1FontHasEuro}ifelse}bind
+def/EuroEncodingIdx 1 def/EuroFontHdr{12 dict begin/FontInfo 10 dict dup begin
+/version(001.000)readonly def/Notice(Copyright (c)1999 Adobe Systems
+Incorporated. All Rights Reserved.)readonly def/FullName(Euro)readonly def
+/FamilyName(Euro)readonly def/Weight(Regular)readonly def/isFixedPitch false
+def/ItalicAngle 0 def/UnderlinePosition -100 def/UnderlineThickness 50 def end
+readonly def/FontName/Euro def/Encoding 256 array 0 1 255{1 index exch/.notdef
+put}for def/PaintType 0 def/FontType 1 def/FontMatrix[0.001 0 0 0.001 0 0]def
+/FontBBox{-25 -23 1500 804}readonly def currentdict end dup/Private 20 dict dup
+begin/ND{def}def/NP{put}def/lenIV -1 def/RD{string currentfile exch
+readhexstring pop}def/-|{string currentfile exch readstring pop}executeonly def
+/|-{def}executeonly def/|{put}executeonly def/BlueValues[-20 0 706 736 547 572]
+|-/OtherBlues[-211 -203]|-/BlueScale 0.0312917 def/MinFeature{16 16}|-/StdHW
+[60]|-/StdVW[71]|-/ForceBold false def/password 5839 def/Erode{8.5 dup 3 -1
+roll 0.1 mul exch 0.5 sub mul cvi sub dup mul 71 0 dtransform dup mul exch dup
+mul add le{pop pop 1.0 1.0}{pop pop 0.0 1.5}ifelse}def/OtherSubrs[{}{}{}
+{systemdict/internaldict known not{pop 3}{1183615869 systemdict/internaldict
+get exec dup/startlock known{/startlock get exec}{dup/strtlck known{/strtlck
+get exec}{pop 3}ifelse}ifelse}ifelse}executeonly]|-/Subrs 5 array dup 0
+<8E8B0C100C110C110C210B>put dup 1<8B8C0C100B>put dup 2<8B8D0C100B>put dup 3<0B>
+put dup 4<8E8C8E0C100C110A0B>put |- 2 index/CharStrings 256 dict dup begin
+/.notdef<8b8b0d0e>def end end put put dup/FontName get exch definefont pop}bind
+def/AddEuroGlyph{2 index exch EuroEncodingIdx 1 eq{EuroFontHdr}if systemdict
+begin/Euro findfont dup dup/Encoding get 5 1 roll/Private get begin/CharStrings
+get dup 3 index known{pop pop pop pop end end}{begin 1 index exch def end end
+end EuroEncodingIdx dup 1 add/EuroEncodingIdx exch def exch put}ifelse}bind def
+/GetNewXUID{currentdict/XUID known{[7 XUID aload pop]true}{currentdict/UniqueID
+known{[7 UniqueID]true}{false}ifelse}ifelse}bind def/BuildT3EuroFont{exch 16
+dict begin dup/FontName exch def findfont dup/Encoding get/Encoding exch def
+dup length 1 add dict copy dup/FID undef begin dup dup/FontName exch def
+/Encoding 256 array 0 1 255{1 index exch/.notdef put}for def GetNewXUID{/XUID
+exch def}if currentdict end definefont pop/BaseFont exch findfont 1000
+scalefont def/EuroFont exch findfont 1000 scalefont def pop/EuroGlyphName exch
+def/FontType 3 def/FontMatrix[.001 0 0 .001 0 0]def/FontBBox BaseFont/FontBBox
+get def/Char 1 string def/BuildChar{exch dup begin/Encoding get 1 index get
+/Euro eq{BaseFont T1FontHasEuro{false}{true}ifelse}{false}ifelse{EuroFont
+setfont pop userdict/Idx 0 put EuroFont/Encoding get{EuroGlyphName eq{exit}
+{userdict/Idx Idx 1 add put}ifelse}forall userdict/Idx get}{dup dup Encoding
+exch get BaseFont/Encoding get 3 1 roll put BaseFont setfont}ifelse Char 0 3 -1
+roll put Char stringwidth newpath 0 0 moveto Char true charpath flattenpath
+pathbbox setcachedevice 0 0 moveto Char show end}bind def currentdict end dup
+/FontName get exch definefont pop}bind def/AddEuroToT1Font{dup findfont dup
+length 10 add dict copy dup/FID undef begin/EuroFont 3 -1 roll findfont 1000
+scalefont def CharStrings dup length 1 add dict copy begin/Euro{EuroFont
+setfont pop EuroGBBox aload pop setcachedevice 0 0 moveto EuroGName glyphshow}
+bind def currentdict end/CharStrings exch def GetNewXUID{/XUID exch def}if 3 1
+roll/EuroGBBox exch def/EuroGName exch def currentdict end definefont pop}bind
+def/BuildNewFont{UseT3EuroFont{BuildT3EuroFont}{pop AddEuroToT1Font}ifelse}bind
+def/UseObliqueEuro{findfont/FontMatrix get dup 2 get 0 eq exch dup 0 get exch 3
+get eq and UseT3EuroFont or}bind def
+%%EndResource
+end reinitialize
+7500 VM?
+/Helvetica FontHasEuro not
+{
+/Euro.Helvetica
+ [556 0 24 -19 541 703 ] 
+<A3F8C00DD4E90378DA01F779D301F808D301F904DA01F899F908156CB447AD338B08FB2D
+8B372B7BFB37085806724305D30644075B06724305DA06A0FB36E035F7218B08E08BCDB7
+939208EE077A71405E418B083F8B4CCE84F108F76506A3D305FB8306D207F79C06A3D305
+FBB10692E2B7E8F28B08E08BBE62A45A08090E>
+AddEuroGlyph
+/Euro /Helvetica /Helvetica-Copy BuildNewFont
+} if
+F /F0 0 /256 T /Helvetica mF 
+/F0SA5YFFFFFF56 F0 [165.379 0 0 -170 0 0 ] mFS
+F0SA5YFFFFFF56 Ji 
+1800 1625 M (1 MHz Digital Storage Oscilloscope)[93 46 139 121 84 46 121 37 94 37 46 93 37 46 112 46 93 55 94 93 93 46 131 84 84 37 37 37 93 84 84 93
+93  0]xS 
+2170 2133 M (DSOscope Analog Board)[120 112 130 84 84 94 93 93 46 112 93 93 37 94 93 46 112 93 93 56  0]xS 
+/F0S34YFFFFFFCE F0 [52.105 0 0 -50 0 0 ] mFS
+F0S34YFFFFFFCE Ji 
+3093 4651 M (http://www.ocrg.org/level2pages/project_corner.html)[29 14 15 29 14 15 15 38 38 38 14 29 26 17 29 14 29 17 29 15 12 29 26 29 12 29 29 29 29 29 26 14
+29 17 29 12 29 26 14 29 26 29 17 29 29 17 14 29 14 43  0]xS 
+3508 4605 M (License information at:)[29 12 26 29 29 26 29 13 12 29 14 29 17 43 29 15 12 29 29 14 29 14  0]xS 
+Pscript_WinNT_Incr begin
+%%BeginResource: file Pscript_Win_Dib_L2 5.0 0
+/iw 0 d/ih 0 d/im_save 0 d/s 0 d/polarity 0 d/smoothflag 0 d/mystring 0 d/bpc 0
+d/maskcolor 0 d/mask? F d/setup1asciiproc{[currentfile mystring/readhexstring
+cvx/! cvx]cvx bind}b/setup1binaryproc{[currentfile mystring/readstring cvx/!
+cvx]cvx bind}b/setup2asciiproc{currentfile/ASCII85Decode filter/RunLengthDecode
+filter}b/setup2binaryproc{currentfile/RunLengthDecode filter}b/jpegasciiproc
+{currentfile/ASCII85Decode filter<</Relax 1>>/DCTDecode filter}b/jpegbinaryproc
+{currentfile<</Relax 1>>/DCTDecode filter}b/mycolorspace{colspABC}d/myimagedict
+{/myimagedict 10 dict d myimagedict @ `/ImageType 1 d/MultipleDataSource F d E}
+b/imageprocarray[/setup1binaryproc/setup1asciiproc/setup2binaryproc
+/setup2asciiproc/setup1binarydecodeproc/setup1asciidecodeproc]d/jpegprocarray[
+/jpegasciiproc/jpegbinaryproc]d/Q{/im_save save d scol imageprocarray ~ get/s ~
+, d/polarity ~ d/smoothflag ~ d +/dx 2 ^ d/dy 1 ^ d +S/mystring ~ string d/bpc
+~ d/ih ~ d/iw ~ d fx rf}b/X{/im_save save d/mask? ~ d/maskcolor ~ d
+imageprocarray ~ get/s ~ , d/polarity ~ d/smoothflag ~ d +/dx 2 ^ d/dy 1 ^ d +S
+/mystring ~ string d/bpc ~ d/ih ~ d/iw ~ d}b/Z{im_save restore}b/beginjpeg{
+/jpeg_save save d jpegprocarray ~ get/jpegimageproc ~ , d + +S/bpc ~ d/ih ~ d
+/iw ~ d bpc 24 eq{/DeviceRGB}{/DeviceGray}? setcolorspace myimagedict @ `
+/ImageType 1 d/Width iw d/Height ih d/Decode bpc 24 eq{[0 1 0 1 0 1]}{[0 1]}? d
+/ImageMatrix[iw 0 0 ih 0 0]d/BitsPerComponent 8 d/DataSource jpegimageproc d E
+image}b/endjpeg{jpeg_save restore}b/Y{scol myimagedict @ ` mask?{/polarity
+maskcolor 0 get 0 eq{T}{F}? d}if/Width iw d/Height ih d/Decode polarity{[1 0]}{
+[0 1]}? d/ImageMatrix[iw 0 0 ih 0 0]d/DataSource s d/BitsPerComponent 1 d
+/Interpolate smoothflag d E imagemask}bd/doclutimage{/rgbclut ~ d bpc @ 8 eq{!
+255}{@ 4 eq{! 15}{2 eq{3}{1}?}?}?/hival ~ d[/Indexed currentcolorspace hival
+rgbclut]setcolorspace myimagedict @ ` mask?{/ImageType 4 d/MaskColor maskcolor
+d}if/Width iw d/Height ih d/Decode[0 hival]d/ImageMatrix[iw 0 0 ih 0 0]d
+/DataSource s d/BitsPerComponent bpc d/Interpolate smoothflag d E image}b
+/doCMYKclutimage{/CMYKclut ~ d bpc @ 8 eq{! 255}{4 eq{15}{3}?}?/hival ~ d[
+/Indexed/DeviceCMYK hival CMYKclut]setcolorspace myimagedict @ ` mask?{
+/ImageType 4 d/MaskColor maskcolor d}if/Width iw d/Height ih d/Decode[0 hival]d
+/ImageMatrix[iw 0 0 ih 0 0]d/DataSource s d/BitsPerComponent bpc d/Interpolate
+smoothflag d E image}b/doNimage{bpc 24 eq{currentcolorspace}{colspA}?
+setcolorspace myimagedict @ ` mask?{/ImageType 4 d/MaskColor maskcolor d}if
+/Width iw d/Height ih d/Decode bpc 24 eq{[0 1 0 1 0 1]}{[0 1]}? d/ImageMatrix
+[iw 0 0 ih 0 0]d/DataSource s d/BitsPerComponent bpc 24 eq{8}{bpc}? d
+/Interpolate smoothflag d E image}b/doCMYKimage{/DeviceCMYK setcolorspace
+myimagedict @ ` mask?{/ImageType 4 d/MaskColor maskcolor d}if/Width iw d/Height
+ih d/Decode[0 1 0 1 0 1 0 1]d/ImageMatrix[iw 0 0 ih 0 0]d/DataSource s d
+/BitsPerComponent 8 d/Interpolate smoothflag d E image}b
+%%EndResource
+end reinitialize
+: 195 216 8 0 188 198 3515 4347 F F 3 [ 0 ] F 
+X
+doNimage
+Z2aCos8N)urVuiqqu$NoYQ(m-o)A[h!<2or!WN,srr;r"s.02hrW3&uVuNOls8Musp&;,oZ2ak'
+qu?EirVuiqr;?WpY5bd,s8Moqp\t'iqu-WpriZ9ts7QBgrrE&#s/#borW)ulri6"'s8DosrTsL`
+rVZYts0;V#rW)odrW`<!rqucqrN?1*s8MutrVulsrVuoirW`E%s8DusrVul"s0;V'rW)orrqQNl
+rqud#qu?Znrr)i!s0;S*rr;uts7lQnrUp-ks8DforiZ:)rrE#trr`6!q>U<js8;Wis8E-#rr;r"
+s0;V(rW)oqrW)EeGlN'hGQ`;:H$FW5GR&M@HK4u#rqihtZ2ak'#6"Q"rr(qbs'>Y2"'o5=?N"10
+?3OV>?.&TKrr0)#dJrt?rVuosnc&XhqZ$Nss8MrAra#G.!+#P0$=-tD?X/urrVliqnc/Re_Z/$`
+p\t-ks8MQg!;ulr"oSAtrKggf?N"1,?3XV@HMd[;r;Zces8Dr6s0;S,rr)`ns8W#uF^=oOrE];,
+"C5G?kPbG[!WE#$s0;V'rW)lrr;u4i?2S%-?2Iq2>@Cn#r;Q\us3^lFroO.[r;Za"qu?ZV?X<M7
+s'>M.#@^qEeG]=Frpg$grr)lqrr)lsrm(Pks8DrYrs8W&r;Zcli*9Ra?N4=.?N476@*&9Fs8MQg
+s8MusrVlcqs8L=DdJs7GrVuWknc&jnr;Q`orPN%C?2S%.?2@k3@Tn!SqYU9^s8W)us7uZ:s3(H:
+rpg$frW`<"r-;LQ?2S%.?2Iq5?Wpi\lMgh_nc/Xgs8Voob5]lh!WN&trr;uurr;uurr<!!rqufq
+n,ECds8E/dG[+Q\r*KA.qHaA3?<c[mrqu<d"9&5trr;uurVc`rr;ZctrVk+BdJs4F"oA8rrqlWm
+rW)orrp]plr;Zcnl<dlt?2S%.?2Iq2>$tQBjT#2Js8MuurVliss8E&orr<#ur;ciBs3^iJrVZWm
+rWN3!rVl]orW2lpnc&jns8DrqjBc*k?2S"/?27e0@9HuDbl@VArpg$grWiE!s8MopqYpNms8E'!
+rm(Pks8N!%rVQQkk0E/ir;lcls8MQg"o\K!rr(+A?N=C0?N4=,?3OV>?=J-Ws8MQgs8E#qrr2rr
+#Og:(rVZWnrQbGjrt#)-rVlcnl$Hc`jno#RrVl?e#QF]%rr%.F>lS(1?=!51#@1\>?[;5?rUKmi
+r;Q`qrqlo\H<PUNs8DuscMu;l!ri,ss83,dGZn<Y>cm;jr;cifs8W'$s8;D5@K'O5?=!P:!+#D,
+"^58>>@-Onrpg!hrr)lr%/o_@ITp2`Hf+burVk.CdJjIMs8Mu]G$JDR?3=JZiVifUo)Aais8W&u
+kl4ie?iOC3?N4=2?3":,?34J=?2n44k5,)Is8W''r;GlI>Zk?;s'>_Pi;``Urm1VlrsA]'r9AN6
+?sHuBs'5_5H,8kGrr)isrr)lrrWiB#rVPea?X3V:s'>\2p0Io-?!goDdJs1Drql]qrqud!rqlZF
+H2h1O?X<Y;"'g-0r;Q]Cs5F"Xrr<#urr<!!rr)fp!WW0!r<MS3?=-oC>[[S<$=?tFGinr&q>UEk
+s8E0!rqlZns8<6$rVPfH?<pfAn6Q9*>[DX:qZ$Koq>^Eos8;isrVlis"9&/bQ2b.k?"*b?!*oP1
+"^PA[hYd?PrW)uorr;uurnd\6s8W)us8W)us8N!"qu6Kms82u\H<OPQ@1-@I?X-oH?<^iabjk`3
+!WN-!r;Z`ts8Musr!2cQR<i%B>@7D9o3M`/>[puI?sS'7li6q`rW)uurW2ops8NN,rVP;m?=@)H
+=^PHAs'>q<?<qm4r;HQirW)osrW3&uhZ)R7s8N&us8N&us8Dus!<<)u$N91:?<goC?!goFs'5\6
+?X3V8"(%>WrVld(s8Murr;Gs,H<=K_s'5Y3?1D51@UE;G>[:T@?ZsENpAOsh&cM_*rU#eR?=-uF
+?s[5G@:!=@>mXb?H/\Z!rr;orqu5CNiW&rWs8W,urVm9)rVQTmk'C07?<q">?3":2?NOP=?N4C;
+@9d,`cMIJ=r<iQ$o]EB&>[:cG=T2Rp?3=A<@:9+A!b,>@s'#Y5S)<T2r;Z`qq[V\3?X@,F?X?rC
+>[LfA?iOF:@pWDbi;EQRrW2rsr;PLOg&D``rr)ipr9/N7>[UlH>$tTB?!^q=?5[*U=^YZC@Zg$R
+r9N-^>%(WB>@C]B?t!;GnQlN/>[UcC?!LfE@/jLB>[)HtlhgVGY$tU??s?q8?iOI4?O0qD?X?rE
+=aJs)quH]qrqufrrnd\.rt,2+rqlZZG["E^>[(N??s[4?>l\72?3+>>r`oJ2&:)7%F^AHa>@:]B
+>[^cA>[?i*#%:eA@:!2Hs'-:E?=.)G>@)NHc$<W!?".)I>[C]?@fK^=?=@)F?!LiCs'5_Phu*HQ
+rW)utrW)uurnd\6s8W)ss8W&urVuj"rTSN2?iOC8@UEGK>@7A9r`o_8?s[5F@9`b;#@(PD>$kH?
+?N4@9?s-oF>%7D9s'>A*$s[1I?!^rE?X$rC=^h>9!+5b4$sQtE?<UW=?t!;J@U&k>#?tJ=@pWDH
+@/aC7H/SW!rr;us!<<)uhZ)R7s8MusrVcrtl??QAs'5e8>@1ZB?iOF3?N=C3?NaY>?!L_9>l\73
+?3X\A?X.&I=oVe.?2n75>[^n8?N4=(?3FV@?<gn<>m=V@?X@#G>l@t3?!C`B@/jL4?N4:4?=.%=
+?NXP?>[[S;!*oP2"'^'2rVZWps8W)Ts5F"Vrr<#srX/Sb>[UfD?!^fD?N4=)?N4=2?Me%"?Me$u
+?N4=*?N"1"?3jbA?s[&Dg\q0NrW)uurnd\6s8Drss8N!'r;QMV>@(H:@/aI6?"7+5?N4=2?Me%"
+?Me$u?N4=*?N"1"?3jqF=^GK[mf*7brW)uurnd\6s8Drss8Dp%r;H#0?".2Ks'#M5?2n:'?Me$A
+?3":2?NOMTk5YA[s8Doss8W)Ts5F"Vrr<#urX8])rr)`M?X$cA@UB(?!Ere#?Me$A?3"40?3OWV
+rVZZprr2rts8LmTiW&rWrVuiq%KHG+os.t4>?tWA?t!Hb?N4<k?3abC>Ft$Wr;P:IiW&rWrVuiq
+%K-8*rT\Q0@U3;J>?kCS?N4<k?3=J<HKY>-eGnM-s8Moqs8E#ss8E<%rT%<i@9R&Gs'Y_1qd&Ak
+s'=ttqH`Jp#@1Z]rVlcpqu?]prnRP4s8W)qrrE#trX8])rqlW.?<gcD?!R23r*@]Vq-EDp#[Li#
+o_ndhrVlisrVkUPe,TII"n$V??sd1=?N4<C?N4=2?N4=2?N+71?3"71>m,K:rVlcprmq+trs8W&
+ja(08@U<FA?+XGC?2n72?2n45>@1]?s'5\0?e58U!ri/rs8LULdf9@H"oZ5C@U!1<?0,Dm?.iQa
+?2@k->Q8"0?iO@5RJd'^r;P:IdJjLJrp,qT?X$lCjBhjlfj=\aqd'S7?<^iB@!Lu8r;6KEs3UcL
+qu,c(>[@/3!+"nsqd&#as'>P/ra#M0!aj[ZrVcitrRCkps8W'%rVY&L?X3J7s'=qsqd&#as'>S0
+s'5n8?!glDXnhqnrr*$"rr;uKs3^iMrr;uqn=BSbs'G_2s'G_2lX'0gqd0/*nQu6$rEfM0#[U_@
+@<_,;rr)ir!<)rt!<2lqs8LmTdJs4F"TA8F?!mV<s'>Y2s'=qso3M6"qd&_us'>S0s'5q8@p36+
+r;HWpr;ZcurVulns8W)Ts3^iOrr)ipq0?4Ps'G_2s'G_2lX'Ts$=7"B?=.#H?!prFs'5Y4?2n72
+?iOC5?<gk-?N4=0?N+47>@:]\lhpb\s8W'!rVl]os8LmTdJjIMrqlZY?!^h:?N4=2?N4<s?N4:3
+>@7D9"^,5>?X-q;?iOC8?=.#C>[RM;!F/k!?N4=0?N4::>[UlH?J#/RrVultrVc`ms8W)Ts3^iH
+qu?WtrN0=5qHj2-l!=U&>[LcE?<^e:?3OM=@U<GIs'Q";?<^`E>k)/#?2\+0>l\42>m4A=H0tS0
+s8N)udf7Yn"TIP0?X*A5s'=kq$!^kE?X$oC?s?t;>le/:s'5\1?=!P:!FK+%?N4=/?3snA?!prE
+?f_1br;Zfrf)O.t#Q=Z!c!aj`?2It.?0PZ%?X6lB@UEDG@9`b;!b#5<s'Q%<>[CiE>@6o,s'>M.
+#@Le?AQW<(q>^EprVlis!<1OKdJs7G"n6h>@Td(7?3"9q?3FVA?sR":?3"71>mOkF?!gf@?!h">
+>ln>;@.@S'?2Iq.=oVh4>$tWCli$h^!<<)uec4%s"8i#P?N4@5>@.>8lX'Tsqd0;.'jkEo^t[u5
+jl5+CH?`b(='o9>@U37/?N4=2?N4=2?34P@>Q8"3?!O]4rr2rt!<1OKdf0UPrVUnI>[L`Bs'=qs
+s'>V1r`o_7I+[WZr;HQk$N'bbhMbiG?<giAn6Z-#s'G_2s'>_0?iOC8>$bK[meQk]e,St<qu6Wq
+r;Q`p!WW,urW)lrrW2uss8N-!s8N!#rVYY]?iF@3@/4./?2%\(>m">>>%%>8!dW\ns8;urrVlcr
+rVZX%rVGZ@?<pfD?!C_:>l\73?3"@0?N4=$?3&XWrW)lkrr;rsrrW2ur;Z`rr;Zfsrp'ORs82fq
+s8MutrVc]rs8;or!<)rs!WE#prrW2sZi=>4?!mV;q-O),pKmc'#?tV@>^F-RrVlfrs8W&us8N#s
+s8W'.qtAZe?!^fE=Bf-;?sR.:?N4=%?3FPYnbrCbrW2opqYgKnr;H`qrr<#urp'ORs8W)us8W)u
+rrDurrr<!(rVQNmrr;oqrVccqrWE)sja-r5!aT5Al<aHq"CYSBGMW8s!<3#sq>UHos8NZ0qYpHk
+k]gB<>$tfE@9[&Cqd0;.nm;?%!9O7Z!rW&qs8E&rqZ$QsqZ$KnrW<&rrr;rrs8W)`s7--hrr<#u
+rr<#srr2rsrW)iqrr<#trW)lprWrGM@p32H?!C\%?N4:;?s-`\kPY;UrVlfrs8Dlqrr2rt!;ulq
+!rV>Js'Yt6?X3>3s'>/$"^d\lr;HNmr;ccprW<&tq>L<krrE&us8W)`s7--hrql]srr)corr;p"
+r;Z]prVuj.r;HWmrV,O;cZWK$?<^`D>j5Sp?NYT9r;-Elr;Zfrs8Vuq%/p5)rr)c^E*6UR?sN\:
+s'G_2m9Ts(>K>mloDe^grVucqrVufprW)lrrW2rrs8W&ss8W,umf2hWs8Moqs8D`lrV[<"lfHEn
+H<arc?t!5F?s[2Jl<X[#>'o'&qu-Ql"9/?"rVc`qs82d+rVl]nrVlc`H<jia?s-iBs'G_2m9]ft
+#[UeCH'Qb?l0\HJ!;lcorr)rurVc`qs8W)ds7--hrql`prW)oqrY>>.l0.3QHZiV!?XR/D?<^Q@
+?XR2Gs'4hq"C5?Mqu-Qo!<<#ss8W)trVufp$iBo%s8Moof3V`e>lS+1@/jR5?0kl!?!CY8>QA+0
+>RGk$`8]qGq>C3grVHNns8W)ds7--hrql]qrVuj*s8Mr^f"lTT?!goD>lS+;?WpcE>$k]B?X@%;
+?g:r(?$Yi8rVl`or;Q`ps8W&srr;fn!WE&urW2n]s'>_6?N4:1?N4<u?3+D<rETJ3?!RD9!F9(4
+>mF_^Yh/+9rr)cos8W,umf2hWs8N&us8N&us8N&us8E%D?L_=b?3abD?X?oG>i>Y\q>UEor;Q?g
+#laec?X6oE?!RD9s'>"us'>J-!aT,<ra#k9?<^`[m/Hn]qu?]qmf2hWs8N&us8N&urr*$"rr%*A
+?2S%-?2n70?0GVp>m4J??s.jHrr2rt!WN&rrW)urrq-3mrr)PQr`oP0?2n72?0ttu?2.b(>m4P>
+?Y&?ts8Moqs8MHdnc/Lcs8W)t"98B!H2h1*?N4:>?<prG?!ps`rVl`os8W&urVc]qs7H<grr`8t
+rSmf`s'>Y2s'>Y2s'=kqra#J/s'5h5?Wu^lrqufrs8M<`nc/Lcs8W)t"98B!H1YGB?0Ybr>mFbB
+?=.#C?0hOi"9&6!rVQTos7QBgrri?"m<)Y5?2e11?2n72?0P\q?2S"4?!^fA?L7[js8W,ulMpDS
+!WN,orWE3"rHR+(rE]D/#$bMAH11_2rr2utnc/Lcr;R!!rKg_r?<dG9s'>Y2s'=kqq-F#,"Bo-s
+rqucqs8M<`nc&Ugs8Voo"TSK"H!T64r*9A1?X<\=!j2D"rr2uts8N)uq>^HnrVufprVm#urr(JY
+s&oD2s'G_2s'G_2l!F<orE]\6?X?t%rVlfrs8M<`nc&Ugs8Voo"onT#H!ObU>m+J>?<pn:?0P\o
+>l\73>Qe>?>g<3HrWE3!rr;lps8VrppAb-k!T@Dc>l\.0?Me$u?N4=&?3FM>?X<!trW)oss8W)`
+s6fp_rWW?$rHV[Tpg*o+s'=qsrETe8?XR,E?KM+`rr;uts82fqs7uZgrs/Q#rodZn?=!S;qd&)c
+!aK'qs8N#ts8M<`mf3%\"9!LN?M%Oj?N4=2?N4:;?<plE>[H[mrr;usrr;rrs8Vuqp&>3ps8M:i
+>lS+,?N4<s?N4=,?3FP??!cgqrW)utrp'ORs8W)us7lQqrHV[Tp0Hujs'>Y2s'5_6?!gn;?j#Ng
+rr;rrs8W&ss8Vuqp&>9qs8M=k?!^e5?N4=$?N4=0?N4=,?3OV@?!cgpqu5m\li6h\!r[CMhd6=g
+s'G_2$"$tE>[Lmur;Q`orW)usrr<#srq$-prr;r\?!L`Aqd0;.iEcOj?N4:3lM^VZlMp2MqYgQp
+H!T<6s'>Y2r`oe:?!poCeboFHqu-Tqrr2rtrVlBf!ri/Zs'#M2?2It.?/],i?2n42lMgb_s8N#_
+s6p!frr<#urr<!%rr;urH!T<6s'>S0$!gqE@9[!>r;Q`nrr<#urr<#urpg$grWW8Q?X6uCqd0;.
+iElOis'>]js8E#urVl*^n,NFes8W,us8N9%s8MtA?/Jug?2S"/?iOC8?<qpRrr;lps8W,us8W,u
+nc/Xg!r9',ra#D-s'=VjrETG1lMph`s8Dr^s7-*irr;us!<<&t"onT%rr%)l?3"71?NFHts8N&u
+rVl*^s8E6$m<i2G?!mJ8s'>/$rE],'rETG1lMph`s8Drss8W)ds7--err<#trr<!#rr%(Io3VH&
+l!=Br@/jO9?!gdhrVulss8N#_rrE&ur<;7c?t!;Gqd0;.nQu0"oj.Z)?N4:2lMph`s8Drss8W)d
+s7--err<#srWN9#r-M`L?NjY@?=-oDs'-"=?X@#B?=7#G?!CZA@.@P(>[[S<"CG>@Gk(h4!WN-!
+rW)osrpTjgrVulsr;li"s'>Y3ra,V1s'G_2nQu3#%UNFK?X-oB?sd,F?sR)Ds'Gckr;Pp[nc/Xg
+!<<&t*<6$:rr;oqrKUYj?X?uE>[LlEA6E/A?!pi@>@.>;!aT/;n6QB->[ClG>@QRhs8DiooD\mj
+s8N&us8N&s"m()8@U*.:?N4=2?N4=$?3OSB?=-i@ra-(>>[(NC?!CK?>']Z9s8W,ukl:2Qs8E0$
+rr)irs8E#ss8N<$rorIkR<\a=&mJ^G?!(E=@9m2H?"78H?sR)Gn6Q*%s'5e9?X-cYmJd%cs8Mus
+rpp*hrXA`'qu6QjP@7^%?sd4>?N4=2?N4=$?4gRL?<^oD=^YTB?X[>G@<m1Fs5a4Zs8D*[o)J^g
+"TSK"rr<#t!;uir!<3#s#5e>ql/UO5s*4iX>[:T??<^_8?3"71?NFD>nQl3$s'H.?>[CfF?,?I;
+r;6Nnrpg!jr;QWns8;r[s',P3s'G_1s'G_2s'G_2nQl<'?X7+??4URO?!hoZf]VMiqu-Hlr;PdW
+o)J^g"98B!rr<#srW<#rrr)cqq>^Boqu-QY#3F'UG?\H^s',P4s'>)""(,>?@/jO=?X6oai;EQQ
+r:'^srVulprr)cZG["K]?<plAl!=^$@:*5bGJ<"rl1t8U!WN&trr<!!qu?Wos8W,umf2kX"oeK"
+s8MusrW)uurW)osrWW?"rql]mrVcfprVZotp$9@s@fB[7?"!/.!+5b3!+5_3#@1YCIHUS,rpTjs
+rVQTmq=0_T@9ZuF?X."'?3FVAQ0.Q7r;loqs8E#rrr)utrr;us!WW)rrr<#urpKgWrrE&ur<!#u
+rVuiss8N#tr<WH%rr;lorr)irs8W'"r;QWorW_q>?!^`D?iOF"?N+47?=-oB>BoE3rpg$grWW9"
+r:#qVs&oM9>[(V9>NfArFR8r(r;QZrrVulr#Q4T"rqlWmr;Zfqrr<#urpKgWrrE&ur;clsrr;uu
+rr;rrrr;uur;$<ls8;itrQedL?iF=2@.@P'?2n73?2n74>[.57"'o>ZiW&lVrq-6jrr2j(l'5X]
+?"$oB?sR)El!=KuQMg^ZrVclurqufq!<)rss8<'!r;HZnrr<#urpKgVs8W)grrE&krs/PfG$nT_
+?<mJ9s'>Y2s'>2%s'5n:>[Lc[dII/5rr)oqqYpNp#laf#qqH@#?X;o&#%(Y??s?oAs'>fir;HQn
+rW)lorrE&srrE&Ws3goLrqr0is'#P4>[RM;s'>Y2s'>/$"'o5?>lS1:?('pSrr;foqYpNp#laeg
+_-^GU>[Q`%%9m(F?!^`C>^G`7rquZCs3goKrqtmX?3=Y@?<dG9s'>Y2s'>/$!F&q2?3sb??<hj1
+rr;uprVlis!<3#u"odV1?!:\:?3"*t?N4=.?3=P>?!@87!a8mVs8;ros8E'!rVQWprnd\'rrrE#
+nTA2Ds'5V0s'G_2s'G_2n6Q6'=C,TFs'Gt7XT&1qrr;uss8N)us8NB(fj.uj?<^`CnQu6$qHaG5
+?=-l@@<pu5rr)rrrqcZprnd\'s8W'"rQejN?3"70?N4=2?N4=#?3":2?N=4.>ln5<k5P>[rVuls
+s8N#trs8VgH<sla?=-q,?N4=.?34J=>5r%2?3-;hs8E)ts8Dcns8LmTdJs7E"m1&7@:*:>?N4=2
+?N4=#?4:4J?!^`C?$H2Equ?Tms8Muts8W'#rN]d7s'Ge/@.@S'?2Iq/?"!\="^>8;ir/fTrW3&t
+q>^KohZ)"'s8E3#QX<m#@/F:1?1;/1>@L`C?!Lalr;HWprr)irs8W)us8W''rT%9m=^t`AnQu6$
+qd'P5?X7#D?$c/BrVlrus8Dips8LmTd/X.E"QNcq?=!G7s'>,#$!geD>$bQ[nGN7brW)osrr<#u
+rr<#urWN2tR9F&!>6&+%?N4=-?3jnA?!h!jrVlisrW3&tq>^KohZ)"'#QFc&n9\;G?2It.?1D5%
+>[[S<"C,;?_u0Q5!<3#us8Moqs8N&s"lETl>%(\+?N4=.?3jqC>[Lc[lMUVXrrE&Ls3^iIrr<#s
+"4CL[@/F:1?1D5'@p3)Bs'Ge3lMph^rW)uurql`prWN2eH<FVT?1D8$?2Iq6>[^iB>d+)(rr<#t
+rm^tqrrr<"rqbb_q-O),nQl3"s'Ph2s'>_qq#(*ks8Drps8MuurPJSA!F8so?3ahD>@6@equ6Qo
+!<3#us8L[NdJj7Hs8W$!m9a,p?N4=$?3snG>$PKAkPbD[rVcfsrr2fp"T88tjE^c0!+"hq#$kJA
+>@?Xis8;rsrVlots8W)Ns3^lHrr;p!_-12Nqd0;.mp?$$!a9m=qYpNps8N&uqu-csrL.&#@e!e)
+?2\+/>l\+/?NXQ$qu$Hmrr<#ss8L[NdJjIMs8M/,?s-k6?N4=#?3"71>6JBYr;Z`nrr<#urr<#s
+rW3&us82u\>[L_*?N4=0?N4:3?X3V;"C,'Sr;Q`rs8E#urVkILd/O=Lm<;lA@U&k<s'G_2mTp-,
+?<h^;qu?Wmrr)lorW2rqs8E,kHWskI?N"10?N4:2>lS+7>$k``kPP;Trr)lsrnd\-rrE&qrrrDt
+Y?tOAs'5S0s'G_2mp66)?<ggAr;QWkrr)lnrW3&us8;rMmp>rus'G_2"(#2;@K0O6?^CB^r;H]p
+s8Muss8LmThuETQ!<)rs!<)rs"oJ;sjBc-l?3+;=q-O),rEf;*ra#\2>[ZRkr;cltrq$-prr;oq
+rTe]5s'5e5?sHuD>lS.-?1M;&?-iQLrr)oqr;Q`rs8LmThuENO!;lfq$N:#(l$HWB@U<DGq-O),
+r*KA.s'G_2s'>h6@pO<Nr;Q9e!;ulr#Q=S)?=7&G?N47.?Me%!?3X\\lMUPYrVQTos8W)Ts53kT
+rW<-!qYpI!s8Moh[9I'Es'#M3?h%J$?2\(7?!LOlrVQTos8MQg$2sl%r8_9l=^GA5?3+D<s'G_2
+mTp$%??ki8s8E#sr;Q`rs8LmThuEZSs8N0"rVZ]p$MjYR?<plE?!puDn6Z*"rE]_7?@(l6rVlis
+rq$-jr;ZfrrqutA?sd;Gs'>\4ra,V1m9Tm#>Jp@<rr2rsrn@D*rr`9#r;Q`p!UP+2?3"@4?3+J?
+l!=I!>-Il(r;lornc&Ufs8NE'rr)cQ>[CfE?iOC3?g1l!>%;g;s8;uqrmq,$s8W'+rV;^a?Wpc@
+?sI&El!=R!?0_@brr)?d!WN#srs&;ur9Sf7?2n75?<ge"?3=J:GjbV1s8E#us8N&us8LmTiW&rW
+rVulr!WW0!quGIN>mFVE?s?rC>[R;5s'>G,s'>P/!g`W[s8E'!r;6KorqQKprVl`ps8W'&r5;uL
+>?kJ0?N4=$?3skC?!jf4r;HWps8N&us8LmTiW&rWrVuos%0->(rTJN6>[U]@@9rn?pg3u+q-O),
+ra#Y3@,1e\!ri,sqZ$Tpq>^Kos83*$rqu`Y>%%A:ra#D-s'>/$!ao5>s'5Zdr;Z`rs8Muts8W)T
+s5F"Xrr<#srW)uurW2MTs'5V0s'Gq7?=6uG>kq\1?!gfC?!pq;?jU"B@9d#D>^Pf8s8Mfns8Mus
+s8N&urVlis'E7t-Q!Rg&?<gc@>@1]??s[&B?2n73?2n73?27e,>lS19>[DU?rVlirrW)uurnd\6
+s8W)us8Dp*s8Mo\='o?A>$kTA@K0U5@/4+3>[:]F>lS+1>lS(7?X$W@>[YhTs8N&u!<)cos8Mus
+s8N&urVliss8E&thY^[Y?iOC4@U&k<!FT:6?1qS2?!1K>>$o\Urr<#ts8W,uhZ)@1s8EQ-rr)>4
+>[(H@@:*5E?X-n4?3+>:s'5V4s'5t=?!prE@Tm)_kktJ[rquirqu?Wos8W,us8W&ss8W,u"T7k<
+?=3_<#?tP?>?tH??N4=1?3"@4>l\7-?N+:6=^QF9s8E#us8LaPg].9P%KHG)kBUBC>[(NC>[:_3
+?4:1I>[LcD>[UuD>?tM6?NHJkrr)ors8E#rqu?Wos8W,us8W&ss8W,us8<2I>[CT>?s@"<?j0tE
+=^YNBs'>e8?<pq6?3aYA>%2g>rVkCJg&M$M#6!t2?XmGJs'Pk5?hdq@>[:`D?!guD>[UoF>[Ujs
+rVZQkrVliss8N&urVliss8N&urVlisrr*E(lZccE?<gf@?Wp]A?=!S=!a],<s'Gb3pg+&.??bW4
+rql`qrnd\.rrN,trr*0#k]pB=?X$n;?3"7+?3+G8r`o]3kKeHZ?iOC7=aKW:rr<!!rql`ps8W,u
+s8W&ss8W,us8W&ss8W,u"oA5sQX*hq?3OV[XmEcHs'>e3>[Ln=>l\7+?3FAXkl(GYs8N#ts8W)T
+s5!_Trr;uurVlcrr;Z]tkBU<As'>b4?XWY8"C#>^iq`WP$1#TV>[Cdjr;Q`qr;Q]qs8W)us8Drs
+s8W)ss8W)us8Dp%r8M0j??i[<rqm)`G[=i`?=I5G?hdq0?ZkN0rVcfsrr2rts8LmTh>dNSs8Vrp
+!rV>,s'5_7?<pe7?2\(4?!La%kPtJ\r;Z^$r9:D0I-1D,r;Z`rrVlfrs8W)us8Drss8W)ss8W)u
+rsA])rqucgFBk9pqu$]g^3F$g?iOF5?sEV9rE]e9H0G5+qu6Qns8N#ts8W)Ts4%)JrXJhgG[F]`
+?!giB?X?uEs'5eSf)>OGrVZWrrU9.Rr;ciVs8W'!s8)cZ!;H9f'BFIG=^GH??=-rD>[:Z?Gj>5+
+rVultrRLqrrrE&ur<)8,?sN_<s'Q%:?<UZ@QKe>H$31#)rqucor;QWPrrE#trrN&rq#:s*rTCCn
+?!:N=?<poC?XS*Bqu?Zrr;ZcsrRLqqs8W'-rTJK8=C5B<?Wpf`an>]4!;ulr!;ufq!WE&trW)lS
+rrN)trVllrqYpQps8<)uj)na9s'Pb3"^?*9rVlisrr;uurmh%qs8W!$rTJB3?<U\8?NHDTs8;ut
+rVuisrVulurVlfr"9/5srnd\TrW2usq#CBn#5\;`Q<RX"s'5\4Hg:Y0!W;oCs3L]Frr;j%m<Dc>
+??sifr;HZp!;lfpqu?QmdJj:Gs8N&s$i8Y'?sI#]lMLPXrr2ourVk=HdJs4F#Q=Z#kBgQ[irAuV
+rW)orrr;uurVlftrr;rriVrrXs8W)urrE&ns8W'*s8DrorT9;KH0bG.rr)isrr;uurmq+ss8W&u
+s8W'&q>TI*nG`4_rW)lprrN)ts8N)ur;QitrVkXQs8Mcm"9/5ts8W)ur<<)WlM:GWrVl`p!<1RL
+dJs7G"TSK"rr)iq!rW&trr*!!rr)ls"TJH#s8C[Os8Mus!<)`nrr*#ts82fqr<E9"rqucqrqucs
+rVk@IdJrt?rVuos_>jK5!<;opb5]lhp\t-ks8Kk7rVlisqu4b<dJs1Ep](9m_>jK5s8W&srVuos
+cMu;lrVlQks8Kk7rVlisrVlcqs8L=D_uKc9JcG`L_uKc9JcG`Lc2[\?rVuosqu?Wo_>jE3cN!J8
+r;QWo!<2lqs8E'!rql]qrqcZmrqZQorr2rtrpTmcrpBabrqufqrr)lsrqHHjroa=[rqZQorql]q
+rql`qrqZQsrVlcprVlfrr;lots8E#srr)ops8E)urr)lr!W;rss8;irs8W&us8MutrVuj!rVlcm
+s8W,u!rr8srVd!!rqufns8Drqs8MutrVuj"rVlcps8W&us8Dosr;QZrrVufp!<)rs!W2omrW2rq
+r;Hlurr)iprr;otrr;us#6"K"rr)lqrr)utrr<#t!;ulr!;uco!<)rs!<)os!WE&urW)ljrr2rt
+rql]rrr<#t!<)rs#lOZ#rVlirs8;fo!<<)t!;ufps8Dus!WDoprW2rqrr)ors8E)rrqufq!rr5u
+s8W)t!<)rs!<)rs!W2lrrrE#srr2rmrW3&ss8E-!s8MrnrW2uqs8E#ss8E3%r;Q`qrVulsr;c`p
+rW)oqrW<&ur;Q[#rVlcnrqufqs8N)ts8E-!s8MlprW)orrWN9#rVlisrVc`qr;Zd!rVliorVcfs
+r;QWoq#:?ks8N)us8W,t!<3#ss8E&ss8W'$s8;lorVc]qqu?Tpr;Z`rqZ$Nqr;HTos8N&s!WN#r
+rW)orrW2rqs8E3#rr;uprVuits8;or!<)rss8Vuqs8<$!rr)lr!;lfr$N:#(qtg?kqu-EjrVd*$
+rr)corVZZns8E#srr*#srVulsquH]orW)uurr2lrrWE)srr;urrr)ops8E#ss8E#rs8E&tqYgBq
+s8;oos8N3!qY^?ms82fps7ZHmrVuisqZ$Kqr;HQnr;loorr)ots8E)uqu$Hl!;c`n!<)rs!WW#r
+rWW5uqu-EkrqursrVl]orWW9"rVZZms8E,tr;HQnr;uiqqYgBns8;isrVQWos8Dus!r`,qs8E#q
+s8E-#qu6NmrW)lpr;lfps8Drr!;c`o"8i&rrVlcrq>^Bqr;HWls8N&rrr2oqs83'!s8N&rrr)fo
+rW)lqrWN/ur;QWnrVucqrr2iurr;urr;Q`rrVuiqs8W#q#M[J:`kTjYrVuisr;Z]rn%Sh=%-@BD
+b/;!1i;*BMs8Drr$iTtbdE9e\jR<'Iqu?X0qVoH,_sI3U_SF%0kPY>ZrVlirs8;j&s8Mulkh",+
+c-cRQs82lorr*6&rr)$9eC)\(mf37crX&H$m(Bj?eboFFs8E?'ijZG3li-k^jT"KNjSe]3k3)!p
+p&G!nqYfd<rlYPjhXg^FrVl`pr<i2Vc-Xbfl21DXr;Z`rs82fps8DurrWrQ%rr)c\UL7I/>o-^P
+H*?l>qu-QR@9d*h^iWmd>@1Wom/?t`%/p2(ka#CY@:!5DIH1A,#5eDufj%les',S4?2n48@!09]
+qu?Zqs8;irs8VrulC;*cs'5k:=^??Tlhpb^r<*&b[WqgX&7AdKI)PFOr;ZcX?=@'Nr;HZp#5eAL
+?sd."s8<3#KjJ#9l%<7@?OpCGJaiX8eTG8(>%1ZAGhi8s$N/n/=^PB>>@*]Zs8E#rs8W)tqu?]q
+s8Vuq)uT[$G$J<U?<L]C>[EH]rr)i^>@(Z@@9d,H?2n.D?BOaVqu6EVG@Fi_?!:QA?$Y6'rVucq
+g&GC^?"$oC>5qn5>$Y@MrVZZps8DpHs8Mu\H!F`Z@U*)E?<poalhpe^n=!Tk>[:Q@>@(^*o)ARd
+jBl,!]DVX-rr;p"fihcjkPtJfr-i-[?X-fE=^,;6?O-H)_-:8O?!mS9$t!>PrVlcSF^8H\?=3_;
+!ag68rVlfrrr2oss8N&urVcs"rr)YUs',\4?X.#Cs'>t9?GcX>rT7Bms'?7AG&qhK?X@)Ebl.P>
+oQOVEs'H&?\6rTH?[:i5s832Y>[:T???UI4>lS16>]ej%rr;lp%fES;?<qi\cEDOt?X&fns8E<"
+QsF'&@<d-Ds'H.=?,Z^@r8q6j?,-=:rWiE"dpcNekPYAY!eFW`r`pRqKS!LKp%r$!?sI#^G'A4<
+>@)UCroeQ4?s%a#Y'U+R"($3=rVulrs8N#ss8W)us82d%qq>=^?$2Irr7_0o#@1SVkPG2B>lJ%1
+P2?6:"luOg>@DROr;baT>TR=Zo)8FV[U3<ERJm'^gKe,k@'o%on_%qi?!P)Bs8W)ts8Muum!8V9
+!L`6Qr!*,qigG#Xrr;p,lWd_%H0=htmFunn?$ko;r;c$[?3@h<rr<#t!WCRJ?3'-er=X]g?!DsK
+o_n:EnGMHX?!DNpkl:SakfJ*ojT#/YYQ%o;H/8;pqs9VU>[Q+\rVulss8N#ss8W)us8N#trrW&q
+[JsJ7@+G5TqZ$I&a'W.Yc2RY'@U*8_lMU\\!rVJ,s'GeLkPtJ`Q!n!@qZ$L!rquV\?X8!Bs8</R
+>@(O-q#:9j#2WTn>'^,Fs8N&urr)utk[+9p"607Wr;QZtr:Bjcs8;rHs'>_2lMphgr;HQM?!CUq
+s8;u]?2n4=]D_d/s8MuI?<pn"rr!"P?<pn)r;Z`rs8W'&rRY=[?dnuRrWrH$rTinMr9nq2>n,$U
+rr)ipl$-K=H2RX?rr;usrr;rsrr2rt#6+RC?s[sPs8<N.r;H&+>[bMKrT@Bk?)%8rrr!r:\m&HI
+lMTsm>@H1^rVl`nr8M*f?KqCbh-XDqh#76Pr<E8nG$A6rr;Zcqs8W)ur;l:ms',Q=s82orqu$Eu
+s8DhB?!qpQs8Dus"o[_6@U.C^r=J-t?<t5Cs8N&trRG4[?KM1dr;_HL?3>fMrVliq#Q4T!Q<RaA
+oDedgrW2rrrquu_>%1e%s839'qu-H0?X8$BrVlisrW)uurr2rrs8N!#s8;lpF8oSK_#432r<<3!
+G$nUMs8<Po@9d0Xr;QWorqt;R>@-Okl2P)l?/FrJl4<4Il/u>[?0(q\fih`gkPbG[#lXc$UgIDK
+rVZWos8N&s%.\RJ?X9#NjQ>XfnbW:bs8<(G=^T8Js8E9'qYpG9?!Nftr;c!Z>l_P:rXSu-rRG4[
+?KM1brdnE^JcGWWrVlcqrptD>?b?78rVZ]qs8E].rVYPW?=2m\m-a3+mFPWM>O27crquflrs8T&
+rH;FP^\n'1rWE,ur,MaA!.OtH!9X;g!a`\?s8E#rs8<8Y?=@+%r8q6j>lS.2=T;\A>$tZD?=2ai
+r7bIa>Nl%br;QWm_>ddCFoD=>s8E#urr*0$r8(ab?<pq<>Qe>@HHu-^rWN.E@p@:Zq[EK%rr)hF
+?sA$Wro[Se?3%V:rWN9#r7,*Q?45lorVhCS?@i%Qs8;or#Q<jm?sChPrVuisr;HWpr<^bW>[CcD
+>ZtK=s',b9>[Qgqs8N&ss8MusqYpQps8<,sFC8Ckr;?O%s*S3\F8bt'>$G=`s8Drr$2iL_>[H[m
+j^DBn?PH^P?!LcC?X-`@kPY/1@Tm.'qY^?lr<C)C?ZuADs8;j&s8Mrn^34!j?XEb>$sI"EPOnbN
+I9Tt.qu-Nns8;q@s'5bQrVktcs'>uDrVulsrqt;Ps'?&orr)hJ?!`0^rr)iq$2s7!='aPXrVlcq
+rW)osrXJ`%c!=ab?!LcC>[CcGs&oM3l2L_]rqufns8N#tr<@=M>f$=9rr2j+rc27NErH""?Xm9U
+rVZZor<q4`?sVsoj]u+tFF4%5%siGFG^F^\jo,,4?!CUtrVuj%rVl]1?WqUOrr;fn%/oG6H$+=9
+?"%#D?Jb_\"FFE]dJa+E#Q=T#rd8*\HN3sEkPe`m]D_d/s8MrI?2n49k5P>YJmM`8s8;utr;QWq
+k["3r!Qk<?rW2utrV[-'r6\\V=a57<H?aZ6GQW5<GO##'rr;iprr*3$Ea`1Zr;HNks8E0$F^A@^
+s8<)^>[:[Prr)lr&,Ojb>$L7ik$VJ"lMLPWrVl]srVlcps8;rPra#WjrVud"rVlc1?!_XQr<!#u
+s82cqr;QX.qu,pJlIL;c@[6okH!Xjur;Zcrs8EH*G[FdDrVkqb?<t2@s8E-#rqt=G>la$drW%NL
+?4DJbrVlcqrr)D3?<t5As8;uur;Zcqr;uoR@K0U5n,E7_r;cclrW)orrr<#urr;uurr<#urr;p"
+G$86qqu?WprXJhaG@+[nqu#S^?X8oos8EK*rqj-/?X)^ll$H]Bf`1mLrW)osrY5>1qu?ZngKn8n
+kPbGZr;QZ4>@2IOrW<-!s8MusrW)lqrX/W's8;lpr5)]EGQ7UGG?nO!qu6NnrW<&gGlM(Ue,91+
+?X6p1r;Z^$s8Mu7?<pgurVuj!IpZN6rr*6&s8MupQ=!jAn,N=crWE)trVQWn"m0#t>NYnarW2us
+rVZ`qrVufprr<#ts8W,us8N)us8<)9?sR!grVZfp`*E=J#hJqNj]u,!E9.&s"9/5\ErTDGFlr`&
+"I`V$GOGJ/"oJ8pk5,,Wr<CqZ>%-Olr;Z^!qu+68?$#uDs8W,u!<<)u"5U-LrVuiss8W$*r2j42
+Hi3`l@9[.$rr*K-r6\bU?0;(]mW2c>Eo6fns8E5gG$J<[kPkM[$%cDhJGfEHrr;utr>jKo@U6bC
+rVZZnq:Fa+rTni8@^5e.r;HNlqssabs8N#trr2lrs8N&urr*Q1rVl`O?!:]ZbNA`^^iWpiF6W`&
+([,40?!`TNoC1b"?X?r[r;HQN?<pm)jo5/]kHS@/q>UEm%bkE">3Gb^rVQTm^Kt8es8N&urr*3'
+rqkN!??+uls84SLp<e4k?'bEel<IP"HeRc\mEp8h?@(o7rVMFX@:"0.lL`ql>utH>k55/VK3h`7
+s8;rps8E3"rr)&-=oVh7]B&GOk,MX1h>dBVZX$d?_<M!t#5d>DH/AJtrVlZns8N&uqYg]pX'Ak9
+>[[S9!+5b3!F3MAquQcXs'Gh4@Trb;!F/q1?4p\prVZWeO^29tG^"FUH!ac_Q2gdep>&tX?0_Cf
+rr;m!_-gAhr;Q`qrWE,sqK`*I$XI+aI!0d[?<^cAjT#/fq6OF7>@(`D>?tQ>=k<WOs8E&L>lS+2
+?!dM8%9m7J?!H[nrr%=R?%MqOrr2j&csL$^@:3GG?X`t@#^Pn;l$6WD>^HBn"CGVCHL(V0rr2rt
+s8N#ts8N&urVcfss8E-!l'#QS>o$dR>[=o9rVZWT?=@&C?!q#E?sR,CNW8hYrr)c_H!UGT!aoAA
+s',Y5Gi/H!r<1h]?=2jprVld"r52cGG5_I@qu-]rl'#NT>6J5:?=.%<?N@qBr!<<#n!@3`?X-n9
+?4gGcq>C3jq"_.#>[CcD?X[;Ds'H7AjSeuSKj%f7r;HNmrqufq+8u,Q?!gfA>[Lf@@!'QgrVPGu
+>?Y???!gi@?@22>rVuiss8Drrs8W)us8Dour;Zcrr=&&#F^SK_>[;Hrq#1*ir=.ss?!Q+7F^&6Z
+>B[ODs8E#ss8E3"n#Cb@=oM\/H(+!os8<9%fj@ihir/lQrr;p"_-L;jrVlfsrVZX#rUS`i?XR/G
+>Q7t2H/eVrs8N&s%.)#_>@(Q@>C"]qrqucq$NBt9G$S9W>BIR/s'5\1k552X)1l.#K)GTErVlcp
+s82`ji-&C2?<LTAPi_lDrWiE"k*TF]>@%89!dMQMs8Duss8W&srr;rsr;Hfur;HWpr<D<3_8+"C
+m/R%`rZM1'>[(Uiqt/FW_:%6=rVZZnqu?ZnrTWCicdCe8r;HWpr;uu^g&Ke-p&4pi#PnDuhV?i?
+rVuits8N&s!WN-!rVucsqrQ]7ciheRkjeTMrXAc)s8Mi[lIF82lL4]Oqum'!r;HWpr!;K/]tVYN
+qrcK/fE^jErr;BPmHafM"oeQ!rr)lrr<W>kkgRf"e`6T-r=&`(rqcTjkMFP3biS0jr;uusrqufr
+rr2rrs8;j"r;Zcpr;Q]o!;lco!rMuqs8E6$l<[_%g&1mK!;uiprr2rrs8E#urr2rq!<)rqrquru
+r;Z`qrW)iqr;loqs8E-#rr)cpr<3-"rVlirrW)uurW2uprquirs82fo!ri)qs8E'!r;Zcor;QWs
+rqcZnrr2rrrVZ]os8N&s"9/>urVulqr;uups8;isrVZ]o!W2iqr;QWrrr;rqrqu`nrW2rrp&G!j
+qu6Tpq#19nrVd$"kZqP$g&:sM!<)lq!WW0!rVulsrrN-!qu6Tps8E#squ-Tqrr)rurr;osrr<!!
+rr)ls!rMuss8N&s!ri/ts8W,u!<<&t!<<)u!<<&t!rr8uqu6WqrVcfss8E#sqYpNprVcfsrVlis
+rr2rtr;H]rr;Q`rqu-Tqrr2corr2]mrVucorVuosr;ZZn!r_=gs'>`[rVlfps82fls82fqs8W&u
+s8N#ts8Muts8DrsrrW2urr<!*rVtp9iTU7>r;QQ^rr<#trr<#srr)itrr;Th!<<#srr;uss8W)t
+!WW0!s7ZHlrrN-!qYpHns8N#tq>^EmrVuWk$31"f?=.!krVlckrr<#prW)urrW)uurqZTmrr)j"
+rr;urs8W!&rqgqG@*JQErVHKos8N&s!WN,prquflrr<#srW)uprW)oprr2rsrr<#srWN9#s8N&m
+rW)umrqQNhs8Drrs7ZErs8M1f?XDFbrVQQos7cKms8W'"rVliqrW)uurqufnrr)isrr<!&rqlY?
+?<PGNquQcnr;H`srr)crrr;fnrVuco!WE#rrrN-!oD\dirVcfsqYgKprr2oqq>LBmq>U0hp&Fdc
+s8W,u!rr8_ra#TYrVc?e!<)Wj!<<)us8W)t!<;urrVllss8W,u#Q8gN@`\HEq>L<ls8W)urVuls
+s7lTns8Drss8W)ts7-*bs8N!!s8N&urW<-!s8W)ur;lotr;QZnrVlNjp&Fdcs8N)us8N9%k?VD"
+gAUsNrr;us!<;urs8Vck!<<&ts8W&s!<<#s!<<)u"TSB!rqZTm"*e3Vbl@V=rr)lqrqufmrr2rr
+rqufirW)uurqQNmrW)utrW<&ts8W&us8Doss8W'"s8MuqrW)utrq?B`s8;lmrs/Q%kZqM#gAV'N
+!<)forVuWk!<;los8W&s!<<#s!<<)u!;lfq%f?8(r-)=Rao)/<qu-NorVlcqrr2rtrr2rtrr2rt
+qYpNprVcfsr;H]rrr)otrVlisrVcfss8Muq!<<&t!<<)u#QOf%rr;rrs7lTls8W)ts7?9grqcX!
+rr)%e?X;@ar<<,trr;urqYgNqrr2lmrW)uurW)utrr)fqrr)lrrW2uss8<#qr-86I"j6fAs8Muo
+rW)utrql`qrVc`qs8W)qrVQTorrE&urVuius8N&srVulqs8W)rrVZZns8Muts8DourVlcnrr)ls
+rr2rarrE&urrrE%rr)%ds'>rcr;,L-gYVQ$rWiB$rr)iorTO:@"6&A*qZ$NlrWDiep%8:^!:p0V
+!q,[Yrr*3%lJpgcoD8B.s'H&OrU]=?m.:2Rs8N&s"8M9Kmem%hrVPsHmHOQJs8<)hm-jB+s6Tmd
+r;HTn!:p0M!U0%Qqutd'e(sm!rr*-#qWR,(k3N$Fs8MWi"TJH#s8M]kmJm4cs8N)us8N6$kZqP%
+s4Ra??!q#FFk6BerVd3#h/Ze+?s[&FGhDfkrWE,urJ(>X+GK@1KOJ1lL[4I.l`557?!2=&pNg.M
+c2?j3?!P2Cs82iq!WD9_>QK0Js8=/@r;H24?<`cqrU..A@9ZuF>^X$Kr;-?jrRP.]?I[GA?XEb<
+#)VsKrr)#Is'6";?$`a>rVZWns8Muos8W)ds6]jdrr;uurr<!)rodWp?=@)A>[%,4!F`>7rVuj,
+rOZEA?s[,C?X7&EQgjqQr>5Hc>%(`C?X?l>?s-h)m<DlC?<guF?<mM9#[GOLq0cLSH27L>#lXc#
+emD`flM^_]'`7'#?sVC_nU+VK>$kZ@@:*;dlM^_]("?Sr>$YKA@9m)EET[5r^NNjh?<pq<>mGW6
+rVl`or;PjYmJm4cs8N)us8NW/kZqP%=^PQB?=-lD>BS["r=8`$Q!7R#>[LfG?<UZBbl.MJKjS%h
+?WgiD@:+]fo)N%q?3=P;?sWe;"Ck\B@*/HH!8%6V!ak0js83*#r-2LS@FbATs8EM\>$YM!rTJK6
+>[(NC?!@87#%2T=rr)iHs'HUL>?kK<?X.*?rr(kd?!glA?=6rC?ZkQ0s8E'!rT=.Is8W)urrE&u
+rsShi?!goGGJ2hi^39N_&n."$r;HW^\U2ffmd'#fH!=Hqs83#srI\B_s'6Vkl1F.gp&!iX?!CUE
+hrs+(?<glAbP_>'?X-pks8E?%rodTm?<iiprVum$rK^_sG5VC=0(44[nEoQ0n$QJ-@-d^irRP.Y
+>[qZqgs_sgr;Q),=^c=*kj@H;?!:['qYg?lrr2lrs8MHdmJm4cs8N)us8N<&kZqP%EnC9f%c2;6
+>&rj*q>U?lo)8Rcs8E)ub[(6U$0V3creOfc>O21aquQ]Us'5\4Wr)en"oGH/>$oPRquq4M>dF;+
+s8E#Vs'?:G=aK90rr;G4>@,q[r;QZhq>^EnrW<&iH2h4Pf)>XJ%F\ck?>nd"rVZQkrq>=N?isZt
+r;Q`p#5kQ.>[?Xnr;QZps8MHdmJm4cs8N)us8N<&kZqP%Vu$Dl'E.j)>[^n"rVl]orr)ios8Drq
+i;[!g>42=frIe?ZM"LZGrW)lrr<<,@?sHpts8;rqs8<bq>@1[Yr;HQK?!MUIr;QYV@:*8G@GUn^
+rW_Ij?si$pqu$EnqZ$O(rVUnH@=%nMrmkC[?Fp17rquips8<)&?!`lms8E0"rr)(gs',]Xr;QZp
+s8Muss8MHdmJm4cs8N)us8N`2kZqP%b5M>;rqu`H?<^b"r;Zcq"9&,qr;Za"rS_*g?0D7e#5s9`
+?A/:Vrr3K,rr'uH?!lmprr)iol?WD9!Qk9>r<2.f?!cXmr;l,/s',\7?<WWls8E5J?<_[OqZ$To
+"TJ>urVZ]o!W.6D?4(uVrr(AQ?X;1ZrVZX"r-2ORcM[Y=s8E)unQl0$!R^iFrW)uurr)lsrpKgR
+s8W)urrE&urs/Pe?!gpkrVuos#64YT?Wpn"rr*9'kg?JXGBJ4VG?t5R"RQ-arIt8W!/17K#6"PD
+>[VdRrVd9'rHDOSb5M><n9\GGg&Ls]iEop-n9SAbl2LI'>[G\Rr;Za!rTMp`GlN-qH@($E@!MYM
+rXm[e?!l.\rr;uqrr),,>$uT#s*=roG^4XB?XD%Us8E#ss8Muss8MHdmJm4cs8N)us8N?'kZqP$
+g&:sNrXf,.g0J,mjo,2Wh03:4=^5A6>lS14?fqCf!W@`P?3#]TrWUGP?$?/Gs8Dus"oWXM?H`<I
+rWN27?!j!!r$[b7?K_4#?!lCcl!Re'kPP5Un=!Zj>$kT@?X6oB=b$ALr7,+Z?If#SrW)osrXo+n
+?=7&H?!1N@@9[#B?!bkUs8E#us8Muss8MHdmJm4cs8N)us8N<&kZqP$g&1gJ!W:[O?3X[$r;,;q
+>5qh:@:3;H?<g]<?KqFfrIt8X!/:FO)#sU6s89rD>'p5Jr;HZlr-)IQbP_A;roX5c(4593H=(m`
+r8V'fSG_AN>'fl>rV;sks'G_2'OY?S?=.#GHi3pCeQuNfeG]FHrVliq"mfN%>@:\8?iO@8?X-oB
+>L*0HrW)osrr)lsrpKgRs8W)urrE&urs&Jd?!gmkr;Za1s8MrL?X."$qttYB@!1/cki_<sg](U]
+@-IUg",'udK`D&Lrs&GF?sRsDrVc^5nTnGHbPhG?rUY8@?!LT;?a9S*nonJcl*^Ot"MXj6r9OAh
+#[b.1n*B?-m!Sh<!IF_ErWgt[?!c%Zs8N&s%0-:oH<ssnlL!j'mcjc<"R>@>rVliss8Muss8MHd
+mJm4cs8N)us8N<&kZqP$gAM!M"TSK!fj=\a#3YpJ?XR6ss830$rr)cQ>[C_'s8E&rK`><XL&_,R
+s8Mrrrs&GE?X-q'r;Q[#rTdTl?HW6Gs8NB&_-:/P?X$jrs8E,tQ!%Jo>RanGkPkGXfjJ*9pA=gd
+s8E&tJH&sZI/O!Bec/nW?e,,Tr;HitF(/Cls83#uq>U<jrqlcps8E'!r9"%Hs8W)urrE&urs&Jd
+?!gmjr;Za6s8MrM>@Uk&r9@Kk?fq:brr)inh-XDok5PDZ!/:GY!/:IP!WW0!s8W'.d9U'`g\q'K
+r;GJ[?XCkRr!NK%k$).s?!qj@r;Za+j'Q,#>[;UDrVlcD?sLJGr;Z^%r;(bI>'p5IrRCjQ%U[cb
+rr;rrr;6K4>@)[=s8<#urVliq"T85rrr)lrk5XiKs8N&u!<3#u#6*gl?X;@`rVd*$g0\)mkPa[R
+s'6#Sp\b!hqYZ1Y>@6dtr;lnOs'>\Yrr)rurr;p$rn_*g@=%#7r!<8aG?J<Yao)/<rrW2hG5kn[
+?!<cprVlcX?<gcB?aBY1s8<)V>@)aGrVR!#nQTC+IJj!@eGieV?e,,Ss8N-!rVuj#jBQ+u[I4(m
+$N9n_QIPa0rVulqqu?]qmf2PO!WN-!rW_Rl?<u:`rr<!>rr(MU?<lamqfl@O?^'+$jO'&r>@(S!
+rr;tO?<r9\rX81:?X7#_YfX+n?XEb;#LE;Hs8Drp[f9P6?s_:[s8N&r"aF<Z?X2^krX.mr>[`0,
+m-=#_JcB!Z@!MVJqUGON#@H$[rr;utrVuj0q3YAl??j]XjfWo7@))[>qZ$Qls8W)ds7--grr<#s
+rX&W(rT@Hj?.f/Ts8N&s!SLfZ?NoTjr8Dm+s'H+=?X?rC?s?rFkPbG[!/:GZ!egOOrr3B(s8MrI
+>[:TB?!Le;?3OS??-N6Fs8N&s!9*o_$s`&qrql]nfNMWeG4>P2&H)P$S6f?*?<^`A?s[5F?@)VL
+!S(HT?3&XXr;cisrrrE#rr))+s'?";>[CcC?X-p'q>^Hms8W)`s7--grW)usrW3&us8<)_?t!<o
+s8Dus#Q=ST=^bV"r;Z]rd<Yas!aT#;r`on>>[H[orVhOW>DN1VrX\u-rqucm^3Nsl>[CfZfm<[(
+!Qk<?r;Za%r:G/=?$cAFqu?X!rTINp?*=2*&cVb.n!mlk?X7)D?!CTA@=%nPr!1_Y>[>hWrr<#s
+s8Nc3qu,W'>[LrD?<pfCYNl)^rVulss8W)`s7--hrr<#rrW)lrrWV>(Dg'k4rr*-#r7cI<ET[5u
+&a$iSFaS>6iT,-,GO,/*r.B\&K`V/Os8N)ss8N)urquoWXEFPf#JB=!H$FYXrVuj&s8;il[<m,2
+rVuiss8W'Co6GD&k5G2Wrr;oqpZT,3H[1,"np,S,HN!jAd<9PQe,K=Frr<#t%/g,'nDLHjH[9nT
+jneuU!<)!Ync/Xgs8W&ss8N0"qu6Wo"8r/urVuj!r;QZls8;rss8;rqs8;ros8Dups8;oq"oS>u
+rVulrr<W?"rr;rrrVlisrW)iqrVucrrVZ]o$N0ktrVl`orVulprV[!#rVlims8Musr;Z^!rr;io
+s8;oqrVZ]o!;lfp!;ulr!rVrorqm3(rVulsrVulqrr)]mrVZ`nr;HZp!rW)rk5XZF!<)rs"T&,p
+rr)lsrVcrtrqcWjqu-Tlqu-Nn!<)rt!W2lrquH`rs8W'%r;QTnqu$Kn!;ulr!;ZTl!;uco!<)rt
+!WN&trW)iqrWW>trr;rps8Drr#6"Gur;Z`nrVc`p!W;rsrrN)us8N&s"9/2ss8W&urVuisrVc]q
+rVuisqu?Zqr;uurrVulurr<#tkl9oIr;Hlurr;uqrVulurVZNks8N)sr;Q`p!WMuqrrE#trW)os
+s8)]qrVlfr"o\K#qu6QjrW2rqs8E-!r;Z`qrW)orrWW2urVufos8E&srVuj"r;HZpqu?Wrr;Zfr
+!rW#ss8;utr;Z`urVlclrVcfqrr)ops8E'!rr)lsqu?WurVlirs8W)^s7--frr<#srqucuqu-No
+s8Dut"oeH"r;ZZorW<-!qYpHnrrN-!s8E9%rql]ms8;iqrW)oss8W'%s8;iprVliq!WN#srrrB$
+rr)irrr)ors8E#ur;H]prr)ors8N0"r;Q`rs8Dus!<<&t!<)or!rr6!rr*#ss8MomrW)lrrW)ip
+rr<!!r;Q`o!WMurrrr?!s8MurqZ$Tpmf2hWrVlisrr2rr"98?"qu6TkrrE&us8W'$r;QZorVuis
+r;Z`rr;QZqrVuius8Muqrr)itrVuoq!WN&rrW2uss8N)ts8N,trr;rsrW<&ts8W&uqtp?mrVuot
+rr<!!rr)lrs8N)ts8E)urr)ls"TA5srVliq"TJB!r;6Km!rMuqrr)rurVc]qrVuius8N&urr;uu
+rVQWprpKgVs8Drss8Drss7uZis7-*es8Drrs8N#rs7uZgs8W)us8Drqs8W)us8N#ts8N#rs8Drs
+s82fqs8W)as8Drms8W)ds7--frr<#srr<#orqZTarr)lrrr2rrrr)lmrqHHmrr<#srr)lsrr<#s
+rr<#urr)lqrr<#qrr<#urp0U_rqZTorpKgVs8Drms8Doss8;lns8Drds8Muts8)`ds82fms82fo
+s82f]s8N#ts8N#rs8)`ps8N#Ws7--frqZTnrr<#rrql`orpg$]rq$0erqcZmrr)lorp0U_rW)ut
+rr)lmrW)utro3t.s8Drqs82fos82fgs8W)ks8Drss8N#ss8Dros8W)os8W)us82fms8W)ks8DrR
+s4./Jrr)lorr)lorq6<krq6<irr<#rrr<#trql`qrqZTorr<#qrqcWprq-3jrnRPDs8W)ss8Drs
+s8Doss7lTls8W'!s8N&unc&Rgq>UEorVlNjp\t0lhu<ZUo_nmkrqcZnrr)lsrpKgVs8W)ss8Drs
+s8Doss7lTlrrE&urrE&us7-*gs7uZos8Dris7cNms53hUs7-*cs8Drqs8W)ds-s#grh]XGs1\Ma
+s1\Mas1\Mas1\Mas1\Mas1\Mas1\L~> Z
+; : 88 31 8 0 191 74 3740 4442 F F 3 [ 0 ] F 
+X
+doNimage
+!<9)"!<<'!$b*[Y^;.Y*aND]Mc2Z)hbmhk=aMu-6^:Uqb[C!6Es0)L,cE@0I%03lJ]YD>&aNMiS
+dF-MDe.L0XdEg(\aMl$2]XbMZ['Hs@s0'_N!!!E-\\,\o`lZHNdY'ssr;[?;6\Wt8c-"&D^V%+d
+[Bm1=YQ1m(XoWhtr;ZjIHL\-=H7Adm!@`?eXoJG.!5$"_`lcTSOrO,q%NCSYcHF8G^Uq%b['R$A
+s0)F)!L5)5!!#:aDu`0'!!+L5or\=\./s8I5lYd'5lUfb.$aM/!!!6(^;@n4cI,Pg!!3^>JH*@c
+J7&rf!"2WBcca>F^:Un_['K_9!3cF*"JH;*:uD6O"Q*#U%[Hdk"JH;*:uD6O"Q*#U%[Hdk!!!3'
+^r=F@dSTrD!YBnNqYpSg&H;_>.)jKS`PK7!\$WKHYcn)0![n%Vrr;uurr3%l!%@TE![n%Vs8N)Z
+s2P-"s8N.m!%@TE!!!0&_oU'L;#^Lr0]2X)!Uh`B!"2WNc,df;]=>8TZ*=83"*srDec,UK!<)p!
+:]Ph;Xp'+O:t>T>r?)*Ns8N-s!.+FC!!!-%`QHMirr<'Rn+H\]mkFbA$BicZ`kf@!\$WHFs/uJQ
+!8mPN!oEu,q5suP!8mgs+?<hOru_H*s5*f*poXSs#6;iidMi/tch%/KmgoI<d`okN^:Uk^Za$a<
+!'pM_!+>g,!+>d*!C-Y\Xp+kks7)L"M?!SWSKKQbrrG@bpoXSs!s$KiK`;#PJFWX>TDnm#L!Ro\
+^q@1bZa$a<!-%o:r;cfr!H8&7Xp+lFs7%?W.0';Ij8U5(kPoK$poXSs"ouio6N@\ds8N,7;#`c\
+JH,WM^JOqq!0@-Z%hJ_.dEBPG]t(SYZ*:D3E;fh8!<)ouDuf^:!<@*=rrTS[^]4<6j8U5(hu@Wq
+poXSs"TZcp%00f9rrBh3!!,?gqu?_)s8NU;!"IB$a25O$\$WHFY5gidrr?I,!!$F*rrG@bq5s_u
+5l^ic\Y7+ErrB,"+TMHB5QLS^!!!'#c-u[m!0@0[%57c)hnL;+0E<faY99J;rrA\k!"IE%aMYa'
+\$WHFY:0J/rVultrVlrV!%I`H"=X?.s.004s+1G&+I<&b!%I]G!!!'#cIDjo!5JR6rr<%LrVult
+!.atH!5JO6%Fi\E_nN^k['Hp>H2pe?s8N)trrQ!sHMO]FH2peArr@ZL+9cTOs%i]ApoXSs!W^Nq
+rr<&6s8W*!!.b%Jrr<%Lqu6Z2rr<PYcH*o;]!o&PYck2X!+>g+rrE&u!cS,fpT=QG!+>j,!6Y>B
+!7h,L!cS,fpT=Jr!W^Korr<%[s8NN^!$LaV+Fl-G0^m=1JH,WLTDnm&e'5tO^:Le\ZEUO8Tah'!
+hu3QXhbX:_Q1qEaTah'!hu3QXhbX:_Q1qE]!!NAHdL?1as8N)&qu?b*YP\A#@/p69Du^?qbf@T6
+]!o&PYcn)0!MLqA!!=o_E%q:l!@X6+XoY4Err<-T?uRh"!!+L5p9"Aq"TZ`n:]M(+rrKl2s$-R7
+s8N)&r]gI6rr3EM!(5/W`kf<u[^<<DYPkU)H7Adm!@`?bXoWhtr;ZjIHM"??!!<5Dc]\;.!0?[M
+!2'8k$\cpL`5'!p[Bm-BYL'EP!!`MEc-dO2&E!*Z&+:&0)q*!P_nNal[Bm-BYL'EP!!E;@b0Q^[
+!!+eBp&>']0`M+[P0_=j_7dCf['Hq9YL'EP!<3$$IE^)Err<'RchIG?h_>'1"&RChK>dii!!@5c
+dSTrD!YBnNqu6`dJ.V_\"#\NPIDc-a!!@\qdTuhP!YAais1\Vc?kE;;"&RFkQgt.Us8N'!s8Duu
+s7-0hs8N*!s7-0f!!Ibqd@VBP!!F7(dE\*K!!*'!!!*'!!!<0#s7--is8;ots8N'!s766f!![Ge
+cdItD%K-82%7?<,ccgh,!<3#s!!*&g!<<*!!<)rh!;Z["19f$LdF-MDe-=CMdEg(B548IOs8N'!
+s8Duus6]jgrrE*!!!*&j!;HNs5)R(uc2Z&lc-3nZ54&@Ls8;ots7$*gs8N'!s8N'!s765i!!*&"
+!!*$~> Z
+; Pscript_WinNT_Incr begin
+%%BeginResource: file Pscript_Win_GdiObject 5.0 0
+/SavedCTM null d/CTMsave{/SavedCTM SavedCTM currentmatrix d}b/CTMrestore
+{SavedCTM setmatrix}b/mp null d/ADO_mxRot null d/GDIHMatrix null d
+/GDIHPatternDict 22 dict d GDIHPatternDict `/PatternType 1 d/PaintType 2 d/Reps
+L2?{1}{5}? d/XStep 8 Reps mul d/YStep XStep d/BBox[0 0 XStep YStep]d/TilingType
+1 d/PaintProc{` 1 Lw[]0 sd PaintData , exec E}b/FGnd null d/BGnd null d
+/HS_Horizontal{horiz}b/HS_Vertical{vert}b/HS_FDiagonal{fdiag}b/HS_BDiagonal
+{biag}b/HS_Cross{horiz vert}b/HS_DiagCross{fdiag biag}b/MaxXYStep XStep YStep
+gt{XStep}{YStep}? d/horiz{Reps{0 4 M XStep 0 - 0 8 +}repeat 0 -8 Reps mul + K}b
+/vert{Reps{4 0 M 0 YStep - 8 0 +}repeat 0 -8 Reps mul + K}b/biag{Reps{0 0 M
+MaxXYStep @ - 0 YStep neg M MaxXYStep @ - 0 8 +}repeat 0 -8 Reps mul + 0 YStep
+M 8 8 - K}b/fdiag{Reps{0 0 M MaxXYStep @ neg - 0 YStep M MaxXYStep @ neg - 0 8
++}repeat 0 -8 Reps mul + MaxXYStep @ M 8 -8 - K}b E/makehatch{4 -2 $/yOrg ~ d
+/xOrg ~ d GDIHPatternDict/PaintData 3 -1 $ put CTMsave GDIHMatrix setmatrix
+GDIHPatternDict matrix xOrg yOrg + mp CTMrestore ~ U ~ 2 ^ put}b/h0{/h0
+/HS_Horizontal makehatch}b/h1{/h1/HS_Vertical makehatch}b/h2{/h2/HS_FDiagonal
+makehatch}b/h3{/h3/HS_BDiagonal makehatch}b/h4{/h4/HS_Cross makehatch}b/h5{/h5
+/HS_DiagCross makehatch}b/GDIBWPatternMx null d/pfprep{save 8 1 $
+/PatternOfTheDay 8 1 $ GDIBWPatternDict `/yOrg ~ d/xOrg ~ d/PaintData ~ d/yExt
+~ d/Width ~ d/BGnd ~ d/FGnd ~ d/Height yExt RepsV mul d/mx[Width 0 0 Height 0
+0]d E build_pattern ~ !}b/pfbf{/fEOFill ~ d pfprep hbf fEOFill{O}{L}? restore}b
+/GraphInit{GDIHMatrix null eq{/SavedCTM matrix d : ADO_mxRot concat 0 0 snap +
+: 0.48 @ GDIHPatternDict ` YStep mul ~ XStep mul ~ nonzero_dsnap YStep V ~
+XStep V ~ E +S/GDIHMatrix matrix currentmatrix readonly d ; : 0.24 -0.24 +S
+GDIBWPatternDict ` Width Height E nonzero_dsnap +S/GDIBWPatternMx matrix
+currentmatrix readonly d ; ;}if}b
+%%EndResource
+%%BeginResource: file Pscript_Win_GdiObject_L2 5.0 0
+/GDIBWPatternDict 25 dict @ `/PatternType 1 d/PaintType 1 d/RepsV 1 d/RepsH 1 d
+/BBox[0 0 RepsH 1]d/TilingType 1 d/XStep 1 d/YStep 1 d/Height 8 RepsV mul d
+/Width 8 d/mx[Width 0 0 Height neg 0 Height]d/FGnd null d/BGnd null d
+/SetBGndFGnd{BGnd null ne{BGnd aload ! scol BBox aload ! 2 ^ sub ~ 3 ^ sub ~
+rf}if FGnd null ne{FGnd aload ! scol}if}b/PaintProc{` SetBGndFGnd RepsH{Width
+Height F mx PaintData imagemask Width 0 +}repeat E}b E d/mp/makepattern , d
+/build_pattern{CTMsave GDIBWPatternMx setmatrix/nupangle where{! nupangle -90
+eq{nupangle R}if}if GDIBWPatternDict @ ` Width Height ne{Width Height gt{Width
+Height V 1}{1 Height Width V}? +S}if xOrg yOrg E matrix + mp CTMrestore}b/hbf
+{setpattern}b/hf{:/fEOFill ~ d ~ ! setpattern fEOFill{O}{L}? ;}b/pbf{: !
+/fEOFill ~ d GDIBWPatternDict `/yOrg ~ d/xOrg ~ d/PaintData ~ d/OutputBPP ~ d
+/Height ~ d/Width ~ d/PaintType 1 d/PatternType 1 d/TilingType 1 d/BBox[0 0
+Width Height]d/XStep Width d/YStep Height d/mx xOrg yOrg matrix + d 20 dict @ `
+/ImageType 1 d/Width Width d/Height Height d/ImageMatrix[1 0 0 1 0 0]d
+/BitsPerComponent 8 d OutputBPP 24 eq{/Decode[0 1 0 1 0 1]d}{OutputBPP 8 eq{
+/Decode[0 1]d}{/Decode[0 1 0 1 0 1 0 1]d}?}?/DataSource{PaintData}d E/ImageDict
+~ d/PaintProc{` ImageDict image E}b & mx makepattern setpattern E fEOFill{O}{L}
+? ;}b/mask_pbf{:/fEOFill ~ d 20 dict `/yOrg ~ d/xOrg ~ d/PaintData ~ d/Height ~
+d/Width ~ d/PatternType 1 d/PaintType 2 d/TilingType 1 d/BBox[0 0 Width Height]
+d/XStep Width d/YStep Height d/mx xOrg yOrg matrix + d/PaintProc{` Width Height
+T 1 1 dtransform abs ~ abs ~ 0 0 3 -1 $ 0 0 6 array astore{PaintData}imagemask
+E}b & mx makepattern setpattern E fEOFill{O}{L}? ;}b
+%%EndResource
+end reinitialize
+1 Lj 1 Lc 4 Lw solid N 4330 3951 M 6176 3951 I K 
+N 6176 3951 M 6176 4699 I K 
+N 6176 4699 M 4330 4699 I K 
+N 4330 4699 M 4330 3951 I K 
+N 4330 4118 M 6176 4118 I K 
+N 4330 4367 M 6176 4367 I K 
+N 4330 4533 M 6176 4533 I K 
+N 5807 4367 M 5807 4533 I K 
+N 4945 4533 M 4945 4699 I K 
+N 5807 4533 M 5807 4699 I K 
+/F0S3BYFFFFFFC4 F0 [59.992 0 0 -60 0 0 ] mFS
+F0S3BYFFFFFFC4 Ji 
+4372 4022 M (Title)[38 13 17 13  0]xS 
+4372 4188 M (Author)[40 33 17 33 33  0]xS 
+4372 4437 M (File)[37 13 13  0]xS 
+4372 4603 M (Revision)[43 33 31 13 30 13 33  0]xS 
+5849 4437 M (Document)[43 33 30 33 49 33 33  0]xS 
+4987 4603 M (Date)[43 33 17  0]xS 
+5849 4603 M (Sheets)[40 33 33 33 17  0]xS 
+4413 4105 M (1 MHz Digital Storage Oscilloscope - Analog Board)[33 17 49 43 29 17 43 13 33 13 17 33 13 17 40 17 33 20 33 33 33 17 47 30 30 13 13 13 33 30 30 33
+33 33 17 20 17 40 33 33 13 33 33 17 40 33 33 20  0]xS 
+4413 4271 M (Original Design from http://jonathanweaver.net)[47 20 13 33 13 33 33 13 17 43 33 30 13 33 33 17 17 20 33 49 17 33 17 17 33 17 17 17 13 33 33 33
+17 33 33 33 43 33 33 31 33 20 17 33 33  0]xS 
+4413 4354 M (Modifications by WA7ZVY - www.ocrg.org)[49 33 33 13 17 13 30 33 17 13 33 33 30 17 33 29 17 60 40 33 37 40 40 17 20 17 43 43 43 17 33 30
+20 33 17 33 20  0]xS 
+: 4413 4466 1310 67 rc 3281 4520 M (C:\\Users\\pmesser\\_Paul\\Design\\DSOscope\\Schematic\\A03\\DSOscope_AnalogBrd_A03.dsn)
+[43 17 17 43 30 33 20 30 17 33 49 33 30 30 33 20 17 33 40 33 33 13 17 43 33 30 13 33 33 17 43 40
+47 30 30 33 33 33 17 40 30 33 33 49 33 17 13 30 17 40 33 33 17 43 40 47 30 30 33 33 33 33 40 33
+33 13 33 33 40 20 33 33 40 33 33 17 33 30  0]xS 
+; 4413 4686 M (A03)[40 33  0]xS 
+5890 4520 M (120402.2)[33 33 33 33 33 33 17  0]xS 
+5029 4686 M (January 10, 2013)[30 33 33 33 33 20 29 17 33 33 17 17 33 33 33  0]xS 
+5890 4686 M (1 of 2)[33 17 33 17 17  0]xS 
+: 0 0 6250 4 rc N 0 0 M 6246 0 I K 
+; : 6243 0 7 4772 rc N 6246 0 M 6246 4768 I K 
+; : 0 4765 6250 7 rc N 6246 4768 M 0 4768 I K 
+; : 0 0 4 4772 rc N 0 4768 M 0 0 I K 
+; N 78 78 M 6176 78 I K 
+N 6176 78 M 6176 4699 I K 
+N 6176 4699 M 78 4699 I K 
+N 78 4699 M 78 78 I K 
+: 0 0 82 82 rc N 0 0 M 78 78 I K 
+; N 6246 4768 M 6176 4699 I K 
+: 6173 0 77 82 rc N 6246 0 M 6176 78 I K 
+; : 0 4696 82 76 rc N 0 4768 M 78 4699 I K 
+; : 0 0 4 82 rc N 0 0 M 0 78 I K 
+; /F0S2DYFFFFFFD2 F0 [45.992 0 0 -46 0 0 ] mFS
+F0S2DYFFFFFFD2 Ji 
+377 59 M (1)S 
+: 0 4696 4 76 rc N 0 4768 M 0 4699 I K 
+; 377 4749 M (1)S 
+: 778 0 7 82 rc N 781 0 M 781 78 I K 
+; 1158 59 M (2)S 
+N 781 4768 M 781 4699 I K 
+1158 4749 M (2)S 
+: 1558 0 7 82 rc N 1561 0 M 1561 78 I K 
+; 1939 59 M (3)S 
+N 1561 4768 M 1561 4699 I K 
+1939 4749 M (3)S 
+: 2339 0 7 82 rc N 2342 0 M 2342 78 I K 
+; 2719 59 M (4)S 
+N 2342 4768 M 2342 4699 I K 
+2719 4749 M (4)S 
+: 3120 0 7 82 rc N 3123 0 M 3123 78 I K 
+; 3500 59 M (5)S 
+N 3123 4768 M 3123 4699 I K 
+3500 4749 M (5)S 
+: 3901 0 7 82 rc N 3904 0 M 3904 78 I K 
+; 4281 59 M (6)S 
+N 3904 4768 M 3904 4699 I K 
+4281 4749 M (6)S 
+: 4681 0 7 82 rc N 4684 0 M 4684 78 I K 
+; 5062 59 M (7)S 
+N 4684 4768 M 4684 4699 I K 
+5062 4749 M (7)S 
+: 5462 0 7 82 rc N 5465 0 M 5465 78 I K 
+; 5842 59 M (8)S 
+N 5465 4768 M 5465 4699 I K 
+5842 4749 M (8)S 
+: 0 0 82 4 rc N 0 0 M 78 0 I K 
+; /F0S00IFFFFFFD2YFFFFFFD2 F0 [0 -45.992 -46 0 0 0 ] mFS
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+58 413 M (A)S 
+: 6173 0 77 4 rc N 6246 0 M 6176 0 I K 
+; 6230 413 M (A)S 
+: 0 792 82 7 rc N 0 795 M 78 795 I K 
+; 58 1208 M (B)S 
+N 6246 795 M 6176 795 I K 
+6230 1208 M (B)S 
+: 0 1586 82 7 rc N 0 1589 M 78 1589 I K 
+; 58 2004 M (C)S 
+N 6246 1589 M 6176 1589 I K 
+6230 2004 M (C)S 
+: 0 2381 82 7 rc N 0 2384 M 78 2384 I K 
+; 58 2799 M (D)S 
+N 6246 2384 M 6176 2384 I K 
+6230 2799 M (D)S 
+: 0 3176 82 7 rc N 0 3179 M 78 3179 I K 
+; 58 3592 M (E)S 
+N 6246 3179 M 6176 3179 I K 
+6230 3592 M (E)S 
+: 0 3971 82 7 rc N 0 3974 M 78 3974 I K 
+; 58 4385 M (F)S 
+N 6246 3974 M 6176 3974 I K 
+6230 4385 M (F)S 
+LH
+(%%[Page: 1]%%) = 
+%%PageTrailer
+
+%%Page: 2 2
+%%PageBoundingBox: 13 13 599 780
+%%EndPageComments
+%%BeginPageSetup
+/DeviceRGB dup setcolorspace /colspABC exch def
+mysetup concat colspRefresh
+%%EndPageSetup
+
+/DeviceGray dup setcolorspace /colspABC exch def
+0 0 scol 1 Lj 1 Lc 4 Lw N 739 785 M 785 785 I K 
+N 785 785 M 785 923 I K 
+F0S2DYFFFFFFD2 Ji 
+734 1111 M (GND)[36 33  0]xS 
+N 752 988 M 822 988 I K 
+N 752 988 M 785 1052 I K 
+N 785 1052 M 822 988 I K 
+N 785 923 M 785 988 I K 
+N 645 646 M 554 646 I 554 830 I 645 830 I C 
+K 
+N 674 692 M 646 692 I K 
+N 739 692 M 674 692 I K 
+680 682 M (1)S 
+N 674 785 M 646 785 I K 
+N 739 785 M 674 785 I K 
+680 775 M (2)S 
+N 622 692 M 622 679 611 669 599 669 -c 587 669 577 679 577 692 -c 577 704 587 715 599 715 -c 611 715 622 704 622 692 -c C 
+K 
+N 622 786 M 622 774 611 764 599 764 -c 587 764 577 774 577 786 -c 577 798 587 809 599 809 -c 611 809 622 798 622 786 -c C 
+K 
+N 616 677 M 585 707 I K 
+N 614 771 M 583 801 I K 
+531 553 M (J1)[23  0]xS 
+439 636 M (Terminal Block)[28 26 16 38 10 26 26 10 13 31 11 26 23  0]xS 
+N 3277 508 M 3277 323 I K 
+N 3277 323 M 2770 323 I K 
+N 2770 323 M 2770 646 I K 
+N 5981 894 M 5863 894 I K 
+N 5981 953 M 5863 953 I K 
+N 5863 953 M 5863 894 I K 
+N 5981 894 M 6039 924 I K 
+N 6039 924 M 5981 953 I K 
+F0S34YFFFFFFCE Ji 
+5876 942 M (CH1)[38 38  0]xS 
+N 5871 914 M 5853 914 I 5853 931 I 5871 931 I C 
+K 
+185 681 M (FROM)[32 38 41  0]xS 
+185 728 M (CHANNEL 1)[38 38 35 38 38 35 29 13  0]xS 
+185 866 M (BNC)[35 38  0]xS 
+185 774 M (FRONT)[32 38 41 38  0]xS 
+F0S2DYFFFFFFD2 Ji 
+3688 1157 M (GND)[36 33  0]xS 
+N 3707 1034 M 3776 1034 I K 
+N 3707 1034 M 3739 1099 I K 
+N 3739 1099 M 3776 1034 I K 
+N 3739 969 M 3739 1034 I K 
+N 3739 923 M 3739 969 I K 
+N 3001 923 M 3001 969 I K 
+2946 419 M (+12V)[27 26 26  0]xS 
+N 2968 443 M 3037 443 I K 
+N 3001 508 M 3001 443 I K 
+2952 1092 M (-12V)[15 26 26  0]xS 
+N 2968 1034 M 3037 1034 I K 
+N 3001 969 M 3001 1034 I K 
+2626 1988 M (GND)[36 33  0]xS 
+N 2645 1865 M 2714 1865 I K 
+N 2645 1865 M 2677 1930 I K 
+N 2677 1930 M 2714 1865 I K 
+N 2677 1800 M 2677 1865 I K 
+N 2677 1477 M 2677 1523 I K 
+N 2677 1754 M 2677 1800 I K 
+N 3139 739 M 2908 600 I 2908 877 I 3139 739 I K 
+N 3001 619 M 3001 646 I K 
+N 3001 554 M 3001 619 I K 
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+3017 713 M (V+)[-31  0]yS 
+2990 612 M (8)S 
+N 3001 859 M 3001 831 I K 
+N 3001 923 M 3001 859 I K 
+3017 822 M (V-)[-31  0]yS 
+2990 891 M (4)S 
+N 2953 669 M 2919 669 I K 
+N 2954 808 M 2920 808 I K 
+N 2937 788 M 2937 826 I K 
+N 3167 739 M 3139 739 I K 
+N 3231 739 M 3167 739 I K 
+F0S2DYFFFFFFD2 Ji 
+3173 729 M (1)S 
+N 2880 646 M 2908 646 I K 
+N 2816 646 M 2880 646 I K 
+2848 636 M (2)S 
+N 2880 831 M 2908 831 I K 
+N 2816 831 M 2880 831 I K 
+2848 821 M (3)S 
+3024 553 M (U1A)[33 26  0]xS 
+3024 636 M (TLE2082)[28 26 31 26 26 26  0]xS 
+N 2031 415 M 2031 785 I K 
+N 1154 1339 M 1062 1339 I K 
+N 1062 1339 M 877 1339 I K 
+N 624 1309 M 819 1309 I K 
+N 624 1368 M 819 1368 I K 
+N 819 1368 M 877 1339 I K 
+N 877 1339 M 819 1309 I K 
+N 624 1368 M 624 1309 I K 
+F0S34YFFFFFFCE Ji 
+636 1357 M (CH1Sel)[38 38 29 35 29  0]xS 
+N 885 1329 M 868 1329 I 868 1347 I 885 1347 I C 
+K 
+[ 36 36 ] 0 sd N 1708 969 M 1708 1246 I K 
+solid N 1817 1309 M 1523 1309 I K 
+N 1817 1368 M 1523 1368 I K 
+N 1523 1368 M 1523 1309 I K 
+N 1817 1309 M 1875 1339 I K 
+N 1875 1339 M 1817 1368 I K 
+1538 1357 M (ACDCMode)[35 38 38 38 43 29 29  0]xS 
+N 1532 1329 M 1514 1329 I 1514 1347 I 1532 1347 I C 
+K 
+N 2770 831 M 2724 831 I K 
+F0S2DYFFFFFFD2 Ji 
+1980 1434 M (GND)[36 33  0]xS 
+N 1999 1311 M 2068 1311 I K 
+N 1999 1311 M 2031 1376 I K 
+N 2031 1376 M 2068 1311 I K 
+N 2031 1246 M 2031 1311 I K 
+5442 1480 M (GND)[36 33  0]xS 
+N 5461 1357 M 5530 1357 I K 
+N 5461 1357 M 5493 1422 I K 
+N 5493 1422 M 5530 1357 I K 
+N 5493 1293 M 5493 1357 I K 
+F0S34YFFFFFFCE Ji 
+2077 958 M (0.1X)[29 14 29  0]xS 
+2077 728 M (1X)[29  0]xS 
+N 3001 508 M 3001 554 I K 
+N 2096 415 M 2123 415 I K 
+N 2077 415 M 2096 415 I K 
+F0S2DYFFFFFFD2 Ji 
+2086 405 M (1)S 
+N 2290 415 M 2262 415 I K 
+N 2308 415 M 2290 415 I K 
+2273 405 M (2)S 
+N 2123 415 M 2135 390 I K 
+N 2227 391 M 2251 438 I K 
+N 2205 438 M 2228 391 I K 
+N 2251 439 M 2263 415 I K 
+N 2182 390 M 2206 438 I K 
+N 2136 390 M 2160 438 I K 
+N 2159 438 M 2182 391 I K 
+2123 313 M (R3)[33  0]xS 
+2123 359 M (1.00M)[26 13 26 26  0]xS 
+N 2511 831 M 2539 831 I K 
+N 2493 831 M 2511 831 I K 
+2502 821 M (1)S 
+N 2705 831 M 2677 831 I K 
+N 2724 831 M 2705 831 I K 
+2688 821 M (2)S 
+N 2539 831 M 2551 805 I K 
+N 2642 807 M 2666 854 I K 
+N 2620 853 M 2643 807 I K 
+N 2666 854 M 2678 831 I K 
+N 2597 806 M 2621 853 I K 
+N 2551 806 M 2575 853 I K 
+N 2574 853 M 2597 807 I K 
+2539 729 M (R6)[33  0]xS 
+2539 775 M (100K)[26 26 26  0]xS 
+N 831 692 M 877 692 I K 
+N 1477 692 M 1569 692 I K 
+N 1219 415 M 1246 415 I K 
+N 1200 415 M 1219 415 I K 
+1209 405 M (1)S 
+N 1413 415 M 1385 415 I K 
+N 1431 415 M 1413 415 I K 
+1396 405 M (2)S 
+N 1246 415 M 1258 390 I K 
+N 1350 391 M 1374 438 I K 
+N 1328 438 M 1351 391 I K 
+N 1374 439 M 1386 415 I K 
+N 1305 390 M 1329 438 I K 
+N 1258 390 M 1282 438 I K 
+N 1281 438 M 1305 391 I K 
+1246 313 M (R1)[33  0]xS 
+1246 359 M (10.0)[26 26 13  0]xS 
+N 1154 692 M 1200 692 I K 
+N 1200 415 M 1154 415 I K 
+N 1154 415 M 1154 692 I K 
+N 1108 692 M 1154 692 I K 
+N 1477 415 M 1477 692 I K 
+N 1431 692 M 1477 692 I K 
+N 1569 785 M 831 785 I K 
+N 831 785 M 831 692 I K 
+N 739 692 M 831 692 I K 
+N 1385 877 M 1385 923 I K 
+1334 1111 M (GND)[36 33  0]xS 
+N 1353 988 M 1422 988 I K 
+N 1353 988 M 1385 1052 I K 
+N 1385 1052 M 1422 988 I K 
+N 1385 923 M 1385 988 I K 
+N 1634 415 M 1662 415 I K 
+N 1616 415 M 1634 415 I K 
+1625 405 M (1)S 
+N 1828 415 M 1800 415 I K 
+N 1846 415 M 1828 415 I K 
+1811 405 M (2)S 
+N 1662 415 M 1674 390 I K 
+N 1765 391 M 1789 438 I K 
+N 1743 438 M 1766 391 I K 
+N 1789 439 M 1801 415 I K 
+N 1720 390 M 1744 438 I K 
+N 1674 390 M 1698 438 I K 
+N 1697 438 M 1720 391 I K 
+1662 313 M (R2)[33  0]xS 
+1662 359 M (1.00M)[26 13 26 26  0]xS 
+N 1477 415 M 1431 415 I K 
+N 1616 415 M 1477 415 I K 
+/F0S28YFFFFFFDC F0 [40.777 0 0 -36 0 0 ] mFS
+F0S28YFFFFFFDC Ji 
+1497 774 M (DC)[30  0]xS 
+1477 869 M (GND)[32 30  0]xS 
+1500 682 M (AC)[27  0]xS 
+N 1154 1431 M 1062 1431 I K 
+N 1062 1339 M 1062 1431 I K 
+N 1477 1339 M 1523 1339 I K 
+N 1385 877 M 1569 877 I K 
+N 2354 831 M 2354 415 I K 
+N 2031 415 M 1846 415 I K 
+N 2077 415 M 2031 415 I K 
+N 2031 1200 M 2031 1246 I K 
+N 2031 942 M 2031 969 I K 
+N 2031 923 M 2031 942 I K 
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+2020 958 M (1)S 
+N 2031 1136 M 2031 1108 I K 
+N 2031 1154 M 2031 1136 I K 
+2020 1145 M (2)S 
+N 2031 969 M 2057 981 I K 
+N 2055 1073 M 2008 1097 I K 
+N 2009 1051 M 2055 1074 I K 
+N 2008 1097 M 2031 1109 I K 
+N 2056 1028 M 2009 1052 I K 
+N 2056 982 M 2009 1006 I K 
+N 2009 1004 M 2055 1028 I K 
+F0S2DYFFFFFFD2 Ji 
+2054 1061 M (R10)[33 26  0]xS 
+2054 1144 M (110K)[26 26 26  0]xS 
+N 2770 646 M 2816 646 I K 
+N 3535 1202 M 3535 1193 3529 1186 3521 1186 -c 3514 1186 3508 1193 3508 1202 -c 3508 1210 3514 1218 3521 1218 -c 3529 1218 3535 1210 3535 1202 -c C 
+K 
+N 3601 1200 M 3536 1200 I K 
+3542 1190 M (2)S 
+N 3461 1156 M 3461 1147 3455 1140 3447 1140 -c 3440 1140 3434 1147 3434 1156 -c 3434 1164 3440 1172 3447 1172 -c 3455 1172 3461 1164 3461 1156 -c C 
+K 
+N 3370 1154 M 3434 1154 I K 
+3402 1144 M (1)S 
+N 3461 1248 M 3461 1240 3455 1233 3447 1233 -c 3440 1233 3434 1240 3434 1248 -c 3434 1257 3440 1264 3447 1264 -c 3455 1264 3461 1257 3461 1248 -c C 
+K 
+N 3370 1246 M 3434 1246 I K 
+3402 1236 M (3)S 
+N 3508 1200 M 3442 1200 I K 
+3439 1098 M (SW3A)[31 46 26  0]xS 
+N 3461 1571 M 3461 1563 3455 1556 3447 1556 -c 3440 1556 3434 1563 3434 1571 -c 3434 1580 3440 1587 3447 1587 -c 3455 1587 3461 1580 3461 1571 -c C 
+K 
+N 3370 1569 M 3434 1569 I K 
+3402 1559 M (5)S 
+N 3535 1525 M 3535 1516 3529 1509 3521 1509 -c 3514 1509 3508 1516 3508 1525 -c 3508 1533 3514 1541 3521 1541 -c 3529 1541 3535 1533 3535 1525 -c C 
+K 
+N 3601 1523 M 3536 1523 I K 
+3542 1513 M (4)S 
+N 3535 1617 M 3535 1609 3529 1602 3521 1602 -c 3514 1602 3508 1609 3508 1617 -c 3508 1626 3514 1633 3521 1633 -c 3529 1633 3535 1626 3535 1617 -c C 
+K 
+N 3601 1616 M 3536 1616 I K 
+3542 1606 M (6)S 
+N 3462 1569 M 3528 1569 I K 
+3485 1421 M (SW3B)[31 46 26  0]xS 
+N 4108 831 M 3878 692 I 3878 969 I 4108 831 I K 
+N 3923 762 M 3888 762 I K 
+N 3924 900 M 3889 900 I K 
+N 3906 881 M 3906 919 I K 
+N 4136 831 M 4108 831 I K 
+N 4201 831 M 4136 831 I K 
+4143 821 M (7)S 
+N 3850 739 M 3878 739 I K 
+N 3785 739 M 3850 739 I K 
+3818 729 M (6)S 
+N 3850 923 M 3878 923 I K 
+N 3785 923 M 3850 923 I K 
+3818 913 M (5)S 
+3993 645 M (U1B)[33 26  0]xS 
+3993 729 M (TLE2082)[28 26 31 26 26 26  0]xS 
+N 3388 739 M 3416 739 I K 
+N 3370 739 M 3388 739 I K 
+3379 729 M (1)S 
+N 3582 739 M 3554 739 I K 
+N 3601 739 M 3582 739 I K 
+3565 729 M (2)S 
+N 3416 739 M 3428 713 I K 
+N 3519 715 M 3543 762 I K 
+N 3497 761 M 3520 715 I K 
+N 3543 762 M 3555 739 I K 
+N 3474 714 M 3498 761 I K 
+N 3428 714 M 3452 761 I K 
+N 3451 761 M 3474 715 I K 
+3416 636 M (R5)[33  0]xS 
+3416 682 M (3.90K)[26 13 26 26  0]xS 
+N 3785 923 M 3739 923 I K 
+N 3693 739 M 3785 739 I K 
+N 3896 1200 M 3924 1200 I K 
+N 3878 1200 M 3896 1200 I K 
+3887 1190 M (1)S 
+N 4090 1200 M 4062 1200 I K 
+N 4108 1200 M 4090 1200 I K 
+4073 1190 M (2)S 
+N 3924 1200 M 3936 1174 I K 
+N 4027 1176 M 4051 1223 I K 
+N 4005 1222 M 4028 1176 I K 
+N 4051 1223 M 4063 1200 I K 
+N 3982 1175 M 4006 1222 I K 
+N 3936 1175 M 3960 1222 I K 
+N 3959 1222 M 3982 1176 I K 
+3924 1098 M (R12)[33 26  0]xS 
+3924 1144 M (1.00K)[26 13 26 26  0]xS 
+N 3277 739 M 3231 739 I K 
+N 3324 739 M 3277 739 I K 
+N 3324 785 M 3324 739 I K 
+N 3370 739 M 3324 739 I K 
+N 3324 1016 M 3324 1154 I K 
+N 3324 1154 M 3370 1154 I K 
+N 3647 1200 M 3647 739 I K 
+N 3601 739 M 3647 739 I K 
+N 2354 415 M 2308 415 I K 
+N 1939 785 M 1893 785 I K 
+N 2077 785 M 2031 785 I K 
+N 2077 877 M 2031 877 I K 
+N 2031 877 M 2031 923 I K 
+N 2354 831 M 2308 831 I K 
+N 2493 831 M 2354 831 I K 
+[ 36 36 ] 0 sd N 3462 1293 M 3462 1477 I K 
+solid N 4247 942 M 4247 969 I K 
+N 4247 923 M 4247 942 I K 
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+4236 958 M (1)S 
+N 4247 1136 M 4247 1108 I K 
+N 4247 1154 M 4247 1136 I K 
+4236 1145 M (2)S 
+N 4247 969 M 4273 981 I K 
+N 4271 1073 M 4224 1097 I K 
+N 4225 1051 M 4271 1074 I K 
+N 4224 1097 M 4247 1109 I K 
+N 4272 1028 M 4225 1052 I K 
+N 4272 982 M 4225 1006 I K 
+N 4225 1004 M 4271 1028 I K 
+F0S2DYFFFFFFD2 Ji 
+4316 969 M (R11)[33 26  0]xS 
+4316 1052 M (1.00K)[26 13 26 26  0]xS 
+N 3370 1246 M 3324 1246 I K 
+N 3324 1246 M 3324 1339 I K 
+N 3324 1339 M 4247 1339 I K 
+N 3647 1200 M 3601 1200 I K 
+N 3878 1200 M 3647 1200 I K 
+N 4108 1200 M 4247 1200 I K 
+N 4247 923 M 4247 831 I K 
+N 4247 1200 M 4247 1339 I K 
+N 4247 1154 M 4247 1200 I K 
+F0S34YFFFFFFCE Ji 
+3139 1189 M (Gain 5)[41 29 12 29 13  0]xS 
+3139 1235 M (Gain 2)[41 29 12 29 13  0]xS 
+3139 1282 M (Gain 1)[41 29 12 29 13  0]xS 
+N 5032 923 M 4801 785 I 4801 1062 I 5032 923 I K 
+N 4893 803 M 4893 831 I K 
+N 4893 739 M 4893 803 I K 
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+4909 897 M (V+)[-31  0]yS 
+4882 797 M (8)S 
+N 4893 1043 M 4893 1016 I K 
+N 4893 1108 M 4893 1043 I K 
+4909 1006 M (V-)[-31  0]yS 
+4882 1076 M (4)S 
+N 4846 854 M 4811 854 I K 
+N 4847 992 M 4812 992 I K 
+N 4830 973 M 4830 1011 I K 
+N 5059 923 M 5032 923 I K 
+N 5124 923 M 5059 923 I K 
+F0S2DYFFFFFFD2 Ji 
+5066 913 M (1)S 
+N 4773 831 M 4801 831 I K 
+N 4708 831 M 4773 831 I K 
+4741 821 M (2)S 
+N 4773 1016 M 4801 1016 I K 
+N 4708 1016 M 4773 1016 I K 
+4741 1006 M (3)S 
+4916 738 M (U3A)[33 26  0]xS 
+4916 821 M (TLE2082)[28 26 31 26 26 26  0]xS 
+N 4311 831 M 4339 831 I K 
+N 4293 831 M 4311 831 I K 
+4302 821 M (1)S 
+N 4505 831 M 4478 831 I K 
+N 4524 831 M 4505 831 I K 
+4489 821 M (2)S 
+N 4339 831 M 4351 805 I K 
+N 4443 807 M 4467 854 I K 
+N 4420 853 M 4444 807 I K 
+N 4467 854 M 4479 831 I K 
+N 4397 806 M 4421 853 I K 
+N 4351 806 M 4375 853 I K 
+N 4374 853 M 4397 807 I K 
+4293 729 M (R7)[33  0]xS 
+4293 775 M (1.00K)[26 13 26 26  0]xS 
+N 4819 415 M 4847 415 I K 
+N 4801 415 M 4819 415 I K 
+4810 405 M (1)S 
+N 5013 415 M 4985 415 I K 
+N 5032 415 M 5013 415 I K 
+4996 405 M (2)S 
+N 4847 415 M 4859 390 I K 
+N 4950 391 M 4974 438 I K 
+N 4928 438 M 4951 391 I K 
+N 4974 439 M 4986 415 I K 
+N 4905 390 M 4929 438 I K 
+N 4859 390 M 4883 438 I K 
+N 4882 438 M 4905 391 I K 
+4847 313 M (R4)[33  0]xS 
+4847 359 M (1.00K)[26 13 26 26  0]xS 
+4839 604 M (+12V)[27 26 26  0]xS 
+N 4861 628 M 4930 628 I K 
+N 4893 692 M 4893 628 I K 
+N 4893 692 M 4893 739 I K 
+N 4893 1108 M 4893 1154 I K 
+4844 1277 M (-12V)[15 26 26  0]xS 
+N 4861 1219 M 4930 1219 I K 
+N 4893 1154 M 4893 1219 I K 
+N 5521 923 M 5493 923 I K 
+N 5539 923 M 5521 923 I K 
+5504 913 M (1)S 
+N 5327 923 M 5355 923 I K 
+N 5309 923 M 5327 923 I K 
+5318 913 M (2)S 
+N 5493 923 M 5481 949 I K 
+N 5390 947 M 5366 900 I K 
+N 5412 901 M 5389 947 I K 
+N 5366 900 M 5354 923 I K 
+N 5435 948 M 5411 901 I K 
+N 5481 948 M 5457 901 I K 
+N 5458 901 M 5435 947 I K 
+5309 821 M (R9)[33  0]xS 
+5309 867 M (1.00K)[26 13 26 26  0]xS 
+N 4708 1016 M 4616 1016 I K 
+N 4247 831 M 4201 831 I K 
+N 4293 831 M 4247 831 I K 
+N 4662 831 M 4708 831 I K 
+N 4801 415 M 4662 415 I K 
+N 4662 415 M 4662 831 I K 
+N 4524 831 M 4662 831 I K 
+N 5262 923 M 5309 923 I K 
+N 5032 415 M 5170 415 I K 
+N 5170 415 M 5170 923 I K 
+N 5124 923 M 5170 923 I K 
+5803 1310 M (+5V)[27 26  0]xS 
+N 5789 1260 M 5789 1329 I K 
+N 5724 1293 M 5789 1293 I K 
+N 5586 923 M 5863 923 I K 
+N 3370 1569 M 3324 1569 I K 
+N 3030 1540 M 3265 1540 I K 
+N 3030 1599 M 3265 1599 I K 
+N 3265 1599 M 3324 1570 I K 
+N 3324 1570 M 3265 1540 I K 
+N 3030 1599 M 3030 1540 I K 
+F0S34YFFFFFFCE Ji 
+3042 1588 M (CH1SelG)[38 38 29 35 29 12  0]xS 
+N 3332 1560 M 3314 1560 I 3314 1578 I 3332 1578 I C 
+K 
+N 3910 1494 M 3739 1494 I K 
+N 3910 1553 M 3739 1553 I K 
+N 3739 1553 M 3739 1494 I K 
+N 3910 1494 M 3968 1524 I K 
+N 3968 1524 M 3910 1553 I K 
+3753 1542 M (GAIN5)[41 35 14 38  0]xS 
+N 3747 1514 M 3730 1514 I 3730 1532 I 3747 1532 I C 
+K 
+N 3910 1586 M 3739 1586 I K 
+N 3910 1645 M 3739 1645 I K 
+N 3739 1645 M 3739 1586 I K 
+N 3910 1586 M 3968 1616 I K 
+N 3968 1616 M 3910 1645 I K 
+3753 1634 M (GAIN1)[41 35 14 38  0]xS 
+N 3747 1606 M 3730 1606 I 3730 1624 I 3747 1624 I C 
+K 
+N 3601 1523 M 3739 1523 I K 
+N 3601 1616 M 3739 1616 I K 
+N 739 2308 M 785 2308 I K 
+N 785 2308 M 785 2447 I K 
+F0S2DYFFFFFFD2 Ji 
+734 2634 M (GND)[36 33  0]xS 
+N 752 2511 M 822 2511 I K 
+N 752 2511 M 785 2576 I K 
+N 785 2576 M 822 2511 I K 
+N 785 2447 M 785 2511 I K 
+N 645 2170 M 554 2170 I 554 2353 I 645 2353 I C 
+K 
+N 674 2216 M 646 2216 I K 
+N 739 2216 M 674 2216 I K 
+680 2206 M (1)S 
+N 674 2308 M 646 2308 I K 
+N 739 2308 M 674 2308 I K 
+680 2298 M (2)S 
+N 622 2215 M 622 2203 611 2193 599 2193 -c 587 2193 577 2203 577 2215 -c 577 2227 587 2238 599 2238 -c 611 2238 622 2227 622 2215 -c C 
+K 
+N 622 2309 M 622 2297 611 2287 599 2287 -c 587 2287 577 2297 577 2309 -c 577 2321 587 2332 599 2332 -c 611 2332 622 2321 622 2309 -c C 
+K 
+N 616 2200 M 585 2231 I K 
+N 614 2294 M 583 2325 I K 
+531 2077 M (J2)[23  0]xS 
+439 2160 M (Terminal Block)[28 26 16 38 10 26 26 10 13 31 11 26 23  0]xS 
+N 3277 2031 M 3277 1846 I K 
+N 3277 1846 M 2770 1846 I K 
+N 2770 1846 M 2770 2170 I K 
+N 5981 2417 M 5863 2417 I K 
+N 5981 2476 M 5863 2476 I K 
+N 5863 2476 M 5863 2417 I K 
+N 5981 2417 M 6039 2447 I K 
+N 6039 2447 M 5981 2476 I K 
+F0S34YFFFFFFCE Ji 
+5876 2465 M (CH2)[38 38  0]xS 
+N 5871 2437 M 5853 2437 I 5853 2455 I 5871 2455 I C 
+K 
+185 2205 M (FROM)[32 38 41  0]xS 
+185 2251 M (CHANNEL 2)[38 38 35 38 38 35 29 13  0]xS 
+185 2389 M (BNC)[35 38  0]xS 
+185 2297 M (FRONT)[32 38 41 38  0]xS 
+F0S2DYFFFFFFD2 Ji 
+3688 2680 M (GND)[36 33  0]xS 
+N 3707 2557 M 3776 2557 I K 
+N 3707 2557 M 3739 2622 I K 
+N 3739 2622 M 3776 2557 I K 
+N 3739 2493 M 3739 2557 I K 
+N 3739 2447 M 3739 2493 I K 
+N 3001 2447 M 3001 2493 I K 
+2946 1943 M (+12V)[27 26 26  0]xS 
+N 2968 1966 M 3037 1966 I K 
+N 3001 2031 M 3001 1966 I K 
+2952 2616 M (-12V)[15 26 26  0]xS 
+N 2968 2557 M 3037 2557 I K 
+N 3001 2493 M 3001 2557 I K 
+N 3139 2262 M 2908 2123 I 2908 2400 I 3139 2262 I K 
+N 3001 2142 M 3001 2170 I K 
+N 3001 2077 M 3001 2142 I K 
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+3017 2236 M (V+)[-31  0]yS 
+2990 2135 M (8)S 
+N 3001 2382 M 3001 2354 I K 
+N 3001 2447 M 3001 2382 I K 
+3017 2345 M (V-)[-31  0]yS 
+2990 2414 M (4)S 
+N 2953 2193 M 2919 2193 I K 
+N 2954 2331 M 2920 2331 I K 
+N 2937 2312 M 2937 2350 I K 
+N 3167 2262 M 3139 2262 I K 
+N 3231 2262 M 3167 2262 I K 
+F0S2DYFFFFFFD2 Ji 
+3173 2252 M (1)S 
+N 2880 2170 M 2908 2170 I K 
+N 2816 2170 M 2880 2170 I K 
+2848 2160 M (2)S 
+N 2880 2354 M 2908 2354 I K 
+N 2816 2354 M 2880 2354 I K 
+2848 2344 M (3)S 
+3024 2077 M (U2A)[33 26  0]xS 
+3024 2160 M (TLE2082)[28 26 31 26 26 26  0]xS 
+N 2031 1939 M 2031 2308 I K 
+N 1154 2862 M 1062 2862 I K 
+N 1062 2862 M 877 2862 I K 
+N 624 2832 M 819 2832 I K 
+N 624 2892 M 819 2892 I K 
+N 819 2892 M 877 2862 I K 
+N 877 2862 M 819 2832 I K 
+N 624 2892 M 624 2832 I K 
+F0S34YFFFFFFCE Ji 
+636 2881 M (CH2Sel)[38 38 29 35 29  0]xS 
+N 885 2853 M 868 2853 I 868 2870 I 885 2870 I C 
+K 
+[ 36 36 ] 0 sd N 1754 2493 M 1754 2770 I K 
+solid N 1817 2832 M 1523 2832 I K 
+N 1817 2892 M 1523 2892 I K 
+N 1523 2892 M 1523 2832 I K 
+N 1817 2832 M 1875 2862 I K 
+N 1875 2862 M 1817 2892 I K 
+1538 2881 M (ACDCMode)[35 38 38 38 43 29 29  0]xS 
+N 1532 2853 M 1514 2853 I 1514 2870 I 1532 2870 I C 
+K 
+N 2816 2354 M 2770 2354 I K 
+N 2770 2354 M 2724 2354 I K 
+F0S2DYFFFFFFD2 Ji 
+1980 2957 M (GND)[36 33  0]xS 
+N 1999 2834 M 2068 2834 I K 
+N 1999 2834 M 2031 2899 I K 
+N 2031 2899 M 2068 2834 I K 
+N 2031 2770 M 2031 2834 I K 
+5442 3003 M (GND)[36 33  0]xS 
+N 5461 2880 M 5530 2880 I K 
+N 5461 2880 M 5493 2945 I K 
+N 5493 2945 M 5530 2880 I K 
+N 5493 2816 M 5493 2880 I K 
+N 5493 2770 M 5493 2816 I K 
+F0S34YFFFFFFCE Ji 
+2077 2482 M (0.1X)[29 14 29  0]xS 
+2077 2251 M (1X)[29  0]xS 
+N 3001 2031 M 3001 2077 I K 
+N 2096 1939 M 2123 1939 I K 
+N 2077 1939 M 2096 1939 I K 
+F0S2DYFFFFFFD2 Ji 
+2086 1929 M (1)S 
+N 2290 1939 M 2262 1939 I K 
+N 2308 1939 M 2290 1939 I K 
+2273 1929 M (2)S 
+N 2123 1939 M 2135 1913 I K 
+N 2227 1915 M 2251 1962 I K 
+N 2205 1961 M 2228 1915 I K 
+N 2251 1962 M 2263 1939 I K 
+N 2182 1914 M 2206 1961 I K 
+N 2136 1914 M 2160 1961 I K 
+N 2159 1961 M 2182 1915 I K 
+2123 1836 M (R16)[33 26  0]xS 
+2123 1883 M (1.00M)[26 13 26 26  0]xS 
+N 2511 2354 M 2539 2354 I K 
+N 2493 2354 M 2511 2354 I K 
+2502 2344 M (1)S 
+N 2705 2354 M 2677 2354 I K 
+N 2724 2354 M 2705 2354 I K 
+2688 2344 M (2)S 
+N 2539 2354 M 2551 2328 I K 
+N 2642 2330 M 2666 2377 I K 
+N 2620 2376 M 2643 2330 I K 
+N 2666 2377 M 2678 2354 I K 
+N 2597 2329 M 2621 2376 I K 
+N 2551 2329 M 2575 2376 I K 
+N 2574 2376 M 2597 2330 I K 
+2539 2252 M (R19)[33 26  0]xS 
+2539 2298 M (100K)[26 26 26  0]xS 
+N 831 2216 M 877 2216 I K 
+N 1477 2216 M 1569 2216 I K 
+N 1219 1939 M 1246 1939 I K 
+N 1200 1939 M 1219 1939 I K 
+1209 1929 M (1)S 
+N 1413 1939 M 1385 1939 I K 
+N 1431 1939 M 1413 1939 I K 
+1396 1929 M (2)S 
+N 1246 1939 M 1258 1913 I K 
+N 1350 1915 M 1374 1962 I K 
+N 1328 1961 M 1351 1915 I K 
+N 1374 1962 M 1386 1939 I K 
+N 1305 1914 M 1329 1961 I K 
+N 1258 1914 M 1282 1961 I K 
+N 1281 1961 M 1305 1915 I K 
+1246 1836 M (R14)[33 26  0]xS 
+1246 1883 M (10.0)[26 26 13  0]xS 
+N 1154 2216 M 1200 2216 I K 
+N 1200 1939 M 1154 1939 I K 
+N 1154 1939 M 1154 2216 I K 
+N 1108 2216 M 1154 2216 I K 
+N 1477 1939 M 1477 2216 I K 
+N 1431 2216 M 1477 2216 I K 
+N 1569 2308 M 831 2308 I K 
+N 831 2308 M 831 2216 I K 
+N 739 2216 M 831 2216 I K 
+N 1385 2400 M 1385 2447 I K 
+1334 2634 M (GND)[36 33  0]xS 
+N 1353 2511 M 1422 2511 I K 
+N 1353 2511 M 1385 2576 I K 
+N 1385 2576 M 1422 2511 I K 
+N 1385 2447 M 1385 2511 I K 
+N 1634 1939 M 1662 1939 I K 
+N 1616 1939 M 1634 1939 I K 
+1625 1929 M (1)S 
+N 1828 1939 M 1800 1939 I K 
+N 1846 1939 M 1828 1939 I K 
+1811 1929 M (2)S 
+N 1662 1939 M 1674 1913 I K 
+N 1765 1915 M 1789 1962 I K 
+N 1743 1961 M 1766 1915 I K 
+N 1789 1962 M 1801 1939 I K 
+N 1720 1914 M 1744 1961 I K 
+N 1674 1914 M 1698 1961 I K 
+N 1697 1961 M 1720 1915 I K 
+1662 1836 M (R15)[33 26  0]xS 
+1662 1883 M (1.00M)[26 13 26 26  0]xS 
+N 1477 1939 M 1431 1939 I K 
+N 1616 1939 M 1477 1939 I K 
+F0S28YFFFFFFDC Ji 
+1497 2298 M (DC)[30  0]xS 
+1477 2392 M (GND)[32 30  0]xS 
+1500 2205 M (AC)[27  0]xS 
+N 1154 2954 M 1062 2954 I K 
+N 1062 2862 M 1062 2954 I K 
+N 1477 2862 M 1523 2862 I K 
+N 1385 2400 M 1569 2400 I K 
+N 2354 2354 M 2354 1939 I K 
+N 2031 1939 M 1846 1939 I K 
+N 2077 1939 M 2031 1939 I K 
+N 2031 2724 M 2031 2770 I K 
+N 2031 2465 M 2031 2493 I K 
+N 2031 2447 M 2031 2465 I K 
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+2020 2482 M (1)S 
+N 2031 2659 M 2031 2631 I K 
+N 2031 2677 M 2031 2659 I K 
+2020 2668 M (2)S 
+N 2031 2493 M 2057 2505 I K 
+N 2055 2596 M 2008 2620 I K 
+N 2009 2574 M 2055 2597 I K 
+N 2008 2620 M 2031 2632 I K 
+N 2056 2551 M 2009 2575 I K 
+N 2056 2505 M 2009 2529 I K 
+N 2009 2528 M 2055 2551 I K 
+F0S2DYFFFFFFD2 Ji 
+2054 2584 M (R23)[33 26  0]xS 
+2054 2667 M (110K)[26 26 26  0]xS 
+N 2770 2170 M 2816 2170 I K 
+N 3535 2725 M 3535 2717 3529 2710 3521 2710 -c 3514 2710 3508 2717 3508 2725 -c 3508 2734 3514 2741 3521 2741 -c 3529 2741 3535 2734 3535 2725 -c C 
+K 
+N 3601 2724 M 3536 2724 I K 
+3542 2714 M (5)S 
+N 3461 2679 M 3461 2671 3455 2664 3447 2664 -c 3440 2664 3434 2671 3434 2679 -c 3434 2688 3440 2695 3447 2695 -c 3455 2695 3461 2688 3461 2679 -c C 
+K 
+N 3370 2677 M 3434 2677 I K 
+3402 2667 M (4)S 
+N 3461 2771 M 3461 2763 3455 2756 3447 2756 -c 3440 2756 3434 2763 3434 2771 -c 3434 2780 3440 2787 3447 2787 -c 3455 2787 3461 2780 3461 2771 -c C 
+K 
+N 3370 2770 M 3434 2770 I K 
+3402 2760 M (6)S 
+N 3508 2724 M 3442 2724 I K 
+3439 2621 M (SW7B)[31 46 26  0]xS 
+N 3461 3094 M 3461 3086 3455 3079 3447 3079 -c 3440 3079 3434 3086 3434 3094 -c 3434 3103 3440 3110 3447 3110 -c 3455 3110 3461 3103 3461 3094 -c C 
+K 
+N 3370 3093 M 3434 3093 I K 
+3402 3083 M (2)S 
+N 3535 3048 M 3535 3040 3529 3033 3521 3033 -c 3514 3033 3508 3040 3508 3048 -c 3508 3057 3514 3064 3521 3064 -c 3529 3064 3535 3057 3535 3048 -c C 
+K 
+N 3601 3047 M 3536 3047 I K 
+3542 3037 M (1)S 
+N 3535 3140 M 3535 3132 3529 3125 3521 3125 -c 3514 3125 3508 3132 3508 3140 -c 3508 3149 3514 3156 3521 3156 -c 3529 3156 3535 3149 3535 3140 -c C 
+K 
+N 3601 3139 M 3536 3139 I K 
+3542 3129 M (3)S 
+N 3462 3093 M 3528 3093 I K 
+3485 2944 M (SW7A)[31 46 26  0]xS 
+N 4108 2354 M 3878 2216 I 3878 2493 I 4108 2354 I K 
+N 3923 2285 M 3888 2285 I K 
+N 3924 2423 M 3889 2423 I K 
+N 3906 2404 M 3906 2442 I K 
+N 4136 2354 M 4108 2354 I K 
+N 4201 2354 M 4136 2354 I K 
+4143 2344 M (7)S 
+N 3850 2262 M 3878 2262 I K 
+N 3785 2262 M 3850 2262 I K 
+3818 2252 M (6)S 
+N 3850 2447 M 3878 2447 I K 
+N 3785 2447 M 3850 2447 I K 
+3818 2437 M (5)S 
+3993 2169 M (U2B)[33 26  0]xS 
+3993 2252 M (TLE2082)[28 26 31 26 26 26  0]xS 
+N 3388 2262 M 3416 2262 I K 
+N 3370 2262 M 3388 2262 I K 
+3379 2252 M (1)S 
+N 3582 2262 M 3554 2262 I K 
+N 3601 2262 M 3582 2262 I K 
+3565 2252 M (2)S 
+N 3416 2262 M 3428 2236 I K 
+N 3519 2238 M 3543 2285 I K 
+N 3497 2284 M 3520 2238 I K 
+N 3543 2285 M 3555 2262 I K 
+N 3474 2237 M 3498 2284 I K 
+N 3428 2237 M 3452 2284 I K 
+N 3451 2284 M 3474 2238 I K 
+3416 2160 M (R18)[33 26  0]xS 
+3416 2206 M (3.90K)[26 13 26 26  0]xS 
+N 3785 2447 M 3739 2447 I K 
+N 3693 2262 M 3785 2262 I K 
+N 3896 2724 M 3924 2724 I K 
+N 3878 2724 M 3896 2724 I K 
+3887 2714 M (1)S 
+N 4090 2724 M 4062 2724 I K 
+N 4108 2724 M 4090 2724 I K 
+4073 2714 M (2)S 
+N 3924 2724 M 3936 2698 I K 
+N 4027 2699 M 4051 2747 I K 
+N 4005 2746 M 4028 2700 I K 
+N 4051 2747 M 4063 2724 I K 
+N 3982 2699 M 4006 2746 I K 
+N 3936 2699 M 3960 2746 I K 
+N 3959 2746 M 3982 2700 I K 
+3924 2621 M (R25)[33 26  0]xS 
+3924 2667 M (1.00K)[26 13 26 26  0]xS 
+N 3277 2262 M 3231 2262 I K 
+N 3324 2262 M 3277 2262 I K 
+N 3324 2308 M 3324 2262 I K 
+N 3370 2262 M 3324 2262 I K 
+N 3324 2539 M 3324 2677 I K 
+N 3324 2677 M 3370 2677 I K 
+N 3647 2724 M 3647 2262 I K 
+N 3601 2262 M 3647 2262 I K 
+N 2354 1939 M 2308 1939 I K 
+N 1939 2308 M 1893 2308 I K 
+N 2077 2308 M 2031 2308 I K 
+N 2077 2400 M 2031 2400 I K 
+N 2031 2400 M 2031 2447 I K 
+N 2354 2354 M 2308 2354 I K 
+N 2493 2354 M 2354 2354 I K 
+[ 36 36 ] 0 sd N 3462 2816 M 3462 3001 I K 
+solid N 4247 2465 M 4247 2493 I K 
+N 4247 2447 M 4247 2465 I K 
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+4236 2482 M (1)S 
+N 4247 2659 M 4247 2631 I K 
+N 4247 2677 M 4247 2659 I K 
+4236 2668 M (2)S 
+N 4247 2493 M 4273 2505 I K 
+N 4271 2596 M 4224 2620 I K 
+N 4225 2574 M 4271 2597 I K 
+N 4224 2620 M 4247 2632 I K 
+N 4272 2551 M 4225 2575 I K 
+N 4272 2505 M 4225 2529 I K 
+N 4225 2528 M 4271 2551 I K 
+F0S2DYFFFFFFD2 Ji 
+4316 2538 M (R24)[33 26  0]xS 
+4316 2621 M (1.00K)[26 13 26 26  0]xS 
+N 3370 2770 M 3324 2770 I K 
+N 3324 2770 M 3324 2862 I K 
+N 3324 2862 M 4247 2862 I K 
+N 3647 2724 M 3601 2724 I K 
+N 3878 2724 M 3647 2724 I K 
+N 4108 2724 M 4247 2724 I K 
+N 4247 2447 M 4247 2354 I K 
+N 4247 2724 M 4247 2862 I K 
+N 4247 2677 M 4247 2724 I K 
+F0S34YFFFFFFCE Ji 
+3139 2713 M (Gain 5)[41 29 12 29 13  0]xS 
+3139 2759 M (Gain 2)[41 29 12 29 13  0]xS 
+3139 2805 M (Gain 1)[41 29 12 29 13  0]xS 
+N 5078 2447 M 4847 2308 I 4847 2585 I 5078 2447 I K 
+N 4892 2377 M 4857 2377 I K 
+N 4893 2516 M 4859 2516 I K 
+N 4876 2496 M 4876 2534 I K 
+N 5105 2447 M 5078 2447 I K 
+N 5170 2447 M 5105 2447 I K 
+F0S2DYFFFFFFD2 Ji 
+5112 2437 M (7)S 
+N 4819 2354 M 4847 2354 I K 
+N 4755 2354 M 4819 2354 I K 
+4787 2344 M (6)S 
+N 4819 2539 M 4847 2539 I K 
+N 4755 2539 M 4819 2539 I K 
+4787 2529 M (5)S 
+4962 2261 M (U3B)[33 26  0]xS 
+4962 2344 M (TLE2082)[28 26 31 26 26 26  0]xS 
+N 4311 2354 M 4339 2354 I K 
+N 4293 2354 M 4311 2354 I K 
+4302 2344 M (1)S 
+N 4505 2354 M 4478 2354 I K 
+N 4524 2354 M 4505 2354 I K 
+4489 2344 M (2)S 
+N 4339 2354 M 4351 2328 I K 
+N 4443 2330 M 4467 2377 I K 
+N 4420 2376 M 4444 2330 I K 
+N 4467 2377 M 4479 2354 I K 
+N 4397 2329 M 4421 2376 I K 
+N 4351 2329 M 4375 2376 I K 
+N 4374 2376 M 4397 2330 I K 
+4293 2252 M (R20)[33 26  0]xS 
+4293 2298 M (1.00K)[26 13 26 26  0]xS 
+N 4865 1939 M 4893 1939 I K 
+N 4847 1939 M 4865 1939 I K 
+4856 1929 M (1)S 
+N 5059 1939 M 5032 1939 I K 
+N 5078 1939 M 5059 1939 I K 
+5043 1929 M (2)S 
+N 4893 1939 M 4905 1913 I K 
+N 4997 1915 M 5021 1962 I K 
+N 4974 1961 M 4997 1915 I K 
+N 5021 1962 M 5033 1939 I K 
+N 4951 1914 M 4975 1961 I K 
+N 4905 1914 M 4929 1961 I K 
+N 4928 1961 M 4951 1915 I K 
+4893 1836 M (R17)[33 26  0]xS 
+4893 1883 M (1.00K)[26 13 26 26  0]xS 
+N 5521 2447 M 5493 2447 I K 
+N 5539 2447 M 5521 2447 I K 
+5504 2437 M (1)S 
+N 5327 2447 M 5355 2447 I K 
+N 5309 2447 M 5327 2447 I K 
+5318 2437 M (2)S 
+N 5493 2447 M 5481 2472 I K 
+N 5390 2471 M 5366 2424 I K 
+N 5412 2424 M 5389 2471 I K 
+N 5366 2423 M 5354 2447 I K 
+N 5435 2472 M 5411 2424 I K 
+N 5481 2472 M 5457 2424 I K 
+N 5458 2424 M 5435 2471 I K 
+5309 2344 M (R22)[33 26  0]xS 
+5309 2390 M (1.00K)[26 13 26 26  0]xS 
+N 4755 2539 M 4616 2539 I K 
+N 4247 2354 M 4201 2354 I K 
+N 4293 2354 M 4247 2354 I K 
+N 4708 2354 M 4755 2354 I K 
+N 4847 1939 M 4708 1939 I K 
+N 4708 1939 M 4708 2354 I K 
+N 4524 2354 M 4708 2354 I K 
+N 5262 2447 M 5309 2447 I K 
+N 5078 1939 M 5262 1939 I K 
+N 5170 2447 M 5262 2447 I K 
+5803 2833 M (+5V)[27 26  0]xS 
+N 5789 2784 M 5789 2853 I K 
+N 5724 2816 M 5789 2816 I K 
+N 5586 2447 M 5863 2447 I K 
+N 5539 2447 M 5586 2447 I K 
+N 5586 2493 M 5586 2447 I K 
+N 5678 2816 M 5724 2816 I K 
+N 3370 3093 M 3324 3093 I K 
+N 3030 3063 M 3265 3063 I K 
+N 3030 3122 M 3265 3122 I K 
+N 3265 3122 M 3324 3093 I K 
+N 3324 3093 M 3265 3063 I K 
+N 3030 3122 M 3030 3063 I K 
+F0S34YFFFFFFCE Ji 
+3042 3111 M (CH2SelG)[38 38 29 35 29 12  0]xS 
+N 3332 3084 M 3314 3084 I 3314 3101 I 3332 3101 I C 
+K 
+N 4002 3017 M 3831 3017 I K 
+N 4002 3076 M 3831 3076 I K 
+N 3831 3076 M 3831 3017 I K 
+N 4002 3017 M 4060 3047 I K 
+N 4060 3047 M 4002 3076 I K 
+3845 3065 M (GAIN5)[41 35 14 38  0]xS 
+N 3840 3037 M 3822 3037 I 3822 3055 I 3840 3055 I C 
+K 
+N 4002 3109 M 3831 3109 I K 
+N 4002 3169 M 3831 3169 I K 
+N 3831 3169 M 3831 3109 I K 
+N 4002 3109 M 4060 3139 I K 
+N 4060 3139 M 4002 3169 I K 
+3845 3158 M (GAIN1)[41 35 14 38  0]xS 
+N 3840 3130 M 3822 3130 I 3822 3147 I 3840 3147 I C 
+K 
+N 3601 3047 M 3831 3047 I K 
+N 3601 3139 M 3831 3139 I K 
+N 4454 1467 M 4408 1491 I K 
+N 4431 1523 M 4454 1514 I K 
+N 4408 1491 M 4454 1514 I K 
+N 4408 1349 M 4432 1338 I K 
+N 4408 1444 M 4454 1467 I K 
+N 4408 1398 M 4454 1421 I K 
+N 4454 1421 M 4408 1444 I K 
+N 4407 1349 M 4454 1374 I K 
+N 4454 1374 M 4408 1397 I K 
+N 4476 1431 M 4505 1460 I K 
+N 4477 1431 M 4501 1403 I K 
+N 4293 1477 M 4293 1385 I 4293 1385 I K 
+N 4432 1551 M 4432 1523 I K 
+N 4432 1616 M 4432 1551 I K 
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+4421 1583 M (1)S 
+N 4432 1311 M 4432 1339 I K 
+N 4432 1246 M 4432 1311 I K 
+4421 1305 M (3)S 
+N 4505 1431 M 4478 1431 I K 
+N 4570 1431 M 4505 1431 I K 
+F0S2DYFFFFFFD2 Ji 
+4512 1421 M (2)S 
+/F0S00IFFFFFFCEYFFFFFFCB F0 [0 -52.105 -50 0 0 0 ] mFS
+F0S00IFFFFFFCEYFFFFFFCB Ji 
+4327 1333 M (CW)[-38  0]yS 
+4327 1602 M (CCW)[-38 -38  0]yS 
+F0S2DYFFFFFFD2 Ji 
+4455 1338 M (R13)[33 26  0]xS 
+4455 1375 M (10K)[26 26  0]xS 
+4380 1849 M (GND)[36 33  0]xS 
+N 4399 1726 M 4468 1726 I K 
+N 4399 1726 M 4432 1791 I K 
+N 4432 1791 M 4468 1726 I K 
+N 4432 1662 M 4432 1726 I K 
+N 4432 1616 M 4432 1662 I K 
+4390 1112 M (+5V)[27 26  0]xS 
+N 4399 1136 M 4468 1136 I K 
+N 4432 1200 M 4432 1136 I K 
+N 4432 1246 M 4432 1200 I K 
+N 4570 1431 M 4616 1431 I K 
+N 2784 2354 M 2784 2346 2777 2340 2770 2340 -c 2762 2340 2756 2346 2756 2354 -c 2756 2361 2762 2368 2770 2368 -c 2777 2368 2784 2361 2784 2354 -c C 
+:  O ; K 
+N 3291 738 M 3291 731 3285 725 3277 725 -c 3270 725 3264 731 3264 738 -c 3264 745 3270 752 3277 752 -c 3285 752 3291 745 3291 738 -c C 
+:  O ; K 
+N 3291 2262 M 3291 2254 3285 2248 3277 2248 -c 3270 2248 3264 2254 3264 2262 -c 3264 2269 3270 2276 3277 2276 -c 3285 2276 3291 2269 3291 2262 -c C 
+:  O ; K 
+N 3337 738 M 3337 731 3331 725 3323 725 -c 3316 725 3310 731 3310 738 -c 3310 745 3316 752 3323 752 -c 3331 752 3337 745 3337 738 -c C 
+:  O ; K 
+N 3337 2262 M 3337 2254 3331 2248 3323 2248 -c 3316 2248 3310 2254 3310 2262 -c 3310 2269 3316 2276 3323 2276 -c 3331 2276 3337 2269 3337 2262 -c C 
+:  O ; K 
+N 3661 738 M 3661 731 3654 725 3647 725 -c 3639 725 3633 731 3633 738 -c 3633 745 3639 752 3647 752 -c 3654 752 3661 745 3661 738 -c C 
+:  O ; K 
+N 3661 2262 M 3661 2254 3654 2248 3647 2248 -c 3639 2248 3633 2254 3633 2262 -c 3633 2269 3639 2276 3647 2276 -c 3654 2276 3661 2269 3661 2262 -c C 
+:  O ; K 
+N 3661 1200 M 3661 1192 3654 1186 3647 1186 -c 3639 1186 3633 1192 3633 1200 -c 3633 1207 3639 1214 3647 1214 -c 3654 1214 3661 1207 3661 1200 -c C 
+:  O ; K 
+N 3661 2723 M 3661 2716 3654 2710 3647 2710 -c 3639 2710 3633 2716 3633 2723 -c 3633 2730 3639 2737 3647 2737 -c 3654 2737 3661 2730 3661 2723 -c C 
+:  O ; K 
+N 4261 1200 M 4261 1192 4254 1186 4247 1186 -c 4239 1186 4233 1192 4233 1200 -c 4233 1207 4239 1214 4247 1214 -c 4254 1214 4261 1207 4261 1200 -c C 
+:  O ; K 
+N 4261 2723 M 4261 2716 4254 2710 4247 2710 -c 4239 2710 4233 2716 4233 2723 -c 4233 2730 4239 2737 4247 2737 -c 4254 2737 4261 2730 4261 2723 -c C 
+:  O ; K 
+N 4261 831 M 4261 823 4254 817 4247 817 -c 4239 817 4233 823 4233 831 -c 4233 838 4239 845 4247 845 -c 4254 845 4261 838 4261 831 -c C 
+:  O ; K 
+N 4261 2354 M 4261 2346 4254 2340 4247 2340 -c 4239 2340 4233 2346 4233 2354 -c 4233 2361 4239 2368 4247 2368 -c 4254 2368 4261 2361 4261 2354 -c C 
+:  O ; K 
+N 4676 831 M 4676 823 4669 817 4662 817 -c 4654 817 4648 823 4648 831 -c 4648 838 4654 845 4662 845 -c 4669 845 4676 838 4676 831 -c C 
+:  O ; K 
+N 5184 923 M 5184 915 5177 909 5170 909 -c 5162 909 5156 915 5156 923 -c 5156 930 5162 937 5170 937 -c 5177 937 5184 930 5184 923 -c C 
+:  O ; K 
+N 5401 1662 M 5262 1662 I K 
+N 5262 1662 M 5262 923 I K 
+N 5401 1754 M 5262 1754 I K 
+N 5262 1939 M 5262 2447 I K 
+N 5262 1754 M 5262 1939 I K 
+N 5276 923 M 5276 915 5270 909 5262 909 -c 5255 909 5249 915 5249 923 -c 5249 930 5255 937 5262 937 -c 5270 937 5276 930 5276 923 -c C 
+:  O ; K 
+N 5170 923 M 5262 923 I K 
+N 5982 1678 M 5678 1678 I K 
+N 5982 1738 M 5678 1738 I K 
+N 5678 1738 M 5678 1678 I K 
+N 5982 1678 M 6041 1708 I K 
+N 6041 1708 M 5982 1738 I K 
+F0S34YFFFFFFCE Ji 
+5691 1727 M (TRIGGERIN)[32 38 14 41 41 35 38 14  0]xS 
+N 5686 1699 M 5669 1699 I 5669 1716 I 5686 1716 I C 
+K 
+N 5632 1708 M 5678 1708 I K 
+N 645 3508 M 554 3508 I 554 4384 I 645 4384 I C 
+K 
+N 674 3554 M 646 3554 I K 
+N 739 3554 M 674 3554 I K 
+F0S2DYFFFFFFD2 Ji 
+680 3544 M (1)S 
+N 674 3601 M 646 3601 I K 
+N 739 3601 M 674 3601 I K 
+680 3591 M (2)S 
+N 674 3647 M 646 3647 I K 
+N 739 3647 M 674 3647 I K 
+680 3637 M (3)S 
+N 674 3693 M 646 3693 I K 
+N 739 3693 M 674 3693 I K 
+680 3683 M (4)S 
+N 674 3739 M 646 3739 I K 
+N 739 3739 M 674 3739 I K 
+680 3729 M (5)S 
+N 674 3785 M 646 3785 I K 
+N 739 3785 M 674 3785 I K 
+680 3775 M (6)S 
+N 674 3831 M 646 3831 I K 
+N 739 3831 M 674 3831 I K 
+680 3821 M (7)S 
+N 674 3878 M 646 3878 I K 
+N 739 3878 M 674 3878 I K 
+680 3868 M (8)S 
+N 674 3924 M 646 3924 I K 
+N 739 3924 M 674 3924 I K 
+680 3914 M (9)S 
+N 674 3970 M 646 3970 I K 
+N 739 3970 M 674 3970 I K 
+677 3960 M (10)[26  0]xS 
+N 674 4016 M 646 4016 I K 
+N 739 4016 M 674 4016 I K 
+677 4006 M (11)[26  0]xS 
+N 674 4062 M 646 4062 I K 
+N 739 4062 M 674 4062 I K 
+677 4052 M (12)[26  0]xS 
+N 674 4108 M 646 4108 I K 
+N 739 4108 M 674 4108 I K 
+677 4098 M (13)[26  0]xS 
+N 674 4155 M 646 4155 I K 
+N 739 4155 M 674 4155 I K 
+677 4145 M (14)[26  0]xS 
+N 674 4201 M 646 4201 I K 
+N 739 4201 M 674 4201 I K 
+677 4191 M (15)[26  0]xS 
+N 674 4247 M 646 4247 I K 
+N 739 4247 M 674 4247 I K 
+677 4237 M (16)[26  0]xS 
+N 674 4293 M 646 4293 I K 
+N 739 4293 M 674 4293 I K 
+677 4283 M (17)[26  0]xS 
+N 674 4339 M 646 4339 I K 
+N 739 4339 M 674 4339 I K 
+677 4329 M (18)[26  0]xS 
+N 615 3538 M 582 3538 I 582 3574 I 615 3574 I C 
+K 
+N 615 3584 M 582 3584 I 582 3620 I 615 3620 I C 
+K 
+N 615 3631 M 582 3631 I 582 3667 I 615 3667 I C 
+K 
+N 615 3677 M 582 3677 I 582 3713 I 615 3713 I C 
+K 
+N 615 3723 M 582 3723 I 582 3759 I 615 3759 I C 
+K 
+N 615 3769 M 582 3769 I 582 3805 I 615 3805 I C 
+K 
+N 615 3815 M 582 3815 I 582 3851 I 615 3851 I C 
+K 
+N 615 3861 M 582 3861 I 582 3897 I 615 3897 I C 
+K 
+N 615 3908 M 582 3908 I 582 3944 I 615 3944 I C 
+K 
+N 615 3954 M 582 3954 I 582 3990 I 615 3990 I C 
+K 
+N 615 4000 M 582 4000 I 582 4036 I 615 4036 I C 
+K 
+N 615 4046 M 582 4046 I 582 4082 I 615 4082 I C 
+K 
+N 615 4092 M 582 4092 I 582 4128 I 615 4128 I C 
+K 
+N 615 4138 M 582 4138 I 582 4174 I 615 4174 I C 
+K 
+N 615 4185 M 582 4185 I 582 4220 I 615 4220 I C 
+K 
+N 615 4231 M 582 4231 I 582 4267 I 615 4267 I C 
+K 
+N 615 4277 M 582 4277 I 582 4313 I 615 4313 I C 
+K 
+N 615 4323 M 582 4323 I 582 4359 I 615 4359 I C 
+K 
+577 3415 M (J3)[23  0]xS 
+531 3498 M (1 x 18)[26 12 23 12 26  0]xS 
+N 739 3554 M 785 3554 I K 
+N 785 3554 M 785 3462 I K 
+N 739 3601 M 877 3601 I K 
+N 739 3647 M 969 3647 I K 
+N 877 3601 M 877 3554 I K 
+N 739 3693 M 1062 3693 I K 
+N 739 3739 M 1062 3739 I K 
+N 739 3785 M 1062 3785 I K 
+N 739 3831 M 1062 3831 I K 
+N 739 3878 M 1062 3878 I K 
+N 739 3924 M 877 3924 I K 
+N 739 4016 M 877 4016 I K 
+N 739 4108 M 877 4108 I K 
+N 739 4201 M 877 4201 I K 
+N 739 4293 M 1062 4293 I K 
+N 739 4339 M 1062 4339 I K 
+730 3374 M (+12V)[27 26 26  0]xS 
+N 752 3397 M 822 3397 I K 
+N 785 3462 M 785 3397 I K 
+928 3558 M (+5V)[27 26  0]xS 
+N 937 3582 M 1006 3582 I K 
+N 969 3647 M 969 3582 I K 
+828 3466 M (-12V)[15 26 26  0]xS 
+N 845 3490 M 914 3490 I K 
+N 877 3554 M 877 3490 I K 
+826 4619 M (GND)[36 33  0]xS 
+N 845 4496 M 914 4496 I K 
+N 845 4496 M 877 4561 I K 
+N 877 4561 M 914 4496 I K 
+N 877 4432 M 877 4496 I K 
+N 1216 3671 M 1062 3671 I K 
+N 1216 3715 M 1062 3715 I K 
+N 1062 3715 M 1062 3671 I K 
+N 1216 3671 M 1258 3694 I K 
+N 1258 3694 M 1216 3715 I K 
+F0S28YFFFFFFDC Ji 
+1072 3707 M (CH1Sel)[30 30 24 27 23  0]xS 
+N 1070 3684 M 1052 3684 I 1052 3701 I 1070 3701 I C 
+K 
+N 1216 4317 M 1062 4317 I K 
+N 1216 4361 M 1062 4361 I K 
+N 1062 4361 M 1062 4317 I K 
+N 1216 4317 M 1258 4340 I K 
+N 1258 4340 M 1216 4361 I K 
+1072 4353 M (CH2Sel)[30 30 24 27 23  0]xS 
+N 1070 4330 M 1052 4330 I 1052 4347 I 1070 4347 I C 
+K 
+N 1337 3717 M 1103 3717 I K 
+N 1337 3761 M 1103 3761 I K 
+N 1103 3717 M 1062 3740 I K 
+N 1062 3740 M 1103 3761 I K 
+N 1337 3761 M 1337 3717 I K 
+1106 3753 M (ACDCMode)[27 31 30 31 35 23 23  0]xS 
+N 1070 3730 M 1052 3730 I 1052 3747 I 1070 3747 I C 
+K 
+N 1249 3764 M 1062 3764 I K 
+N 1249 3807 M 1062 3807 I K 
+N 1062 3807 M 1062 3764 I K 
+N 1249 3764 M 1290 3786 I K 
+N 1290 3786 M 1249 3807 I K 
+1073 3799 M (CH1SelG)[30 30 24 27 23 10  0]xS 
+N 1070 3776 M 1052 3776 I 1052 3793 I 1070 3793 I C 
+K 
+N 1249 4271 M 1062 4271 I K 
+N 1249 4315 M 1062 4315 I K 
+N 1062 4315 M 1062 4271 I K 
+N 1249 4271 M 1290 4294 I K 
+N 1290 4294 M 1249 4315 I K 
+1073 4307 M (CH2SelG)[30 30 24 27 23 10  0]xS 
+N 1070 4284 M 1052 4284 I 1052 4301 I 1070 4301 I C 
+K 
+N 1239 3810 M 1103 3810 I K 
+N 1239 3853 M 1103 3853 I K 
+N 1103 3810 M 1062 3832 I K 
+N 1062 3832 M 1103 3853 I K 
+N 1239 3853 M 1239 3810 I K 
+1106 3845 M (GAIN5)[32 28 12 30  0]xS 
+N 1070 3822 M 1052 3822 I 1052 3840 I 1070 3840 I C 
+K 
+N 1239 3856 M 1103 3856 I K 
+N 1239 3899 M 1103 3899 I K 
+N 1103 3856 M 1062 3878 I K 
+N 1062 3878 M 1103 3899 I K 
+N 1239 3899 M 1239 3856 I K 
+1106 3891 M (GAIN1)[32 28 12 30  0]xS 
+N 1070 3868 M 1052 3868 I 1052 3886 I 1070 3886 I C 
+K 
+N 1198 3948 M 1103 3948 I K 
+N 1198 3992 M 1103 3992 I K 
+N 1103 3948 M 1062 3971 I K 
+N 1062 3971 M 1103 3992 I K 
+N 1198 3992 M 1198 3948 I K 
+1105 3984 M (CH1)[30 30  0]xS 
+N 1070 3961 M 1052 3961 I 1052 3978 I 1070 3978 I C 
+K 
+N 1198 4041 M 1103 4041 I K 
+N 1198 4084 M 1103 4084 I K 
+N 1103 4041 M 1062 4063 I K 
+N 1062 4063 M 1103 4084 I K 
+N 1198 4084 M 1198 4041 I K 
+1105 4076 M (CH2)[30 30  0]xS 
+N 1070 4053 M 1052 4053 I 1052 4070 I 1070 4070 I C 
+K 
+N 1305 4133 M 1103 4133 I K 
+N 1305 4176 M 1103 4176 I K 
+N 1103 4133 M 1062 4155 I K 
+N 1062 4155 M 1103 4176 I K 
+N 1305 4176 M 1305 4133 I K 
+1106 4168 M (TRIGGER)[25 31 12 32 32 28  0]xS 
+N 1070 4145 M 1052 4145 I 1052 4163 I 1070 4163 I C 
+K 
+F0S34YFFFFFFCE Ji 
+4662 1328 M (Zero Adjust)[32 29 17 29 14 35 29 12 29 26  0]xS 
+N 739 4062 M 1062 4062 I K 
+N 739 4155 M 1062 4155 I K 
+5124 1651 M (CH 1)[38 38 14  0]xS 
+5124 1789 M (CH 2)[38 38 14  0]xS 
+N 4247 3231 M 4339 3231 I K 
+N 4293 3204 M 4293 3231 I K 
+N 4293 3139 M 4293 3204 I K 
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+4282 3197 M (1)S 
+N 4293 3305 M 4293 3277 I K 
+N 4293 3370 M 4293 3305 I K 
+4282 3337 M (2)S 
+N 4247 3253 M 4337 3253 I K 
+N 4293 3253 M 4293 3277 I K 
+F0S2DYFFFFFFD2 Ji 
+4316 3184 M (C5)[33  0]xS 
+4316 3314 M (1.0uF)[26 13 26 26  0]xS 
+N 4478 3231 M 4570 3231 I K 
+N 4524 3204 M 4524 3231 I K 
+N 4524 3139 M 4524 3204 I K 
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+4513 3197 M (1)S 
+N 4524 3305 M 4524 3277 I K 
+N 4524 3370 M 4524 3305 I K 
+4513 3337 M (2)S 
+N 4478 3253 M 4568 3253 I K 
+N 4524 3253 M 4524 3277 I K 
+F0S2DYFFFFFFD2 Ji 
+4547 3184 M (C6)[33  0]xS 
+4547 3314 M (1.0uF)[26 13 26 26  0]xS 
+N 4708 3231 M 4801 3231 I K 
+N 4755 3204 M 4755 3231 I K 
+N 4755 3139 M 4755 3204 I K 
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+4744 3197 M (1)S 
+N 4755 3305 M 4755 3277 I K 
+N 4755 3370 M 4755 3305 I K 
+4744 3337 M (2)S 
+N 4708 3253 M 4799 3253 I K 
+N 4755 3253 M 4755 3277 I K 
+F0S2DYFFFFFFD2 Ji 
+4778 3184 M (C7)[33  0]xS 
+4778 3314 M (1.0uF)[26 13 26 26  0]xS 
+N 4385 3554 M 4478 3554 I K 
+N 4432 3527 M 4432 3554 I K 
+N 4432 3462 M 4432 3527 I K 
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+4421 3520 M (1)S 
+N 4432 3628 M 4432 3601 I K 
+N 4432 3693 M 4432 3628 I K 
+4421 3661 M (2)S 
+N 4385 3577 M 4476 3577 I K 
+N 4432 3577 M 4432 3601 I K 
+F0S2DYFFFFFFD2 Ji 
+4455 3508 M (C9)[33  0]xS 
+4455 3637 M (1.0uF)[26 13 26 26  0]xS 
+N 4616 3554 M 4708 3554 I K 
+N 4662 3527 M 4662 3554 I K 
+N 4662 3462 M 4662 3527 I K 
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+4651 3520 M (1)S 
+N 4662 3628 M 4662 3601 I K 
+N 4662 3693 M 4662 3628 I K 
+4651 3661 M (2)S 
+N 4616 3577 M 4707 3577 I K 
+N 4662 3577 M 4662 3601 I K 
+F0S2DYFFFFFFD2 Ji 
+4685 3508 M (C10)[33 26  0]xS 
+4685 3637 M (1.0uF)[26 13 26 26  0]xS 
+N 4847 3554 M 4939 3554 I K 
+N 4893 3527 M 4893 3554 I K 
+N 4893 3462 M 4893 3527 I K 
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+4882 3520 M (1)S 
+N 4893 3628 M 4893 3601 I K 
+N 4893 3693 M 4893 3628 I K 
+4882 3661 M (2)S 
+N 4847 3577 M 4937 3577 I K 
+N 4893 3577 M 4893 3601 I K 
+F0S2DYFFFFFFD2 Ji 
+4916 3508 M (C11)[33 26  0]xS 
+4916 3637 M (1.0uF)[26 13 26 26  0]xS 
+N 2908 3693 M 2908 4062 I 3277 3877 I 2908 3693 I K 
+N 2880 3785 M 2908 3785 I K 
+N 2816 3785 M 2880 3785 I K 
+2848 3775 M (2)S 
+N 2880 3970 M 2908 3970 I K 
+N 2816 3970 M 2880 3970 I K 
+2848 3960 M (3)S 
+N 3305 3878 M 3277 3878 I K 
+N 3370 3878 M 3305 3878 I K 
+3312 3868 M (7)S 
+N 3001 4044 M 3001 4016 I K 
+N 3001 4062 M 3001 4044 I K 
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+3017 4007 M (Vee)[-31 -26  0]yS 
+2990 4062 M (4)S 
+N 3093 3998 M 3093 3970 I K 
+N 3093 4062 M 3093 3998 I K 
+3109 3961 M (G/E)[-36 -13  0]yS 
+3082 4053 M (1)S 
+N 3093 3758 M 3093 3785 I K 
+N 3093 3693 M 3093 3758 I K 
+3109 3868 M (B/S)[-31 -13  0]yS 
+3082 3728 M (6)S 
+N 3001 3711 M 3001 3739 I K 
+N 3001 3693 M 3001 3711 I K 
+3017 3825 M (Vcc)[-31 -23  0]yS 
+2990 3719 M (8)S 
+N 3185 3785 M 3185 3831 I K 
+N 3185 3693 M 3185 3785 I K 
+3201 3876 M (B)S 
+3174 3733 M (5)S 
+N 2937 3766 M 2937 3803 I K 
+N 2955 3785 M 2920 3785 I K 
+N 2955 3970 M 2920 3970 I K 
+F0S2DYFFFFFFD2 Ji 
+3254 3738 M (U4)[33  0]xS 
+3208 3821 M (LM311)[26 37 26 26  0]xS 
+N 4939 3231 M 5032 3231 I K 
+N 4985 3204 M 4985 3231 I K 
+N 4985 3139 M 4985 3204 I K 
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+4974 3197 M (1)S 
+N 4985 3305 M 4985 3277 I K 
+N 4985 3370 M 4985 3305 I K 
+4974 3337 M (2)S 
+N 4939 3253 M 5030 3253 I K 
+N 4985 3253 M 4985 3277 I K 
+F0S2DYFFFFFFD2 Ji 
+5009 3184 M (C8)[33  0]xS 
+5009 3314 M (1.0uF)[26 13 26 26  0]xS 
+N 5078 3554 M 5170 3554 I K 
+N 5124 3527 M 5124 3554 I K 
+N 5124 3462 M 5124 3527 I K 
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+5113 3520 M (1)S 
+N 5124 3628 M 5124 3601 I K 
+N 5124 3693 M 5124 3628 I K 
+5113 3661 M (2)S 
+N 5078 3577 M 5168 3577 I K 
+N 5124 3577 M 5124 3601 I K 
+F0S2DYFFFFFFD2 Ji 
+5147 3508 M (C12)[33 26  0]xS 
+5147 3637 M (1.0uF)[26 13 26 26  0]xS 
+4239 2958 M (+12V)[27 26 26  0]xS 
+N 4261 2982 M 4330 2982 I K 
+N 4293 3047 M 4293 2982 I K 
+5306 3908 M (-12V)[15 26 26  0]xS 
+N 5322 3850 M 5392 3850 I K 
+N 5355 3785 M 5355 3850 I K 
+4242 3927 M (GND)[36 33  0]xS 
+N 4261 3804 M 4330 3804 I K 
+N 4261 3804 M 4293 3868 I K 
+N 4293 3868 M 4330 3804 I K 
+N 4293 3739 M 4293 3804 I K 
+N 4293 3093 M 4293 3139 I K 
+N 4985 3139 M 4985 3093 I K 
+N 4524 3093 M 4293 3093 I K 
+N 4293 3047 M 4293 3093 I K 
+N 4755 3139 M 4755 3093 I K 
+N 4985 3093 M 4755 3093 I K 
+N 4524 3139 M 4524 3093 I K 
+N 4755 3093 M 4524 3093 I K 
+N 4432 3416 M 4524 3416 I K 
+N 4524 3416 M 4524 3370 I K 
+N 4662 3416 M 4755 3416 I K 
+N 4755 3416 M 4755 3370 I K 
+N 4985 3416 M 4985 3370 I K 
+N 4293 3416 M 4293 3370 I K 
+N 4293 3739 M 4293 3416 I K 
+N 4432 3462 M 4432 3416 I K 
+N 4293 3416 M 4432 3416 I K 
+N 4662 3462 M 4662 3416 I K 
+N 4524 3416 M 4662 3416 I K 
+N 4893 3462 M 4893 3416 I K 
+N 4755 3416 M 4893 3416 I K 
+N 5124 3462 M 5124 3416 I K 
+N 4985 3416 M 4893 3416 I K 
+N 5124 3416 M 4985 3416 I K 
+N 4432 3693 M 4432 3739 I K 
+N 5124 3739 M 5355 3739 I K 
+N 5355 3739 M 5355 3785 I K 
+N 4893 3693 M 4893 3739 I K 
+N 4662 3739 M 4893 3739 I K 
+N 4662 3693 M 4662 3739 I K 
+N 4432 3739 M 4662 3739 I K 
+2946 3558 M (+12V)[27 26 26  0]xS 
+N 2968 3582 M 3037 3582 I K 
+N 3001 3647 M 3001 3582 I K 
+2952 4231 M (-12V)[15 26 26  0]xS 
+N 2968 4173 M 3037 4173 I K 
+N 3001 4108 M 3001 4173 I K 
+3042 4296 M (GND)[36 33  0]xS 
+N 3061 4173 M 3130 4173 I K 
+N 3061 4173 M 3093 4238 I K 
+N 3093 4238 M 3130 4173 I K 
+N 3093 4108 M 3093 4173 I K 
+N 2272 4225 M 2249 4271 I K 
+N 2216 4248 M 2225 4225 I K 
+N 2249 4271 M 2225 4225 I K 
+N 2390 4271 M 2401 4247 I K 
+N 2295 4271 M 2272 4225 I K 
+N 2341 4271 M 2318 4225 I K 
+N 2318 4225 M 2295 4271 I K 
+N 2390 4272 M 2365 4225 I K 
+N 2365 4225 M 2342 4271 I K 
+N 2308 4202 M 2279 4174 I K 
+N 2308 4201 M 2336 4177 I K 
+N 2216 4339 M 2400 4339 I 2354 4339 I K 
+N 2428 4247 M 2400 4247 I K 
+N 2493 4247 M 2428 4247 I K 
+2434 4237 M (1)S 
+N 2188 4247 M 2216 4247 I K 
+N 2123 4247 M 2188 4247 I K 
+2156 4237 M (3)S 
+N 2308 4173 M 2308 4201 I K 
+N 2308 4108 M 2308 4173 I K 
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+2297 4167 M (2)S 
+F0S34YFFFFFFCE Ji 
+2406 4190 M (CW)[38  0]xS 
+2123 4189 M (CCW)[38 38  0]xS 
+N 2188 4339 M 2216 4339 I K 
+N 2123 4339 M 2188 4339 I K 
+F0S2DYFFFFFFD2 Ji 
+2157 4329 M (M1)[37  0]xS 
+N 2428 4339 M 2400 4339 I K 
+N 2493 4339 M 2428 4339 I K 
+2397 4329 M (M2)[37  0]xS 
+2400 4098 M (R29)[33 26  0]xS 
+2400 4145 M (10K)[26 26  0]xS 
+2617 4264 M (+5V)[27 26  0]xS 
+N 2604 4215 M 2604 4284 I K 
+N 2539 4247 M 2604 4247 I K 
+2026 4619 M (GND)[36 33  0]xS 
+N 2045 4496 M 2114 4496 I K 
+N 2045 4496 M 2077 4561 I K 
+N 2077 4561 M 2114 4496 I K 
+N 2077 4432 M 2077 4496 I K 
+N 2077 4432 M 2077 4247 I K 
+N 2077 4247 M 2123 4247 I K 
+N 2493 4247 M 2539 4247 I K 
+N 2308 4108 M 2308 3970 I K 
+N 1434 4225 M 1103 4225 I K 
+N 1434 4269 M 1103 4269 I K 
+N 1103 4225 M 1062 4248 I K 
+N 1062 4248 M 1103 4269 I K 
+N 1434 4269 M 1434 4225 I K 
+F0S28YFFFFFFDC Ji 
+1106 4261 M (TRIGGERLEVEL)[25 31 12 32 32 28 31 23 27 28 28  0]xS 
+N 1070 4238 M 1052 4238 I 1052 4255 I 1070 4255 I C 
+K 
+N 739 3970 M 1062 3970 I K 
+N 877 3924 M 877 4016 I K 
+N 877 4016 M 877 4108 I K 
+N 877 4108 M 877 4201 I K 
+N 877 4201 M 877 4432 I K 
+N 739 4247 M 1062 4247 I K 
+N 3001 3647 M 3001 3693 I K 
+N 3001 4062 M 3001 4108 I K 
+N 3093 4062 M 3093 4108 I K 
+F0S34YFFFFFFCE Ji 
+5355 1605 M (Trigger Source)[32 17 12 29 29 29 17 15 35 29 29 17 26  0]xS 
+1523 543 M (CH1 Coupling Mode)[38 38 29 14 38 29 29 29 12 12 29 29 13 43 29 29  0]xS 
+1523 2066 M (CH2 Coupling Mode)[38 38 29 14 38 29 29 29 12 12 29 29 13 43 29 29  0]xS 
+3370 1051 M (CH1 Gain)[38 38 29 14 41 29 12  0]xS 
+3370 2574 M (CH2 Gain)[38 38 29 14 41 29 12  0]xS 
+2077 681 M (CH1 Atten)[38 38 29 14 35 14 15 29  0]xS 
+2077 2205 M (CH2 Atten)[38 38 29 14 35 14 15 29  0]xS 
+N 2084 3756 M 2388 3756 I K 
+N 2084 3815 M 2388 3815 I K 
+N 2388 3815 M 2447 3786 I K 
+N 2447 3786 M 2388 3756 I K 
+N 2084 3815 M 2084 3756 I K 
+2096 3804 M (TRIGGERIN)[32 38 14 41 41 35 38 14  0]xS 
+N 2455 3776 M 2437 3776 I 2437 3793 I 2455 3793 I C 
+K 
+N 2927 3416 M 2954 3416 I K 
+N 2908 3416 M 2927 3416 I K 
+F0S2DYFFFFFFD2 Ji 
+2917 3406 M (1)S 
+N 3121 3416 M 3093 3416 I K 
+N 3139 3416 M 3121 3416 I K 
+3104 3406 M (2)S 
+N 2954 3416 M 2966 3390 I K 
+N 3058 3392 M 3082 3439 I K 
+N 3036 3438 M 3059 3392 I K 
+N 3082 3439 M 3094 3416 I K 
+N 3013 3391 M 3037 3438 I K 
+N 2966 3391 M 2990 3438 I K 
+N 2989 3438 M 3013 3392 I K 
+2954 3314 M (R26)[33 26  0]xS 
+2954 3360 M (100K)[26 26 26  0]xS 
+N 2493 3785 M 2447 3785 I K 
+N 2770 3785 M 2816 3785 I K 
+N 2908 3416 M 2770 3416 I K 
+N 2770 3416 M 2770 3785 I K 
+N 2784 3785 M 2784 3777 2777 3771 2770 3771 -c 2762 3771 2756 3777 2756 3785 -c 2756 3792 2762 3799 2770 3799 -c 2777 3799 2784 3792 2784 3785 -c C 
+:  O ; K 
+N 2724 3785 M 2770 3785 I K 
+N 3139 3416 M 3416 3416 I K 
+N 3416 3416 M 3416 3878 I K 
+N 3416 3878 M 3370 3878 I K 
+N 2770 3970 M 2816 3970 I K 
+N 3899 3848 M 3647 3848 I K 
+N 3899 3907 M 3647 3907 I K 
+N 3647 3907 M 3647 3848 I K 
+N 3899 3848 M 3957 3878 I K 
+N 3957 3878 M 3899 3907 I K 
+F0S34YFFFFFFCE Ji 
+3660 3896 M (TRIGGER)[32 38 14 41 41 35  0]xS 
+N 3655 3868 M 3638 3868 I 3638 3886 I 3655 3886 I C 
+K 
+1985 4097 M (Trigger Level)[32 17 12 29 29 29 17 15 29 29 26 29  0]xS 
+N 3430 3877 M 3430 3870 3423 3864 3416 3864 -c 3408 3864 3402 3870 3402 3877 -c 3402 3884 3408 3891 3416 3891 -c 3423 3891 3430 3884 3430 3877 -c C 
+:  O ; K 
+N 3554 3878 M 3647 3878 I K 
+N 3554 3619 M 3554 3647 I K 
+N 3554 3601 M 3554 3619 I K 
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+3543 3636 M (1)S 
+N 3554 3813 M 3554 3785 I K 
+N 3554 3831 M 3554 3813 I K 
+3543 3822 M (2)S 
+N 3554 3647 M 3580 3659 I K 
+N 3579 3750 M 3531 3774 I K 
+N 3532 3728 M 3578 3751 I K 
+N 3531 3774 M 3554 3786 I K 
+N 3579 3705 M 3532 3729 I K 
+N 3579 3659 M 3532 3683 I K 
+N 3532 3682 M 3578 3705 I K 
+F0S2DYFFFFFFD2 Ji 
+3624 3692 M (R27)[33 26  0]xS 
+3624 3775 M (1.00K)[26 13 26 26  0]xS 
+3513 3466 M (+5V)[27 26  0]xS 
+N 3522 3490 M 3591 3490 I K 
+N 3554 3554 M 3554 3490 I K 
+N 3554 3554 M 3554 3601 I K 
+N 3554 3831 M 3554 3878 I K 
+N 3568 3877 M 3568 3870 3562 3864 3554 3864 -c 3547 3864 3541 3870 3541 3877 -c 3541 3884 3547 3891 3554 3891 -c 3562 3891 3568 3884 3568 3877 -c C 
+:  O ; K 
+N 3416 3878 M 3554 3878 I K 
+N 5586 3508 M 5678 3508 I K 
+N 5632 3481 M 5632 3508 I K 
+N 5632 3416 M 5632 3481 I K 
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+5621 3474 M (1)S 
+N 5632 3582 M 5632 3554 I K 
+N 5632 3647 M 5632 3582 I K 
+5621 3614 M (2)S 
+N 5586 3530 M 5676 3530 I K 
+N 5632 3530 M 5632 3554 I K 
+F0S2DYFFFFFFD2 Ji 
+5655 3461 M (C13)[33 26  0]xS 
+5655 3591 M (10uF)[26 26 26  0]xS 
+5580 3927 M (GND)[36 33  0]xS 
+N 5599 3804 M 5669 3804 I K 
+N 5599 3804 M 5632 3868 I K 
+N 5632 3868 M 5669 3804 I K 
+N 5632 3739 M 5632 3804 I K 
+5821 2958 M (+5V)[27 26  0]xS 
+N 5830 2982 M 5899 2982 I K 
+N 5863 3047 M 5863 2982 I K 
+N 5632 3647 M 5632 3739 I K 
+N 3074 3674 M 3111 3711 I K 
+N 3074 3711 M 3111 3674 I K 
+N 3167 3674 M 3204 3711 I K 
+N 3167 3711 M 3204 3674 I K 
+N 1136 2751 M 1173 2788 I K 
+N 1136 2788 M 1173 2751 I K 
+N 1136 1228 M 1173 1265 I K 
+N 1136 1265 M 1173 1228 I K 
+N 2474 4321 M 2511 4358 I K 
+N 2474 4358 M 2511 4321 I K 
+N 2105 4321 M 2142 4358 I K 
+N 2105 4358 M 2142 4321 I K 
+N 5447 2677 M 5539 2677 I 5493 2631 I 5447 2677 I C 
+:  L ; K 
+9 Lw N 5447 2631 M 5539 2631 I K 
+4 Lw N 5586 2557 M 5586 2585 I K 
+N 5586 2493 M 5586 2557 I K 
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+5575 2551 M (3)S 
+N 5493 2705 M 5493 2677 I K 
+N 5493 2770 M 5493 2705 I K 
+5482 2737 M (1)S 
+N 5724 2631 M 5632 2631 I 5678 2677 I 5724 2631 I C 
+:  L ; K 
+9 Lw N 5724 2677 M 5632 2677 I K 
+4 Lw N 5678 2705 M 5678 2677 I K 
+N 5678 2770 M 5678 2705 I K 
+5667 2737 M (2)S 
+N 5493 2631 M 5493 2585 I 5678 2585 I 5678 2631 I K 
+F0S2DYFFFFFFD2 Ji 
+5701 2584 M (D8)[33  0]xS 
+5701 2760 M (MMBD7000)[37 38 31 33 26 26 26  0]xS 
+N 5678 2770 M 5678 2816 I K 
+N 5599 2446 M 5599 2439 5593 2433 5585 2433 -c 5578 2433 5572 2439 5572 2446 -c 5572 2453 5578 2460 5585 2460 -c 5593 2460 5599 2453 5599 2446 -c C 
+:  L ; K 
+N 5447 1154 M 5539 1154 I 5493 1108 I 5447 1154 I C 
+:  L ; K 
+9 Lw N 5447 1108 M 5539 1108 I K 
+4 Lw N 5586 1034 M 5586 1062 I K 
+N 5586 969 M 5586 1034 I K 
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+5575 1028 M (3)S 
+N 5493 1182 M 5493 1154 I K 
+N 5493 1246 M 5493 1182 I K 
+5482 1214 M (1)S 
+N 5724 1108 M 5632 1108 I 5678 1154 I 5724 1108 I C 
+:  L ; K 
+9 Lw N 5724 1154 M 5632 1154 I K 
+4 Lw N 5678 1182 M 5678 1154 I K 
+N 5678 1246 M 5678 1182 I K 
+5667 1214 M (2)S 
+N 5493 1108 M 5493 1062 I 5678 1062 I 5678 1108 I K 
+F0S2DYFFFFFFD2 Ji 
+5701 1061 M (D3)[33  0]xS 
+5701 1236 M (MMBD7000)[37 38 31 33 26 26 26  0]xS 
+N 5586 969 M 5586 923 I K 
+N 5599 923 M 5599 915 5593 909 5585 909 -c 5578 909 5572 915 5572 923 -c 5572 930 5578 937 5585 937 -c 5593 937 5599 930 5599 923 -c C 
+:  L ; K 
+N 5539 923 M 5586 923 I K 
+N 5493 1246 M 5493 1293 I K 
+N 5678 1246 M 5678 1293 I K 
+N 5678 1293 M 5724 1293 I K 
+N 5816 3508 M 5909 3508 I 5863 3554 I 5816 3508 I C 
+:  L ; K 
+9 Lw N 5816 3554 M 5909 3554 I K 
+4 Lw N 5863 3582 M 5863 3554 I K 
+N 5863 3647 M 5863 3582 I K 
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+5852 3615 M (1)S 
+N 5863 3481 M 5863 3508 I K 
+N 5863 3416 M 5863 3481 I K 
+5852 3474 M (2)S 
+9 Lw N 5909 3531 M 5955 3578 I 5955 3554 I 5932 3578 I 5955 3578 I C 
+:  L ; K 
+N 5909 3485 M 5955 3531 I 5955 3508 I 5932 3531 I 5955 3531 I C 
+:  L ; K 
+F0S2DYFFFFFFD2 Ji 
+5978 3508 M (D11)[33 26  0]xS 
+5978 3591 M (LED)[26 31  0]xS 
+5811 3927 M (GND)[36 33  0]xS 
+4 Lw N 5830 3804 M 5899 3804 I K 
+N 5830 3804 M 5863 3868 I K 
+N 5863 3868 M 5899 3804 I K 
+N 5863 3739 M 5863 3804 I K 
+N 5863 3647 M 5863 3739 I K 
+N 5863 3157 M 5863 3185 I K 
+N 5863 3139 M 5863 3157 I K 
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+5852 3174 M (1)S 
+N 5863 3351 M 5863 3324 I K 
+N 5863 3370 M 5863 3351 I K 
+5852 3361 M (2)S 
+N 5863 3185 M 5888 3197 I K 
+N 5887 3289 M 5839 3313 I K 
+N 5840 3266 M 5887 3289 I K 
+N 5839 3313 M 5863 3325 I K 
+N 5888 3243 M 5840 3267 I K 
+N 5888 3197 M 5840 3221 I K 
+N 5840 3220 M 5887 3243 I K 
+F0S2DYFFFFFFD2 Ji 
+5932 3231 M (R30)[33 26  0]xS 
+5932 3314 M (1.00K)[26 13 26 26  0]xS 
+N 5863 3093 M 5863 3047 I K 
+N 5863 3370 M 5863 3416 I K 
+N 5632 3093 M 5632 3416 I K 
+N 4722 2354 M 4722 2346 4716 2340 4708 2340 -c 4701 2340 4695 2346 4695 2354 -c 4695 2361 4701 2368 4708 2368 -c 4716 2368 4722 2361 4722 2354 -c C 
+:  L ; K 
+N 5276 1939 M 5276 1931 5270 1925 5262 1925 -c 5255 1925 5249 1931 5249 1939 -c 5249 1946 5255 1953 5262 1953 -c 5270 1953 5276 1946 5276 1939 -c C 
+:  L ; K 
+N 5276 2446 M 5276 2439 5270 2433 5262 2433 -c 5255 2433 5249 2439 5249 2446 -c 5249 2453 5255 2460 5262 2460 -c 5270 2460 5276 2453 5276 2446 -c C 
+:  L ; K 
+N 4177 1791 M 4131 1814 I K 
+N 4154 1846 M 4177 1837 I K 
+N 4131 1814 M 4177 1837 I K 
+N 4131 1672 M 4155 1661 I K 
+N 4131 1768 M 4177 1791 I K 
+N 4131 1721 M 4177 1744 I K 
+N 4177 1744 M 4131 1768 I K 
+N 4130 1672 M 4177 1697 I K 
+N 4177 1697 M 4131 1720 I K 
+N 4199 1754 M 4228 1783 I K 
+N 4200 1754 M 4224 1726 I K 
+N 4016 1800 M 4016 1708 I 4016 1708 I K 
+N 4155 1874 M 4155 1846 I K 
+N 4155 1939 M 4155 1874 I K 
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+4144 1907 M (1)S 
+N 4155 1634 M 4155 1662 I K 
+N 4155 1569 M 4155 1634 I K 
+4144 1628 M (3)S 
+N 4228 1754 M 4201 1754 I K 
+N 4293 1754 M 4228 1754 I K 
+F0S2DYFFFFFFD2 Ji 
+4235 1744 M (2)S 
+F0S00IFFFFFFCEYFFFFFFCB Ji 
+4050 1656 M (CW)[-38  0]yS 
+4050 1925 M (CCW)[-38 -38  0]yS 
+F0S2DYFFFFFFD2 Ji 
+4178 1661 M (R31)[33 26  0]xS 
+4178 1698 M (10K)[26 26  0]xS 
+4098 1435 M (+5AV)[27 26 31  0]xS 
+N 4122 1459 M 4191 1459 I K 
+N 4155 1523 M 4155 1459 I K 
+4103 2173 M (GND)[36 33  0]xS 
+N 4122 2050 M 4191 2050 I K 
+N 4122 2050 M 4155 2114 I K 
+N 4155 2114 M 4191 2050 I K 
+N 4155 1985 M 4155 2050 I K 
+N 4155 1523 M 4155 1569 I K 
+N 4155 1939 M 4155 1985 I K 
+N 4293 1754 M 4339 1754 I K 
+N 4339 1754 M 4339 1985 I K 
+N 4339 1985 M 4616 1985 I K 
+N 4616 1431 M 4616 1016 I K 
+N 4630 1431 M 4630 1423 4623 1417 4616 1417 -c 4608 1417 4602 1423 4602 1431 -c 4602 1438 4608 1445 4616 1445 -c 4623 1445 4630 1438 4630 1431 -c C 
+:  L ; K 
+N 4616 1477 M 4616 1431 I K 
+N 4616 1985 M 4616 2539 I K 
+N 4630 1985 M 4630 1977 4623 1971 4616 1971 -c 4608 1971 4602 1977 4602 1985 -c 4602 1992 4608 1999 4616 1999 -c 4623 1999 4630 1992 4630 1985 -c C 
+:  L ; K 
+N 4616 1708 M 4616 1985 I K 
+F0S34YFFFFFFCE Ji 
+4247 2066 M (Zero Adjust)[32 29 17 29 14 35 29 12 29 26  0]xS 
+4247 2112 M (\(CH 2 Only\))[17 38 38 15 29 14 41 29 12 26  0]xS 
+4662 1605 M (Install R32 \(0 ohm\))[14 29 26 15 29 12 12 14 38 29 29 14 17 29 15 29 29 43  0]xS 
+4662 1651 M (and remove R31)[29 29 29 13 18 29 43 29 26 29 14 38 29  0]xS 
+4662 1697 M (for single adjust)[14 29 17 15 26 12 29 29 12 29 14 29 29 12 29 26  0]xS 
+4662 1743 M (of both channels)[29 14 15 29 29 14 29 14 26 29 29 29 29 29 12  0]xS 
+4662 1789 M (Zero Adjustment.)[32 29 17 29 14 35 29 12 29 26 14 44 29 29 14  0]xS 
+N 1634 785 M 1662 785 I K 
+N 1569 785 M 1634 785 I K 
+F0S2DYFFFFFFD2 Ji 
+1579 775 M (2)S 
+N 1634 692 M 1662 692 I K 
+N 1569 692 M 1634 692 I K 
+1579 682 M (1)S 
+N 1828 785 M 1800 785 I K 
+N 1893 785 M 1828 785 I K 
+1857 775 M (3)S 
+N 1634 877 M 1662 877 I K 
+N 1569 877 M 1634 877 I K 
+1579 867 M (4)S 
+[ 18 18 ] 0 sd N 1821 646 M 1639 646 I 1639 922 I 1821 922 I C 
+K 
+solid N 1776 776 M 1712 710 I K 
+N 1798 785 M 1798 778 1792 773 1785 773 -c 1777 773 1772 778 1772 785 -c 1772 792 1777 798 1785 798 -c 1792 798 1798 792 1798 785 -c C 
+K 
+N 1689 692 M 1689 684 1683 679 1675 679 -c 1668 679 1662 684 1662 692 -c 1662 699 1668 705 1675 705 -c 1683 705 1689 699 1689 692 -c C 
+K 
+N 1689 784 M 1689 777 1683 772 1675 772 -c 1668 772 1662 777 1662 784 -c 1662 791 1668 797 1675 797 -c 1683 797 1689 791 1689 784 -c C 
+K 
+N 1689 876 M 1689 869 1683 864 1675 864 -c 1668 864 1662 869 1662 876 -c 1662 883 1668 889 1675 889 -c 1683 889 1689 883 1689 876 -c C 
+K 
+1777 636 M (SW1A)[31 46 26  0]xS 
+[ 18 18 ] 0 sd N 1405 1200 M 1224 1200 I 1224 1476 I 1405 1476 I C 
+K 
+solid N 1219 1339 M 1246 1339 I K 
+N 1154 1339 M 1219 1339 I K 
+1163 1329 M (6)S 
+N 1219 1246 M 1246 1246 I K 
+N 1154 1246 M 1219 1246 I K 
+1163 1236 M (5)S 
+N 1413 1339 M 1385 1339 I K 
+N 1477 1339 M 1413 1339 I K 
+1442 1329 M (7)S 
+N 1219 1431 M 1246 1431 I K 
+N 1154 1431 M 1219 1431 I K 
+1163 1421 M (8)S 
+N 1360 1330 M 1296 1264 I K 
+N 1383 1339 M 1383 1332 1377 1327 1370 1327 -c 1362 1327 1357 1332 1357 1339 -c 1357 1346 1362 1352 1370 1352 -c 1377 1352 1383 1346 1383 1339 -c C 
+K 
+N 1273 1246 M 1273 1238 1267 1233 1260 1233 -c 1252 1233 1247 1238 1247 1246 -c 1247 1253 1252 1259 1260 1259 -c 1267 1259 1273 1253 1273 1246 -c C 
+K 
+N 1273 1338 M 1273 1331 1267 1326 1260 1326 -c 1252 1326 1247 1331 1247 1338 -c 1247 1345 1252 1351 1260 1351 -c 1267 1351 1273 1345 1273 1338 -c C 
+K 
+N 1273 1430 M 1273 1423 1267 1418 1260 1418 -c 1252 1418 1247 1423 1247 1430 -c 1247 1437 1252 1443 1260 1443 -c 1267 1443 1273 1437 1273 1430 -c C 
+K 
+1223 1190 M (SW1B)[31 46 26  0]xS 
+N 1634 2308 M 1662 2308 I K 
+N 1569 2308 M 1634 2308 I K 
+1579 2298 M (2)S 
+N 1634 2216 M 1662 2216 I K 
+N 1569 2216 M 1634 2216 I K 
+1579 2206 M (1)S 
+N 1828 2308 M 1800 2308 I K 
+N 1893 2308 M 1828 2308 I K 
+1857 2298 M (3)S 
+N 1634 2400 M 1662 2400 I K 
+N 1569 2400 M 1634 2400 I K 
+1579 2390 M (4)S 
+[ 18 18 ] 0 sd N 1821 2170 M 1639 2170 I 1639 2446 I 1821 2446 I C 
+K 
+solid N 1776 2299 M 1712 2233 I K 
+N 1798 2308 M 1798 2301 1792 2296 1785 2296 -c 1777 2296 1772 2301 1772 2308 -c 1772 2315 1777 2321 1785 2321 -c 1792 2321 1798 2315 1798 2308 -c C 
+K 
+N 1689 2215 M 1689 2208 1683 2203 1675 2203 -c 1668 2203 1662 2208 1662 2215 -c 1662 2222 1668 2228 1675 2228 -c 1683 2228 1689 2222 1689 2215 -c C 
+K 
+N 1689 2307 M 1689 2300 1683 2295 1675 2295 -c 1668 2295 1662 2300 1662 2307 -c 1662 2314 1668 2320 1675 2320 -c 1683 2320 1689 2314 1689 2307 -c C 
+K 
+N 1689 2400 M 1689 2392 1683 2387 1675 2387 -c 1668 2387 1662 2392 1662 2400 -c 1662 2407 1668 2413 1675 2413 -c 1683 2413 1689 2407 1689 2400 -c C 
+K 
+1777 2160 M (SW5A)[31 46 26  0]xS 
+[ 18 18 ] 0 sd N 1405 2724 M 1224 2724 I 1224 3000 I 1405 3000 I C 
+K 
+solid N 1219 2862 M 1246 2862 I K 
+N 1154 2862 M 1219 2862 I K 
+1163 2852 M (6)S 
+N 1219 2770 M 1246 2770 I K 
+N 1154 2770 M 1219 2770 I K 
+1163 2760 M (5)S 
+N 1413 2862 M 1385 2862 I K 
+N 1477 2862 M 1413 2862 I K 
+1442 2852 M (7)S 
+N 1219 2954 M 1246 2954 I K 
+N 1154 2954 M 1219 2954 I K 
+1163 2944 M (8)S 
+N 1360 2853 M 1296 2787 I K 
+N 1383 2862 M 1383 2855 1377 2850 1370 2850 -c 1362 2850 1357 2855 1357 2862 -c 1357 2869 1362 2875 1370 2875 -c 1377 2875 1383 2869 1383 2862 -c C 
+K 
+N 1273 2769 M 1273 2762 1267 2757 1260 2757 -c 1252 2757 1247 2762 1247 2769 -c 1247 2776 1252 2782 1260 2782 -c 1267 2782 1273 2776 1273 2769 -c C 
+K 
+N 1273 2861 M 1273 2854 1267 2849 1260 2849 -c 1252 2849 1247 2854 1247 2861 -c 1247 2868 1252 2874 1260 2874 -c 1267 2874 1273 2868 1273 2861 -c C 
+K 
+N 1273 2954 M 1273 2946 1267 2941 1260 2941 -c 1252 2941 1247 2946 1247 2954 -c 1247 2961 1252 2967 1260 2967 -c 1267 2967 1273 2961 1273 2954 -c C 
+K 
+1223 2714 M (SW5B)[31 46 26  0]xS 
+N 2724 1339 M 2631 1339 I 2677 1385 I 2724 1339 I C 
+:  L ; K 
+9 Lw N 2724 1385 M 2631 1385 I K 
+4 Lw N 2677 1413 M 2677 1385 I K 
+N 2677 1477 M 2677 1413 I K 
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+2666 1445 M (1)S 
+N 2677 1311 M 2677 1339 I K 
+N 2677 1246 M 2677 1311 I K 
+2666 1305 M (2)S 
+9 Lw N 2724 1384 M 2746 1362 I 2747 1362 I K 
+N 2610 1407 M 2631 1385 I 2631 1384 I K 
+F0S2DYFFFFFFD2 Ji 
+2747 1338 M (D4)[33  0]xS 
+2747 1421 M (MMSZ5237B)[37 38 31 28 26 26 26 26  0]xS 
+4 Lw N 2631 1662 M 2724 1662 I 2677 1616 I 2631 1662 I C 
+:  L ; K 
+9 Lw N 2631 1616 M 2724 1616 I K 
+4 Lw N 2677 1588 M 2677 1616 I K 
+N 2677 1523 M 2677 1588 I K 
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+2666 1581 M (1)S 
+N 2677 1690 M 2677 1662 I K 
+N 2677 1754 M 2677 1690 I K 
+2666 1722 M (2)S 
+9 Lw N 2630 1617 M 2609 1639 I 2608 1639 I K 
+N 2745 1594 M 2724 1616 I 2724 1617 I K 
+F0S2DYFFFFFFD2 Ji 
+2747 1569 M (D5)[33  0]xS 
+2747 1698 M (MMSZ5237B)[37 38 31 28 26 26 26 26  0]xS 
+4 Lw N 2816 1062 M 2724 1062 I 2770 1108 I 2816 1062 I C 
+:  L ; K 
+9 Lw N 2816 1108 M 2724 1108 I K 
+4 Lw N 2770 1136 M 2770 1108 I K 
+N 2770 1200 M 2770 1136 I K 
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+2759 1168 M (1)S 
+N 2770 1034 M 2770 1062 I K 
+N 2770 969 M 2770 1034 I K 
+2759 1028 M (2)S 
+F0S2DYFFFFFFD2 Ji 
+2793 1061 M (D2)[33  0]xS 
+2793 1190 M (BAP50-03)[31 31 31 26 26 15 26  0]xS 
+N 2539 1108 M 2631 1108 I 2585 1062 I 2539 1108 I C 
+:  L ; K 
+9 Lw N 2539 1062 M 2631 1062 I K 
+4 Lw N 2585 1034 M 2585 1062 I K 
+N 2585 969 M 2585 1034 I K 
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+2574 1028 M (1)S 
+N 2585 1136 M 2585 1108 I K 
+N 2585 1200 M 2585 1136 I K 
+2574 1168 M (2)S 
+F0S2DYFFFFFFD2 Ji 
+2423 1061 M (D1)[33  0]xS 
+2331 1236 M (BAP50-03)[31 31 31 26 26 15 26  0]xS 
+N 2585 969 M 2585 923 I K 
+N 2585 923 M 2770 923 I K 
+N 2770 923 M 2770 831 I K 
+N 2784 831 M 2784 823 2777 817 2770 817 -c 2762 817 2756 823 2756 831 -c 2756 838 2762 845 2770 845 -c 2777 845 2784 838 2784 831 -c C 
+:  L ; K 
+N 2816 831 M 2770 831 I K 
+N 2770 923 M 2770 969 I K 
+N 2585 1200 M 2585 1246 I K 
+N 2677 1246 M 2770 1246 I K 
+N 2770 1200 M 2770 1246 I K 
+N 2585 1246 M 2677 1246 I K 
+N 2784 923 M 2784 915 2777 909 2770 909 -c 2762 909 2756 915 2756 923 -c 2756 930 2762 937 2770 937 -c 2777 937 2784 930 2784 923 -c C 
+:  L ; K 
+N 2691 1246 M 2691 1239 2685 1233 2677 1233 -c 2670 1233 2664 1239 2664 1246 -c 2664 1253 2670 1260 2677 1260 -c 2685 1260 2691 1253 2691 1246 -c C 
+:  L ; K 
+N 2677 3001 M 2677 3047 I K 
+N 2724 2862 M 2631 2862 I 2677 2908 I 2724 2862 I C 
+:  L ; K 
+9 Lw N 2724 2908 M 2631 2908 I K 
+4 Lw N 2677 2936 M 2677 2908 I K 
+N 2677 3001 M 2677 2936 I K 
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+2666 2968 M (1)S 
+N 2677 2834 M 2677 2862 I K 
+N 2677 2770 M 2677 2834 I K 
+2666 2828 M (2)S 
+9 Lw N 2724 2907 M 2746 2885 I 2747 2885 I K 
+N 2610 2930 M 2631 2908 I 2631 2907 I K 
+F0S2DYFFFFFFD2 Ji 
+2747 2861 M (D9)[33  0]xS 
+2747 2944 M (MMSZ5237B)[37 38 31 28 26 26 26 26  0]xS 
+4 Lw N 2631 3185 M 2724 3185 I 2677 3139 I 2631 3185 I C 
+:  L ; K 
+9 Lw N 2631 3139 M 2724 3139 I K 
+4 Lw N 2677 3111 M 2677 3139 I K 
+N 2677 3047 M 2677 3111 I K 
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+2666 3105 M (1)S 
+N 2677 3213 M 2677 3185 I K 
+N 2677 3277 M 2677 3213 I K 
+2666 3245 M (2)S 
+9 Lw N 2630 3140 M 2609 3162 I 2608 3162 I K 
+N 2745 3117 M 2724 3139 I 2724 3140 I K 
+F0S2DYFFFFFFD2 Ji 
+2747 3092 M (D10)[33 26  0]xS 
+2747 3221 M (MMSZ5237B)[37 38 31 28 26 26 26 26  0]xS 
+4 Lw N 2816 2585 M 2724 2585 I 2770 2631 I 2816 2585 I C 
+:  L ; K 
+9 Lw N 2816 2631 M 2724 2631 I K 
+4 Lw N 2770 2659 M 2770 2631 I K 
+N 2770 2724 M 2770 2659 I K 
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+2759 2691 M (1)S 
+N 2770 2557 M 2770 2585 I K 
+N 2770 2493 M 2770 2557 I K 
+2759 2551 M (2)S 
+F0S2DYFFFFFFD2 Ji 
+2793 2584 M (D7)[33  0]xS 
+2793 2714 M (BAP50-03)[31 31 31 26 26 15 26  0]xS 
+N 2539 2631 M 2631 2631 I 2585 2585 I 2539 2631 I C 
+:  L ; K 
+9 Lw N 2539 2585 M 2631 2585 I K 
+4 Lw N 2585 2557 M 2585 2585 I K 
+N 2585 2493 M 2585 2557 I K 
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+2574 2551 M (1)S 
+N 2585 2659 M 2585 2631 I K 
+N 2585 2724 M 2585 2659 I K 
+2574 2691 M (2)S 
+F0S2DYFFFFFFD2 Ji 
+2470 2584 M (D6)[33  0]xS 
+2470 2437 M (BAP50-03)[31 31 31 26 26 15 26  0]xS 
+N 2585 2493 M 2585 2447 I K 
+N 2585 2447 M 2770 2447 I K 
+N 2770 2447 M 2770 2354 I K 
+N 2770 2447 M 2770 2493 I K 
+N 2585 2724 M 2585 2770 I K 
+N 2677 2770 M 2770 2770 I K 
+N 2770 2724 M 2770 2770 I K 
+N 2585 2770 M 2677 2770 I K 
+N 2784 2446 M 2784 2439 2777 2433 2770 2433 -c 2762 2433 2756 2439 2756 2446 -c 2756 2453 2762 2460 2770 2460 -c 2777 2460 2784 2453 2784 2446 -c C 
+:  L ; K 
+N 2691 2770 M 2691 2762 2685 2756 2677 2756 -c 2670 2756 2664 2762 2664 2770 -c 2664 2777 2670 2784 2677 2784 -c 2685 2784 2691 2777 2691 2770 -c C 
+:  L ; K 
+2626 3511 M (GND)[36 33  0]xS 
+N 2645 3388 M 2714 3388 I K 
+N 2645 3388 M 2677 3453 I K 
+N 2677 3453 M 2714 3388 I K 
+N 2677 3324 M 2677 3388 I K 
+N 2677 3277 M 2677 3324 I K 
+N 3462 554 M 3462 462 I K 
+N 3434 508 M 3462 508 I K 
+N 3370 508 M 3434 508 I K 
+3402 498 M (1)S 
+N 3536 508 M 3508 508 I K 
+N 3601 508 M 3536 508 I K 
+3542 498 M (2)S 
+N 3484 554 M 3484 463 I K 
+N 3484 508 M 3508 508 I K 
+3370 405 M (C14)[33 26  0]xS 
+3370 452 M (10pF)[26 26 26  0]xS 
+N 3601 508 M 3693 508 I K 
+N 3693 508 M 3693 739 I K 
+N 3707 738 M 3707 731 3700 725 3693 725 -c 3685 725 3679 731 3679 738 -c 3679 745 3685 752 3693 752 -c 3700 752 3707 745 3707 738 -c C 
+:  L ; K 
+N 3647 739 M 3693 739 I K 
+N 3370 508 M 3277 508 I K 
+N 3291 508 M 3291 500 3285 494 3277 494 -c 3270 494 3264 500 3264 508 -c 3264 515 3270 522 3277 522 -c 3285 522 3291 515 3291 508 -c C 
+:  L ; K 
+N 3277 739 M 3277 508 I K 
+N 3462 2077 M 3462 1985 I K 
+N 3434 2031 M 3462 2031 I K 
+N 3370 2031 M 3434 2031 I K 
+3402 2021 M (1)S 
+N 3536 2031 M 3508 2031 I K 
+N 3601 2031 M 3536 2031 I K 
+3542 2021 M (2)S 
+N 3484 2077 M 3484 1987 I K 
+N 3484 2031 M 3508 2031 I K 
+3370 1929 M (C15)[33 26  0]xS 
+3370 1975 M (10pF)[26 26 26  0]xS 
+N 3601 2031 M 3693 2031 I K 
+N 3693 2031 M 3693 2262 I K 
+N 3707 2262 M 3707 2254 3700 2248 3693 2248 -c 3685 2248 3679 2254 3679 2262 -c 3679 2269 3685 2276 3693 2276 -c 3700 2276 3707 2269 3707 2262 -c C 
+:  L ; K 
+N 3647 2262 M 3693 2262 I K 
+N 3370 2031 M 3277 2031 I K 
+N 3291 2031 M 3291 2023 3285 2017 3277 2017 -c 3270 2017 3264 2023 3264 2031 -c 3264 2038 3270 2045 3277 2045 -c 3285 2045 3291 2038 3291 2031 -c C 
+:  L ; K 
+N 3277 2262 M 3277 2031 I K 
+N 969 739 M 969 646 I K 
+N 942 692 M 969 692 I K 
+N 877 692 M 942 692 I K 
+909 682 M (1)S 
+N 1043 692 M 1016 692 I K 
+N 1108 692 M 1043 692 I K 
+1050 682 M (2)S 
+N 992 739 M 992 648 I K 
+N 992 692 M 1016 692 I K 
+877 590 M (C1)[33  0]xS 
+877 636 M (0.1uF)[26 13 26 26  0]xS 
+N 969 2262 M 969 2170 I K 
+N 942 2216 M 969 2216 I K 
+N 877 2216 M 942 2216 I K 
+909 2206 M (1)S 
+N 1043 2216 M 1016 2216 I K 
+N 1108 2216 M 1043 2216 I K 
+1050 2206 M (2)S 
+N 992 2262 M 992 2171 I K 
+N 992 2216 M 1016 2216 I K 
+877 2113 M (C3)[33  0]xS 
+877 2160 M (0.1uF)[26 13 26 26  0]xS 
+N 4063 4125 M 3647 4125 I K 
+N 4063 4184 M 3647 4184 I K 
+N 3647 4184 M 3647 4125 I K 
+N 4063 4125 M 4121 4155 I K 
+N 4121 4155 M 4063 4184 I K 
+F0S34YFFFFFFCE Ji 
+3661 4173 M (TRIGGERLEVEL)[32 38 14 41 41 35 38 29 35 35 35  0]xS 
+N 3655 4145 M 3638 4145 I 3638 4163 I 3655 4163 I C 
+K 
+N 3231 4339 M 2770 4339 I K 
+N 2770 4339 M 2770 3970 I K 
+N 2784 3970 M 2784 3962 2777 3956 2770 3956 -c 2762 3956 2756 3962 2756 3970 -c 2756 3977 2762 3984 2770 3984 -c 2777 3984 2784 3977 2784 3970 -c C 
+:  L ; K 
+N 1293 739 M 1293 646 I K 
+N 1265 692 M 1293 692 I K 
+N 1200 692 M 1265 692 I K 
+F0S2DYFFFFFFD2 Ji 
+1232 682 M (1)S 
+N 1366 692 M 1339 692 I K 
+N 1431 692 M 1366 692 I K 
+1373 682 M (2)S 
+N 1315 739 M 1315 648 I K 
+N 1315 692 M 1339 692 I K 
+1246 590 M (C2)[33  0]xS 
+1246 636 M (100pF)[26 26 26 26  0]xS 
+N 1293 2262 M 1293 2170 I K 
+N 1265 2216 M 1293 2216 I K 
+N 1200 2216 M 1265 2216 I K 
+1232 2206 M (1)S 
+N 1366 2216 M 1339 2216 I K 
+N 1431 2216 M 1366 2216 I K 
+1373 2206 M (2)S 
+N 1315 2262 M 1315 2171 I K 
+N 1315 2216 M 1339 2216 I K 
+1246 2113 M (C4)[33  0]xS 
+1246 2160 M (100pF)[26 26 26 26  0]xS 
+N 1939 942 M 1939 969 I K 
+N 1939 923 M 1939 942 I K 
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+1928 958 M (1)S 
+N 1939 1136 M 1939 1108 I K 
+N 1939 1154 M 1939 1136 I K 
+1928 1145 M (2)S 
+N 1939 969 M 1965 981 I K 
+N 1963 1073 M 1916 1097 I K 
+N 1917 1051 M 1963 1074 I K 
+N 1916 1097 M 1939 1109 I K 
+N 1964 1028 M 1917 1052 I K 
+N 1964 982 M 1917 1006 I K 
+N 1917 1004 M 1963 1028 I K 
+F0S2DYFFFFFFD2 Ji 
+1777 1015 M (R33)[33 26  0]xS 
+1777 1098 M (1.00M)[26 13 26 26  0]xS 
+N 1939 2465 M 1939 2493 I K 
+N 1939 2447 M 1939 2465 I K 
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+1928 2482 M (1)S 
+N 1939 2659 M 1939 2631 I K 
+N 1939 2677 M 1939 2659 I K 
+1928 2668 M (2)S 
+N 1939 2493 M 1965 2505 I K 
+N 1963 2596 M 1916 2620 I K 
+N 1917 2574 M 1963 2597 I K 
+N 1916 2620 M 1939 2632 I K 
+N 1964 2551 M 1917 2575 I K 
+N 1964 2505 M 1917 2529 I K 
+N 1917 2528 M 1963 2551 I K 
+F0S2DYFFFFFFD2 Ji 
+1777 2538 M (R34)[33 26  0]xS 
+1777 2621 M (1.00M)[26 13 26 26  0]xS 
+N 1939 923 M 1939 785 I K 
+N 2031 785 M 1939 785 I K 
+N 1939 1154 M 1939 1200 I K 
+N 1939 1200 M 2031 1200 I K 
+N 2031 1154 M 2031 1200 I K 
+N 1939 2447 M 1939 2308 I K 
+N 2031 2308 M 1939 2308 I K 
+N 1939 2677 M 1939 2724 I K 
+N 1939 2724 M 2031 2724 I K 
+N 2031 2677 M 2031 2724 I K 
+N 1893 4247 M 1985 4247 I K 
+N 1939 4219 M 1939 4247 I K 
+N 1939 4155 M 1939 4219 I K 
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+1928 4213 M (1)S 
+N 1939 4321 M 1939 4293 I K 
+N 1939 4385 M 1939 4321 I K 
+1928 4353 M (2)S 
+N 1893 4269 M 1983 4269 I K 
+N 1939 4269 M 1939 4293 I K 
+F0S2DYFFFFFFD2 Ji 
+1777 4246 M (C18)[33 26  0]xS 
+1777 4329 M (0.1uF)[26 13 26 26  0]xS 
+1888 4619 M (GND)[36 33  0]xS 
+N 1906 4496 M 1976 4496 I K 
+N 1906 4496 M 1939 4561 I K 
+N 1939 4561 M 1976 4496 I K 
+N 1939 4432 M 1939 4496 I K 
+N 1939 4155 M 1939 3970 I K 
+N 2308 3970 M 2770 3970 I K 
+N 2322 3970 M 2322 3962 2315 3956 2308 3956 -c 2300 3956 2294 3962 2294 3970 -c 2294 3977 2300 3984 2308 3984 -c 2315 3984 2322 3977 2322 3970 -c C 
+:  L ; K 
+N 1939 3970 M 2308 3970 I K 
+N 1939 4385 M 1939 4432 I K 
+N 4307 3093 M 4307 3085 4300 3079 4293 3079 -c 4285 3079 4279 3085 4279 3093 -c 4279 3100 4285 3107 4293 3107 -c 4300 3107 4307 3100 4307 3093 -c C 
+:  L ; K 
+N 4307 3416 M 4307 3408 4300 3402 4293 3402 -c 4285 3402 4279 3408 4279 3416 -c 4279 3423 4285 3430 4293 3430 -c 4300 3430 4307 3423 4307 3416 -c C 
+:  L ; K 
+N 4445 3416 M 4445 3408 4439 3402 4431 3402 -c 4424 3402 4418 3408 4418 3416 -c 4418 3423 4424 3430 4431 3430 -c 4439 3430 4445 3423 4445 3416 -c C 
+:  L ; K 
+N 4538 3416 M 4538 3408 4531 3402 4524 3402 -c 4516 3402 4510 3408 4510 3416 -c 4510 3423 4516 3430 4524 3430 -c 4531 3430 4538 3423 4538 3416 -c C 
+:  L ; K 
+N 4676 3739 M 4676 3731 4669 3725 4662 3725 -c 4654 3725 4648 3731 4648 3739 -c 4648 3746 4654 3753 4662 3753 -c 4669 3753 4676 3746 4676 3739 -c C 
+:  L ; K 
+N 4538 3093 M 4538 3085 4531 3079 4524 3079 -c 4516 3079 4510 3085 4510 3093 -c 4510 3100 4516 3107 4524 3107 -c 4531 3107 4538 3100 4538 3093 -c C 
+:  L ; K 
+N 4676 3416 M 4676 3408 4669 3402 4662 3402 -c 4654 3402 4648 3408 4648 3416 -c 4648 3423 4654 3430 4662 3430 -c 4669 3430 4676 3423 4676 3416 -c C 
+:  L ; K 
+N 4768 3416 M 4768 3408 4762 3402 4754 3402 -c 4747 3402 4741 3408 4741 3416 -c 4741 3423 4747 3430 4754 3430 -c 4762 3430 4768 3423 4768 3416 -c C 
+:  L ; K 
+N 4907 3739 M 4907 3731 4900 3725 4893 3725 -c 4885 3725 4879 3731 4879 3739 -c 4879 3746 4885 3753 4893 3753 -c 4900 3753 4907 3746 4907 3739 -c C 
+:  L ; K 
+N 4768 3093 M 4768 3085 4762 3079 4754 3079 -c 4747 3079 4741 3085 4741 3093 -c 4741 3100 4747 3107 4754 3107 -c 4762 3107 4768 3100 4768 3093 -c C 
+:  L ; K 
+N 4907 3416 M 4907 3408 4900 3402 4893 3402 -c 4885 3402 4879 3408 4879 3416 -c 4879 3423 4885 3430 4893 3430 -c 4900 3430 4907 3423 4907 3416 -c C 
+:  L ; K 
+N 4999 3416 M 4999 3408 4993 3402 4985 3402 -c 4978 3402 4972 3408 4972 3416 -c 4972 3423 4978 3430 4985 3430 -c 4993 3430 4999 3423 4999 3416 -c C 
+:  L ; K 
+N 4999 3093 M 4999 3085 4993 3079 4985 3079 -c 4978 3079 4972 3085 4972 3093 -c 4972 3100 4978 3107 4985 3107 -c 4993 3107 4999 3100 4999 3093 -c C 
+:  L ; K 
+N 4985 3093 M 5216 3093 I K 
+N 5216 3093 M 5216 3139 I K 
+N 5138 3416 M 5138 3408 5131 3402 5124 3402 -c 5116 3402 5110 3408 5110 3416 -c 5110 3423 5116 3430 5124 3430 -c 5131 3430 5138 3423 5138 3416 -c C 
+:  L ; K 
+N 5216 3416 M 5355 3416 I K 
+N 5355 3416 M 5355 3462 I K 
+N 5216 3370 M 5216 3416 I K 
+N 5230 3416 M 5230 3408 5223 3402 5216 3402 -c 5208 3402 5202 3408 5202 3416 -c 5202 3423 5208 3430 5216 3430 -c 5223 3430 5230 3423 5230 3416 -c C 
+:  L ; K 
+N 5124 3416 M 5216 3416 I K 
+N 5355 3693 M 5355 3739 I K 
+N 5369 3739 M 5369 3731 5362 3725 5355 3725 -c 5347 3725 5341 3731 5341 3739 -c 5341 3746 5347 3753 5355 3753 -c 5362 3753 5369 3746 5369 3739 -c C 
+:  L ; K 
+N 5124 3693 M 5124 3739 I K 
+N 5138 3739 M 5138 3731 5131 3725 5124 3725 -c 5116 3725 5110 3731 5110 3739 -c 5110 3746 5116 3753 5124 3753 -c 5131 3753 5138 3746 5138 3739 -c C 
+:  L ; K 
+N 4893 3739 M 5124 3739 I K 
+N 5632 3093 M 5863 3093 I K 
+N 5876 3093 M 5876 3085 5870 3079 5862 3079 -c 5855 3079 5849 3085 5849 3093 -c 5849 3100 5855 3107 5862 3107 -c 5870 3107 5876 3100 5876 3093 -c C 
+:  L ; K 
+N 5863 3139 M 5863 3093 I K 
+N 4616 1496 M 4616 1523 I K 
+N 4616 1477 M 4616 1496 I K 
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+4605 1512 M (1)S 
+N 4616 1690 M 4616 1662 I K 
+N 4616 1708 M 4616 1690 I K 
+4605 1699 M (2)S 
+N 4616 1523 M 4642 1535 I K 
+N 4640 1627 M 4593 1651 I K 
+N 4594 1605 M 4640 1628 I K 
+N 4593 1651 M 4616 1663 I K 
+N 4641 1582 M 4594 1606 I K 
+N 4641 1535 M 4594 1559 I K 
+N 4594 1558 M 4640 1581 I K 
+F0S2DYFFFFFFD2 Ji 
+4685 1523 M (R32)[33 26  0]xS 
+4685 1559 M (DNI)[33 33  0]xS 
+F0S34YFFFFFFCE Ji 
+4662 1374 M (\(CH 1 and)[17 38 38 15 29 14 29 29  0]xS 
+4662 1420 M (optionally CH 2\))[29 29 14 12 29 29 29 12 12 26 13 38 38 14 29  0]xS 
+N 5170 3231 M 5262 3231 I K 
+N 5216 3204 M 5216 3231 I K 
+N 5216 3139 M 5216 3204 I K 
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+5205 3197 M (1)S 
+N 5216 3305 M 5216 3277 I K 
+N 5216 3370 M 5216 3305 I K 
+5205 3337 M (2)S 
+N 5170 3253 M 5261 3253 I K 
+N 5216 3253 M 5216 3277 I K 
+F0S2DYFFFFFFD2 Ji 
+5239 3184 M (C16)[33 26  0]xS 
+5239 3314 M (10uF)[26 26 26  0]xS 
+N 5309 3554 M 5401 3554 I K 
+N 5355 3527 M 5355 3554 I K 
+N 5355 3462 M 5355 3527 I K 
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+5344 3520 M (1)S 
+N 5355 3628 M 5355 3601 I K 
+N 5355 3693 M 5355 3628 I K 
+5344 3661 M (2)S 
+N 5309 3577 M 5399 3577 I K 
+N 5355 3577 M 5355 3601 I K 
+F0S2DYFFFFFFD2 Ji 
+5378 3508 M (C17)[33 26  0]xS 
+5378 3637 M (10uF)[26 26 26  0]xS 
+F0S34YFFFFFFCE Ji 
+3093 4651 M (http://www.ocrg.org/level2pages/project_corner.html)[29 14 15 29 14 15 15 38 38 38 14 29 26 17 29 14 29 17 29 15 12 29 26 29 12 29 29 29 29 29 26 14
+29 17 29 12 29 26 14 29 26 29 17 29 29 17 14 29 14 43  0]xS 
+3508 4605 M (License information at:)[29 12 26 29 29 26 29 13 12 29 14 29 17 43 29 15 12 29 29 14 29 14  0]xS 
+: 195 216 8 0 188 198 3515 4347 F F 3 [ 0 ] F 
+X
+doNimage
+Z2aCos8N)urVuiqqu$NoYQ(m-o)A[h!<2or!WN,srr;r"s.02hrW3&uVuNOls8Musp&;,oZ2ak'
+qu?EirVuiqr;?WpY5bd,s8Moqp\t'iqu-WpriZ9ts7QBgrrE&#s/#borW)ulri6"'s8DosrTsL`
+rVZYts0;V#rW)odrW`<!rqucqrN?1*s8MutrVulsrVuoirW`E%s8DusrVul"s0;V'rW)orrqQNl
+rqud#qu?Znrr)i!s0;S*rr;uts7lQnrUp-ks8DforiZ:)rrE#trr`6!q>U<js8;Wis8E-#rr;r"
+s0;V(rW)oqrW)EeGlN'hGQ`;:H$FW5GR&M@HK4u#rqihtZ2ak'#6"Q"rr(qbs'>Y2"'o5=?N"10
+?3OV>?.&TKrr0)#dJrt?rVuosnc&XhqZ$Nss8MrAra#G.!+#P0$=-tD?X/urrVliqnc/Re_Z/$`
+p\t-ks8MQg!;ulr"oSAtrKggf?N"1,?3XV@HMd[;r;Zces8Dr6s0;S,rr)`ns8W#uF^=oOrE];,
+"C5G?kPbG[!WE#$s0;V'rW)lrr;u4i?2S%-?2Iq2>@Cn#r;Q\us3^lFroO.[r;Za"qu?ZV?X<M7
+s'>M.#@^qEeG]=Frpg$grr)lqrr)lsrm(Pks8DrYrs8W&r;Zcli*9Ra?N4=.?N476@*&9Fs8MQg
+s8MusrVlcqs8L=DdJs7GrVuWknc&jnr;Q`orPN%C?2S%.?2@k3@Tn!SqYU9^s8W)us7uZ:s3(H:
+rpg$frW`<"r-;LQ?2S%.?2Iq5?Wpi\lMgh_nc/Xgs8Voob5]lh!WN&trr;uurr;uurr<!!rqufq
+n,ECds8E/dG[+Q\r*KA.qHaA3?<c[mrqu<d"9&5trr;uurVc`rr;ZctrVk+BdJs4F"oA8rrqlWm
+rW)orrp]plr;Zcnl<dlt?2S%.?2Iq2>$tQBjT#2Js8MuurVliss8E&orr<#ur;ciBs3^iJrVZWm
+rWN3!rVl]orW2lpnc&jns8DrqjBc*k?2S"/?27e0@9HuDbl@VArpg$grWiE!s8MopqYpNms8E'!
+rm(Pks8N!%rVQQkk0E/ir;lcls8MQg"o\K!rr(+A?N=C0?N4=,?3OV>?=J-Ws8MQgs8E#qrr2rr
+#Og:(rVZWnrQbGjrt#)-rVlcnl$Hc`jno#RrVl?e#QF]%rr%.F>lS(1?=!51#@1\>?[;5?rUKmi
+r;Q`qrqlo\H<PUNs8DuscMu;l!ri,ss83,dGZn<Y>cm;jr;cifs8W'$s8;D5@K'O5?=!P:!+#D,
+"^58>>@-Onrpg!hrr)lr%/o_@ITp2`Hf+burVk.CdJjIMs8Mu]G$JDR?3=JZiVifUo)Aais8W&u
+kl4ie?iOC3?N4=2?3":,?34J=?2n44k5,)Is8W''r;GlI>Zk?;s'>_Pi;``Urm1VlrsA]'r9AN6
+?sHuBs'5_5H,8kGrr)isrr)lrrWiB#rVPea?X3V:s'>\2p0Io-?!goDdJs1Drql]qrqud!rqlZF
+H2h1O?X<Y;"'g-0r;Q]Cs5F"Xrr<#urr<!!rr)fp!WW0!r<MS3?=-oC>[[S<$=?tFGinr&q>UEk
+s8E0!rqlZns8<6$rVPfH?<pfAn6Q9*>[DX:qZ$Koq>^Eos8;isrVlis"9&/bQ2b.k?"*b?!*oP1
+"^PA[hYd?PrW)uorr;uurnd\6s8W)us8W)us8N!"qu6Kms82u\H<OPQ@1-@I?X-oH?<^iabjk`3
+!WN-!r;Z`ts8Musr!2cQR<i%B>@7D9o3M`/>[puI?sS'7li6q`rW)uurW2ops8NN,rVP;m?=@)H
+=^PHAs'>q<?<qm4r;HQirW)osrW3&uhZ)R7s8N&us8N&us8Dus!<<)u$N91:?<goC?!goFs'5\6
+?X3V8"(%>WrVld(s8Murr;Gs,H<=K_s'5Y3?1D51@UE;G>[:T@?ZsENpAOsh&cM_*rU#eR?=-uF
+?s[5G@:!=@>mXb?H/\Z!rr;orqu5CNiW&rWs8W,urVm9)rVQTmk'C07?<q">?3":2?NOP=?N4C;
+@9d,`cMIJ=r<iQ$o]EB&>[:cG=T2Rp?3=A<@:9+A!b,>@s'#Y5S)<T2r;Z`qq[V\3?X@,F?X?rC
+>[LfA?iOF:@pWDbi;EQRrW2rsr;PLOg&D``rr)ipr9/N7>[UlH>$tTB?!^q=?5[*U=^YZC@Zg$R
+r9N-^>%(WB>@C]B?t!;GnQlN/>[UcC?!LfE@/jLB>[)HtlhgVGY$tU??s?q8?iOI4?O0qD?X?rE
+=aJs)quH]qrqufrrnd\.rt,2+rqlZZG["E^>[(N??s[4?>l\72?3+>>r`oJ2&:)7%F^AHa>@:]B
+>[^cA>[?i*#%:eA@:!2Hs'-:E?=.)G>@)NHc$<W!?".)I>[C]?@fK^=?=@)F?!LiCs'5_Phu*HQ
+rW)utrW)uurnd\6s8W)ss8W&urVuj"rTSN2?iOC8@UEGK>@7A9r`o_8?s[5F@9`b;#@(PD>$kH?
+?N4@9?s-oF>%7D9s'>A*$s[1I?!^rE?X$rC=^h>9!+5b4$sQtE?<UW=?t!;J@U&k>#?tJ=@pWDH
+@/aC7H/SW!rr;us!<<)uhZ)R7s8MusrVcrtl??QAs'5e8>@1ZB?iOF3?N=C3?NaY>?!L_9>l\73
+?3X\A?X.&I=oVe.?2n75>[^n8?N4=(?3FV@?<gn<>m=V@?X@#G>l@t3?!C`B@/jL4?N4:4?=.%=
+?NXP?>[[S;!*oP2"'^'2rVZWps8W)Ts5F"Vrr<#srX/Sb>[UfD?!^fD?N4=)?N4=2?Me%"?Me$u
+?N4=*?N"1"?3jbA?s[&Dg\q0NrW)uurnd\6s8Drss8N!'r;QMV>@(H:@/aI6?"7+5?N4=2?Me%"
+?Me$u?N4=*?N"1"?3jqF=^GK[mf*7brW)uurnd\6s8Drss8Dp%r;H#0?".2Ks'#M5?2n:'?Me$A
+?3":2?NOMTk5YA[s8Doss8W)Ts5F"Vrr<#urX8])rr)`M?X$cA@UB(?!Ere#?Me$A?3"40?3OWV
+rVZZprr2rts8LmTiW&rWrVuiq%KHG+os.t4>?tWA?t!Hb?N4<k?3abC>Ft$Wr;P:IiW&rWrVuiq
+%K-8*rT\Q0@U3;J>?kCS?N4<k?3=J<HKY>-eGnM-s8Moqs8E#ss8E<%rT%<i@9R&Gs'Y_1qd&Ak
+s'=ttqH`Jp#@1Z]rVlcpqu?]prnRP4s8W)qrrE#trX8])rqlW.?<gcD?!R23r*@]Vq-EDp#[Li#
+o_ndhrVlisrVkUPe,TII"n$V??sd1=?N4<C?N4=2?N4=2?N+71?3"71>m,K:rVlcprmq+trs8W&
+ja(08@U<FA?+XGC?2n72?2n45>@1]?s'5\0?e58U!ri/rs8LULdf9@H"oZ5C@U!1<?0,Dm?.iQa
+?2@k->Q8"0?iO@5RJd'^r;P:IdJjLJrp,qT?X$lCjBhjlfj=\aqd'S7?<^iB@!Lu8r;6KEs3UcL
+qu,c(>[@/3!+"nsqd&#as'>P/ra#M0!aj[ZrVcitrRCkps8W'%rVY&L?X3J7s'=qsqd&#as'>S0
+s'5n8?!glDXnhqnrr*$"rr;uKs3^iMrr;uqn=BSbs'G_2s'G_2lX'0gqd0/*nQu6$rEfM0#[U_@
+@<_,;rr)ir!<)rt!<2lqs8LmTdJs4F"TA8F?!mV<s'>Y2s'=qso3M6"qd&_us'>S0s'5q8@p36+
+r;HWpr;ZcurVulns8W)Ts3^iOrr)ipq0?4Ps'G_2s'G_2lX'Ts$=7"B?=.#H?!prFs'5Y4?2n72
+?iOC5?<gk-?N4=0?N+47>@:]\lhpb\s8W'!rVl]os8LmTdJjIMrqlZY?!^h:?N4=2?N4<s?N4:3
+>@7D9"^,5>?X-q;?iOC8?=.#C>[RM;!F/k!?N4=0?N4::>[UlH?J#/RrVultrVc`ms8W)Ts3^iH
+qu?WtrN0=5qHj2-l!=U&>[LcE?<^e:?3OM=@U<GIs'Q";?<^`E>k)/#?2\+0>l\42>m4A=H0tS0
+s8N)udf7Yn"TIP0?X*A5s'=kq$!^kE?X$oC?s?t;>le/:s'5\1?=!P:!FK+%?N4=/?3snA?!prE
+?f_1br;Zfrf)O.t#Q=Z!c!aj`?2It.?0PZ%?X6lB@UEDG@9`b;!b#5<s'Q%<>[CiE>@6o,s'>M.
+#@Le?AQW<(q>^EprVlis!<1OKdJs7G"n6h>@Td(7?3"9q?3FVA?sR":?3"71>mOkF?!gf@?!h">
+>ln>;@.@S'?2Iq.=oVh4>$tWCli$h^!<<)uec4%s"8i#P?N4@5>@.>8lX'Tsqd0;.'jkEo^t[u5
+jl5+CH?`b(='o9>@U37/?N4=2?N4=2?34P@>Q8"3?!O]4rr2rt!<1OKdf0UPrVUnI>[L`Bs'=qs
+s'>V1r`o_7I+[WZr;HQk$N'bbhMbiG?<giAn6Z-#s'G_2s'>_0?iOC8>$bK[meQk]e,St<qu6Wq
+r;Q`p!WW,urW)lrrW2uss8N-!s8N!#rVYY]?iF@3@/4./?2%\(>m">>>%%>8!dW\ns8;urrVlcr
+rVZX%rVGZ@?<pfD?!C_:>l\73?3"@0?N4=$?3&XWrW)lkrr;rsrrW2ur;Z`rr;Zfsrp'ORs82fq
+s8MutrVc]rs8;or!<)rs!WE#prrW2sZi=>4?!mV;q-O),pKmc'#?tV@>^F-RrVlfrs8W&us8N#s
+s8W'.qtAZe?!^fE=Bf-;?sR.:?N4=%?3FPYnbrCbrW2opqYgKnr;H`qrr<#urp'ORs8W)us8W)u
+rrDurrr<!(rVQNmrr;oqrVccqrWE)sja-r5!aT5Al<aHq"CYSBGMW8s!<3#sq>UHos8NZ0qYpHk
+k]gB<>$tfE@9[&Cqd0;.nm;?%!9O7Z!rW&qs8E&rqZ$QsqZ$KnrW<&rrr;rrs8W)`s7--hrr<#u
+rr<#srr2rsrW)iqrr<#trW)lprWrGM@p32H?!C\%?N4:;?s-`\kPY;UrVlfrs8Dlqrr2rt!;ulq
+!rV>Js'Yt6?X3>3s'>/$"^d\lr;HNmr;ccprW<&tq>L<krrE&us8W)`s7--hrql]srr)corr;p"
+r;Z]prVuj.r;HWmrV,O;cZWK$?<^`D>j5Sp?NYT9r;-Elr;Zfrs8Vuq%/p5)rr)c^E*6UR?sN\:
+s'G_2m9Ts(>K>mloDe^grVucqrVufprW)lrrW2rrs8W&ss8W,umf2hWs8Moqs8D`lrV[<"lfHEn
+H<arc?t!5F?s[2Jl<X[#>'o'&qu-Ql"9/?"rVc`qs82d+rVl]nrVlc`H<jia?s-iBs'G_2m9]ft
+#[UeCH'Qb?l0\HJ!;lcorr)rurVc`qs8W)ds7--hrql`prW)oqrY>>.l0.3QHZiV!?XR/D?<^Q@
+?XR2Gs'4hq"C5?Mqu-Qo!<<#ss8W)trVufp$iBo%s8Moof3V`e>lS+1@/jR5?0kl!?!CY8>QA+0
+>RGk$`8]qGq>C3grVHNns8W)ds7--hrql]qrVuj*s8Mr^f"lTT?!goD>lS+;?WpcE>$k]B?X@%;
+?g:r(?$Yi8rVl`or;Q`ps8W&srr;fn!WE&urW2n]s'>_6?N4:1?N4<u?3+D<rETJ3?!RD9!F9(4
+>mF_^Yh/+9rr)cos8W,umf2hWs8N&us8N&us8N&us8E%D?L_=b?3abD?X?oG>i>Y\q>UEor;Q?g
+#laec?X6oE?!RD9s'>"us'>J-!aT,<ra#k9?<^`[m/Hn]qu?]qmf2hWs8N&us8N&urr*$"rr%*A
+?2S%-?2n70?0GVp>m4J??s.jHrr2rt!WN&rrW)urrq-3mrr)PQr`oP0?2n72?0ttu?2.b(>m4P>
+?Y&?ts8Moqs8MHdnc/Lcs8W)t"98B!H2h1*?N4:>?<prG?!ps`rVl`os8W&urVc]qs7H<grr`8t
+rSmf`s'>Y2s'>Y2s'=kqra#J/s'5h5?Wu^lrqufrs8M<`nc/Lcs8W)t"98B!H1YGB?0Ybr>mFbB
+?=.#C?0hOi"9&6!rVQTos7QBgrri?"m<)Y5?2e11?2n72?0P\q?2S"4?!^fA?L7[js8W,ulMpDS
+!WN,orWE3"rHR+(rE]D/#$bMAH11_2rr2utnc/Lcr;R!!rKg_r?<dG9s'>Y2s'=kqq-F#,"Bo-s
+rqucqs8M<`nc&Ugs8Voo"TSK"H!T64r*9A1?X<\=!j2D"rr2uts8N)uq>^HnrVufprVm#urr(JY
+s&oD2s'G_2s'G_2l!F<orE]\6?X?t%rVlfrs8M<`nc&Ugs8Voo"onT#H!ObU>m+J>?<pn:?0P\o
+>l\73>Qe>?>g<3HrWE3!rr;lps8VrppAb-k!T@Dc>l\.0?Me$u?N4=&?3FM>?X<!trW)oss8W)`
+s6fp_rWW?$rHV[Tpg*o+s'=qsrETe8?XR,E?KM+`rr;uts82fqs7uZgrs/Q#rodZn?=!S;qd&)c
+!aK'qs8N#ts8M<`mf3%\"9!LN?M%Oj?N4=2?N4:;?<plE>[H[mrr;usrr;rrs8Vuqp&>3ps8M:i
+>lS+,?N4<s?N4=,?3FP??!cgqrW)utrp'ORs8W)us7lQqrHV[Tp0Hujs'>Y2s'5_6?!gn;?j#Ng
+rr;rrs8W&ss8Vuqp&>9qs8M=k?!^e5?N4=$?N4=0?N4=,?3OV@?!cgpqu5m\li6h\!r[CMhd6=g
+s'G_2$"$tE>[Lmur;Q`orW)usrr<#srq$-prr;r\?!L`Aqd0;.iEcOj?N4:3lM^VZlMp2MqYgQp
+H!T<6s'>Y2r`oe:?!poCeboFHqu-Tqrr2rtrVlBf!ri/Zs'#M2?2It.?/],i?2n42lMgb_s8N#_
+s6p!frr<#urr<!%rr;urH!T<6s'>S0$!gqE@9[!>r;Q`nrr<#urr<#urpg$grWW8Q?X6uCqd0;.
+iElOis'>]js8E#urVl*^n,NFes8W,us8N9%s8MtA?/Jug?2S"/?iOC8?<qpRrr;lps8W,us8W,u
+nc/Xg!r9',ra#D-s'=VjrETG1lMph`s8Dr^s7-*irr;us!<<&t"onT%rr%)l?3"71?NFHts8N&u
+rVl*^s8E6$m<i2G?!mJ8s'>/$rE],'rETG1lMph`s8Drss8W)ds7--err<#trr<!#rr%(Io3VH&
+l!=Br@/jO9?!gdhrVulss8N#_rrE&ur<;7c?t!;Gqd0;.nQu0"oj.Z)?N4:2lMph`s8Drss8W)d
+s7--err<#srWN9#r-M`L?NjY@?=-oDs'-"=?X@#B?=7#G?!CZA@.@P(>[[S<"CG>@Gk(h4!WN-!
+rW)osrpTjgrVulsr;li"s'>Y3ra,V1s'G_2nQu3#%UNFK?X-oB?sd,F?sR)Ds'Gckr;Pp[nc/Xg
+!<<&t*<6$:rr;oqrKUYj?X?uE>[LlEA6E/A?!pi@>@.>;!aT/;n6QB->[ClG>@QRhs8DiooD\mj
+s8N&us8N&s"m()8@U*.:?N4=2?N4=$?3OSB?=-i@ra-(>>[(NC?!CK?>']Z9s8W,ukl:2Qs8E0$
+rr)irs8E#ss8N<$rorIkR<\a=&mJ^G?!(E=@9m2H?"78H?sR)Gn6Q*%s'5e9?X-cYmJd%cs8Mus
+rpp*hrXA`'qu6QjP@7^%?sd4>?N4=2?N4=$?4gRL?<^oD=^YTB?X[>G@<m1Fs5a4Zs8D*[o)J^g
+"TSK"rr<#t!;uir!<3#s#5e>ql/UO5s*4iX>[:T??<^_8?3"71?NFD>nQl3$s'H.?>[CfF?,?I;
+r;6Nnrpg!jr;QWns8;r[s',P3s'G_1s'G_2s'G_2nQl<'?X7+??4URO?!hoZf]VMiqu-Hlr;PdW
+o)J^g"98B!rr<#srW<#rrr)cqq>^Boqu-QY#3F'UG?\H^s',P4s'>)""(,>?@/jO=?X6oai;EQQ
+r:'^srVulprr)cZG["K]?<plAl!=^$@:*5bGJ<"rl1t8U!WN&trr<!!qu?Wos8W,umf2kX"oeK"
+s8MusrW)uurW)osrWW?"rql]mrVcfprVZotp$9@s@fB[7?"!/.!+5b3!+5_3#@1YCIHUS,rpTjs
+rVQTmq=0_T@9ZuF?X."'?3FVAQ0.Q7r;loqs8E#rrr)utrr;us!WW)rrr<#urpKgWrrE&ur<!#u
+rVuiss8N#tr<WH%rr;lorr)irs8W'"r;QWorW_q>?!^`D?iOF"?N+47?=-oB>BoE3rpg$grWW9"
+r:#qVs&oM9>[(V9>NfArFR8r(r;QZrrVulr#Q4T"rqlWmr;Zfqrr<#urpKgWrrE&ur;clsrr;uu
+rr;rrrr;uur;$<ls8;itrQedL?iF=2@.@P'?2n73?2n74>[.57"'o>ZiW&lVrq-6jrr2j(l'5X]
+?"$oB?sR)El!=KuQMg^ZrVclurqufq!<)rss8<'!r;HZnrr<#urpKgVs8W)grrE&krs/PfG$nT_
+?<mJ9s'>Y2s'>2%s'5n:>[Lc[dII/5rr)oqqYpNp#laf#qqH@#?X;o&#%(Y??s?oAs'>fir;HQn
+rW)lorrE&srrE&Ws3goLrqr0is'#P4>[RM;s'>Y2s'>/$"'o5?>lS1:?('pSrr;foqYpNp#laeg
+_-^GU>[Q`%%9m(F?!^`C>^G`7rquZCs3goKrqtmX?3=Y@?<dG9s'>Y2s'>/$!F&q2?3sb??<hj1
+rr;uprVlis!<3#u"odV1?!:\:?3"*t?N4=.?3=P>?!@87!a8mVs8;ros8E'!rVQWprnd\'rrrE#
+nTA2Ds'5V0s'G_2s'G_2n6Q6'=C,TFs'Gt7XT&1qrr;uss8N)us8NB(fj.uj?<^`CnQu6$qHaG5
+?=-l@@<pu5rr)rrrqcZprnd\'s8W'"rQejN?3"70?N4=2?N4=#?3":2?N=4.>ln5<k5P>[rVuls
+s8N#trs8VgH<sla?=-q,?N4=.?34J=>5r%2?3-;hs8E)ts8Dcns8LmTdJs7E"m1&7@:*:>?N4=2
+?N4=#?4:4J?!^`C?$H2Equ?Tms8Muts8W'#rN]d7s'Ge/@.@S'?2Iq/?"!\="^>8;ir/fTrW3&t
+q>^KohZ)"'s8E3#QX<m#@/F:1?1;/1>@L`C?!Lalr;HWprr)irs8W)us8W''rT%9m=^t`AnQu6$
+qd'P5?X7#D?$c/BrVlrus8Dips8LmTd/X.E"QNcq?=!G7s'>,#$!geD>$bQ[nGN7brW)osrr<#u
+rr<#urWN2tR9F&!>6&+%?N4=-?3jnA?!h!jrVlisrW3&tq>^KohZ)"'#QFc&n9\;G?2It.?1D5%
+>[[S<"C,;?_u0Q5!<3#us8Moqs8N&s"lETl>%(\+?N4=.?3jqC>[Lc[lMUVXrrE&Ls3^iIrr<#s
+"4CL[@/F:1?1D5'@p3)Bs'Ge3lMph^rW)uurql`prWN2eH<FVT?1D8$?2Iq6>[^iB>d+)(rr<#t
+rm^tqrrr<"rqbb_q-O),nQl3"s'Ph2s'>_qq#(*ks8Drps8MuurPJSA!F8so?3ahD>@6@equ6Qo
+!<3#us8L[NdJj7Hs8W$!m9a,p?N4=$?3snG>$PKAkPbD[rVcfsrr2fp"T88tjE^c0!+"hq#$kJA
+>@?Xis8;rsrVlots8W)Ns3^lHrr;p!_-12Nqd0;.mp?$$!a9m=qYpNps8N&uqu-csrL.&#@e!e)
+?2\+/>l\+/?NXQ$qu$Hmrr<#ss8L[NdJjIMs8M/,?s-k6?N4=#?3"71>6JBYr;Z`nrr<#urr<#s
+rW3&us82u\>[L_*?N4=0?N4:3?X3V;"C,'Sr;Q`rs8E#urVkILd/O=Lm<;lA@U&k<s'G_2mTp-,
+?<h^;qu?Wmrr)lorW2rqs8E,kHWskI?N"10?N4:2>lS+7>$k``kPP;Trr)lsrnd\-rrE&qrrrDt
+Y?tOAs'5S0s'G_2mp66)?<ggAr;QWkrr)lnrW3&us8;rMmp>rus'G_2"(#2;@K0O6?^CB^r;H]p
+s8Muss8LmThuETQ!<)rs!<)rs"oJ;sjBc-l?3+;=q-O),rEf;*ra#\2>[ZRkr;cltrq$-prr;oq
+rTe]5s'5e5?sHuD>lS.-?1M;&?-iQLrr)oqr;Q`rs8LmThuENO!;lfq$N:#(l$HWB@U<DGq-O),
+r*KA.s'G_2s'>h6@pO<Nr;Q9e!;ulr#Q=S)?=7&G?N47.?Me%!?3X\\lMUPYrVQTos8W)Ts53kT
+rW<-!qYpI!s8Moh[9I'Es'#M3?h%J$?2\(7?!LOlrVQTos8MQg$2sl%r8_9l=^GA5?3+D<s'G_2
+mTp$%??ki8s8E#sr;Q`rs8LmThuEZSs8N0"rVZ]p$MjYR?<plE?!puDn6Z*"rE]_7?@(l6rVlis
+rq$-jr;ZfrrqutA?sd;Gs'>\4ra,V1m9Tm#>Jp@<rr2rsrn@D*rr`9#r;Q`p!UP+2?3"@4?3+J?
+l!=I!>-Il(r;lornc&Ufs8NE'rr)cQ>[CfE?iOC3?g1l!>%;g;s8;uqrmq,$s8W'+rV;^a?Wpc@
+?sI&El!=R!?0_@brr)?d!WN#srs&;ur9Sf7?2n75?<ge"?3=J:GjbV1s8E#us8N&us8LmTiW&rW
+rVulr!WW0!quGIN>mFVE?s?rC>[R;5s'>G,s'>P/!g`W[s8E'!r;6KorqQKprVl`ps8W'&r5;uL
+>?kJ0?N4=$?3skC?!jf4r;HWps8N&us8LmTiW&rWrVuos%0->(rTJN6>[U]@@9rn?pg3u+q-O),
+ra#Y3@,1e\!ri,sqZ$Tpq>^Kos83*$rqu`Y>%%A:ra#D-s'>/$!ao5>s'5Zdr;Z`rs8Muts8W)T
+s5F"Xrr<#srW)uurW2MTs'5V0s'Gq7?=6uG>kq\1?!gfC?!pq;?jU"B@9d#D>^Pf8s8Mfns8Mus
+s8N&urVlis'E7t-Q!Rg&?<gc@>@1]??s[&B?2n73?2n73?27e,>lS19>[DU?rVlirrW)uurnd\6
+s8W)us8Dp*s8Mo\='o?A>$kTA@K0U5@/4+3>[:]F>lS+1>lS(7?X$W@>[YhTs8N&u!<)cos8Mus
+s8N&urVliss8E&thY^[Y?iOC4@U&k<!FT:6?1qS2?!1K>>$o\Urr<#ts8W,uhZ)@1s8EQ-rr)>4
+>[(H@@:*5E?X-n4?3+>:s'5V4s'5t=?!prE@Tm)_kktJ[rquirqu?Wos8W,us8W&ss8W,u"T7k<
+?=3_<#?tP?>?tH??N4=1?3"@4>l\7-?N+:6=^QF9s8E#us8LaPg].9P%KHG)kBUBC>[(NC>[:_3
+?4:1I>[LcD>[UuD>?tM6?NHJkrr)ors8E#rqu?Wos8W,us8W&ss8W,us8<2I>[CT>?s@"<?j0tE
+=^YNBs'>e8?<pq6?3aYA>%2g>rVkCJg&M$M#6!t2?XmGJs'Pk5?hdq@>[:`D?!guD>[UoF>[Ujs
+rVZQkrVliss8N&urVliss8N&urVlisrr*E(lZccE?<gf@?Wp]A?=!S=!a],<s'Gb3pg+&.??bW4
+rql`qrnd\.rrN,trr*0#k]pB=?X$n;?3"7+?3+G8r`o]3kKeHZ?iOC7=aKW:rr<!!rql`ps8W,u
+s8W&ss8W,us8W&ss8W,u"oA5sQX*hq?3OV[XmEcHs'>e3>[Ln=>l\7+?3FAXkl(GYs8N#ts8W)T
+s5!_Trr;uurVlcrr;Z]tkBU<As'>b4?XWY8"C#>^iq`WP$1#TV>[Cdjr;Q`qr;Q]qs8W)us8Drs
+s8W)ss8W)us8Dp%r8M0j??i[<rqm)`G[=i`?=I5G?hdq0?ZkN0rVcfsrr2rts8LmTh>dNSs8Vrp
+!rV>,s'5_7?<pe7?2\(4?!La%kPtJ\r;Z^$r9:D0I-1D,r;Z`rrVlfrs8W)us8Drss8W)ss8W)u
+rsA])rqucgFBk9pqu$]g^3F$g?iOF5?sEV9rE]e9H0G5+qu6Qns8N#ts8W)Ts4%)JrXJhgG[F]`
+?!giB?X?uEs'5eSf)>OGrVZWrrU9.Rr;ciVs8W'!s8)cZ!;H9f'BFIG=^GH??=-rD>[:Z?Gj>5+
+rVultrRLqrrrE&ur<)8,?sN_<s'Q%:?<UZ@QKe>H$31#)rqucor;QWPrrE#trrN&rq#:s*rTCCn
+?!:N=?<poC?XS*Bqu?Zrr;ZcsrRLqqs8W'-rTJK8=C5B<?Wpf`an>]4!;ulr!;ufq!WE&trW)lS
+rrN)trVllrqYpQps8<)uj)na9s'Pb3"^?*9rVlisrr;uurmh%qs8W!$rTJB3?<U\8?NHDTs8;ut
+rVuisrVulurVlfr"9/5srnd\TrW2usq#CBn#5\;`Q<RX"s'5\4Hg:Y0!W;oCs3L]Frr;j%m<Dc>
+??sifr;HZp!;lfpqu?QmdJj:Gs8N&s$i8Y'?sI#]lMLPXrr2ourVk=HdJs4F#Q=Z#kBgQ[irAuV
+rW)orrr;uurVlftrr;rriVrrXs8W)urrE&ns8W'*s8DrorT9;KH0bG.rr)isrr;uurmq+ss8W&u
+s8W'&q>TI*nG`4_rW)lprrN)ts8N)ur;QitrVkXQs8Mcm"9/5ts8W)ur<<)WlM:GWrVl`p!<1RL
+dJs7G"TSK"rr)iq!rW&trr*!!rr)ls"TJH#s8C[Os8Mus!<)`nrr*#ts82fqr<E9"rqucqrqucs
+rVk@IdJrt?rVuos_>jK5!<;opb5]lhp\t-ks8Kk7rVlisqu4b<dJs1Ep](9m_>jK5s8W&srVuos
+cMu;lrVlQks8Kk7rVlisrVlcqs8L=D_uKc9JcG`L_uKc9JcG`Lc2[\?rVuosqu?Wo_>jE3cN!J8
+r;QWo!<2lqs8E'!rql]qrqcZmrqZQorr2rtrpTmcrpBabrqufqrr)lsrqHHjroa=[rqZQorql]q
+rql`qrqZQsrVlcprVlfrr;lots8E#srr)ops8E)urr)lr!W;rss8;irs8W&us8MutrVuj!rVlcm
+s8W,u!rr8srVd!!rqufns8Drqs8MutrVuj"rVlcps8W&us8Dosr;QZrrVufp!<)rs!W2omrW2rq
+r;Hlurr)iprr;otrr;us#6"K"rr)lqrr)utrr<#t!;ulr!;uco!<)rs!<)os!WE&urW)ljrr2rt
+rql]rrr<#t!<)rs#lOZ#rVlirs8;fo!<<)t!;ufps8Dus!WDoprW2rqrr)ors8E)rrqufq!rr5u
+s8W)t!<)rs!<)rs!W2lrrrE#srr2rmrW3&ss8E-!s8MrnrW2uqs8E#ss8E3%r;Q`qrVulsr;c`p
+rW)oqrW<&ur;Q[#rVlcnrqufqs8N)ts8E-!s8MlprW)orrWN9#rVlisrVc`qr;Zd!rVliorVcfs
+r;QWoq#:?ks8N)us8W,t!<3#ss8E&ss8W'$s8;lorVc]qqu?Tpr;Z`rqZ$Nqr;HTos8N&s!WN#r
+rW)orrW2rqs8E3#rr;uprVuits8;or!<)rss8Vuqs8<$!rr)lr!;lfr$N:#(qtg?kqu-EjrVd*$
+rr)corVZZns8E#srr*#srVulsquH]orW)uurr2lrrWE)srr;urrr)ops8E#ss8E#rs8E&tqYgBq
+s8;oos8N3!qY^?ms82fps7ZHmrVuisqZ$Kqr;HQnr;loorr)ots8E)uqu$Hl!;c`n!<)rs!WW#r
+rWW5uqu-EkrqursrVl]orWW9"rVZZms8E,tr;HQnr;uiqqYgBns8;isrVQWos8Dus!r`,qs8E#q
+s8E-#qu6NmrW)lpr;lfps8Drr!;c`o"8i&rrVlcrq>^Bqr;HWls8N&rrr2oqs83'!s8N&rrr)fo
+rW)lqrWN/ur;QWnrVucqrr2iurr;urr;Q`rrVuiqs8W#q#M[J:`kTjYrVuisr;Z]rn%Sh=%-@BD
+b/;!1i;*BMs8Drr$iTtbdE9e\jR<'Iqu?X0qVoH,_sI3U_SF%0kPY>ZrVlirs8;j&s8Mulkh",+
+c-cRQs82lorr*6&rr)$9eC)\(mf37crX&H$m(Bj?eboFFs8E?'ijZG3li-k^jT"KNjSe]3k3)!p
+p&G!nqYfd<rlYPjhXg^FrVl`pr<i2Vc-Xbfl21DXr;Z`rs82fps8DurrWrQ%rr)c\UL7I/>o-^P
+H*?l>qu-QR@9d*h^iWmd>@1Wom/?t`%/p2(ka#CY@:!5DIH1A,#5eDufj%les',S4?2n48@!09]
+qu?Zqs8;irs8VrulC;*cs'5k:=^??Tlhpb^r<*&b[WqgX&7AdKI)PFOr;ZcX?=@'Nr;HZp#5eAL
+?sd."s8<3#KjJ#9l%<7@?OpCGJaiX8eTG8(>%1ZAGhi8s$N/n/=^PB>>@*]Zs8E#rs8W)tqu?]q
+s8Vuq)uT[$G$J<U?<L]C>[EH]rr)i^>@(Z@@9d,H?2n.D?BOaVqu6EVG@Fi_?!:QA?$Y6'rVucq
+g&GC^?"$oC>5qn5>$Y@MrVZZps8DpHs8Mu\H!F`Z@U*)E?<poalhpe^n=!Tk>[:Q@>@(^*o)ARd
+jBl,!]DVX-rr;p"fihcjkPtJfr-i-[?X-fE=^,;6?O-H)_-:8O?!mS9$t!>PrVlcSF^8H\?=3_;
+!ag68rVlfrrr2oss8N&urVcs"rr)YUs',\4?X.#Cs'>t9?GcX>rT7Bms'?7AG&qhK?X@)Ebl.P>
+oQOVEs'H&?\6rTH?[:i5s832Y>[:T???UI4>lS16>]ej%rr;lp%fES;?<qi\cEDOt?X&fns8E<"
+QsF'&@<d-Ds'H.=?,Z^@r8q6j?,-=:rWiE"dpcNekPYAY!eFW`r`pRqKS!LKp%r$!?sI#^G'A4<
+>@)UCroeQ4?s%a#Y'U+R"($3=rVulrs8N#ss8W)us82d%qq>=^?$2Irr7_0o#@1SVkPG2B>lJ%1
+P2?6:"luOg>@DROr;baT>TR=Zo)8FV[U3<ERJm'^gKe,k@'o%on_%qi?!P)Bs8W)ts8Muum!8V9
+!L`6Qr!*,qigG#Xrr;p,lWd_%H0=htmFunn?$ko;r;c$[?3@h<rr<#t!WCRJ?3'-er=X]g?!DsK
+o_n:EnGMHX?!DNpkl:SakfJ*ojT#/YYQ%o;H/8;pqs9VU>[Q+\rVulss8N#ss8W)us8N#trrW&q
+[JsJ7@+G5TqZ$I&a'W.Yc2RY'@U*8_lMU\\!rVJ,s'GeLkPtJ`Q!n!@qZ$L!rquV\?X8!Bs8</R
+>@(O-q#:9j#2WTn>'^,Fs8N&urr)utk[+9p"607Wr;QZtr:Bjcs8;rHs'>_2lMphgr;HQM?!CUq
+s8;u]?2n4=]D_d/s8MuI?<pn"rr!"P?<pn)r;Z`rs8W'&rRY=[?dnuRrWrH$rTinMr9nq2>n,$U
+rr)ipl$-K=H2RX?rr;usrr;rsrr2rt#6+RC?s[sPs8<N.r;H&+>[bMKrT@Bk?)%8rrr!r:\m&HI
+lMTsm>@H1^rVl`nr8M*f?KqCbh-XDqh#76Pr<E8nG$A6rr;Zcqs8W)ur;l:ms',Q=s82orqu$Eu
+s8DhB?!qpQs8Dus"o[_6@U.C^r=J-t?<t5Cs8N&trRG4[?KM1dr;_HL?3>fMrVliq#Q4T!Q<RaA
+oDedgrW2rrrquu_>%1e%s839'qu-H0?X8$BrVlisrW)uurr2rrs8N!#s8;lpF8oSK_#432r<<3!
+G$nUMs8<Po@9d0Xr;QWorqt;R>@-Okl2P)l?/FrJl4<4Il/u>[?0(q\fih`gkPbG[#lXc$UgIDK
+rVZWos8N&s%.\RJ?X9#NjQ>XfnbW:bs8<(G=^T8Js8E9'qYpG9?!Nftr;c!Z>l_P:rXSu-rRG4[
+?KM1brdnE^JcGWWrVlcqrptD>?b?78rVZ]qs8E].rVYPW?=2m\m-a3+mFPWM>O27crquflrs8T&
+rH;FP^\n'1rWE,ur,MaA!.OtH!9X;g!a`\?s8E#rs8<8Y?=@+%r8q6j>lS.2=T;\A>$tZD?=2ai
+r7bIa>Nl%br;QWm_>ddCFoD=>s8E#urr*0$r8(ab?<pq<>Qe>@HHu-^rWN.E@p@:Zq[EK%rr)hF
+?sA$Wro[Se?3%V:rWN9#r7,*Q?45lorVhCS?@i%Qs8;or#Q<jm?sChPrVuisr;HWpr<^bW>[CcD
+>ZtK=s',b9>[Qgqs8N&ss8MusqYpQps8<,sFC8Ckr;?O%s*S3\F8bt'>$G=`s8Drr$2iL_>[H[m
+j^DBn?PH^P?!LcC?X-`@kPY/1@Tm.'qY^?lr<C)C?ZuADs8;j&s8Mrn^34!j?XEb>$sI"EPOnbN
+I9Tt.qu-Nns8;q@s'5bQrVktcs'>uDrVulsrqt;Ps'?&orr)hJ?!`0^rr)iq$2s7!='aPXrVlcq
+rW)osrXJ`%c!=ab?!LcC>[CcGs&oM3l2L_]rqufns8N#tr<@=M>f$=9rr2j+rc27NErH""?Xm9U
+rVZZor<q4`?sVsoj]u+tFF4%5%siGFG^F^\jo,,4?!CUtrVuj%rVl]1?WqUOrr;fn%/oG6H$+=9
+?"%#D?Jb_\"FFE]dJa+E#Q=T#rd8*\HN3sEkPe`m]D_d/s8MrI?2n49k5P>YJmM`8s8;utr;QWq
+k["3r!Qk<?rW2utrV[-'r6\\V=a57<H?aZ6GQW5<GO##'rr;iprr*3$Ea`1Zr;HNks8E0$F^A@^
+s8<)^>[:[Prr)lr&,Ojb>$L7ik$VJ"lMLPWrVl]srVlcps8;rPra#WjrVud"rVlc1?!_XQr<!#u
+s82cqr;QX.qu,pJlIL;c@[6okH!Xjur;Zcrs8EH*G[FdDrVkqb?<t2@s8E-#rqt=G>la$drW%NL
+?4DJbrVlcqrr)D3?<t5As8;uur;Zcqr;uoR@K0U5n,E7_r;cclrW)orrr<#urr;uurr<#urr;p"
+G$86qqu?WprXJhaG@+[nqu#S^?X8oos8EK*rqj-/?X)^ll$H]Bf`1mLrW)osrY5>1qu?ZngKn8n
+kPbGZr;QZ4>@2IOrW<-!s8MusrW)lqrX/W's8;lpr5)]EGQ7UGG?nO!qu6NnrW<&gGlM(Ue,91+
+?X6p1r;Z^$s8Mu7?<pgurVuj!IpZN6rr*6&s8MupQ=!jAn,N=crWE)trVQWn"m0#t>NYnarW2us
+rVZ`qrVufprr<#ts8W,us8N)us8<)9?sR!grVZfp`*E=J#hJqNj]u,!E9.&s"9/5\ErTDGFlr`&
+"I`V$GOGJ/"oJ8pk5,,Wr<CqZ>%-Olr;Z^!qu+68?$#uDs8W,u!<<)u"5U-LrVuiss8W$*r2j42
+Hi3`l@9[.$rr*K-r6\bU?0;(]mW2c>Eo6fns8E5gG$J<[kPkM[$%cDhJGfEHrr;utr>jKo@U6bC
+rVZZnq:Fa+rTni8@^5e.r;HNlqssabs8N#trr2lrs8N&urr*Q1rVl`O?!:]ZbNA`^^iWpiF6W`&
+([,40?!`TNoC1b"?X?r[r;HQN?<pm)jo5/]kHS@/q>UEm%bkE">3Gb^rVQTm^Kt8es8N&urr*3'
+rqkN!??+uls84SLp<e4k?'bEel<IP"HeRc\mEp8h?@(o7rVMFX@:"0.lL`ql>utH>k55/VK3h`7
+s8;rps8E3"rr)&-=oVh7]B&GOk,MX1h>dBVZX$d?_<M!t#5d>DH/AJtrVlZns8N&uqYg]pX'Ak9
+>[[S9!+5b3!F3MAquQcXs'Gh4@Trb;!F/q1?4p\prVZWeO^29tG^"FUH!ac_Q2gdep>&tX?0_Cf
+rr;m!_-gAhr;Q`qrWE,sqK`*I$XI+aI!0d[?<^cAjT#/fq6OF7>@(`D>?tQ>=k<WOs8E&L>lS+2
+?!dM8%9m7J?!H[nrr%=R?%MqOrr2j&csL$^@:3GG?X`t@#^Pn;l$6WD>^HBn"CGVCHL(V0rr2rt
+s8N#ts8N&urVcfss8E-!l'#QS>o$dR>[=o9rVZWT?=@&C?!q#E?sR,CNW8hYrr)c_H!UGT!aoAA
+s',Y5Gi/H!r<1h]?=2jprVld"r52cGG5_I@qu-]rl'#NT>6J5:?=.%<?N@qBr!<<#n!@3`?X-n9
+?4gGcq>C3jq"_.#>[CcD?X[;Ds'H7AjSeuSKj%f7r;HNmrqufq+8u,Q?!gfA>[Lf@@!'QgrVPGu
+>?Y???!gi@?@22>rVuiss8Drrs8W)us8Dour;Zcrr=&&#F^SK_>[;Hrq#1*ir=.ss?!Q+7F^&6Z
+>B[ODs8E#ss8E3"n#Cb@=oM\/H(+!os8<9%fj@ihir/lQrr;p"_-L;jrVlfsrVZX#rUS`i?XR/G
+>Q7t2H/eVrs8N&s%.)#_>@(Q@>C"]qrqucq$NBt9G$S9W>BIR/s'5\1k552X)1l.#K)GTErVlcp
+s82`ji-&C2?<LTAPi_lDrWiE"k*TF]>@%89!dMQMs8Duss8W&srr;rsr;Hfur;HWpr<D<3_8+"C
+m/R%`rZM1'>[(Uiqt/FW_:%6=rVZZnqu?ZnrTWCicdCe8r;HWpr;uu^g&Ke-p&4pi#PnDuhV?i?
+rVuits8N&s!WN-!rVucsqrQ]7ciheRkjeTMrXAc)s8Mi[lIF82lL4]Oqum'!r;HWpr!;K/]tVYN
+qrcK/fE^jErr;BPmHafM"oeQ!rr)lrr<W>kkgRf"e`6T-r=&`(rqcTjkMFP3biS0jr;uusrqufr
+rr2rrs8;j"r;Zcpr;Q]o!;lco!rMuqs8E6$l<[_%g&1mK!;uiprr2rrs8E#urr2rq!<)rqrquru
+r;Z`qrW)iqr;loqs8E-#rr)cpr<3-"rVlirrW)uurW2uprquirs82fo!ri)qs8E'!r;Zcor;QWs
+rqcZnrr2rrrVZ]os8N&s"9/>urVulqr;uups8;isrVZ]o!W2iqr;QWrrr;rqrqu`nrW2rrp&G!j
+qu6Tpq#19nrVd$"kZqP$g&:sM!<)lq!WW0!rVulsrrN-!qu6Tps8E#squ-Tqrr)rurr;osrr<!!
+rr)ls!rMuss8N&s!ri/ts8W,u!<<&t!<<)u!<<&t!rr8uqu6WqrVcfss8E#sqYpNprVcfsrVlis
+rr2rtr;H]rr;Q`rqu-Tqrr2corr2]mrVucorVuosr;ZZn!r_=gs'>`[rVlfps82fls82fqs8W&u
+s8N#ts8Muts8DrsrrW2urr<!*rVtp9iTU7>r;QQ^rr<#trr<#srr)itrr;Th!<<#srr;uss8W)t
+!WW0!s7ZHlrrN-!qYpHns8N#tq>^EmrVuWk$31"f?=.!krVlckrr<#prW)urrW)uurqZTmrr)j"
+rr;urs8W!&rqgqG@*JQErVHKos8N&s!WN,prquflrr<#srW)uprW)oprr2rsrr<#srWN9#s8N&m
+rW)umrqQNhs8Drrs7ZErs8M1f?XDFbrVQQos7cKms8W'"rVliqrW)uurqufnrr)isrr<!&rqlY?
+?<PGNquQcnr;H`srr)crrr;fnrVuco!WE#rrrN-!oD\dirVcfsqYgKprr2oqq>LBmq>U0hp&Fdc
+s8W,u!rr8_ra#TYrVc?e!<)Wj!<<)us8W)t!<;urrVllss8W,u#Q8gN@`\HEq>L<ls8W)urVuls
+s7lTns8Drss8W)ts7-*bs8N!!s8N&urW<-!s8W)ur;lotr;QZnrVlNjp&Fdcs8N)us8N9%k?VD"
+gAUsNrr;us!<;urs8Vck!<<&ts8W&s!<<#s!<<)u"TSB!rqZTm"*e3Vbl@V=rr)lqrqufmrr2rr
+rqufirW)uurqQNmrW)utrW<&ts8W&us8Doss8W'"s8MuqrW)utrq?B`s8;lmrs/Q%kZqM#gAV'N
+!<)forVuWk!<;los8W&s!<<#s!<<)u!;lfq%f?8(r-)=Rao)/<qu-NorVlcqrr2rtrr2rtrr2rt
+qYpNprVcfsr;H]rrr)otrVlisrVcfss8Muq!<<&t!<<)u#QOf%rr;rrs7lTls8W)ts7?9grqcX!
+rr)%e?X;@ar<<,trr;urqYgNqrr2lmrW)uurW)utrr)fqrr)lrrW2uss8<#qr-86I"j6fAs8Muo
+rW)utrql`qrVc`qs8W)qrVQTorrE&urVuius8N&srVulqs8W)rrVZZns8Muts8DourVlcnrr)ls
+rr2rarrE&urrrE%rr)%ds'>rcr;,L-gYVQ$rWiB$rr)iorTO:@"6&A*qZ$NlrWDiep%8:^!:p0V
+!q,[Yrr*3%lJpgcoD8B.s'H&OrU]=?m.:2Rs8N&s"8M9Kmem%hrVPsHmHOQJs8<)hm-jB+s6Tmd
+r;HTn!:p0M!U0%Qqutd'e(sm!rr*-#qWR,(k3N$Fs8MWi"TJH#s8M]kmJm4cs8N)us8N6$kZqP%
+s4Ra??!q#FFk6BerVd3#h/Ze+?s[&FGhDfkrWE,urJ(>X+GK@1KOJ1lL[4I.l`557?!2=&pNg.M
+c2?j3?!P2Cs82iq!WD9_>QK0Js8=/@r;H24?<`cqrU..A@9ZuF>^X$Kr;-?jrRP.]?I[GA?XEb<
+#)VsKrr)#Is'6";?$`a>rVZWns8Muos8W)ds6]jdrr;uurr<!)rodWp?=@)A>[%,4!F`>7rVuj,
+rOZEA?s[,C?X7&EQgjqQr>5Hc>%(`C?X?l>?s-h)m<DlC?<guF?<mM9#[GOLq0cLSH27L>#lXc#
+emD`flM^_]'`7'#?sVC_nU+VK>$kZ@@:*;dlM^_]("?Sr>$YKA@9m)EET[5r^NNjh?<pq<>mGW6
+rVl`or;PjYmJm4cs8N)us8NW/kZqP%=^PQB?=-lD>BS["r=8`$Q!7R#>[LfG?<UZBbl.MJKjS%h
+?WgiD@:+]fo)N%q?3=P;?sWe;"Ck\B@*/HH!8%6V!ak0js83*#r-2LS@FbATs8EM\>$YM!rTJK6
+>[(NC?!@87#%2T=rr)iHs'HUL>?kK<?X.*?rr(kd?!glA?=6rC?ZkQ0s8E'!rT=.Is8W)urrE&u
+rsShi?!goGGJ2hi^39N_&n."$r;HW^\U2ffmd'#fH!=Hqs83#srI\B_s'6Vkl1F.gp&!iX?!CUE
+hrs+(?<glAbP_>'?X-pks8E?%rodTm?<iiprVum$rK^_sG5VC=0(44[nEoQ0n$QJ-@-d^irRP.Y
+>[qZqgs_sgr;Q),=^c=*kj@H;?!:['qYg?lrr2lrs8MHdmJm4cs8N)us8N<&kZqP%EnC9f%c2;6
+>&rj*q>U?lo)8Rcs8E)ub[(6U$0V3creOfc>O21aquQ]Us'5\4Wr)en"oGH/>$oPRquq4M>dF;+
+s8E#Vs'?:G=aK90rr;G4>@,q[r;QZhq>^EnrW<&iH2h4Pf)>XJ%F\ck?>nd"rVZQkrq>=N?isZt
+r;Q`p#5kQ.>[?Xnr;QZps8MHdmJm4cs8N)us8N<&kZqP%Vu$Dl'E.j)>[^n"rVl]orr)ios8Drq
+i;[!g>42=frIe?ZM"LZGrW)lrr<<,@?sHpts8;rqs8<bq>@1[Yr;HQK?!MUIr;QYV@:*8G@GUn^
+rW_Ij?si$pqu$EnqZ$O(rVUnH@=%nMrmkC[?Fp17rquips8<)&?!`lms8E0"rr)(gs',]Xr;QZp
+s8Muss8MHdmJm4cs8N)us8N`2kZqP%b5M>;rqu`H?<^b"r;Zcq"9&,qr;Za"rS_*g?0D7e#5s9`
+?A/:Vrr3K,rr'uH?!lmprr)iol?WD9!Qk9>r<2.f?!cXmr;l,/s',\7?<WWls8E5J?<_[OqZ$To
+"TJ>urVZ]o!W.6D?4(uVrr(AQ?X;1ZrVZX"r-2ORcM[Y=s8E)unQl0$!R^iFrW)uurr)lsrpKgR
+s8W)urrE&urs/Pe?!gpkrVuos#64YT?Wpn"rr*9'kg?JXGBJ4VG?t5R"RQ-arIt8W!/17K#6"PD
+>[VdRrVd9'rHDOSb5M><n9\GGg&Ls]iEop-n9SAbl2LI'>[G\Rr;Za!rTMp`GlN-qH@($E@!MYM
+rXm[e?!l.\rr;uqrr),,>$uT#s*=roG^4XB?XD%Us8E#ss8Muss8MHdmJm4cs8N)us8N?'kZqP$
+g&:sNrXf,.g0J,mjo,2Wh03:4=^5A6>lS14?fqCf!W@`P?3#]TrWUGP?$?/Gs8Dus"oWXM?H`<I
+rWN27?!j!!r$[b7?K_4#?!lCcl!Re'kPP5Un=!Zj>$kT@?X6oB=b$ALr7,+Z?If#SrW)osrXo+n
+?=7&H?!1N@@9[#B?!bkUs8E#us8Muss8MHdmJm4cs8N)us8N<&kZqP$g&1gJ!W:[O?3X[$r;,;q
+>5qh:@:3;H?<g]<?KqFfrIt8X!/:FO)#sU6s89rD>'p5Jr;HZlr-)IQbP_A;roX5c(4593H=(m`
+r8V'fSG_AN>'fl>rV;sks'G_2'OY?S?=.#GHi3pCeQuNfeG]FHrVliq"mfN%>@:\8?iO@8?X-oB
+>L*0HrW)osrr)lsrpKgRs8W)urrE&urs&Jd?!gmkr;Za1s8MrL?X."$qttYB@!1/cki_<sg](U]
+@-IUg",'udK`D&Lrs&GF?sRsDrVc^5nTnGHbPhG?rUY8@?!LT;?a9S*nonJcl*^Ot"MXj6r9OAh
+#[b.1n*B?-m!Sh<!IF_ErWgt[?!c%Zs8N&s%0-:oH<ssnlL!j'mcjc<"R>@>rVliss8Muss8MHd
+mJm4cs8N)us8N<&kZqP$gAM!M"TSK!fj=\a#3YpJ?XR6ss830$rr)cQ>[C_'s8E&rK`><XL&_,R
+s8Mrrrs&GE?X-q'r;Q[#rTdTl?HW6Gs8NB&_-:/P?X$jrs8E,tQ!%Jo>RanGkPkGXfjJ*9pA=gd
+s8E&tJH&sZI/O!Bec/nW?e,,Tr;HitF(/Cls83#uq>U<jrqlcps8E'!r9"%Hs8W)urrE&urs&Jd
+?!gmjr;Za6s8MrM>@Uk&r9@Kk?fq:brr)inh-XDok5PDZ!/:GY!/:IP!WW0!s8W'.d9U'`g\q'K
+r;GJ[?XCkRr!NK%k$).s?!qj@r;Za+j'Q,#>[;UDrVlcD?sLJGr;Z^%r;(bI>'p5IrRCjQ%U[cb
+rr;rrr;6K4>@)[=s8<#urVliq"T85rrr)lrk5XiKs8N&u!<3#u#6*gl?X;@`rVd*$g0\)mkPa[R
+s'6#Sp\b!hqYZ1Y>@6dtr;lnOs'>\Yrr)rurr;p$rn_*g@=%#7r!<8aG?J<Yao)/<rrW2hG5kn[
+?!<cprVlcX?<gcB?aBY1s8<)V>@)aGrVR!#nQTC+IJj!@eGieV?e,,Ss8N-!rVuj#jBQ+u[I4(m
+$N9n_QIPa0rVulqqu?]qmf2PO!WN-!rW_Rl?<u:`rr<!>rr(MU?<lamqfl@O?^'+$jO'&r>@(S!
+rr;tO?<r9\rX81:?X7#_YfX+n?XEb;#LE;Hs8Drp[f9P6?s_:[s8N&r"aF<Z?X2^krX.mr>[`0,
+m-=#_JcB!Z@!MVJqUGON#@H$[rr;utrVuj0q3YAl??j]XjfWo7@))[>qZ$Qls8W)ds7--grr<#s
+rX&W(rT@Hj?.f/Ts8N&s!SLfZ?NoTjr8Dm+s'H+=?X?rC?s?rFkPbG[!/:GZ!egOOrr3B(s8MrI
+>[:TB?!Le;?3OS??-N6Fs8N&s!9*o_$s`&qrql]nfNMWeG4>P2&H)P$S6f?*?<^`A?s[5F?@)VL
+!S(HT?3&XXr;cisrrrE#rr))+s'?";>[CcC?X-p'q>^Hms8W)`s7--grW)usrW3&us8<)_?t!<o
+s8Dus#Q=ST=^bV"r;Z]rd<Yas!aT#;r`on>>[H[orVhOW>DN1VrX\u-rqucm^3Nsl>[CfZfm<[(
+!Qk<?r;Za%r:G/=?$cAFqu?X!rTINp?*=2*&cVb.n!mlk?X7)D?!CTA@=%nPr!1_Y>[>hWrr<#s
+s8Nc3qu,W'>[LrD?<pfCYNl)^rVulss8W)`s7--hrr<#rrW)lrrWV>(Dg'k4rr*-#r7cI<ET[5u
+&a$iSFaS>6iT,-,GO,/*r.B\&K`V/Os8N)ss8N)urquoWXEFPf#JB=!H$FYXrVuj&s8;il[<m,2
+rVuiss8W'Co6GD&k5G2Wrr;oqpZT,3H[1,"np,S,HN!jAd<9PQe,K=Frr<#t%/g,'nDLHjH[9nT
+jneuU!<)!Ync/Xgs8W&ss8N0"qu6Wo"8r/urVuj!r;QZls8;rss8;rqs8;ros8Dups8;oq"oS>u
+rVulrr<W?"rr;rrrVlisrW)iqrVucrrVZ]o$N0ktrVl`orVulprV[!#rVlims8Musr;Z^!rr;io
+s8;oqrVZ]o!;lfp!;ulr!rVrorqm3(rVulsrVulqrr)]mrVZ`nr;HZp!rW)rk5XZF!<)rs"T&,p
+rr)lsrVcrtrqcWjqu-Tlqu-Nn!<)rt!W2lrquH`rs8W'%r;QTnqu$Kn!;ulr!;ZTl!;uco!<)rt
+!WN&trW)iqrWW>trr;rps8Drr#6"Gur;Z`nrVc`p!W;rsrrN)us8N&s"9/2ss8W&urVuisrVc]q
+rVuisqu?Zqr;uurrVulurr<#tkl9oIr;Hlurr;uqrVulurVZNks8N)sr;Q`p!WMuqrrE#trW)os
+s8)]qrVlfr"o\K#qu6QjrW2rqs8E-!r;Z`qrW)orrWW2urVufos8E&srVuj"r;HZpqu?Wrr;Zfr
+!rW#ss8;utr;Z`urVlclrVcfqrr)ops8E'!rr)lsqu?WurVlirs8W)^s7--frr<#srqucuqu-No
+s8Dut"oeH"r;ZZorW<-!qYpHnrrN-!s8E9%rql]ms8;iqrW)oss8W'%s8;iprVliq!WN#srrrB$
+rr)irrr)ors8E#ur;H]prr)ors8N0"r;Q`rs8Dus!<<&t!<)or!rr6!rr*#ss8MomrW)lrrW)ip
+rr<!!r;Q`o!WMurrrr?!s8MurqZ$Tpmf2hWrVlisrr2rr"98?"qu6TkrrE&us8W'$r;QZorVuis
+r;Z`rr;QZqrVuius8Muqrr)itrVuoq!WN&rrW2uss8N)ts8N,trr;rsrW<&ts8W&uqtp?mrVuot
+rr<!!rr)lrs8N)ts8E)urr)ls"TA5srVliq"TJB!r;6Km!rMuqrr)rurVc]qrVuius8N&urr;uu
+rVQWprpKgVs8Drss8Drss7uZis7-*es8Drrs8N#rs7uZgs8W)us8Drqs8W)us8N#ts8N#rs8Drs
+s82fqs8W)as8Drms8W)ds7--frr<#srr<#orqZTarr)lrrr2rrrr)lmrqHHmrr<#srr)lsrr<#s
+rr<#urr)lqrr<#qrr<#urp0U_rqZTorpKgVs8Drms8Doss8;lns8Drds8Muts8)`ds82fms82fo
+s82f]s8N#ts8N#rs8)`ps8N#Ws7--frqZTnrr<#rrql`orpg$]rq$0erqcZmrr)lorp0U_rW)ut
+rr)lmrW)utro3t.s8Drqs82fos82fgs8W)ks8Drss8N#ss8Dros8W)os8W)us82fms8W)ks8DrR
+s4./Jrr)lorr)lorq6<krq6<irr<#rrr<#trql`qrqZTorr<#qrqcWprq-3jrnRPDs8W)ss8Drs
+s8Doss7lTls8W'!s8N&unc&Rgq>UEorVlNjp\t0lhu<ZUo_nmkrqcZnrr)lsrpKgVs8W)ss8Drs
+s8Doss7lTlrrE&urrE&us7-*gs7uZos8Dris7cNms53hUs7-*cs8Drqs8W)ds-s#grh]XGs1\Ma
+s1\Mas1\Mas1\Mas1\Mas1\Mas1\L~> Z
+; : 88 31 8 0 191 74 3740 4442 F F 3 [ 0 ] F 
+X
+doNimage
+!<9)"!<<'!$b*[Y^;.Y*aND]Mc2Z)hbmhk=aMu-6^:Uqb[C!6Es0)L,cE@0I%03lJ]YD>&aNMiS
+dF-MDe.L0XdEg(\aMl$2]XbMZ['Hs@s0'_N!!!E-\\,\o`lZHNdY'ssr;[?;6\Wt8c-"&D^V%+d
+[Bm1=YQ1m(XoWhtr;ZjIHL\-=H7Adm!@`?eXoJG.!5$"_`lcTSOrO,q%NCSYcHF8G^Uq%b['R$A
+s0)F)!L5)5!!#:aDu`0'!!+L5or\=\./s8I5lYd'5lUfb.$aM/!!!6(^;@n4cI,Pg!!3^>JH*@c
+J7&rf!"2WBcca>F^:Un_['K_9!3cF*"JH;*:uD6O"Q*#U%[Hdk"JH;*:uD6O"Q*#U%[Hdk!!!3'
+^r=F@dSTrD!YBnNqYpSg&H;_>.)jKS`PK7!\$WKHYcn)0![n%Vrr;uurr3%l!%@TE![n%Vs8N)Z
+s2P-"s8N.m!%@TE!!!0&_oU'L;#^Lr0]2X)!Uh`B!"2WNc,df;]=>8TZ*=83"*srDec,UK!<)p!
+:]Ph;Xp'+O:t>T>r?)*Ns8N-s!.+FC!!!-%`QHMirr<'Rn+H\]mkFbA$BicZ`kf@!\$WHFs/uJQ
+!8mPN!oEu,q5suP!8mgs+?<hOru_H*s5*f*poXSs#6;iidMi/tch%/KmgoI<d`okN^:Uk^Za$a<
+!'pM_!+>g,!+>d*!C-Y\Xp+kks7)L"M?!SWSKKQbrrG@bpoXSs!s$KiK`;#PJFWX>TDnm#L!Ro\
+^q@1bZa$a<!-%o:r;cfr!H8&7Xp+lFs7%?W.0';Ij8U5(kPoK$poXSs"ouio6N@\ds8N,7;#`c\
+JH,WM^JOqq!0@-Z%hJ_.dEBPG]t(SYZ*:D3E;fh8!<)ouDuf^:!<@*=rrTS[^]4<6j8U5(hu@Wq
+poXSs"TZcp%00f9rrBh3!!,?gqu?_)s8NU;!"IB$a25O$\$WHFY5gidrr?I,!!$F*rrG@bq5s_u
+5l^ic\Y7+ErrB,"+TMHB5QLS^!!!'#c-u[m!0@0[%57c)hnL;+0E<faY99J;rrA\k!"IE%aMYa'
+\$WHFY:0J/rVultrVlrV!%I`H"=X?.s.004s+1G&+I<&b!%I]G!!!'#cIDjo!5JR6rr<%LrVult
+!.atH!5JO6%Fi\E_nN^k['Hp>H2pe?s8N)trrQ!sHMO]FH2peArr@ZL+9cTOs%i]ApoXSs!W^Nq
+rr<&6s8W*!!.b%Jrr<%Lqu6Z2rr<PYcH*o;]!o&PYck2X!+>g+rrE&u!cS,fpT=QG!+>j,!6Y>B
+!7h,L!cS,fpT=Jr!W^Korr<%[s8NN^!$LaV+Fl-G0^m=1JH,WLTDnm&e'5tO^:Le\ZEUO8Tah'!
+hu3QXhbX:_Q1qEaTah'!hu3QXhbX:_Q1qE]!!NAHdL?1as8N)&qu?b*YP\A#@/p69Du^?qbf@T6
+]!o&PYcn)0!MLqA!!=o_E%q:l!@X6+XoY4Err<-T?uRh"!!+L5p9"Aq"TZ`n:]M(+rrKl2s$-R7
+s8N)&r]gI6rr3EM!(5/W`kf<u[^<<DYPkU)H7Adm!@`?bXoWhtr;ZjIHM"??!!<5Dc]\;.!0?[M
+!2'8k$\cpL`5'!p[Bm-BYL'EP!!`MEc-dO2&E!*Z&+:&0)q*!P_nNal[Bm-BYL'EP!!E;@b0Q^[
+!!+eBp&>']0`M+[P0_=j_7dCf['Hq9YL'EP!<3$$IE^)Err<'RchIG?h_>'1"&RChK>dii!!@5c
+dSTrD!YBnNqu6`dJ.V_\"#\NPIDc-a!!@\qdTuhP!YAais1\Vc?kE;;"&RFkQgt.Us8N'!s8Duu
+s7-0hs8N*!s7-0f!!Ibqd@VBP!!F7(dE\*K!!*'!!!*'!!!<0#s7--is8;ots8N'!s766f!![Ge
+cdItD%K-82%7?<,ccgh,!<3#s!!*&g!<<*!!<)rh!;Z["19f$LdF-MDe-=CMdEg(B548IOs8N'!
+s8Duus6]jgrrE*!!!*&j!;HNs5)R(uc2Z&lc-3nZ54&@Ls8;ots7$*gs8N'!s8N'!s765i!!*&"
+!!*$~> Z
+; N 3231 4339 M 3231 4155 I K 
+N 3231 4155 M 3647 4155 I K 
+N 3324 803 M 3324 831 I K 
+N 3324 785 M 3324 803 I K 
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+3313 820 M (1)S 
+N 3324 997 M 3324 969 I K 
+N 3324 1016 M 3324 997 I K 
+3313 1006 M (2)S 
+N 3324 831 M 3349 843 I K 
+N 3348 934 M 3301 958 I K 
+N 3301 912 M 3348 935 I K 
+N 3301 958 M 3324 970 I K 
+N 3349 889 M 3302 913 I K 
+N 3349 843 M 3302 867 I K 
+N 3301 866 M 3348 889 I K 
+F0S2DYFFFFFFD2 Ji 
+3393 876 M (R8)[33  0]xS 
+3393 959 M (2.61K)[26 13 26 26  0]xS 
+N 3324 2327 M 3324 2354 I K 
+N 3324 2308 M 3324 2327 I K 
+F0S00IFFFFFFD2YFFFFFFD2 Ji 
+3313 2343 M (1)S 
+N 3324 2520 M 3324 2493 I K 
+N 3324 2539 M 3324 2520 I K 
+3313 2530 M (2)S 
+N 3324 2354 M 3349 2366 I K 
+N 3348 2458 M 3301 2482 I K 
+N 3301 2435 M 3348 2459 I K 
+N 3301 2482 M 3324 2494 I K 
+N 3349 2413 M 3302 2437 I K 
+N 3349 2366 M 3302 2390 I K 
+N 3301 2389 M 3348 2412 I K 
+F0S2DYFFFFFFD2 Ji 
+3393 2400 M (R21)[33 26  0]xS 
+3393 2483 M (2.61K)[26 13 26 26  0]xS 
+N 2511 3785 M 2539 3785 I K 
+N 2493 3785 M 2511 3785 I K 
+2502 3775 M (1)S 
+N 2705 3785 M 2677 3785 I K 
+N 2724 3785 M 2705 3785 I K 
+2688 3775 M (2)S 
+N 2539 3785 M 2551 3811 I K 
+N 2642 3809 M 2666 3762 I K 
+N 2620 3763 M 2643 3809 I K 
+N 2666 3762 M 2678 3785 I K 
+N 2597 3810 M 2621 3763 I K 
+N 2551 3810 M 2575 3763 I K 
+N 2574 3763 M 2597 3809 I K 
+2539 3683 M (R28)[33 26  0]xS 
+2539 3729 M (680)[26 26  0]xS 
+N 5566 1709 M 5566 1701 5560 1694 5552 1694 -c 5545 1694 5539 1701 5539 1709 -c 5539 1718 5545 1725 5552 1725 -c 5560 1725 5566 1718 5566 1709 -c C 
+K 
+N 5632 1708 M 5567 1708 I K 
+5573 1698 M (5)S 
+N 5492 1663 M 5492 1655 5486 1648 5479 1648 -c 5471 1648 5466 1655 5466 1663 -c 5466 1672 5471 1679 5479 1679 -c 5486 1679 5492 1672 5492 1663 -c C 
+K 
+N 5401 1662 M 5466 1662 I K 
+5433 1652 M (4)S 
+N 5492 1756 M 5492 1747 5486 1740 5479 1740 -c 5471 1740 5466 1747 5466 1756 -c 5466 1764 5471 1772 5479 1772 -c 5486 1772 5492 1764 5492 1756 -c C 
+K 
+N 5401 1754 M 5466 1754 I K 
+5433 1744 M (6)S 
+N 5539 1708 M 5479 1679 I K 
+5562 1652 M (SW4B)[31 46 26  0]xS 
+N 5566 1940 M 5566 1932 5560 1925 5552 1925 -c 5545 1925 5539 1932 5539 1940 -c 5539 1949 5545 1956 5552 1956 -c 5560 1956 5566 1949 5566 1940 -c C 
+K 
+N 5632 1939 M 5567 1939 I K 
+5573 1929 M (2)S 
+N 5492 1894 M 5492 1886 5486 1879 5479 1879 -c 5471 1879 5466 1886 5466 1894 -c 5466 1903 5471 1910 5479 1910 -c 5486 1910 5492 1903 5492 1894 -c C 
+K 
+N 5401 1893 M 5466 1893 I K 
+5433 1883 M (1)S 
+N 5492 1986 M 5492 1978 5486 1971 5479 1971 -c 5471 1971 5466 1978 5466 1986 -c 5466 1995 5471 2002 5479 2002 -c 5486 2002 5492 1995 5492 1986 -c C 
+K 
+N 5401 1985 M 5466 1985 I K 
+5433 1975 M (3)S 
+N 5539 1939 M 5479 1910 I K 
+5562 1883 M (SW4A)[31 46 26  0]xS 
+N 6008 1909 M 5678 1909 I K 
+N 6008 1968 M 5678 1968 I K 
+N 5678 1968 M 5678 1909 I K 
+N 6008 1909 M 6066 1939 I K 
+N 6066 1939 M 6008 1968 I K 
+F0S34YFFFFFFCE Ji 
+5691 1957 M (TRIGGERSrc)[32 38 14 41 41 35 38 35 17  0]xS 
+N 5686 1930 M 5669 1930 I 5669 1947 I 5686 1947 I C 
+K 
+N 5401 1893 M 5355 1893 I K 
+F0S2DYFFFFFFD2 Ji 
+5627 2357 M (GND)[36 33  0]xS 
+N 5646 2234 M 5715 2234 I K 
+N 5646 2234 M 5678 2299 I K 
+N 5678 2299 M 5715 2234 I K 
+N 5678 2170 M 5678 2234 I K 
+N 5382 1966 M 5419 2003 I K 
+N 5382 2003 M 5419 1966 I K 
+N 5632 1939 M 5678 1939 I K 
+[ 18 18 ] 0 sd N 5516 1759 M 5516 1897 I K 
+[ 36 36 ] 0 sd N 1708 1246 M 1431 1246 I K 
+solid N 2242 832 M 2242 824 2236 817 2229 817 -c 2221 817 2216 824 2216 832 -c 2216 841 2221 848 2229 848 -c 2236 848 2242 841 2242 832 -c C 
+K 
+N 2308 831 M 2243 831 I K 
+2250 821 M (5)S 
+N 2169 786 M 2169 778 2163 771 2155 771 -c 2148 771 2142 778 2142 786 -c 2142 795 2148 802 2155 802 -c 2163 802 2169 795 2169 786 -c C 
+K 
+N 2077 785 M 2142 785 I K 
+2109 775 M (4)S 
+N 2169 879 M 2169 870 2163 863 2155 863 -c 2148 863 2142 870 2142 879 -c 2142 887 2148 895 2155 895 -c 2163 895 2169 887 2169 879 -c C 
+K 
+N 2077 877 M 2142 877 I K 
+2109 867 M (6)S 
+N 2216 831 M 2155 802 I K 
+2193 775 M (SW2B)[31 46 26  0]xS 
+N 2242 1571 M 2242 1563 2236 1556 2229 1556 -c 2221 1556 2216 1563 2216 1571 -c 2216 1580 2221 1587 2229 1587 -c 2236 1587 2242 1580 2242 1571 -c C 
+K 
+N 2308 1569 M 2243 1569 I K 
+2250 1559 M (2)S 
+N 2169 1525 M 2169 1516 2163 1509 2155 1509 -c 2148 1509 2142 1516 2142 1525 -c 2142 1533 2148 1541 2155 1541 -c 2163 1541 2169 1533 2169 1525 -c C 
+K 
+N 2077 1523 M 2142 1523 I K 
+2109 1513 M (1)S 
+N 2169 1617 M 2169 1609 2163 1602 2155 1602 -c 2148 1602 2142 1609 2142 1617 -c 2142 1626 2148 1633 2155 1633 -c 2163 1633 2169 1626 2169 1617 -c C 
+K 
+N 2077 1616 M 2142 1616 I K 
+2109 1606 M (3)S 
+N 2216 1569 M 2155 1541 I K 
+2239 1513 M (SW2A)[31 46 26  0]xS 
+[ 36 36 ] 0 sd N 2216 877 M 2216 1523 I K 
+1509 1541 M (GND)[36 33  0]xS 
+solid N 1690 1491 M 1690 1560 I K 
+N 1690 1491 M 1625 1523 I K 
+N 1625 1523 M 1690 1560 I K 
+N 1754 1523 M 1690 1523 I K 
+N 2059 1597 M 2096 1634 I K 
+N 2059 1634 M 2096 1597 I K 
+N 2031 1523 M 2077 1523 I K 
+N 2308 1569 M 2447 1569 I K 
+N 2447 1569 M 2447 1662 I K 
+N 2447 1662 M 969 1662 I K 
+[ 36 36 ] 0 sd N 1754 2770 M 1431 2770 I K 
+N 2216 2400 M 2216 3047 I K 
+solid N 2242 3094 M 2242 3086 2236 3079 2229 3079 -c 2221 3079 2216 3086 2216 3094 -c 2216 3103 2221 3110 2229 3110 -c 2236 3110 2242 3103 2242 3094 -c C 
+K 
+N 2308 3093 M 2243 3093 I K 
+2250 3083 M (2)S 
+N 2169 3048 M 2169 3040 2163 3033 2155 3033 -c 2148 3033 2142 3040 2142 3048 -c 2142 3057 2148 3064 2155 3064 -c 2163 3064 2169 3057 2169 3048 -c C 
+K 
+N 2077 3047 M 2142 3047 I K 
+2109 3037 M (1)S 
+N 2169 3140 M 2169 3132 2163 3125 2155 3125 -c 2148 3125 2142 3132 2142 3140 -c 2142 3149 2148 3156 2155 3156 -c 2163 3156 2169 3149 2169 3140 -c C 
+K 
+N 2077 3139 M 2142 3139 I K 
+2109 3129 M (3)S 
+N 2216 3093 M 2155 3064 I K 
+2239 3037 M (SW6A)[31 46 26  0]xS 
+1509 3064 M (GND)[36 33  0]xS 
+N 1690 3014 M 1690 3084 I K 
+N 1690 3014 M 1625 3047 I K 
+N 1625 3047 M 1690 3084 I K 
+N 1754 3047 M 1690 3047 I K 
+N 2059 3121 M 2096 3157 I K 
+N 2059 3157 M 2096 3121 I K 
+N 2242 2356 M 2242 2347 2236 2340 2229 2340 -c 2221 2340 2216 2347 2216 2356 -c 2216 2364 2221 2372 2229 2372 -c 2236 2372 2242 2364 2242 2356 -c C 
+K 
+N 2308 2354 M 2243 2354 I K 
+2250 2344 M (5)S 
+N 2169 2310 M 2169 2301 2163 2294 2155 2294 -c 2148 2294 2142 2301 2142 2310 -c 2142 2318 2148 2326 2155 2326 -c 2163 2326 2169 2318 2169 2310 -c C 
+K 
+N 2077 2308 M 2142 2308 I K 
+2109 2298 M (4)S 
+N 2169 2402 M 2169 2394 2163 2387 2155 2387 -c 2148 2387 2142 2394 2142 2402 -c 2142 2411 2148 2418 2155 2418 -c 2163 2418 2169 2411 2169 2402 -c C 
+K 
+N 2077 2400 M 2142 2400 I K 
+2109 2390 M (6)S 
+N 2216 2354 M 2155 2325 I K 
+2193 2298 M (SW6B)[31 46 26  0]xS 
+N 2031 3047 M 2077 3047 I K 
+F0S34YFFFFFFCE Ji 
+185 820 M (PANEL)[35 35 38 35  0]xS 
+185 2343 M (PANEL)[35 35 38 35  0]xS 
+N 845 692 M 845 685 838 679 831 679 -c 823 679 817 685 817 692 -c 817 699 823 706 831 706 -c 838 706 845 699 845 692 -c C 
+:  L ; K 
+N 1076 1339 M 1076 1331 1069 1325 1062 1325 -c 1054 1325 1048 1331 1048 1339 -c 1048 1346 1054 1353 1062 1353 -c 1069 1353 1076 1346 1076 1339 -c C 
+:  L ; K 
+N 1168 692 M 1168 685 1161 679 1154 679 -c 1146 679 1140 685 1140 692 -c 1140 699 1146 706 1154 706 -c 1161 706 1168 699 1168 692 -c C 
+:  L ; K 
+N 1491 692 M 1491 685 1484 679 1477 679 -c 1469 679 1463 685 1463 692 -c 1463 699 1469 706 1477 706 -c 1484 706 1491 699 1491 692 -c C 
+:  L ; K 
+N 1491 415 M 1491 408 1484 402 1477 402 -c 1469 402 1463 408 1463 415 -c 1463 422 1469 429 1477 429 -c 1484 429 1491 422 1491 415 -c C 
+:  L ; K 
+N 1953 785 M 1953 777 1946 771 1939 771 -c 1931 771 1925 777 1925 785 -c 1925 792 1931 799 1939 799 -c 1946 799 1953 792 1953 785 -c C 
+:  L ; K 
+N 2045 1200 M 2045 1192 2038 1186 2031 1186 -c 2023 1186 2017 1192 2017 1200 -c 2017 1207 2023 1214 2031 1214 -c 2038 1214 2045 1207 2045 1200 -c C 
+:  L ; K 
+N 2045 415 M 2045 408 2038 402 2031 402 -c 2023 402 2017 408 2017 415 -c 2017 422 2023 429 2031 429 -c 2038 429 2045 422 2045 415 -c C 
+:  L ; K 
+N 2045 785 M 2045 777 2038 771 2031 771 -c 2023 771 2017 777 2017 785 -c 2017 792 2023 799 2031 799 -c 2038 799 2045 792 2045 785 -c C 
+:  L ; K 
+N 2368 831 M 2368 823 2361 817 2354 817 -c 2346 817 2340 823 2340 831 -c 2340 838 2346 845 2354 845 -c 2361 845 2368 838 2368 831 -c C 
+:  L ; K 
+N 845 2216 M 845 2208 838 2202 831 2202 -c 823 2202 817 2208 817 2216 -c 817 2223 823 2230 831 2230 -c 838 2230 845 2223 845 2216 -c C 
+:  L ; K 
+N 1076 2862 M 1076 2854 1069 2848 1062 2848 -c 1054 2848 1048 2854 1048 2862 -c 1048 2869 1054 2876 1062 2876 -c 1069 2876 1076 2869 1076 2862 -c C 
+:  L ; K 
+N 1168 2216 M 1168 2208 1161 2202 1154 2202 -c 1146 2202 1140 2208 1140 2216 -c 1140 2223 1146 2230 1154 2230 -c 1161 2230 1168 2223 1168 2216 -c C 
+:  L ; K 
+N 1491 2216 M 1491 2208 1484 2202 1477 2202 -c 1469 2202 1463 2208 1463 2216 -c 1463 2223 1469 2230 1477 2230 -c 1484 2230 1491 2223 1491 2216 -c C 
+:  L ; K 
+N 1491 1939 M 1491 1931 1484 1925 1477 1925 -c 1469 1925 1463 1931 1463 1939 -c 1463 1946 1469 1953 1477 1953 -c 1484 1953 1491 1946 1491 1939 -c C 
+:  L ; K 
+N 1953 2308 M 1953 2300 1946 2294 1939 2294 -c 1931 2294 1925 2300 1925 2308 -c 1925 2315 1931 2322 1939 2322 -c 1946 2322 1953 2315 1953 2308 -c C 
+:  L ; K 
+N 2045 2723 M 2045 2716 2038 2710 2031 2710 -c 2023 2710 2017 2716 2017 2723 -c 2017 2730 2023 2737 2031 2737 -c 2038 2737 2045 2730 2045 2723 -c C 
+:  L ; K 
+N 2045 1939 M 2045 1931 2038 1925 2031 1925 -c 2023 1925 2017 1931 2017 1939 -c 2017 1946 2023 1953 2031 1953 -c 2038 1953 2045 1946 2045 1939 -c C 
+:  L ; K 
+N 2045 2308 M 2045 2300 2038 2294 2031 2294 -c 2023 2294 2017 2300 2017 2308 -c 2017 2315 2023 2322 2031 2322 -c 2038 2322 2045 2315 2045 2308 -c C 
+:  L ; K 
+N 2368 2354 M 2368 2346 2361 2340 2354 2340 -c 2346 2340 2340 2346 2340 2354 -c 2340 2361 2346 2368 2354 2368 -c 2361 2368 2368 2361 2368 2354 -c C 
+:  L ; K 
+N 891 4016 M 891 4008 884 4002 877 4002 -c 869 4002 863 4008 863 4016 -c 863 4023 869 4030 877 4030 -c 884 4030 891 4023 891 4016 -c C 
+:  L ; K 
+N 891 4108 M 891 4101 884 4095 877 4095 -c 869 4095 863 4101 863 4108 -c 863 4115 869 4122 877 4122 -c 884 4122 891 4115 891 4108 -c C 
+:  L ; K 
+N 891 4201 M 891 4193 884 4187 877 4187 -c 869 4187 863 4193 863 4201 -c 863 4208 869 4215 877 4215 -c 884 4215 891 4208 891 4201 -c C 
+:  L ; K 
+1062 1651 M (CH1Atten)[38 38 29 35 14 14 29  0]xS 
+N 1070 1653 M 1052 1653 I 1052 1670 I 1070 1670 I C 
+K 
+N 2308 3093 M 2447 3093 I K 
+N 2447 3093 M 2447 1754 I K 
+N 2447 1754 M 739 1754 I K 
+1062 1743 M (CH2Atten)[38 38 29 35 14 14 29  0]xS 
+N 1070 1745 M 1052 1745 I 1052 1762 I 1070 1762 I C 
+K 
+N 739 1708 M 969 1708 I K 
+N 969 1708 M 969 1662 I K 
+N 739 1662 M 785 1662 I K 
+N 785 1662 M 785 1569 I K 
+N 785 1569 M 1016 1569 I K 
+N 1404 1540 M 1074 1540 I K 
+N 1404 1599 M 1074 1599 I K 
+N 1074 1540 M 1016 1570 I K 
+N 1016 1570 M 1074 1599 I K 
+N 1404 1599 M 1404 1540 I K 
+1075 1588 M (TRIGGERSrc)[32 38 14 41 41 35 38 35 17  0]xS 
+N 1024 1560 M 1006 1560 I 1006 1578 I 1024 1578 I C 
+K 
+N 1819 1523 M 1846 1523 I K 
+N 1800 1523 M 1819 1523 I K 
+F0S2DYFFFFFFD2 Ji 
+1809 1513 M (1)S 
+N 2013 1523 M 1985 1523 I K 
+N 2031 1523 M 2013 1523 I K 
+1996 1513 M (2)S 
+N 1846 1523 M 1858 1549 I K 
+N 1950 1547 M 1974 1500 I K 
+N 1928 1501 M 1951 1547 I K 
+N 1974 1500 M 1986 1523 I K 
+N 1905 1548 M 1929 1501 I K 
+N 1859 1548 M 1883 1501 I K 
+N 1882 1501 M 1905 1547 I K 
+1846 1467 M (R35)[33 26  0]xS 
+1846 1606 M (1.00K)[26 13 26 26  0]xS 
+N 1754 1523 M 1800 1523 I K 
+N 1819 3047 M 1846 3047 I K 
+N 1800 3047 M 1819 3047 I K 
+1809 3037 M (1)S 
+N 2013 3047 M 1985 3047 I K 
+N 2031 3047 M 2013 3047 I K 
+1996 3037 M (2)S 
+N 1846 3047 M 1858 3073 I K 
+N 1950 3071 M 1974 3024 I K 
+N 1928 3025 M 1951 3071 I K 
+N 1974 3024 M 1986 3047 I K 
+N 1905 3072 M 1929 3025 I K 
+N 1859 3072 M 1883 3025 I K 
+N 1882 3025 M 1905 3071 I K 
+1846 2991 M (R36)[33 26  0]xS 
+1846 3129 M (1.00K)[26 13 26 26  0]xS 
+N 1754 3047 M 1800 3047 I K 
+N 5419 2123 M 5447 2123 I K 
+N 5401 2123 M 5419 2123 I K 
+5410 2113 M (1)S 
+N 5613 2123 M 5586 2123 I K 
+N 5632 2123 M 5613 2123 I K 
+5596 2113 M (2)S 
+N 5447 2123 M 5459 2149 I K 
+N 5551 2147 M 5575 2100 I K 
+N 5528 2101 M 5551 2147 I K 
+N 5574 2100 M 5586 2123 I K 
+N 5505 2148 M 5529 2101 I K 
+N 5459 2148 M 5483 2101 I K 
+N 5482 2101 M 5505 2147 I K 
+5447 2067 M (R37)[33 26  0]xS 
+5447 2206 M (1.00K)[26 13 26 26  0]xS 
+N 5355 1893 M 5355 2123 I K 
+N 5355 2123 M 5401 2123 I K 
+N 5632 2123 M 5678 2123 I K 
+N 5678 2123 M 5678 2170 I K 
+F0S34YFFFFFFCE Ji 
+185 1651 M (J4 MATES)[26 29 14 43 35 33 35  0]xS 
+185 1743 M (CPU BRD's)[38 35 38 14 35 38 38 10  0]xS 
+185 1789 M (J2 PRGM'ING)[26 29 14 35 38 41 43 10 15 38  0]xS 
+185 1835 M (HEADER)[38 35 35 38 35  0]xS 
+N 645 1569 M 554 1569 I 554 1938 I 645 1938 I C 
+K 
+N 674 1893 M 646 1893 I K 
+N 739 1893 M 674 1893 I K 
+F0S2DYFFFFFFD2 Ji 
+680 1883 M (1)S 
+N 674 1846 M 646 1846 I K 
+N 739 1846 M 674 1846 I K 
+680 1836 M (2)S 
+N 674 1800 M 646 1800 I K 
+N 739 1800 M 674 1800 I K 
+680 1790 M (3)S 
+N 674 1754 M 646 1754 I K 
+N 739 1754 M 674 1754 I K 
+680 1744 M (4)S 
+N 674 1708 M 646 1708 I K 
+N 739 1708 M 674 1708 I K 
+680 1698 M (5)S 
+N 674 1662 M 646 1662 I K 
+N 739 1662 M 674 1662 I K 
+680 1652 M (6)S 
+N 674 1616 M 646 1616 I K 
+N 739 1616 M 674 1616 I K 
+680 1606 M (7)S 
+N 615 1872 M 582 1872 I 582 1908 I 615 1908 I C 
+K 
+N 615 1826 M 582 1826 I 582 1862 I 615 1862 I C 
+K 
+N 615 1780 M 582 1780 I 582 1815 I 615 1815 I C 
+K 
+N 615 1733 M 582 1733 I 582 1769 I 615 1769 I C 
+K 
+N 615 1687 M 582 1687 I 582 1723 I 615 1723 I C 
+K 
+N 615 1641 M 582 1641 I 582 1677 I 615 1677 I C 
+K 
+N 615 1595 M 582 1595 I 582 1631 I 615 1631 I C 
+K 
+531 1476 M (J4)[23  0]xS 
+531 1559 M (1 x 7)[26 12 23 12  0]xS 
+F0S34YFFFFFFCE Ji 
+185 1697 M (WITH)[49 14 33  0]xS 
+F0S2DYFFFFFFD2 Ji 
+956 1864 M (+5AV)[27 26 31  0]xS 
+N 942 1814 M 942 1883 I K 
+N 877 1846 M 942 1846 I K 
+N 739 1846 M 877 1846 I K 
+N 720 1597 M 757 1634 I K 
+N 720 1634 M 757 1597 I K 
+N 720 1874 M 757 1911 I K 
+N 720 1911 M 757 1874 I K 
+N 739 1800 M 831 1800 I K 
+N 831 1800 M 831 1893 I K 
+780 2080 M (GND)[36 33  0]xS 
+N 799 1957 M 868 1957 I K 
+N 799 1957 M 831 2022 I K 
+N 831 2022 M 868 1957 I K 
+N 831 1893 M 831 1957 I K 
+N 4330 3951 M 6176 3951 I K 
+N 6176 3951 M 6176 4699 I K 
+N 6176 4699 M 4330 4699 I K 
+N 4330 4699 M 4330 3951 I K 
+N 4330 4118 M 6176 4118 I K 
+N 4330 4367 M 6176 4367 I K 
+N 4330 4533 M 6176 4533 I K 
+N 5807 4367 M 5807 4533 I K 
+N 4945 4533 M 4945 4699 I K 
+N 5807 4533 M 5807 4699 I K 
+F0S3BYFFFFFFC4 Ji 
+4372 4022 M (Title)[38 13 17 13  0]xS 
+4372 4188 M (Author)[40 33 17 33 33  0]xS 
+4372 4437 M (File)[37 13 13  0]xS 
+4372 4603 M (Revision)[43 33 31 13 30 13 33  0]xS 
+5849 4437 M (Document)[43 33 30 33 49 33 33  0]xS 
+4987 4603 M (Date)[43 33 17  0]xS 
+5849 4603 M (Sheets)[40 33 33 33 17  0]xS 
+4413 4105 M (1 MHz Digital Storage Oscilloscope - Analog Board)[33 17 49 43 29 17 43 13 33 13 17 33 13 17 40 17 33 20 33 33 33 17 47 30 30 13 13 13 33 30 30 33
+33 33 17 20 17 40 33 33 13 33 33 17 40 33 33 20  0]xS 
+4413 4271 M (Original Design from http://jonathanweaver.net)[47 20 13 33 13 33 33 13 17 43 33 30 13 33 33 17 17 20 33 49 17 33 17 17 33 17 17 17 13 33 33 33
+17 33 33 33 43 33 33 31 33 20 17 33 33  0]xS 
+4413 4354 M (Modifications by WA7ZVY - www.ocrg.org)[49 33 33 13 17 13 30 33 17 13 33 33 30 17 33 29 17 60 40 33 37 40 40 17 20 17 43 43 43 17 33 30
+20 33 17 33 20  0]xS 
+: 4413 4466 1310 67 rc 3281 4520 M (C:\\Users\\pmesser\\_Paul\\Design\\DSOscope\\Schematic\\A03\\DSOscope_AnalogBrd_A03.dsn)
+[43 17 17 43 30 33 20 30 17 33 49 33 30 30 33 20 17 33 40 33 33 13 17 43 33 30 13 33 33 17 43 40
+47 30 30 33 33 33 17 40 30 33 33 49 33 17 13 30 17 40 33 33 17 43 40 47 30 30 33 33 33 33 40 33
+33 13 33 33 40 20 33 33 40 33 33 17 33 30  0]xS 
+; 4413 4686 M (A03)[40 33  0]xS 
+5890 4520 M (120402.2)[33 33 33 33 33 33 17  0]xS 
+5029 4686 M (January 10, 2013)[30 33 33 33 33 20 29 17 33 33 17 17 33 33 33  0]xS 
+5890 4686 M (2 of 2)[33 17 33 17 17  0]xS 
+: 0 0 6250 4 rc N 0 0 M 6246 0 I K 
+; : 6243 0 7 4772 rc N 6246 0 M 6246 4768 I K 
+; : 0 4765 6250 7 rc N 6246 4768 M 0 4768 I K 
+; : 0 0 4 4772 rc N 0 4768 M 0 0 I K 
+; N 78 78 M 6176 78 I K 
+N 6176 78 M 6176 4699 I K 
+N 6176 4699 M 78 4699 I K 
+N 78 4699 M 78 78 I K 
+: 0 0 82 82 rc N 0 0 M 78 78 I K 
+; N 6246 4768 M 6176 4699 I K 
+: 6173 0 77 82 rc N 6246 0 M 6176 78 I K 
+; : 0 4696 82 76 rc N 0 4768 M 78 4699 I K 
+; : 0 0 4 82 rc N 0 0 M 0 78 I K 
+; F0S2DYFFFFFFD2 Ji 
+377 59 M (1)S 
+: 0 4696 4 76 rc N 0 4768 M 0 4699 I K 
+; 377 4749 M (1)S 
+: 778 0 7 82 rc N 781 0 M 781 78 I K 
+; 1158 59 M (2)S 
+N 781 4768 M 781 4699 I K 
+1158 4749 M (2)S 
+: 1558 0 7 82 rc N 1561 0 M 1561 78 I K 
+; 1939 59 M (3)S 
+N 1561 4768 M 1561 4699 I K 
+1939 4749 M (3)S 
+: 2339 0 7 82 rc N 2342 0 M 2342 78 I K 
+; 2719 59 M (4)S 
+N 2342 4768 M 2342 4699 I K 
+2719 4749 M (4)S 
+: 3120 0 7 82 rc N 3123 0 M 3123 78 I K 
+; 3500 59 M (5)S 
+N 3123 4768 M 3123 4699 I K 
+3500 4749 M (5)S 
+: 3901 0 7 82 rc N 3904 0 M 3904 78 I K 
+; 4281 59 M (6)S 
+N 3904 4768 M 3904 4699 I K 
+4281 4749 M (6)S 
+: 4681 0 7 82 rc N 4684 0 M 4684 78 I K 
+; 5062 59 M (7)S 
+N 4684 4768 M 4684 4699 I K 
+5062 4749 M (7)S 
+: 5462 0 7 82 rc N 5465 0 M 5465 78 I K 
+; 5842 59 M (8)S 
+N 5465 4768 M 5465 4699 I K 
+5842 4749 M (8)S 
+: 0 0 82 4 rc N 0 0 M 78 0 I K 
+; F0S00IFFFFFFD2YFFFFFFD2 Ji 
+58 413 M (A)S 
+: 6173 0 77 4 rc N 6246 0 M 6176 0 I K 
+; 6230 413 M (A)S 
+: 0 792 82 7 rc N 0 795 M 78 795 I K 
+; 58 1208 M (B)S 
+N 6246 795 M 6176 795 I K 
+6230 1208 M (B)S 
+: 0 1586 82 7 rc N 0 1589 M 78 1589 I K 
+; 58 2004 M (C)S 
+N 6246 1589 M 6176 1589 I K 
+6230 2004 M (C)S 
+: 0 2381 82 7 rc N 0 2384 M 78 2384 I K 
+; 58 2799 M (D)S 
+N 6246 2384 M 6176 2384 I K 
+6230 2799 M (D)S 
+: 0 3176 82 7 rc N 0 3179 M 78 3179 I K 
+; 58 3592 M (E)S 
+N 6246 3179 M 6176 3179 I K 
+6230 3592 M (E)S 
+: 0 3971 82 7 rc N 0 3974 M 78 3974 I K 
+; 58 4385 M (F)S 
+N 6246 3974 M 6176 3974 I K 
+6230 4385 M (F)S 
+LH
+(%%[Page: 2]%%) = 
+%%PageTrailer
+
+%%Trailer
+%%BoundingBox: 13 13 599 780
+%%DocumentNeededResources: 
+%%+ font Helvetica
+%%DocumentSuppliedResources: 
+%%+ procset Pscript_WinNT_ErrorHandler 5.0 0
+%%+ procset Pscript_FatalError 5.0 0
+%%+ procset Pscript_Win_Basic 5.0 0
+%%+ procset Pscript_Win_Utils_L2 5.0 0
+%%+ procset Pscript_Text 5.0 0
+%%+ procset Pscript_Encoding256 5.0 0
+%%+ procset Pscript_Win_Euro_L2 5.0 0
+%%+ procset Pscript_Win_Dib_L2 5.0 0
+%%+ procset Pscript_Win_GdiObject 5.0 0
+%%+ procset Pscript_Win_GdiObject_L2 5.0 0
+Pscript_WinNT_Incr dup /terminate get exec
+ehsave restore
+%%Pages: 2
+(%%[LastPage]%%) = 
+%%EOF
+%-12345X@PJL EOJ
+%-12345X

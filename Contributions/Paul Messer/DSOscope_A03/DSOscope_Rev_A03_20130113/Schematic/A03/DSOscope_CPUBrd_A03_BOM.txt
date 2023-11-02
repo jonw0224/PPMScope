@@ -1,0 +1,49 @@
+====+  Parts List for DSOscope_CPUBrd_A03.dsn  +====
+
+Reference_Designator(s)       Qty   Description                                           PN_Digi-Key           PN_Jameco       
+---------------------------   ---   ---------------------------------------------------   -------------------   ----------------
+
+BOM_1                           1   Cabinet Aluminum 4.0"x2.2"x1.6" BOM Only Part         HM609-ND               
+BOM_2,BOM_3,BOM_4,BOM_5         4   Feet - Bumpons BOM Only Part                          SJ5012-0-ND           142658 
+BOM_6,BOM_7                     2   BNC Jack 50 Ohm Panel Mount BOM Only Part                                   355178 
+BOM_8,BOM_9                     2   RG174/U Cable - Cut to Length 4.5" BOM Only Part                            644818 
+BOM_10,BOM_11                   2   Card Guide - Custom BOM Only Part                                            
+BOM_12                          1   Top Cabinet Label - Custom BOM Only Part                                     
+BOM_13                          1   Front Cabinet Label - Custom BOM Only Part                                   
+BOM_14                          1   Rear Cabinet Label - Custom BOM Only Part                                    
+C1,C5,C6,C22                    4   1.0uF +80% -20% 25V Y5V 0805                          311-1358-1-ND          
+C2                              1   470nF 10% 16V X7R 0805                                311-1364-1-ND          
+C3,C4                           2   22pF 5% 50V C0G 0603                                  399-1053-1-ND          
+C7,C24,C25                      3   10uF +80% -20% 16V Y5V 0805                           490-3347-1-ND          
+C8,C10,C12,C16                  4   100uF 20% 35V Alum Radial                             P5165-ND               
+C9,C14,C15,C19,C20              5   0.1uF 10% 50V X7R 0805                                399-1170-1-ND          
+C11                             1   0.001uF 10% 50V X7R 0805                              399-1147-1-ND          
+C13,C18                         2   470uF 20% 35V Alum Radial                             493-1084-ND            
+C17                             1   1500pF 10% 100V X7R 0805                              445-4429-1-ND          
+C21,C23                         2   330pF 5% 50V C0G 0603                                 399-1068-1-ND          
+D1                              1   1N4148 Signal Diode: DO-35-SMT                        1N4148FS-ND            
+D2                              1   MMSZ5232B Zener Diode 5.6V 0.5W: SOD-123              MMSZ5232B-FDICT-ND     
+D4,D5                           2   1N5819 Schottky Diode: DO-41                          1N5819DICT-ND         177965 
+F1                              1   0.5A PolySwitch Resetable Fuse                        MINISMDC050FCT-ND      
+J1                              1   Cut Strap 1 x 2 0.025 pin 0.1 space                                          
+J2                              1   1 x 7 Square Pin Conn 0.025 pin 0.1 space             S1211E-36-ND           
+J3                              1   1 x 18 Square Pin Conn 0.025 pin 0.1 space            S1211E-36-ND           
+J4                              1   1 x 6 Square Pin Conn 0.025 pin 0.1 space             S1211E-36-ND           
+J5                              1   USB-B Right Angle Thru Hole                           151-1121-ND            
+L1,L2                           2   100uH Inductor: 0.80A Shielded SMT                    308-1424-1-ND          
+L3,L4                           2   10uH Inductor: 0.70A Shielded SMT 1210                490-5340-1-ND          
+R2,R3,R5,R12,R14                5   1.00K 1/8W 1% 0805                                    311-1.00KCRCT-ND       
+R4,R6,R7,R8,R9,R33,R34,R35      8   10.0K 1/8W 1% 0805                                    311-10.0KCRCT-ND       
+R17,R18,R32                     3   DNI Do Not Install - 1/8W 1% 0805                     No P/N                 
+R21,R22,R27,R28                 4   1.00 1/8W 1% 0805                                     311-1.00CRCT-ND        
+R23                             1   100 1/8W 1% 0805                                      311-100CRCT-ND         
+R24,R31                         2   8.20K 1/8W 1% 0805                                    311-8.20KCRCT-ND       
+R25,R26,R29,R30                 4   470 1/8W 1% 0805                                      311-470CRCT-ND         
+U1                              1   MAX118 ADC 8 Ch 1MHz: SSOP-28                         MAX118CAI+-ND          
+U2                              1   PIC16F887 MicroController: TQFP-44                    PIC16F887-I/PT-ND      
+U4,U5                           2   MC34063A Switching Regulator: SOIC-8                  MC34063ADR2GOSCT-ND    
+X1                              1   20.00MHz XTAL: HC49 Vertical                          X439-ND                
+
+
+====+  End of Parts List for DSOscope_CPUBrd_A03.dsn  +====
+

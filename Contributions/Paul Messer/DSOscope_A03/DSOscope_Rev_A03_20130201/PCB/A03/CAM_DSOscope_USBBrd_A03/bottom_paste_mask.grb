@@ -1,0 +1,80 @@
+G04 FreePCB version 1.359*
+G04 C:\Google Drive\Projects\PPMScope\Contributions\Paul Messer\DSOscope_A03\DSOscope_Rev_A03_20130201\PCB\A03\CAM_DSOscope_USBBrd_A03\bottom_paste_mask.grb*
+G04 bottom paste mask layer *
+G04 Scale: 100 percent, Rotated: No, Reflected: No *
+%FSLAX24Y24*%
+%MOIN*%
+%LN bottom paste mask *%
+G04 Rounded Rectangle Macro, params: W/2, H/2, R *
+%AMRNDREC*
+21,1,$1+$1,$2+$2-$3-$3,0,0,0*
+21,1,$1+$1-$3-$3,$2+$2,0,0,0*
+1,1,$3+$3,$1-$3,$2-$3*
+1,1,$3+$3,$3-$1,$2-$3*
+1,1,$3+$3,$1-$3,$3-$2*
+1,1,$3+$3,$3-$1,$3-$2*%
+G04 Rectangular Thermal Macro, params: W/2, H/2, T/2 *
+%AMRECTHERM*
+$4=$3/2*
+21,1,$1-$3,$2-$3,0-$1/2-$4,0-$2/2-$4,0*
+21,1,$1-$3,$2-$3,0-$1/2-$4,$2/2+$4,0*
+21,1,$1-$3,$2-$3,$1/2+$4,0-$2/2-$4,0*
+21,1,$1-$3,$2-$3,$1/2+$4,$2/2+$4,0*%
+%ADD10C,0.005000*%
+%ADD11R,0.050000X0.050000*%
+G90*
+G70D02*
+
+G04 Step and Repeat for panelization *
+
+G04 ----------------------- Draw board outline (positive)*
+%LPD*%
+G54D10*
+G01X0Y0D02*
+G01X0Y2250D01*
+G04 end of side 1*
+G01X0Y9250D01*
+G04 end of side 2*
+G01X11500Y9250D01*
+G04 end of side 3*
+G01X11500Y0D01*
+G04 end of side 4*
+G01X0Y0D01*
+
+G04 -------------- Draw Parts, Pads, Traces, Vias and Text (positive)*
+%LPD*%
+G04 Draw part U1*
+G04 Draw part C2*
+G04 Draw part C1*
+G04 Draw part L1*
+G04 Draw part R6*
+G04 Draw part R5*
+G04 Draw part R4*
+G04 Draw part R3*
+G04 Draw part R9*
+G54D11*
+G01X5200Y850D03*
+G01X6100Y850D03*
+G04 Draw part R8*
+G01X7000Y1650D03*
+G01X7900Y1650D03*
+G04 Draw part R7*
+G01X7000Y2450D03*
+G01X7900Y2450D03*
+G04 Draw part R10*
+G01X2100Y850D03*
+G01X1200Y850D03*
+G04 Draw part R2*
+G04 Draw part R1*
+G04 Draw part D2*
+G04 Draw part D1*
+G04 Draw part P1*
+G04 Draw part C3*
+G01X4300Y5750D03*
+G01X3400Y5750D03*
+
+G04 Draw traces*
+
+G04 Draw Text*
+M00*
+M02*

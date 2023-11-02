@@ -1,0 +1,50 @@
+====+  Parts List for C:\Users\pmesser\_Paul\Design\DSOscope\Schematic\A02\DSOscope_CPUBrd_A02.dsn  +====
+
+C11                           1   0.001uF,10% 50V X7R 0805,0805,399-1147-1-ND,,,10%,50V,X7R
+C14,C15,C19,C20,C9            5   0.1uF,10% 50V X7R 0805,0805,399-1170-1-ND,,,10%,50V,X7R
+F1                            1   0.5A,PolySwitch Resetable Fuse,miniSMD,MINISMDC050FCT-ND
+J3                            1   1 x 18,Square Pin Conn 0.025 pin 0.1 space,SqPin1x18,,S1211E-36-ND
+J4                            1   1 x 6,Square Pin Conn 0.025 pin 0.1 space,SqPin1x6,S1211E-36-ND
+J2                            1   1 x 7,Square Pin Conn 0.025 pin 0.1 space,SqPin1x7,S1211E-36-ND
+R21,R22,R27,R28               4   1.00,1/8W 1% 0805,0805,RHM1.00CCT-ND,,1/8W,1%
+R12,R14,R2,R3,R5              5   1.00K,1/8W 1% 0805,0805,311-1.00KCRCT-ND,,1/8W,1%
+C1,C22,C5,C6                  4   1.0uF,+80% -20% 25V Y5V 0805,0805,311-1358-1-ND,,,+80% -20%,25V,Y5V
+R1,R10,R11,R13,R15,R16,
+R4,R6,R7,R8,R9               11   10.0K,1/8W 1% 0805,0805,311-10.0KCRCT-ND,,1/8W,1%
+R23                           1   100,1/8W 1% 0805,0805,RHM100CCT-ND,,1/8W,1%
+C10,C12,C16,C8                4   100uF,20% 35V Alum Radial,RAD248,P5165-ND,,,20%,35V,Alum
+L1,L2                         2   100uH,Inductor: 0.80A Shielded SMT,INDUCT1,308-1424-1-ND
+C24,C25,C7                    3   10uF,+80% -20% 16V Y5V 0805,0805,490-3347-1-ND,,,+80% -20%,16V,Y5V
+L3,L4                         2   10uH,Inductor: 0.70A Shielded SMT 1210,1210,490-5340-1-ND
+C17                           1   1500pF,10% 100V X7R 0805,0805,445-4429-1-ND,,,10%,100V,X7R
+D3                            1   1N4007,Diode Rectifier 1000V 1A: DO-41,DO41,1N4007-E3/54GICT-ND
+D1                            1   1N4148,Signal Diode: DO-35-SMT,DO35SMT,1N4148FS-ND
+D4,D5                         2   1N5819,Schottky Diode: DO-41,DO41,1N5819DICT-ND,,,,,,177965
+X1                            1   20.00MHz,XTAL: HC49 Vertical,HC49VERT,X439-ND,,,+/- 30ppm
+C3,C4                         2   22pF,5% 50V C0G 0603,0603,399-1053-1-ND,,,5%,50V,C0G
+C21,C23                       2   330pF,5% 50V C0G 0603,0603,399-1068-1-ND,,,5%,50V,COG
+BOM_16,BOM_17,BOM_19,
+BOM_20,BOM_21                 5   4-40 HEX NUT,BOM Only Part,NOPACKAGE,H216-ND,,,,,,
+BOM_15                        1   4-40 x 0.625 PAN HEAD SCREW,BOM Only Part,NOPACKAGE,H148-ND,,,,,,
+R25,R26,R29,R30               4   470,1/8W 1% 0805,0805,RHM470CCT-ND,,1/8W,1%
+C2                            1   470nF,10% 16V X7R 0805,0805,445-1357-1-ND,,,10%,16V,X7R
+C13,C18                       2   470uF,20% 35V Alum Radial,RAD394,493-1084-ND,,,20%,35V,Alum
+U3                            1   7805T,Voltage Regulator: TO-220,TO220,,,,,,,51263
+R24,R31                       2   8.20K,1/8W 1% 0805,0805,RHM8.20KCCT-ND,,1/8W,1%
+BOM_6,BOM_7                   2   BNC Jack 50 Ohm Panel Mount,BOM Only Part,NOPACKAGE,,,,,,,355178
+J6                            1   CP002A,Coaxial Power Jack,CP002A,CP-002A-ND
+BOM_1                         1   Cabinet Aluminum 4.0"x2.2"x1.6",BOM Only Part,NOPACKAGE,HM609-ND,,,,,,
+BOM_10,BOM_11                 2   Card Guide - Custom,BOM Only Part,NOPACKAGE,,,,,,,
+J1                            1   Cut Strap 1 x 2,0.025 pin 0.1 space,CutStrap1,
+R17,R18,R19,R20,R32           5   DNI,Do Not Install - 1/8W 1% 0805,0805,No P/N,,1/8W,1%
+BOM_2,BOM_3,BOM_4,BOM_5       4   Feet - Bumpons,BOM Only Part,NOPACKAGE,SJ5012-0-ND,,,,,,142658
+BOM_13                        1   Front Cabinet Label - Custom,BOM Only Part,NOPACKAGE,,,,,,,
+U1                            1   MAX118,ADC 8 Ch 1MHz: SSOP-28,SSOP28,MAX118CAI+-ND
+U4,U5                         2   MC34063A,Switching Regulator: SOIC-8,SOIC8,MC34063ADR2GOSCT-ND
+D2                            1   MMSZ5232B,Zener Diode 5.6V 0.5W: SOD-123,SOD123,MMSZ5232B-FDICT-ND,,,,,,
+BOM_18                        1   No. 4 INTERNAL TOOTH LOCK WASHER,BOM Only Part,NOPACKAGE,H236-ND,,,,,,
+U2                            1   PIC16F887,MicroController: TQFP-44,TQFP44,PIC16F887-I/PT-ND
+BOM_8,BOM_9                   2   RG174/U Cable - Cut to Length 4.5",BOM Only Part,NOPACKAGE,,,,,,,644818
+BOM_14                        1   Rear Cabinet Label - Custom,BOM Only Part,NOPACKAGE,,,,,,,
+BOM_12                        1   Top Cabinet Label - Custom,BOM Only Part,NOPACKAGE,,,,,,,
+J5                            1   USB-B,Right Angle Thru Hole,USBB1,151-1121-ND

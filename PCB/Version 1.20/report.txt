@@ -1,0 +1,13 @@
+FreePCB project report (default units = MIL)
+============================================
+Project name: PPMScope
+Project file: E:\Projects\PPMScope\PCB\Version 1.20\PPMScope v1_2.fpc
+Default library folder: c:\program files\freepcb\lib
+
+Drill list
+==========
+NUMBER  DIAMETER
+------  --------
+   60   40 MIL
+  323   35 MIL
+    4   125 MIL

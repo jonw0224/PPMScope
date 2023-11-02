@@ -1,0 +1,37 @@
+
+
+   ---- Transcoding 'C:\jww\Projects\PPMScope\PCB\Version 1.20\CAM\top_copper.grb' ----   Thu Apr 17 14:20:18 2014
+
+D11   --> D100
+D12   --> D101
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\jww\Projects\PPMScope\PCB\Version 1.20\CAM\top_copper.grb' ----   Thu Apr 17 14:24:19 2014
+
+D18   --> D100
+D19   --> D101
+D20   --> D102
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\jww\Projects\PPMScope\PCB\Version 1.20\CAM\top_silk.grb' ----   Thu Apr 17 14:24:19 2014
+
+D11   --> D103
+D12   --> D104
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\jww\Projects\PPMScope\PCB\Version 1.20\CAM\top_copper.grb' ----   Thu Apr 17 14:27:24 2014
+
+D18   --> D100
+D19   --> D101
+D20   --> D102
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\jww\Projects\PPMScope\PCB\Version 1.20\CAM\top_silk.grb' ----   Thu Apr 17 14:27:24 2014
+
+D11   --> D103
+D12   --> D104
+-----------------------------------------------------------------

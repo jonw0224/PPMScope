@@ -1,0 +1,86 @@
+<html>
+<head>
+	<META content="PIC Assembly Freeware" name=keywords>
+	<META content="Jonathan Weaver" name=author>
+</head>
+<body>
+<center>
+<table border=0 width="800">
+	<tr><td>
+		<h2><b><center>
+ i2cs.inc </b></h2><br><b>Author:  </b> 
+  Jonathan Weaver, jonw0224@netscape.net<br><b>Date:    </b> 
+ 7/10/2003<br><b>Version: </b> 
+ 1.0<br><b>Filename: </b> 
+ i2cs.inc<br><b>Description:  </b>
+ Software immulated I2C Slave Device.  I2CPort sets I/O port for I2C.  CLK sets clock pin.  SDA sets data pin.</center><br><br>
+<h2><b><i>External Variable List</i></b></h2><br>
+<table cellpadding=3 cellspacing=0 style="BORDER-LEFT: #8f8f8f 1px solid;BORDER-RIGHT: #8f8f8f 1px solid; BORDER-TOP: #8f8f8f 1px solid; BORDER-BOTTOM: #8f8f8f 1px solid" bgcolor="#CFCFFF" width="800">
+	<tr><td valign=top><i> 
+;external CLK</i></td><td width=600>
+CLK is a literal which determines which pin will be the clock signal</td></tr>
+<tr><td valign=top width=200><i> 
+;external CLK</i></td><td width=600>
+SDA is a literal which determines which pin will be the data signal</td></tr>
+<tr><td valign=top width=200><i> 
+;external cntr</i></td><td width=600>
+Temporary Counter, declare as register in main program</td></tr>
+<tr><td valign=top width=200><i> 
+;external I2CPORT</i></td><td width=600>
+I2CPORT is a literal which determines which port will be used as the I2C port.  Example setup for CLK = RB6 and SDA = RB7.<br><br>  CLK equ 0x06<br>  SDA equ 0x07<br> I2CPORT equ PORTB</td></tr>
+<tr><td valign=top width=200><i> 
+;external i2csdata</i></td><td width=600>
+I2C Data byte, declare as register in main program
+</td></tr></table>
+<br>
+<br>
+<h2><b><i>Procedure Heading List</i></b></h2><br>
+<table cellpadding=3 cellspacing=0 style="BORDER-LEFT: #8f8f8f 1px solid;BORDER-RIGHT: #8f8f8f 1px solid; BORDER-TOP: #8f8f8f 1px solid; BORDER-BOTTOM: #8f8f8f 1px solid" bgcolor="#CFCFFF" width="800">
+<tr><td style="BORDER-BOTTOM: #8f8f8f 1px solid;">
+<a href="#5">I2CSGetAck </a></td></tr><tr><td style="BORDER-BOTTOM: #8f8f8f 1px solid;"><a href="#2">I2CSGetByte </a></td></tr><tr><td style="BORDER-BOTTOM: #8f8f8f 1px solid;"><a href="#0">I2CSGetStop </a></td></tr><tr><td style="BORDER-BOTTOM: #8f8f8f 1px solid;"><a href="#3">I2CSPutAck </a></td></tr><tr><td style="BORDER-BOTTOM: #8f8f8f 1px solid;"><a href="#4">I2CSPutByte </a></td></tr><tr><td style="BORDER-BOTTOM: #8f8f8f 1px solid;"><a href="#1">I2CSWaitStart </a></td></tr><tr><td style="BORDER-BOTTOM: #8f8f8f 1px solid;"><a href="#0"></a></td></tr></table>
+<br><br>
+<h2><b><i>Procedure Descriptions</i></b></h2><br>
+<table cellpadding=3 cellspacing=0 style="BORDER-LEFT: #8f8f8f 1px solid;BORDER-RIGHT: #8f8f8f 1px solid; BORDER-TOP: #8f8f8f 1px solid; BORDER-BOTTOM: #8f8f8f 1px solid" bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2 style="BORDER-BOTTOM: #8f8f8f 1px solid;"><a name="5"></a>I2CSGetAck <tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Detects if the master sent an acknowledge.  Expects: to be called when clock is low</td></tr><tr><td valign=top width=200>
+<b>Returns:</b></td><td width=600> 
+ 0x00 in WREG if Ack detected.  0xFF in WREG if Ack not detected</td></tr></table>
+<br><br>
+<table cellpadding=3 cellspacing=0 style="BORDER-LEFT: #8f8f8f 1px solid;BORDER-RIGHT: #8f8f8f 1px solid; BORDER-TOP: #8f8f8f 1px solid; BORDER-BOTTOM: #8f8f8f 1px solid" bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2 style="BORDER-BOTTOM: #8f8f8f 1px solid;"><a name="2"></a>I2CSGetByte <tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Recieves a byte and sends an acknowledge.  Recieved byte appears in i2csdata</td></tr><tr><td valign=top width=200>
+<b>Returns:</b></td><td width=600> 
+  0x00 in WREG</td></tr></table>
+<br><br>
+<table cellpadding=3 cellspacing=0 style="BORDER-LEFT: #8f8f8f 1px solid;BORDER-RIGHT: #8f8f8f 1px solid; BORDER-TOP: #8f8f8f 1px solid; BORDER-BOTTOM: #8f8f8f 1px solid" bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2 style="BORDER-BOTTOM: #8f8f8f 1px solid;"><a name="0"></a>I2CSGetStop <tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Tests if the next clock cycle is stop, start, or continued transmission.</td></tr><tr><td valign=top width=200>
+<b>Returns:</b></td><td width=600> 
+  If Stop detected, returns hFF in WREG.  If Start detected, returns hFE in WREG.  If continued transmission, recieves next byte and returns h00 in WREG.  Next byte appears in i2csdata</td></tr></table>
+<br><br>
+<table cellpadding=3 cellspacing=0 style="BORDER-LEFT: #8f8f8f 1px solid;BORDER-RIGHT: #8f8f8f 1px solid; BORDER-TOP: #8f8f8f 1px solid; BORDER-BOTTOM: #8f8f8f 1px solid" bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2 style="BORDER-BOTTOM: #8f8f8f 1px solid;"><a name="3"></a>I2CSPutAck <tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Send an acknowledge.</td></tr><tr><td valign=top width=200>
+<b>Returns:</b></td><td width=600> 
+ 0x00 in WREG</td></tr></table>
+<br><br>
+<table cellpadding=3 cellspacing=0 style="BORDER-LEFT: #8f8f8f 1px solid;BORDER-RIGHT: #8f8f8f 1px solid; BORDER-TOP: #8f8f8f 1px solid; BORDER-BOTTOM: #8f8f8f 1px solid" bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2 style="BORDER-BOTTOM: #8f8f8f 1px solid;"><a name="4"></a>I2CSPutByte <tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Sends a byte.  Expects: the byte to send to be in i2csdata.</td></tr><tr><td valign=top width=200>
+<b>Returns:</b></td><td width=600> 
+ 0x00 in WREG if Ack detected.  0xFF in WREG if Ack not detected</td></tr></table>
+<br><br>
+<table cellpadding=3 cellspacing=0 style="BORDER-LEFT: #8f8f8f 1px solid;BORDER-RIGHT: #8f8f8f 1px solid; BORDER-TOP: #8f8f8f 1px solid; BORDER-BOTTOM: #8f8f8f 1px solid" bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2 style="BORDER-BOTTOM: #8f8f8f 1px solid;"><a name="1"></a>I2CSWaitStart <tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Waits for a start condition.  Never returns unless Start detected and byte recieved.</td></tr><tr><td valign=top width=200>
+<b>Returns:</b></td><td width=600> 
+ 0x00 in WREG.  Byte returned in i2csdata</td></tr></table>
+</td></tr></table>
+</center>
+<br><br></body></html>

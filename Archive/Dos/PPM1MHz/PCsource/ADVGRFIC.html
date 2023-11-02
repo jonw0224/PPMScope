@@ -1,0 +1,155 @@
+<html>
+<head>
+</head>
+<body>
+<center>
+<table border=0 width="800">
+	<tr><td>
+		<h1><b><center>
+  advgrfic.bas </b></h1><br><b>Author:  </b> 
+  Jonathan Weaver<br><b>Date:    </b> 
+    5/21/2001<br><b>Version: </b> 
+ 1.1 build #3<br><b>Filename: </b> 
+  advgrfic.bas<br><b>Description:  </b>
+  A collection of subroutines used to do common graphics procedures.
+</td></tr></table>
+</center><br>
+<hr><br>
+<h2><b><i>Procedure Heading List</i></b></h2><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td>
+<a href="#1">sub colorGet(ByVal Colour%, Red%, Green%, Blue%) public</a></td></tr><tr><td><a href="#2">sub colorSet(ByVal Colour%, Red%, Green%, Blue%) public</a></td></tr><tr><td><a href="#7">sub getScreen(ByVal x%, ByVal y%, ByVal l%, ByVal h%, ByVal filename$) public</a></td></tr><tr><td><a href="#8">function graphsize( l%, h%) public</a></td></tr><tr><td><a href="#6">sub killScreen(ByVal filename$) public</a></td></tr><tr><td><a href="#3">SUB PaletteGet(ByVal Colour%, Red%, Green%, Blue%) PUBLIC</a></td></tr><tr><td><a href="#4">SUB PaletteSet(ByVal Colour%, ByVal Red%, ByVal Green%, ByVal Blue%) PUBLIC</a></td></tr><tr><td><a href="#5">sub putScreen(ByVal x%, ByVal y%, ByVal filename$) public</a></td></tr><tr><td><a href="#0">function verAdvgrfic$() public</a></td></tr><tr><td><a href="#0"></a></td></tr></table>
+<br><hr><br>
+<h2><b><i>Procedure Descriptions</i></b></h2><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="1"></a>sub colorGet(ByVal Colour%, Red%, Green%, Blue%) public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Gets the palette value of a specified color attribute and saves it in RGB values.  All palette values are between 0 and 63.</td></tr><tr><td colspan=2><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+Colour%</i></td><td width=600>
+ the color attribute, 0 thru 16</td></tr>
+<tr><td width=200><i> 
+Red%</i></td><td width=600>
+ red value</td></tr>
+<tr><td width=200><i> 
+Green%</i></td><td width=600>
+ green value</td></tr>
+<tr><td width=200><i> 
+Blue%</i></td><td width=600>
+ blue value</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="2"></a>sub colorSet(ByVal Colour%, Red%, Green%, Blue%) public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Sets the palette value of a specified color attribute.  All palette values are between 0 and 63.</td></tr><tr><td colspan=2><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+Colour%</i></td><td width=600>
+ the color attribute, 0 thru 16</td></tr>
+<tr><td width=200><i> 
+Red%</i></td><td width=600>
+ red value</td></tr>
+<tr><td width=200><i> 
+Green%</i></td><td width=600>
+ green value</td></tr>
+<tr><td width=200><i> 
+Blue%</i></td><td width=600>
+ blue value</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="7"></a>sub getScreen(ByVal x%, ByVal y%, ByVal l%, ByVal h%, ByVal filename$) public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Captures the screen whose given the upper left coordinates and the box width and length and stores it to files based on filename.  The method used is fast, but not space saving.</td></tr><tr><td colspan=2><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+x%</i></td><td width=600>
+ the x-coordinate of the upper left corner</td></tr>
+<tr><td width=200><i> 
+y%</i></td><td width=600>
+ the y-coordinate of the upper left corner</td></tr>
+<tr><td width=200><i> 
+l%</i></td><td width=600>
+ the length of the area to be captured</td></tr>
+<tr><td width=200><i> 
+h%</i></td><td width=600>
+ the height of the area to be captured</td></tr>
+<tr><td width=200><i> 
+filename$</i></td><td width=600>
+ the base-filename to save the screen to.  A <filename>.tmp will be created, followed by <filename>.0, <filename>.1, etc. as required by memory</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="8"></a>function graphsize( l%, h%) public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ This function gives the size for the array needed to capture a section of the screen</td></tr><tr><td colspan=2><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+l%</i></td><td width=600>
+the width of the screen capture</td></tr>
+<tr><td width=200><i> 
+h%</i></td><td width=600>
+  the height of the screen capture</td></tr><tr><td width=200>
+<b>Returns:</b></td><td width=600> 
+  the size of an integer array used to capture a section of the screen</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="6"></a>sub killScreen(ByVal filename$) public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Deletes a screen capture file-set based on filename.</td></tr><tr><td colspan=2><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+filename$</i></td><td width=600>
+ the basename of the files to be deleted.  Actual files deleted include <filename>.tmp, <filename>.0, <filename>.1, etc.</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="3"></a>SUB PaletteGet(ByVal Colour%, Red%, Green%, Blue%) PUBLIC<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Gets the palette value of a specified palette color and saves it in RGB values.  All palette values are between 0 and 63.</td></tr><tr><td colspan=2><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+Colour%</i></td><td width=600>
+ the palette, 16 thru 63</td></tr>
+<tr><td width=200><i> 
+Red%</i></td><td width=600>
+ red value</td></tr>
+<tr><td width=200><i> 
+Green%</i></td><td width=600>
+ green value</td></tr>
+<tr><td width=200><i> 
+Blue%</i></td><td width=600>
+ blue value</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="4"></a>SUB PaletteSet(ByVal Colour%, ByVal Red%, ByVal Green%, ByVal Blue%) PUBLIC<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Sets the palette value of a specified palette color.  All palette values are between 0 and 63.</td></tr><tr><td colspan=2><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+Colour%</i></td><td width=600>
+ the palette, 16 thru 63</td></tr>
+<tr><td width=200><i> 
+Red%</i></td><td width=600>
+ red value</td></tr>
+<tr><td width=200><i> 
+Green%</i></td><td width=600>
+ green value</td></tr>
+<tr><td width=200><i> 
+Blue%</i></td><td width=600>
+ blue value</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="5"></a>sub putScreen(ByVal x%, ByVal y%, ByVal filename$) public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Places a screen capture, saved in filename, on the screen based on the coordinates of the upper left corner.</td></tr><tr><td colspan=2><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+x%</i></td><td width=600>
+ the x-coordinate of the upper left corner</td></tr>
+<tr><td width=200><i> 
+y%</i></td><td width=600>
+ the y-coordinate of the upper left corner</td></tr>
+<tr><td width=200><i> 
+filename$</i></td><td width=600>
+ the base-filename to extract the screen from.</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="0"></a>function verAdvgrfic$() public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Returns the build and version number of this unit library</td></tr><tr><td width=200>
+<b>Returns:</b></td><td width=600> 
+ the number of the build</td></tr></table>
+</td></tr></table>
+</center>
+<br><br></body></html>

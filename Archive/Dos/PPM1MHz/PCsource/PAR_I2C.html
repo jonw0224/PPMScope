@@ -1,0 +1,102 @@
+<html>
+<head>
+</head>
+<body>
+<center>
+<table border=0 width="800">
+	<tr><td>
+		<h1><b><center>
+  par_i2c.bas </b></h1><br><b>Author:  </b> 
+  Jonathan Weaver<br><b>Date:    </b> 
+    created 11/17/03.<br><b>Version: </b> 
+  1.0 build #1.<br><b>Filename: </b> 
+  par_i2c.bas<br><b>Description:  </b>
+  simulate i2c protocol on a parallel port</center><br><hr><br>
+<h2><b><i>External Variable List</i></b></h2><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+	<tr><td><i> 
+external CLKCONTROL, SDACONTROL, SDAINCONTROL</i></td><td width=600>
+Integers to specify the control byte for the clock, data out, and data in</td></tr>
+<tr><td width=200><i> 
+external LPTPORT, CLK, SDA, SDAIN</i></td><td width=600>
+Integers to specify port, clock bit, data out bit, and data in bit</td></tr>
+<tr><td width=200><i> 
+external SDASET, SDARESET, CLKRESET, CLKSET, SDAINSET, SDAINRESET</i></td><td width=600>
+Integers to specify the polarity for data out, clock, and data in</td></tr>
+<tr><td width=200><i> 
+external WTA, WTB</i></td><td width=600>
+Integers to determine timing</td></tr></table></center>
+<br><hr><br>
+<h2><b><i>External Subroutine List</i></b></h2><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+	<tr><td><i> 
+declare function getBit(portNo%, byteNo%, bitNo%)</i></td><td width=600>
+Function used from parallel.pbu.  Gets a bit from the parallel port.</td></tr>
+<tr><td width=200><i> 
+external WTA, WTB</i></td><td width=600>
+Function used from parallel.pbu.  Gets a bit from the parallel port.
+</td></tr></table>
+</center><br>
+<hr><br>
+<h2><b><i>Procedure Heading List</i></b></h2><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td>
+<a href="#7">function recieveByte?(ack?) public</a></td></tr><tr><td><a href="#1">sub releaseBus public</a></td></tr><tr><td><a href="#6">function sendByte(theByte?) public</a></td></tr><tr><td><a href="#5">sub sendOne public</a></td></tr><tr><td><a href="#2">sub sendStart public</a></td></tr><tr><td><a href="#3">sub sendStop public</a></td></tr><tr><td><a href="#4">sub sendZero public</a></td></tr><tr><td><a href="#0">function verPar_i2c$() public</a></td></tr><tr><td><a href="#8">sub waitTime public</a></td></tr><tr><td><a href="#0"></a></td></tr></table>
+<br><hr><br>
+<h2><b><i>Procedure Descriptions</i></b></h2><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="7"></a>function recieveByte?(ack?) public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Recieves a byte.  Send an acknowlege if appropriate</td></tr><tr><td colspan=2><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+ack?</i></td><td width=600>
+  TRUE indicates send acknowledge, FALSE indicates don't send acknowledge</td></tr><tr><td width=200>
+<b>Returns:</b></td><td width=600> 
+ the byte recieved</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="1"></a>sub releaseBus public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Releases the bus by pulling SDA and CLK high</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="6"></a>function sendByte(theByte?) public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Sends a byte to the slave device</td></tr><tr><td width=200>
+<b>Returns:</b></td><td width=600> 
+  1 if slave device acknowledges, 0 if slave device does not.</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="5"></a>sub sendOne public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Send a one to the device</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="2"></a>sub sendStart public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Sends a start signal to the slave device</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="3"></a>sub sendStop public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Sends a stop signal to the slave device</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="4"></a>sub sendZero public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Send a zero to the device</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="0"></a>function verPar_i2c$() public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Returns the build and version number of this unit library</td></tr><tr><td width=200>
+<b>Returns:</b></td><td width=600> 
+ the number of the build</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="8"></a>sub waitTime public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Waits an amount of time specified by WTA and WTB</td></tr></table>
+</td></tr></table>
+</center>
+<br><br></body></html>

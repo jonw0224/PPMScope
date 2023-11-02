@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="PPMScope" />
+		<Option platforms="Windows;" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option platforms="Windows;" />
+				<Option output="PPMScope" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Linker>
+					<Add library="libcomctl32.a" />
+					<Add library="libmsimg32.a" />
+				</Linker>
+			</Target>
+		</Build>
+		<Linker>
+			<Add library="libcomctl32.a" />
+			<Add library="libmsimg32.a" />
+		</Linker>
+		<Unit filename="aboutdlg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="aboutdlg.h">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="caldlg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="caldlg.h">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="debug.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="debug.h">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="engNum.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="engNum.h">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="fourier.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="fourier.h">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="func.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="func.h">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="hardwaredlg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="hardwaredlg.h">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="hdriver.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="hdriver.h">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="hdwtestdlg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="hdwtestdlg.h">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ini_io.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ini_io.h">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="logdlg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="logdlg.h">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="main.h">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="oscDisp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="oscDisp.h">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="panel.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="panel.h">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="par_i2c.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="par_i2c.h">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="parallel.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="parallel.h">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="refreshratedlg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="refreshratedlg.h">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="resource.rc">
+			<Option compilerVar="CPP" />
+		</Unit>
+		<Unit filename="serial.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="serial.h">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="settings.h">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<wxsmith version="1">
+				<gui name="wxWidgets" src="" main="" init_handlers="necessary" language="CPP" />
+			</wxsmith>
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

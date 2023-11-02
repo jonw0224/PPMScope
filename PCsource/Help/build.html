@@ -1,0 +1,170 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<Title>Building the PPMScope</Title>
+    <link rel="stylesheet" href="main.css">
+</HEAD>
+<BODY>
+
+<h1>Building the PPMScope</h1>
+
+<ul>
+	<li><a href="build.html#schematic">Schematic</a>
+	<li><a href="build.html#pcb">PCB</a>
+	<li><a href="build.html#panel">Front Panel</a>
+	<li><a href="build.html#parts">Parts List and cost to build</a>
+</ul>
+
+<p>Some people have asked me if I have a working prototype of the PPMScope.  The answer is yes.
+	I have developed most of the software using a software "simulated" scope.  However, I verified
+	the software using a PPMScope laid out on a prototype board.  I currently use a prototype
+	that I constructed on punch board using a point to point wiring method.  To help me route
+	the wires on the punch board I have drawn a PCB, discussed below.</p>
+
+<center><img border=0 alt="PPMScope on the protoboard" src="proto.jpg" width=400 height=300>
+	<br>
+	Prototype board prototype of PPMScope
+	<br>
+	<br>
+	<img border=0 alt="PPMScope on the punch board" src="punchbd.jpg" width=400 height=267>
+	<br>
+	Punch board and point to point wiring prototype of PPMScope
+	<br>
+	<br>
+</center>
+
+<a name="schematic"></a>
+<h1>Schematic</h1>
+
+<p>The schematic of the oscilloscope is drawn in <A HREF= "#" 
+ onClick="window.open('http://tinycad.sourceforge.net',
+'Sample','toolbar=yes,width=640,height=480,left=0,top=0, status=yes,scrollbars=yes,resize=yes');return false">
+Tiny CAD</a>,
+	a freely available electronic schematic software program.  The schematics are installed in a
+	clearly marked directory.  I also have the schematic available as a PDF file, which you can access by 	clicking on the link below:</p>
+
+<a href="PPM1MHz.pdf">Schematic</a>
+
+<p>I have added a USB to serial port adaptor for connecting the oscilloscope to the computer via a USB port
+using the UART of the microcontroller.  The schematic for the adaptor is below:</p>
+
+<a href="USBToSerial.pdf">USB to Serial Daughterboard Adaptor</a>
+<br>
+
+<a name="pcb"></a>
+<h1>PCB</h1>
+
+<p>The PCB is drawn in <A HREF= "#" 
+ onClick="window.open('http://freepcb.com',
+'Sample','toolbar=yes,width=640,height=480,left=0,top=0, status=yes,scrollbars=yes,resize=yes');return false">
+FreePCB</a>.  I've also generated Gerber and PDF files
+	for use in creating your own PCB's.  A word of caution if you use the PDF files to make templates for etching: print them at actual size.  Some versions of Adobe Reader attempt to scale the PDF to fit within the margins.  Make sure you print them at actual size.  To make the process of creating PCB's easier, the design of the 	PCB was created so that a single sided PCB could be used with jumper wires (you will notice the traces 	are simply single wires on the top side of the PCB.  The layouts are linked below:
+
+<ul>
+	<li><a href="PCBTop_Mirrored.pdf">Top layer (Mirrored)</a>
+	<li><a href="PCBTopSilk_Mirrored.pdf">Top Silk Layer (Mirrored)</a>
+	<li><a href="PCBBottom.pdf">Bottom layer</a>
+	<li><a href="PCB.pdf">Complete layout</a>
+</ul>
+
+<p>Many people have asked me about how to hook up components to the PCB.  To answer those questions, I've included
+	a diagram to show how components are wired to the PCB.</p>
+
+	<a href="WiringOfPCB.jpg">PCB Wiring Diagram</a>
+<br>
+
+<p>Also, here are the PCB layout files for the USB to Serial Daughterboard Adaptor:</p>
+
+<ul>
+	<li><a href="USB_PCBTop_Mirrored.pdf">Top layer (Mirrored)</a>
+	<li><a href="USB_PCBTopSilk_Mirrored.pdf">Top Silk Layer (Mirrored)</a>
+	<li><a href="USB_PCBBottom.pdf">Bottom layer</a>
+</ul>
+
+<a name="panel"></a>
+<h1>Front Panel</h1>
+
+<p>There are only two BNC connectors, 4 toggle switches, and a knob to be mounted on the front panel.  	On the back panel, you could get by with a 9 pin D sub connector, a power cord, and an on switch.  	You may also want to add a power indicator LED.</p>
+
+<p>Below is a picture of what I built.  The PPMScope in the picture is also a power supply and will also be a simple function generator.  Kind of an "all-in-one" instrument.  The blue area is the oscilloscope front panel.</p>
+
+<center><img border=0 alt="PPMScope front" src="front.jpg" width=400 height=247></center>
+
+<br>
+<br>
+
+<a name="parts"></a>
+<h1>Parts List and Cost to build</h1>
+
+<p>To buy everything new (including building a 50 Watt power supply, a fan, the enclosure, etc) I estimate the cost to build at $115 US.  However, the costs of many of these components can be improved upon by using scavenged parts or eliminating unnecessary parts.  I estimate the oscilloscope could be built for $50 or less depending.</p>
+
+<p>The table below is an all inclusive parts list:</p>
+
+<table width=100% border=0 cellspacing=5 style="BORDER-LEFT: #8f8f8f 1px solid;BORDER-RIGHT: #8f8f8f 1px solid; BORDER-TOP: #8f8f8f 1px solid; BORDER-BOTTOM: #8f8f8f 1px solid">
+<tr><td><p>&nbsp;</td><td><p><b>Quantity</b></td><td><p><b>Description</b></td><td><p><b>Unit Price</b></td><td><p><b>Total</b></tr>
+<tr><td><p><b>Oscilloscope</b></td><td><p>&nbsp;</td><td><p>&nbsp;</td><td><p>&nbsp;</td><td><p></tr>
+<tr><td><p>R17, R19, R28, R30</td><td><p>4</td> <td><p>100k, 1/8 Watt +/-5%</td><td><p>0.056</td><td><p>0.224</tr>
+<tr><td><p>C2, C3, C4</td><td><p>3</td><td><p>100n, Axial ceramic +/-20%</td><td><p>0.115</td><td><p>0.345</tr>
+<tr><td><p>R12, R13, R14, R2, R3, R36, R37, R4, R41, R43, R6, R9</td><td><p>12</td><td><p>10k, 1/8 Watt +/-5%</td><td><p>0.056</td><td><p>0.672</tr>
+<tr><td><p>C7,C8</td><td><p>2</td><td><p>10u, Electrolytic +/-20%</td><td><p>0.34</td><td><p>0.68</tr>
+<tr><td><p>R1, R10, R11, R15, R21, R22, R23, R25, R26, R32, R33, R34, R35, R38, R39, R44, R45, R5</td><td><p>18</td><td><p>1k, 1/4 Watt +/-5%</td><td><p>0.056</td><td><p>1.008</tr>
+<tr><td><p>X1</td><td><p>1</td><td><p>20MHz Crystal</td><td><p>0.4</td><td><p>0.4</tr>
+<tr><td><p>C1, C5</td><td><p>2</td><td><p>20p, +/-20%</td><td><p>0.095</td><td><p>0.19</tr>
+<tr><td><p>R16, R27</td><td><p>2</td><td><p>3.9k, 1/4 Watt +/-5%</td><td><p>0.056</td><td><p>0.112</tr>
+<tr><td><p>R18, R29</td><td><p>2</td><td><p>33k, 1/8 Watt +/-5%</td><td><p>0.056</td><td><p>0.112</tr>
+<tr><td><p>R20, R31</td><td><p>2</td><td><p>3k, 1/4 Watt +/-5%</td><td><p>0.056</td><td><p>0.112</tr>
+<tr><td><p>R40</td><td><p>1</td><td><p>4.7k, 1/4 Watt +/-5%</td><td><p>0.056</td><td><p>0.056</tr>
+<tr><td><p>C6</td><td><p>1</td><td><p>4.7u, Electrolytic +/-20%</td><td><p>0.34</td><td><p>0.34</tr>
+<tr><td><p>S1, S2, S5, S6</td><td><p>2</td><td><p>DPDT Toggle Switches</td><td><p>1.29</td><td><p>2.58</tr>
+<tr><td><p>CN9, CN10</td><td><p>2</td><td><p>Panel mount BNC</td><td><p>2.99</td><td><p>5.98</tr>
+<tr><td><p>S3, S4</td><td><p>2</td><td><p>DPDT Toggle Switches, on-off-on</td><td><p>1.29</td><td><p>2.58</tr>
+<tr><td><p>CN2, CN3, CN4, CN5, CN8, CN11, CN12</td><td><p>1</td><td><p>Panel mount DB9, Male</td><td><p>1.63</td><td><p>1.63</tr>
+<tr><td><p>U6, U7</td><td><p>2</td><td><p>LM311, Comparator, DIP</td><td><p>0.6</td><td><p>1.2</tr>
+<tr><td><p>U8</td><td><p>1</td><td><p>7407, Hex Buffers, DIP</td><td><p>0.59</td><td><p>0.59</tr>
+<tr><td><p>U2</td><td><p>1</td><td><p>MAX118, ADC, DIP</td><td><p>9.59</td><td><p>9.59</tr>
+<tr><td><p>Q1</td><td><p>1</td><td><p>N3904</td><td><p>0.11</td><td><p>0.11</tr>
+<tr><td><p>D1, D2, D3, D4, D5, D6, D7, D8, D9, D10</td><td><p>10</td><td><p>N4148</td><td><p>0.053</td><td><p>0.53</tr>
+<tr><td><p>U1</td><td><p>1</td><td><p>PIC16F877A, Microcontroller, DIP</td><td><p>7.25</td><td><p>7.25</tr>
+<tr><td><p>R24</td><td><p>1</td><td><p>10k Trimmer POT</td><td><p>0.32</td><td><p>0.32</tr>
+<tr><td><p>R42</td><td><p>1</td><td><p>10k POT, Mini Panel Mount</td><td><p>1.35</td><td><p>1.35</tr>
+<tr><td><p>U3, U4, U5</td><td><p>3</td><td><p>TLE2082, OPAMP, DIP</td><td><p>2.25</td><td><p>6.75</tr>
+<tr><td><p>&nbsp;</td><td><p>5</td><td><p>Chip Socket, 8 pin</td><td><p>0.1</td><td><p>0.5</tr>
+<tr><td><p>&nbsp;</td><td><p>1</td><td><p>Chip Socket, 40 pin</td><td><p>0.49</td><td><p>0.49</tr>
+<tr><td><p>&nbsp;</td><td><p>1</td><td><p>Chip Socket, 28 pin</td><td><p>0.34</td><td><p>0.34</tr>
+<tr><td><p>&nbsp;</td><td><p>&nbsp;</td><td><p>&nbsp;</td><td><p>&nbsp;</td><td><p><b>$46.04</b></tr>
+<tr><td><p>&nbsp;</td><td><p>&nbsp;</td><td><p>&nbsp;</td><td><p>&nbsp;</td><td><p></tr>
+<tr><td><p><b>Power Supply</b></td><td><p>&nbsp;</td><td><p>&nbsp;</td><td><p>&nbsp;</td><td><p></tr>
+<tr><td><p>Transformer</td><td><p>1</td><td><p>24.9V 2A Center Tapped</td><td><p>10.49</td><td><p>10.49</tr>
+<tr><td><p>Capacitors</td><td><p>8</td><td><p>2200u 25V</td><td><p>0.68</td><td><p>5.44</tr>
+<tr><td><p>Capacitors</td><td><p>2</td><td><p>3300u 16V</td><td><p>0.63</td><td><p>1.26</tr>
+<tr><td><p>Capacitors</td><td><p>2</td><td><p>1000u 16V</td><td><p>0.35</td><td><p>0.7</tr>
+<tr><td><p>LM7805</td><td><p>1</td><td><p>5 Volt Regulator</td><td><p>0.66</td><td><p>0.66</tr>
+<tr><td><p>LM7912</td><td><p>2</td><td><p>-12 Volt Regulator</td><td><p>0.31</td><td><p>0.62</tr>
+<tr><td><p>LM7812</td><td><p>2</td><td><p>12 Volt Regulator</td><td><p>0.6</td><td><p>1.2</tr>
+<tr><td><p>Bridge Rectifier</td><td><p>1</td><td><p>4 Amp Bridge Rectifier</td><td><p>1.32</td><td><p>1.32</tr>
+<tr><td><p>&nbsp;</td><td><p>&nbsp;</td><td><p>&nbsp;</td><td><p>&nbsp;</td><td><p><b>$21.69</b></tr>
+<tr><td><p>&nbsp;</td><td><p>&nbsp;</td><td><p>&nbsp;</td><td><p>&nbsp;</td><td><p></tr>
+<tr><td><p><b>Mechanical</b></td><td><p>&nbsp;</td><td><p>&nbsp;</td><td><p>&nbsp;</td><td><p></tr>
+<tr><td><p>Enclosure</td><td><p>1</td><td><p>&nbsp;</td><td><p>12</td><td><p>12</tr>
+<tr><td><p>Fan</td><td><p>1</td><td><p>3 Inch, 12 Volt</td><td><p>6</td><td><p>5.29</tr>
+<tr><td><p>Knob</td><td><p>1</td><td><p>&nbsp;</td><td><p>0.99</td><td><p>0.99</tr>
+<tr><td><p>Power Connector</td><td><p>1</td><td><p>&nbsp;</td><td><p>0.26</td><td><p>0.26</tr>
+<tr><td><p>Fuse Holder and Fuse</td><td><p>1</td><td><p>&nbsp;</td><td><p>1.04</td><td><p>1.04</tr>
+<tr><td><p>On/Off Switch</td><td><p>1</td><td><p>&nbsp;</td><td><p>1.75</td><td><p>1.75</tr>
+<tr><td><p>Banana Plugs</td><td><p>4</td><td><p>&nbsp;</td><td><p>1.59</td><td><p>6.36</tr>
+<tr><td><p>Banana Jacks</td><td><p>4</td><td><p>&nbsp;</td><td><p>0.99</td><td><p>3.96</tr>
+<tr><td><p>BNC to clip test cables</td><td><p>2</td><td><p>&nbsp;</td><td><p>3.49</td><td><p>6.98</tr>
+<tr><td><p>PCB</td><td><p>1</td><td><p>&nbsp;</td><td><p>7</td><td><p>7</tr>
+<tr><td><p>Standoffs</td><td><p>4</td><td><p>&nbsp;</td><td><p>0.49</td><td><p>1.96</tr>
+<tr><td><p>Connector for cable to Oscilloscope</td><td><p>1</td><td><p>Solder tip or crip DB9, Female</td><td><p>1.63</td><td><p>1.63</tr>
+<tr><td><p>Connector for cable to PC</td><td><p>1</td><td><p>Solder tip or crip DB25, Male</td><td><p>1.63</td><td><p>1.63</tr>
+<tr><td><p>&nbsp;</td><td><p>&nbsp;</td><td><p>&nbsp;</td><td><p>&nbsp;</td><td><p><b>$50.85</b></tr>
+
+<tr><td><p>&nbsp;</td><td><p>&nbsp;</td><td><p>&nbsp;</td><td><p>&nbsp;</td><td><p></tr>
+<tr><td><p><b>Total</b></td><td><p>&nbsp;</td><td><p>&nbsp;</td><td><p>&nbsp;</td><td><p><b>$118.58</b></tr>
+</table>
+
+</BODY>
+
+</HTML>

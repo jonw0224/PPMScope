@@ -1,0 +1,110 @@
+<html>
+<head>
+</head>
+<body>
+<center>
+<table border=0 width="800">
+	<tr><td>
+		<h1><b><center>
+  strgstff.bas </b></h1><br><b>Author:  </b> 
+  Jonathan Weaver<br><b>Date:    </b> 
+    6/6/2001<br><b>Version: </b> 
+ 1.1<br><b>Filename: </b> 
+  strgstff.bas<br><b>Description:  </b>
+  A collection of subroutines used to edit and parse strings.
+</td></tr></table>
+</center><br>
+<hr><br>
+<h2><b><i>Procedure Heading List</i></b></h2><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td>
+<a href="#4">function fileBufferNum%(filename$) public</a></td></tr><tr><td><a href="#2">function loadFile$(filename$) public</a></td></tr><tr><td><a href="#3">function loadFileBuffer$(filename$, bufferNum%) public</a></td></tr><tr><td><a href="#1">function parseword$(toParse$, tokenChar$, wordNo%) public</a></td></tr><tr><td><a href="#6">function stringNum%(mainStr$, subStr$) public</a></td></tr><tr><td><a href="#0">function verStrgstff$() public</a></td></tr><tr><td><a href="#5">function wordNum%(toParse$, tokenChar$) public</a></td></tr><tr><td><a href="#0"></a></td></tr></table>
+<br><hr><br>
+<h2><b><i>Procedure Descriptions</i></b></h2><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="4"></a>function fileBufferNum%(filename$) public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Returns the number of buffers a file will be split into by loadFileBuffer$</td></tr><tr><td colspan=2><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+filename$</i></td><td width=600>
+  the name of the file to load with loadFileBuffer$</td></tr><tr><td width=200>
+<b>Returns:</b></td><td width=600> 
+  an integer indicating the number of buffers in the file</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="2"></a>function loadFile$(filename$) public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Loads the contents of a file into a string</td></tr><tr><td colspan=2><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+filename$</i></td><td width=600>
+  the name of the file to load</td></tr><tr><td width=200>
+<b>Returns:</b></td><td width=600> 
+  a string containing the contents of the file</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="3"></a>function loadFileBuffer$(filename$, bufferNum%) public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Loads a section of the contents of a file into a string</td></tr><tr><td colspan=2><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+filename$</i></td><td width=600>
+  the name of the file to load</td></tr>
+<tr><td width=200><i> 
+bufferNum%</i></td><td width=600>
+ a number indicating the section of the file to load, starting with zero and ending with fileBufferNum(filename$) - 1</td></tr><tr><td width=200>
+<b>Returns:</b></td><td width=600> 
+  a string containing the contents of the file</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="1"></a>function parseword$(toParse$, tokenChar$, wordNo%) public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Parses a word from a string</td></tr><tr><td colspan=2><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+toParse$</i></td><td width=600>
+ the string to parse</td></tr>
+<tr><td width=200><i> 
+tokenChar$</i></td><td width=600>
+ the character which separates words</td></tr>
+<tr><td width=200><i> 
+wordNo%</i></td><td width=600>
+ the nth word to parse out of a the string.  For example wordNo% = 1 parses the first word from the string, etc.</td></tr><tr><td width=200>
+<b>Returns:</b></td><td width=600> 
+ the value of the word</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="6"></a>function stringNum%(mainStr$, subStr$) public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Returns the number of times a substring appears in a string.</td></tr><tr><td colspan=2><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+mainStr$</i></td><td width=600>
+ the string to search</td></tr>
+<tr><td width=200><i> 
+subStr$</i></td><td width=600>
+ the string to count the occurances of</td></tr><tr><td width=200>
+<b>Returns:</b></td><td width=600> 
+ an integer containing the occurance of subStr$ in mainStr$</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="0"></a>function verStrgstff$() public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+          1.1 build # 2 - 5/21/2005 - added loadFilebuffer() and fileBufferNum()</td></tr><tr><td colspan=2><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+Returns the build and version number of this unit library</i></td><td width=600>
+</td></tr><tr><td width=200>
+<b>Returns:</b></td><td width=600> 
+ the number of the build</td></tr></table>
+<br><hr><br>
+<table border=1 bgcolor="#CFCFFF" width="800">
+<tr><td colspan=2><a name="5"></a>function wordNum%(toParse$, tokenChar$) public<tr><td colspan=2>
+<b>Description:</b></td></tr><tr><td colspan=2>
+ Returns the number of words that can be made in a string.</td></tr><tr><td colspan=2><b>Parameters:</b></td></tr> 
+<tr><td width=200><i>
+toParse$</i></td><td width=600>
+  string to parse</td></tr>
+<tr><td width=200><i> 
+tokenChar$</i></td><td width=600>
+  the character which separates words</td></tr><tr><td width=200>
+<b>Returns:</b></td><td width=600> 
+ an integer containing the number of words in the string</td></tr></table>
+</td></tr></table>
+</center>
+<br><br></body></html>

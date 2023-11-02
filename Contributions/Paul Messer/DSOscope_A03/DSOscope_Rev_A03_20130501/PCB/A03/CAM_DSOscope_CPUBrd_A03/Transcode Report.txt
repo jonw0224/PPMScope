@@ -1,0 +1,40 @@
+
+
+   ---- Transcoding 'C:\jww\Projects\PPMScope\Contributions\Paul Messer\DSOscope_A03\DSOscope_Rev_A03_20130501\PCB\A03\CAM_DSOscope_CPUBrd_A03\bottom_silk.grb' ----   Fri Aug 15 15:20:28 2014
+
+D11   --> D100
+D12   --> D101
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\jww\Projects\PPMScope\Contributions\Paul Messer\DSOscope_A03\DSOscope_Rev_A03_20130501\PCB\A03\CAM_DSOscope_CPUBrd_A03\inner_copper_1.grb' ----   Fri Aug 15 15:20:28 2014
+
+D11   --> D102
+D12   --> D103
+D13   --> D104
+D14   --> D105
+D15   --> D106
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\jww\Projects\PPMScope\Contributions\Paul Messer\DSOscope_A03\DSOscope_Rev_A03_20130501\PCB\A03\CAM_DSOscope_CPUBrd_A03\inner_copper_2.grb' ----   Fri Aug 15 15:20:28 2014
+
+D11   --> D107
+D12   --> D108
+D13   --> D109
+D14   --> D110
+D15   --> D111
+D16   --> D112
+D17   --> D113
+D18   --> D114
+D19   --> D115
+D20   --> D116
+D21   --> D117
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\jww\Projects\PPMScope\Contributions\Paul Messer\DSOscope_A03\DSOscope_Rev_A03_20130501\PCB\A03\CAM_DSOscope_CPUBrd_A03\top_silk.grb' ----   Fri Aug 15 15:22:16 2014
+
+D11   --> D100
+D12   --> D101
+-----------------------------------------------------------------

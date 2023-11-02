@@ -1,0 +1,163 @@
+FreePCB project report (default units = MIL)
+============================================
+Project name: DSOscope_CPUBrd
+Project file: C:\Users\pmesser\_Paul\Design\DSOscope\PCB\A03\DSOscope_CPUBrd_A03.fpc
+Default library folder: c:\users\pmesser\_paul\design\my_freepcb_library
+
+Board statistics
+==============
+Number of copper layers: 4
+Number of board outlines: 3
+Board outline(s) extent: X = 3700 MIL; Y = 1900 MIL
+Number of parts: 91 (without footprints = 14)
+Number of pins: 264 (57 through-hole, 207 SMT)
+Number of vias: 96
+Number of holes: 153
+
+Drill list
+==========
+NUMBER  DIAMETER
+------  --------
+   96   21 MIL
+   10   35 MIL
+    2   90 MIL
+   37   41 MIL
+    4   36 MIL
+    4   52 MIL
+
+Part list
+=========
+For parts on top: the angle is in degrees CCW, as viewed from the top
+For parts on the bottom: the angle is in degrees CCW, as viewed from the bottom by flipping the PCB left-right
+All centroid coordinates are as viewed from the top
+
+   REF    PACKAGE  VALUE  FOOTPRINT  PINS  HOLES    SIDE  ANGLE  CENT X  CENT Y  PIN1 X  PIN1 Y  GLUE W  GLUE X  GLUE Y
+   ---    -------  -----  ---------  ----  -----    ----  -----  ------  ------  ------  ------  ------  ------  ------
+ BOM_1  NOPACKAGE                                                                              
+BOM_10  NOPACKAGE                                                                              
+BOM_11  NOPACKAGE                                                                              
+BOM_12  NOPACKAGE                                                                              
+BOM_13  NOPACKAGE                                                                              
+BOM_14  NOPACKAGE                                                                              
+ BOM_2  NOPACKAGE                                                                              
+ BOM_3  NOPACKAGE                                                                              
+ BOM_4  NOPACKAGE                                                                              
+ BOM_5  NOPACKAGE                                                                              
+ BOM_6  NOPACKAGE                                                                              
+ BOM_7  NOPACKAGE                                                                              
+ BOM_8  NOPACKAGE                                                                              
+ BOM_9  NOPACKAGE                                                                              
+    C1       0805              0805     2      0  bottom    180    1405     750    1360     750      10    1405     705
+   C10     RAD248            RAD248     2      2     top      0    2420     400    2470     400
+   C11       0805              0805     2      0  bottom      0    2955    1590    3000    1590      10    2955    1635
+   C12     RAD248            RAD248     2      2     top     90    2790    1750    2790    1700
+   C13     RAD394            RAD394     2      2     top    270    3500    1110    3500    1210
+   C14       0805              0805     2      0  bottom    270    3400    1105    3400    1150      10    3355    1105
+   C15       0805              0805     2      0     top     90    2710     555    2710     510      10    2665     555
+   C16     RAD248            RAD248     2      2     top     90    2710    1220    2710    1170
+   C17       0805              0805     2      0     top     90    3230    1265    3230    1220      10    3185    1265
+   C18     RAD394            RAD394     2      2     top     90    3500     700    3500     600
+   C19       0805              0805     2      0  bottom     90    3400     915    3400     870      10    3445     915
+    C2       0805              0805     2      0  bottom     90     770     915     770     870      10     815     915
+   C20       0805              0805     2      0  bottom    270    3000     785    3000     830      10    2955     785
+   C21       0603              0603     2      0  bottom     90    2200   773.5    2200     740      10  2233.5   773.5
+   C22       0805              0805     2      0  bottom     90    1870     875    1870     830      10    1915     875
+   C23       0603              0603     2      0  bottom      0  1796.5     660    1830     660      10  1796.5   693.5
+   C24       0805              0805     2      0     top     90    2610     355    2610     310      10    2565     355
+   C25       0805              0805     2      0  bottom    180    2815     660    2770     660      10    2815     615
+    C3       0603              0603     2      0     top      0   506.5     840     540     840      10   506.5   806.5
+    C4       0603              0603     2      0     top    180   313.5     840     280     840      10   313.5   873.5
+    C5       0805              0805     2      0  bottom    270     980     955     980    1000      10     935     955
+    C6       0805              0805     2      0  bottom     90     770    1085     770    1040      10     815    1085
+    C7       0805              0805     2      0     top    180     615    1560     570    1560      10     615    1605
+    C8     RAD248            RAD248     2      2     top     90    2490    1080    2490    1030
+    C9       0805              0805     2      0     top     90    2710     745    2710     700      10    2665     745
+    D1    DO35SMT           DO35SMT     2      0     top    180     390    1670     290    1670      10     390    1770
+    D2     SOD123            SOD123     2      0     top    180   677.5    1670     590    1670      25   677.5    1670
+    D4       DO41              DO41     2      2     top     90    3600    1550    3600    1300
+    D5       DO41              DO41     2      2     top     90    3250     850    3250     600
+    F1    miniSMD           miniSMD     2      0     top    180    2210    1130    2110    1130      10    2210    1230
+    J1  CutStrap1         CutStrap1     3      2     top     90     300     980     300     980
+    J2   SqPin1x7          SqPin1x7     7      7     top     90     150    1150     150    1150
+    J3  SqPin1x18         SqPin1x18    18     18  bottom      0    2700     150    2700     150
+    J4   SqPin1x6          SqPin1x6     6      6     top     90    1390    1290    1390    1290
+    J5      USBB1             USBB1     6      6     top      0    1850    1685    1801    1410
+    L1    INDUCT1           INDUCT1     2      0     top    180    3340    1670    3340    1550      25    3340    1670
+    L2    INDUCT1           INDUCT1     2      0     top     90    2980     750    3100     750      25    2980     750
+    L3       1210              1210     2      0     top    270    2720   352.5    2720     420      10  2787.5   352.5
+    L4       1210              1210     2      0  bottom    270    2830   822.5    2830     890      10  2762.5   822.5
+    R1       0805              0805     2      0     top     90     520    1205     520    1160      10     475    1205
+   R10       0805              0805     2      0     top    180     785    1560     740    1560      10     785    1605
+   R11       0805              0805     2      0     top    180     445    1560     400    1560      10     445    1605
+   R12       0805              0805     2      0  bottom    270     520    1205     520    1250      10     475    1205
+   R13       0805              0805     2      0     top    180     445    1480     400    1480      10     445    1525
+   R14       0805              0805     2      0     top      0     685    1350     730    1350      10     685    1305
+   R15       0805              0805     2      0     top     90    1860     545    1860     500      10    1815     545
+   R16       0805              0805     2      0     top     90    2000     545    2000     500      10    1955     545
+   R17       0805              0805     2      0     top    180    1215    1690    1170    1690      10    1215    1735
+   R18       0805              0805     2      0     top    180    1215    1790    1170    1790      10    1215    1835
+    R2       0805              0805     2      0     top    270    1000     365    1000     410      10    1045     365
+   R21       0805              0805     2      0     top    270    2920    1435    2920    1480      10    2965    1435
+   R22       0805              0805     2      0     top    270    3000    1435    3000    1480      10    3045    1435
+   R23       0805              0805     2      0     top     90    3100    1435    3100    1390      10    3055    1435
+   R24       0805              0805     2      0     top    270    2760    1535    2760    1580      10    2805    1535
+   R25       0805              0805     2      0     top    270    2840    1535    2840    1580      10    2885    1535
+   R26       0805              0805     2      0     top      0    2795    1410    2840    1410      10    2795    1365
+   R27       0805              0805     2      0     top    180    2715    1040    2670    1040      10    2715    1085
+   R28       0805              0805     2      0     top    180    2715     960    2670     960      10    2715    1005
+   R29       0805              0805     2      0     top      0    2925    1310    2970    1310      10    2925    1265
+    R3       0805              0805     2      0     top      0     725     720     770     720      10     725     675
+   R30       0805              0805     2      0     top    180    2925    1220    2880    1220      10    2925    1265
+   R31       0805              0805     2      0     top    180    3095    1310    3050    1310      10    3095    1355
+   R32       0805              0805     2      0     top     90    1760    1155    1760    1110      10    1715    1155
+   R33       0805              0805     2      0  bottom     90     850    1315     850    1270      10     895    1315
+   R34       0805              0805     2      0  bottom     90     930    1315     930    1270      10     975    1315
+   R35       0805              0805     2      0     top      0     685    1430     730    1430      10     685    1385
+    R4       0805              0805     2      0     top      0    2245     810    2290     810      10    2245     765
+    R5       0805              0805     2      0     top      0    1205    1550    1250    1550      10    1205    1505
+    R6       0805              0805     2      0     top    180    1635    1200    1590    1200      10    1635    1245
+    R7       0805              0805     2      0     top      0    1675    1280    1720    1280      10    1675    1235
+    R8       0805              0805     2      0     top    270     910    1605     910    1650      10     955    1605
+    R9       0805              0805     2      0     top    270     990    1605     990    1650      10    1035    1605
+    U1     SSOP28            SSOP28    28      0     top    180    1489   577.5    1320     410      25    1489   577.5
+    U2     TQFP44            TQFP44    44      0     top     90  1002.5  1037.5  1272.5     880      10  1002.5  1037.5
+    U4      SOIC8             SOIC8     8      0     top      0    3025    1690    3100    1800      10    3025    1725
+    U5      SOIC8             SOIC8     8      0     top     90    3000    1055    3110     980      10    3035    1055
+    X1   HC49VERT          HC49VERT     2      2     top     90     375     680     470     680
+
+Gerber file settings
+====================
+Include board outline: YES
+Include moires: NO
+Include layer description text: NO
+Include pilot holes: YES
+Connect SMT pins to copper areas: NO
+Use thermals for SMT pins: YES
+Use thermals for through-hole pins: YES
+Use thermals for vias: YES
+Make solder-mask cutouts for vias: NO
+Use 90-degree thermals for round pins: NO
+Copper to copper-fill clearance: 15 MIL
+Hole-edge to copper-fill clearance: 15 MIL
+Solder mask clearance: 8 MIL
+Pilot hole diameter: 10 MIL
+Minimum silkscreen line width: 5 MIL
+Thermal relief line width: 20 MIL
+Board outline line width: 5 MIL
+Minimum annular ring width (pins): 7 MIL
+Minimum annular ring width (vias): 5 MIL
+Amount to shrink SMT pads for paste mask: 0 MIL
+
+DRC settings
+============
+Minimum trace width: 10 MIL
+Minimum pad to pad clearance: 10 MIL
+Minimum pad to trace clearance: 10 MIL
+Minimum trace to trace clearance: 10 MIL
+Minimum hole to copper clearance: 15 MIL
+Minimum hole to hole clearance: 25 MIL
+Minimum annular ring (pins): 7 MIL
+Minimum annular ring (vias): 5 MIL
+Minimum board edge to copper clearance: 25 MIL
+Minimum board edge to hole clearance: 25 MIL
+Minimum copper area to copper area clearance: 10 MIL
